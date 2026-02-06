@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licensing Framework - Ward Effect Technology</title>
+    <meta name="description" content="Clear licensing framework: Open source for water & public health, commercial licensing for industrial applications. No exclusive licenses ever.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f7fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #b8c5d6;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #4c9aff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .hero-box {
+            background: linear-gradient(135deg, #4c9aff 0%, #00d4ff 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .hero-box h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero-box p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        section {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1a1a2e;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #4c9aff;
+        }
+
+        h3 {
+            color: #2d3748;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+        }
+
+        .decision-tree {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid #4c9aff;
+        }
+
+        .decision-step {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #00ff88;
+        }
+
+        .decision-step.commercial {
+            border-left-color: #4c9aff;
+        }
+
+        .decision-question {
+            font-weight: bold;
+            color: #1a1a2e;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .decision-answer {
+            color: #4a5568;
+            margin-left: 20px;
+        }
+
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .use-case {
+            background: #f7fafc;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid;
+        }
+
+        .use-case.opensource {
+            border-left-color: #00ff88;
+        }
+
+        .use-case.commercial {
+            border-left-color: #4c9aff;
+        }
+
+        .use-case-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+
+        .use-case-scenario {
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .use-case-ruling {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .ruling-opensource {
+            background: rgba(0, 255, 136, 0.2);
+            color: #00875a;
+            border: 1px solid #00ff88;
+        }
+
+        .ruling-commercial {
+            background: rgba(76, 154, 255, 0.2);
+            color: #0052cc;
+            border: 1px solid #4c9aff;
+        }
+
+        .use-case-explanation {
+            color: #4a5568;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        .comparison-table th {
+            background: #1a1a2e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: #f7fafc;
+        }
+
+        .checkmark {
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        .cross {
+            color: #ff4757;
+            font-weight: bold;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #00ff88;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #00d46a;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #4c9aff;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #3182ce;
+            transform: translateY(-2px);
+        }
+
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box strong {
+            color: #856404;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 10px 0;
+            color: #4a5568;
+        }
+
+        @media (max-width: 768px) {
+            .use-cases {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📜 Ward Effect Licensing Framework</h1>
+        <p>Humanitarian Open Source + Commercial Sustainability</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Ward Effect Technology</a>
+
+        <div class="hero-box">
+            <h2>One Simple Principle</h2>
+            <p><strong>Does it directly save lives or relate to drinking water in any way?</strong><br>
+            → Open Source (Free Forever)</p>
+            <p style="margin-top: 15px;"><strong>Everything else?</strong><br>
+            → Commercial License (Standard Royalty, Non-Exclusive)</p>
+        </div>
+
+        <section>
+            <h2>🔓 Open Source Applications (Zero Cost, Zero Royalties)</h2>
+            
+            <h3>What Qualifies as Open Source?</h3>
+            <ul>
+                <li><strong>Drinking Water Purification</strong> - Any application where primary purpose is making water safe for human consumption (any scale)</li>
+                <li><strong>Municipal Water Infrastructure</strong> - Public water system safety, leak detection, quality monitoring, and purification</li>
+                <li><strong>Critical Public Health</strong> - Hospital superbug detection, medical facility pathogen monitoring</li>
+                <li><strong>Infant Safety</strong> - Baby formula production facilities, infant food processing contamination monitoring</li>
+                <li><strong>Agricultural Water Supplies</strong> - Water for irrigation, livestock, aquaculture for food production (includes devices to remove biofilm from agricultural water pipes)</li>
+                <li><strong>Emergency Relief</strong> - Disaster response, refugee camps, humanitarian crises</li>
+                <li><strong>Anything Associated with Drinking Water</strong> - If it relates to drinking water safety, access, or quality, it's open source</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Scale doesn't matter:</strong> Whether you're building one village system or manufacturing 100,000 units for global distribution, water purification is ALWAYS open source.
+            </div>
+        </section>
+
+        <section>
+            <h2>💼 Commercial License Applications (Standard Royalty)</h2>
+            
+            <h3>What Requires Commercial Licensing?</h3>
+            <ul>
+                <li><strong>Marine Anti-Fouling</strong> - Ship hulls, offshore platforms, underwater structures</li>
+                <li><strong>Industrial Flowmeters</strong> - Process control in manufacturing (non-water, non-food)</li>
+                <li><strong>Building Systems</strong> - Commercial HVAC, building optimization (except hospitals/schools)</li>
+                <li><strong>Consumer Electronics</strong> - WardScope spectrum analyzers, audio tools</li>
+                <li><strong>Industrial Process Optimization</strong> - Chemical plants, refineries, manufacturing</li>
+            </ul>
+
+            <h3>License Terms</h3>
+            <p><strong>Non-Exclusive Only</strong> - We will NEVER grant exclusive licenses. Any manufacturer can license on the same terms.</p>
+            
+            <p><strong>Royalty Options (Your Choice):</strong></p>
+            <ul>
+                <li>3-5% of wholesale unit price</li>
+                <li>$5-50 fixed fee per unit (depending on application)</li>
+                <li>$10,000-100,000 annual unlimited production license</li>
+            </ul>
+
+            <p><strong>What's Included:</strong></p>
+            <ul>
+                <li>Full patent portfolio access for licensed application</li>
+                <li>Technical documentation and implementation guides</li>
+                <li>Email technical support</li>
+                <li>Worldwide manufacturing and distribution rights</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🎯 Real-World Use Cases (Your Specific Scenarios)</h2>
+
+            <div class="use-cases">
+                <div class="use-case opensource">
+                    <div class="use-case-title">Village Water Project (Tanganeer)</div>
+                    <div class="use-case-scenario">NGO sets up water purification system for village in developing nation</div>
+                    <div class="use-case-ruling ruling-opensource">✅ OPEN SOURCE</div>
+                    <div class="use-case-explanation">
+                        <strong>Ruling:</strong> Drinking water access<br>
+                        <strong>License Fee:</strong> $0<br>
+                        <strong>Royalty:</strong> None<br>
+                        <strong>Requirements:</strong> Acknowledge Ward Effect Technology
+                    </div>
+                </div>
+
+                <div class="use-case opensource">
+                    <div class="use-case-title">Italian Municipality Leak Detection</div>
+                    <div class="use-case-scenario">Municipal government deploys leak detection in public water distribution network</div>
+                    <div class="use-case-ruling ruling-opensource">✅ OPEN SOURCE</div>
+                    <div class="use-case-explanation">
+                        <strong>Ruling:</strong> Public water infrastructure<br>
+                        <strong>License Fee:</strong> $0<br>
+                        <strong>Royalty:</strong> None<br>
+                        <strong>Scale:</strong> Unlimited (entire city network)
+                    </div>
+                </div>
+
+                <div class="use-case opensource">
+                    <div class="use-case-title">100,000 Water Purifiers Manufactured</div>
+                    <div class="use-case-scenario">Manufacturer produces 100,000 household water purification units for global distribution</div>
+                    <div class="use-case-ruling ruling-opensource">✅ OPEN SOURCE</div>
+                    <div class="use-case-explanation">
+                        <strong>Ruling:</strong> Water purification at any scale<br>
+                        <strong>License Fee:</strong> $0<br>
+                        <strong>Royalty:</strong> None (even on 100,000 units)<br>
+                        <strong>Requirements:</strong> Cannot patent derivative works for water applications
+                    </div>
+                </div>
+
+                <div class="use-case commercial">
+                    <div class="use-case-title">Marine Anti-Fouling Systems</div>
+                    <div class="use-case-scenario">Manufacturer produces ship hull anti-fouling systems for commercial maritime industry</div>
+                    <div class="use-case-ruling ruling-commercial">💰 COMMERCIAL LICENSE</div>
+                    <div class="use-case-explanation">
+                        <strong>Ruling:</strong> Maritime commercial application<br>
+                        <strong>Royalty Options:</strong> 4% wholesale OR $200/system OR $50k/year unlimited<br>
+                        <strong>License Type:</strong> Non-exclusive (no territory restrictions)<br>
+                        <strong>Support:</strong> Technical docs + direct support
+                    </div>
+                </div>
+
+                <div class="use-case commercial">
+                    <div class="use-case-title">Industrial Flowmeters</div>
+                    <div class="use-case-scenario">Manufacturer produces flowmeters for chemical plants, oil refineries, HVAC systems</div>
+                    <div class="use-case-ruling ruling-commercial">💰 COMMERCIAL LICENSE</div>
+                    <div class="use-case-explanation">
+                        <strong>Ruling:</strong> Process optimization (non-water safety)<br>
+                        <strong>Royalty Options:</strong> 2-4% wholesale OR $10-30/unit fixed<br>
+                        <strong>Exception:</strong> Water flowmeters for municipal drinking water = Open Source
+                    </div>
+                </div>
+
+                <div class="use-case opensource">
+                    <div class="use-case-title">Baby Formula Production Safety</div>
+                    <div class="use-case-scenario">Food processing plant deploys contamination detection in infant formula production line</div>
+                    <div class="use-case-ruling ruling-opensource">✅ OPEN SOURCE</div>
+                    <div class="use-case-explanation">
+                        <strong>Ruling:</strong> Infant public health (life-critical)<br>
+                        <strong>License Fee:</strong> $0<br>
+                        <strong>Rationale:</strong> Contaminated formula kills infants globally. This is always open source regardless of commercial scale.
+                    </div>
+                </div>
+
+                <div class="use-case opensource">
+                    <div class="use-case-title">Hospital Superbug Detection</div>
+                    <div class="use-case-scenario">Medical facility installs pathogen detection systems to monitor for MRSA, C. diff, other superbugs</div>
+                    <div class="use-case-ruling ruling-opensource">✅ OPEN SOURCE</div>
+                    <div class="use-case-explanation">
+                        <strong>Ruling:</strong> Critical public health (hospital-acquired infections kill 700,000+/year)<br>
+                        <strong>License Fee:</strong> $0<br>
+                        <strong>Scale:</strong> Unlimited (even if serving Fortune 500 hospitals)
+                    </div>
+                </div>
+
+                <div class="use-case opensource">
+                    <div class="use-case-title">Medical Facilities - General</div>
+                    <div class="use-case-scenario">Any pathogen detection system in hospitals, clinics, dialysis centers, surgical suites</div>
+                    <div class="use-case-ruling ruling-opensource">✅ OPEN SOURCE</div>
+                    <div class="use-case-explanation">
+                        <strong>Ruling:</strong> Protecting vulnerable populations<br>
+                        <strong>Examples:</strong> ICU monitoring, surgical sterilization verification, dialysis water purity
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🌲 Decision Tree - When in Doubt</h2>
+            
+            <div class="decision-tree">
+                <div class="decision-step">
+                    <div class="decision-question">Question 1: Is the primary purpose directly related to human drinking water safety, access, quality, or supply?</div>
+                    <div class="decision-answer">
+                        <strong>YES</strong> → ✅ Open Source (Anything associated with drinking water is open source)<br>
+                        <strong>NO</strong> → Continue to Question 2
+                    </div>
+                </div>
+
+                <div class="decision-step">
+                    <div class="decision-question">Question 2: Does it protect vulnerable populations (infants, elderly, immunocompromised) from life-threatening contamination?</div>
+                    <div class="decision-answer">
+                        <strong>YES</strong> → ✅ Open Source<br>
+                        <strong>NO</strong> → Continue to Question 3
+                    </div>
+                </div>
+
+                <div class="decision-step">
+                    <div class="decision-question">Question 3: Is it operated by government/NGO for public benefit with no profit motive?</div>
+                    <div class="decision-answer">
+                        <strong>YES</strong> → ✅ Open Source<br>
+                        <strong>NO</strong> → Continue to Question 4
+                    </div>
+                </div>
+
+                <div class="decision-step">
+                    <div class="decision-question">Question 4: Does it directly enable food production for human consumption?</div>
+                    <div class="decision-answer">
+                        <strong>YES</strong> → ✅ Open Source<br>
+                        <strong>NO</strong> → Continue to Question 5
+                    </div>
+                </div>
+
+                <div class="decision-step commercial">
+                    <div class="decision-question">Question 5: Still uncertain?</div>
+                    <div class="decision-answer">
+                        <strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb98979a8888929d82bb8c9a899f9e9d9d9e988fd5989496">[email&#160;protected]</a><br>
+                        <strong>Default Rule:</strong> If life/health impact uncertain, we err toward Open Source
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📊 Quick Reference Table</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Application</th>
+                        <th>Classification</th>
+                        <th>Reasoning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Village water system (Tanganeer)</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Drinking water access</td>
+                    </tr>
+                    <tr>
+                        <td>Municipality leak detection (Italy)</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Public water infrastructure</td>
+                    </tr>
+                    <tr>
+                        <td>100,000 water purifiers manufactured</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Water purification at any scale</td>
+                    </tr>
+                    <tr>
+                        <td>Ship hull anti-fouling</td>
+                        <td><span class="cross">$</span> Commercial</td>
+                        <td>Maritime commercial</td>
+                    </tr>
+                    <tr>
+                        <td>Industrial flowmeter (chemical plant)</td>
+                        <td><span class="cross">$</span> Commercial</td>
+                        <td>Process optimization</td>
+                    </tr>
+                    <tr>
+                        <td>Baby formula contamination detection</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Infant public health</td>
+                    </tr>
+                    <tr>
+                        <td>Hospital superbug detection</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Critical public health</td>
+                    </tr>
+                    <tr>
+                        <td>Food processing plant (general)</td>
+                        <td><span class="cross">$</span> Commercial</td>
+                        <td>Industrial food production*</td>
+                    </tr>
+                    <tr>
+                        <td>Food processing (baby formula specifically)</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Infant safety exception</td>
+                    </tr>
+                    <tr>
+                        <td>Aquaculture water (food fish)</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Food production</td>
+                    </tr>
+                    <tr>
+                        <td>Agricultural pipe biofilm removal (irrigation systems)</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Agricultural water infrastructure</td>
+                    </tr>
+                    <tr>
+                        <td>Aquaculture (ornamental fish)</td>
+                        <td><span class="cross">$</span> Commercial</td>
+                        <td>Commercial/recreational</td>
+                    </tr>
+                    <tr>
+                        <td>Emergency disaster relief water</td>
+                        <td><span class="checkmark">✓</span> Open Source</td>
+                        <td>Humanitarian crisis</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 20px; font-size: 0.9em; color: #718096;">
+                *Exception: Infant formula and elderly care food processing = Open Source due to vulnerable population protection
+            </p>
+        </section>
+
+        <section>
+            <h2>🤝 Why No Exclusive Licenses?</h2>
+            
+            <p style="font-size: 1.1em; margin-bottom: 20px;">
+                Even for commercial applications, Ward Effect Technology will <strong>NEVER</strong> grant exclusive licenses.
+            </p>
+
+            <h3>Our Reasoning:</h3>
+            <ul>
+                <li><strong>Monopolies Restrict Innovation</strong> - Exclusive licenses create single points of failure</li>
+                <li><strong>Competition Drives Quality</strong> - Multiple manufacturers compete on service and price, not licensing lock-in</li>
+                <li><strong>Faster Global Deployment</strong> - Any qualified manufacturer can implement immediately</li>
+                <li><strong>Prevents Gatekeeping</strong> - No corporation can block humanitarian use by controlling commercial rights</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Our Promise:</strong> Any manufacturer, anywhere in the world, can license commercial applications on identical terms. We compete on technology quality, not artificial scarcity.
+            </div>
+        </section>
+
+        <div class="cta-box">
+            <h3>Ready to Get Started?</h3>
+            <p>Choose your licensing path based on your application</p>
+            
+            <div class="cta-buttons">
+                <a href="/cdn-cgi/l/email-protection#462936232835293334252306312734222320202325326825292b" class="btn btn-primary">
+                    🔓 Open Source Access<br>
+                    <span style="font-size: 0.8em; opacity: 0.9;">Water, Public Health, Food Safety</span>
+                </a>
+                
+                <a href="/cdn-cgi/l/email-protection#05696c66606b766c6b6245726477616063636066712b666a68" class="btn btn-secondary">
+                    💼 Commercial Licensing<br>
+                    <span style="font-size: 0.8em; opacity: 0.9;">Marine, Industrial, Consumer</span>
+                </a>
+                
+                <a href="/cdn-cgi/l/email-protection#cdaea1acbebea4abb48dbaacbfa9a8ababa8aeb9e3aea2a0" class="btn btn-secondary">
+                    ❓ Unsure? Ask Us<br>
+                    <span style="font-size: 0.8em; opacity: 0.9;">Application Classification Help</span>
+                </a>
+            </div>
+        </div>
+
+        <section>
+            <h2>📧 Contact Information</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 30px;">
+                <div>
+                    <h3 style="color: #00875a;">🔓 Open Source</h3>
+                    <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bed1cedbd0cdd1cbccdddbfec9dfccdadbd8d8dbddca90ddd1d3">[email&#160;protected]</a></p>
+                    <p><strong>For:</strong> Water purification, municipal infrastructure, public health applications</p>
+                    <p><strong>Response Time:</strong> Instant approval for qualifying applications</p>
+                </div>
+
+                <div>
+                    <h3 style="color: #0052cc;">💼 Commercial</h3>
+                    <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b5752585e554852555c7b4c5a495f5e5d5d5e584f15585456">[email&#160;protected]</a></p>
+                    <p><strong>For:</strong> Marine, industrial, consumer electronics licensing</p>
+                    <p><strong>Response Time:</strong> Quote within 48 hours</p>
+                </div>
+
+                <div>
+                    <h3 style="color: #5e6c84;">❓ Classification</h3>
+                    <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="51323d30222238372811263023353437373432257f323e3c">[email&#160;protected]</a></p>
+                    <p><strong>For:</strong> Uncertain applications, gray area inquiries</p>
+                    <p><strong>Response Time:</strong> 24-48 hours with detailed ruling</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: #f7fafc; border-left: 5px solid #4c9aff;">
+            <h2>💡 Philosophy</h2>
+            <p style="font-size: 1.2em; line-height: 1.8; color: #2d3748;">
+                "2+ billion people lack safe drinking water. Hospital infections kill 700,000+ annually. Contaminated infant formula causes periodic global crises. 
+                <strong>These problems c

@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Inverted Triangle - Revolutionary R&D Structure | Ward Effect</title>
+    <meta name="description" content="How autonomous teams of 5 eliminate bureaucracy, embrace failure, and accelerate breakthrough innovation. No administrators. No HR. No legal department. Pure research.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #0f0f1e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        header .subtitle {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            color: #ddd6fe;
+        }
+
+        header p {
+            font-size: 1.2em;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #a78bfa;
+            text-decoration: none;
+            font-weight: 600;
+            background: rgba(167, 139, 250, 0.1);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .back-link:hover {
+            background: rgba(167, 139, 250, 0.2);
+        }
+
+        /* Triangle Visual */
+        .triangle-visual {
+            background: white;
+            padding: 60px 40px;
+            margin: 40px 0;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .triangle-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .triangle-box {
+            padding: 40px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .triangle-box.traditional {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border: 3px solid #dc2626;
+        }
+
+        .triangle-box.inverted {
+            background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+            border: 3px solid #7c3aed;
+        }
+
+        .triangle-diagram {
+            font-size: 5em;
+            margin: 20px 0;
+            line-height: 1;
+        }
+
+        .triangle-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .traditional .triangle-title {
+            color: #991b1b;
+        }
+
+        .inverted .triangle-title {
+            color: #5b21b6;
+        }
+
+        .triangle-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #4a5568;
+        }
+
+        section {
+            background: white;
+            padding: 50px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.1);
+        }
+
+        h2 {
+            color: #5b21b6;
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #7c3aed;
+        }
+
+        h3 {
+            color: #6d28d9;
+            font-size: 1.8em;
+            margin: 35px 0 20px 0;
+        }
+
+        /* Team of 5 */
+        .team-structure {
+            background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 6px solid #7c3aed;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .team-role {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #7c3aed;
+        }
+
+        .role-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .role-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #5b21b6;
+            margin-bottom: 10px;
+        }
+
+        .role-description {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Principles Grid */
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .principle-card {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 4px solid #7c3aed;
+            transition: transform 0.3s;
+        }
+
+        .principle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
+        }
+
+        .principle-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .principle-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #6d28d9;
+            margin-bottom: 15px;
+        }
+
+        .principle-description {
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        .comparison-table th {
+            background: #5b21b6;
+            color: white;
+            padding: 18px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .comparison-table td {
+            padding: 18px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: #faf5ff;
+        }
+
+        .comparison-table .checkmark {
+            color: #16a34a;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .comparison-table .cross {
+            color: #dc2626;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 6px solid #f59e0b;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .highlight-box strong {
+            color: #92400e;
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .highlight-box p {
+            color: #78350f;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            font-size: 1.3em;
+            line-height: 1.8;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .quote-box .author {
+            margin-top: 20px;
+            font-style: normal;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 60px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .cta-box h2 {
+            color: white;
+            border: none;
+            margin-bottom: 25px;
+        }
+
+        .cta-box p {
+            font-size: 1.2em;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 45px;
+            background: #7c3aed;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #6d28d9;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .triangle-comparison {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>▼ The Inverted Triangle</h1>
+        <p class="subtitle">Revolutionary R&D Organization</p>
+        <p>How autonomous teams of 5 eliminate bureaucracy, embrace failure as essential for progress, and accelerate breakthrough innovation. No administrators. No HR department. No legal department. Pure research velocity.</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Ward Effect Technology</a>
+
+        <div class="triangle-visual">
+            <h2 style="color: #5b21b6; border: none; margin-bottom: 40px;">The Fundamental Inversion</h2>
+            
+            <div class="triangle-comparison">
+                <div class="triangle-box traditional">
+                    <div class="triangle-diagram">▲</div>
+                    <div class="triangle-title">Traditional Hierarchy</div>
+                    <div class="triangle-description">
+                        <strong>Power at the Top</strong><br><br>
+                        Executives make decisions<br>
+                        Middle management enforces<br>
+                        Researchers ask permission<br>
+                        Bureaucracy controls innovation<br><br>
+                        <span style="color: #dc2626; font-weight: bold;">Result: Slow, risk-averse, politically driven</span>
+                    </div>
+                </div>
+
+                <div class="triangle-box inverted">
+                    <div class="triangle-diagram">▼</div>
+                    <div class="triangle-title">Inverted Triangle</div>
+                    <div class="triangle-description">
+                        <strong>Power at the Bottom</strong><br><br>
+                        Research teams make decisions<br>
+                        Facilitators enable progress<br>
+                        Steering committee supports<br>
+                        Bureaucracy eliminated<br><br>
+                        <span style="color: #7c3aed; font-weight: bold;">Result: Fast, failure-embracing, science-driven</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>👥 The Team of 5: Core Structure</h2>
+            
+            <div class="team-structure">
+                <h3 style="color: #5b21b6; margin-top: 0;">Team Formation Process</h3>
+                <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+                    <ol style="font-size: 1.1em; line-height: 2; color: #4a5568;">
+                        <li><strong style="color: #5b21b6;">Steering Committee Selects the Leader/Facilitator</strong><br>
+                        Based on technical expertise, collaborative track record, and alignment with project vision</li>
+                        
+                        <li><strong style="color: #5b21b6;">Leader Selects the Other 4 Team Members</strong><br>
+                        Leader has full authority to assemble their team based on complementary skills and teamwork potential</li>
+                        
+                        <li><strong style="color: #5b21b6;">Team Decides on Their Own Training</strong><br>
+                        Team identifies skill gaps and determines what training they need—no HR-mandated courses</li>
+                    </ol>
+                </div>
+
+                <h3 style="color: #5b21b6; margin-top: 0;">Why 5 People?</h3>
+                <p style="font-size: 1.15em; line-height: 1.8; color: #4a5568; margin-bottom: 30px;">
+                    Five is the optimal size for high-velocity research. Small enough for rapid decision-making without meetings. 
+                    Large enough for diverse expertise and peer review. Too few lacks perspective. Too many creates coordination overhead.
+                </p>
+
+                <div class="team-grid">
+                    <div class="team-role">
+                        <span class="role-icon">🎯</span>
+                        <div class="role-title">The Facilitator</div>
+                        <div class="role-description">
+                            <strong>NOT a manager.</strong> The facilitator serves the team—securing resources, removing obstacles, 
+                            connecting with other teams. Has no authority to override team decisions. Rotates based on project needs.
+                        </div>
+                    </div>
+
+                    <div class="team-role">
+                        <span class="role-icon">🔬</span>
+                        <div class="role-title">4 Research Scientists</div>
+                        <div class="role-description">
+                            Each brings specialized expertise (physics, electronics, software, materials). All have equal voice in decisions. 
+                            Collectively responsible for outcomes. Self-organize based on project requirements.
+                        </div>
+                    </div>
+
+                    <div class="team-role">
+                        <span class="role-icon">⚖️</span>
+                        <div class="role-title">Consensus Decision-Making</div>
+                        <div class="role-description">
+                            All decisions made by the group. Budget allocation, experimental design, timeline, resource priorities—the team decides. 
+                            No approvals needed from above. Disagreements resolved through data and experimentation.
+                        </div>
+                    </div>
+
+                    <div class="team-role">
+                        <span class="role-icon">💰</span>
+                        <div class="role-title">Self-Set Budget</div>
+                        <div class="role-description">
+                            Team receives funding allocation from research center. Team determines how to spend it. No purchase orders. 
+                            No approval chains. Direct accountability for results vs. resources consumed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <strong>Each Group of 5 is its Own Administrator</strong>
+                <p>
+                    There are no administrators managing the team. The team manages itself. Need equipment? The team procures it. 
+                    Need to adjust timeline? The team decides. Need to pivot research direction? The team evaluates and chooses. 
+                    This eliminates the 6-month lag between "we need this" and "approval granted."
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>🚫 What's Eliminated: The Bureaucracy Purge</h2>
+
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <span class="principle-icon">📋</span>
+                    <div class="principle-title">No HR Department</div>
+                    <div class="principle-description">
+                        Teams hire their own members through consensus. No HR screening. No personality tests. 
+                        Scientists select scientists based on technical competence and collaborative fit. 
+                        Performance issues resolved by the team, not HR policy.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">⚖️</span>
+                    <div class="principle-title">No Legal Department</div>
+                    <div class="principle-description">
+                        Teams work within established IP framework (open source for water, commercial licensing for industrial). 
+                        Patent filings handled by external specialists when needed. Legal reviews only for contracts, not for daily research decisions.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">🏢</span>
+                    <div class="principle-title">No Middle Management</div>
+                    <div class="principle-description">
+                        No department heads. No project managers. No coordinators. The facilitator isn't a manager—they're a 
+                        logistics enabler. Research teams report directly to the steering committee, which exists only to support them.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">📊</span>
+                    <div class="principle-title">No Approval Chains</div>
+                    <div class="principle-description">
+                        Budget allocated to teams. Teams spend it. No purchase order approvals. No finance sign-offs. 
+                        No waiting for quarterly budget reviews. Accountability through results, not process compliance.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">📅</span>
+                    <div class="principle-title">No Scheduled Meetings</div>
+                    <div class="principle-description">
+                        Teams meet when they need to, not because it's Tuesday. No status update meetings. No weekly all-hands. 
+                        Steering committee meets with teams on-demand, not on a calendar schedule.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">📝</span>
+                    <div class="principle-title">No Performance Reviews</div>
+                    <div class="principle-description">
+                        Results speak for themselves. Did the team advance the technology? Did they solve the problem? 
+                        Did they publish findings? Peer evaluation within the team replaces annual HR reviews.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>✅ Core Principles: How It Works</h2>
+
+            <h3>1. Autonomous Teams with Clear Boundaries</h3>
+            <p style="font-size: 1.1em; line-height: 1.8; margin: 20px 0;">
+                Each group of 5 is completely autonomous within their research domain. They control their budget, set their timeline, 
+                design their experiments, hire team members, and publish their findings.
+            </p>
+
+            <div class="highlight-box">
+                <strong>The Only Restriction:</strong>
+                <p>
+                    Teams cannot make statements or act outside their role. A biofilm detection team doesn't negotiate commercial licenses. 
+                    A marine anti-fouling team doesn't commit to hospital deployments. Teams stay in their lane—but within that lane, 
+                    they have total authority.
+                </p>
+            </div>
+
+            <h3>2. Failure is Essential for Progress</h3>
+            <p style="font-size: 1.1em; line-height: 1.8; margin: 20px 0;">
+                <strong>We expect failure because failure is essential for progress.</strong>
+            </p>
+
+            <ul style="font-size: 1.05em;">
+                <li><strong>Failed experiments are published</strong> so other teams don't repeat them</li>
+                <li><strong>Failed approaches are celebrated</strong> as data points narrowing the solution space</li>
+                <li><strong>Teams are not punished for negative results</strong>—only for not learning from them</li>
+                <li><strong>"We tried X and it didn't work because Y"</strong> is valuable knowledge</li>
+                <li><strong>Fast failure is better than slow success</strong>—iterate rapidly, discard bad ideas quickly</li>
+            </ul>
+
+            <div class="quote-box">
+                "If you're not failing regularly, you're not pushing boundaries. The inverted triangle doesn't penalize failure—
+                it funds failure as a systematic approach to finding what works."
+            </div>
+
+            <h3>3. Funding Without Strings</h3>
+            <p style="font-size: 1.1em; line-height: 1.8; margin: 20px 0;">
+                Funding comes from the research center's revenue (commercial licenses + donations). Teams receive quarterly allocations 
+                based on:
+            </p>
+
+            <ul style="font-size: 1.05em;">
+                <li>Current project requirements (equipment, materials, testing costs)</li>
+                <li>Team size and scope (5 people working full-time vs. part-time)</li>
+                <li>Available center resources (not unlimited, but not micromanaged)</li>
+            </ul>
+
+            <p style="font-size: 1.1em; line-height: 1.8; margin: 20px 0;">
+                Teams are NOT funded based on:
+            </p>
+
+            <ul style="font-size: 1.05em;">
+                <li><strike>Projected ROI or commercialization timelines</strike></li>
+                <li><strike>Political favoritism or seniority</strike></li>
+                <li><strike>Whether they've had "successes" recently</strike></li>
+                <li><strike>Adherence to predetermined roadmaps</strike></li>
+            </ul>
+
+            <h3>4. The 10% Training & Team Building Requirement</h3>
+            <div class="highlight-box" style="background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%); border-left-color: #7c3aed;">
+                <strong style="color: #5b21b6;">Mandatory: 10% of Time on Training & Team Building</strong>
+                <p style="color: #6d28d9;">
+                    <strong>This is a Key Performance Indicator reported to the steering committee.</strong>
+                </p>
+                <p style="color: #6d28d9; margin-top: 15px;">
+                    Teams must allocate 10% of their time (approximately 4 hours per week per person) to:
+                </p>
+            </div>
+
+            <ul style="font-size: 1.05em; margin: 20px 0;">
+                <li><strong>Technical Training:</strong> Learning new methodologies, mastering equipment, staying current with field advancements</li>
+                <li><strong>Cross-Skill Development:</strong> Microbiologist learns basic electronics, software developer learns materials science</li>
+                <li><strong>Team Building:</strong> Building trust, improving communication, strengthening collaborative effectiveness</li>
+                <li><strong>Observing Other Teams:</strong> Visiting other teams' labs, watching their techniques, learning from their approaches</li>
+            </ul>
+
+            <div class="quote-box" style="font-size: 1.3em;">
+                "Monkey see, monkey do! Teams will learn by watching what others do."
+            </div>
+
+            <p style="font-size: 1.1em; line-height: 1.8; margin: 20px 0;">
+                <strong style="color: #5b21b6;">Why This Matters:</strong>
+            </p>
+
+            <ul style="font-size: 1.05em;">
+                <li><strong>Cross-pollination:</strong> A technique that works for biofilm detection might solve a marine anti-fouling problem</li>
+                <li><strong>Prevents isolation:</strong> Teams don't become siloed—they actively share knowledge</li>
+                <li><strong>Builds institutional memory:</strong> When one team solves a problem, all teams learn the solution</li>
+                <li><strong>Strengthens bonds:</strong> Personal connections between teams create informal support networks</li>
+                <li><strong>Forced reflection:</strong> Taking time away from "doing" creates space for "thinking"</li>
+            </ul>
+
+            <div class="team-structure">
+                <h4 style="color: #5b21b6; margin-bottom: 20px;">How It's Reported (KPI)</h4>
+                <p style="font-size: 1.1em; line-height: 1.8; color: #4a5568; margin-bottom: 20px;">
+                    Teams submit simple monthly reports to steering committee:
+                </p>
+                <ul style="font-size: 1.05em; color: #4a5568;">
+                    <li>Hours spent on training/team building (target: ~16 hours/person/month)</li>
+                    <li>What was learned (brief description, not detailed reports)</li>
+                    <li>Which other teams were observed</li>
+                    <li>How learning will be applied to current project</li>
+                </ul>
+                <p style="font-size: 1.1em; line-height: 1.8; color: #4a5568; margin-top: 20px;">
+                    <strong style="color: #5b21b6;">Not compliance checking—</strong> this is about ensuring teams invest in their own growth. 
+                    Teams falling below 10% aren't punished, but steering committee asks "what support do you need to prioritize learning?"
+                </p>
+            </div>
+
+            <h3>5. The Steering Committee: Support, Not Control</h3>
+            <p style="font-size: 1.1em; line-height: 1.8; margin: 20px 0;">
+                Each group reports to a site steering committee. This committee has ONE purpose: <strong>support the teams.</strong>
+            </p>
+
+            <div class="team-structure">
+                <h4 style="color: #5b21b6; margin-bottom: 20px;">What the Steering Committee DOES:</h4>
+                <ul style="font-size: 1.05em;">
+                    <li>Allocate quarterly funding across active teams</li>
+                    <li>Connect teams working on related problems</li>
+                    <li>Secure major capital equipment (shared resources)</li>
+                    <li>Interface with external partners (universities, manufacturers, testing facilities)</li>
+                    <li>Remove institutional obstacles (legal issues, facility access, regulatory compliance)</li>
+                    <li>Celebrate and publicize team achievements</li>
+                </ul>
+
+                <h4 style="color: #5b21b6; margin: 30px 0 20px 0;">What the Steering Committee DOES NOT DO:</h4>
+                <ul style="font-size: 1.05em;">
+                    <li><strong>Override team decisions</strong> - Cannot tell a team "don't pursue that approach"</li>
+                    <li><strong>Set research priorities</strong> - Teams decide what problems to tackle</li>
+                    <li><strong>Approve budgets line-by-line</strong> - Teams manage their allocated funds</li>
+                    <li><strong>Conduct performance reviews</strong> - Teams self-evaluate and peer-review</li>
+                    <li><strong>Enforce process compliance</strong> - No mandatory methodologies or reporting formats</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>📊 Traditional vs. Inverted Triangle</h2>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Traditional Hierarchy</th>
+                        <th>Inverted Triangle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Decision-Making</strong></td>
+                        <td><span class="cross">✗</span> Management approval required</td>
+                        <td><span class="checkmark">✓</span> Team consensus drives all decisions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Budget Control</strong></td>
+                        <td><span class="cross">✗</span> Line-item approvals, purchase orders</td>
+                        <td><span class="checkmark">✓</span> Team sets own budget priorities</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hiring</strong></td>
+                        <td><span class="cross">✗</span> HR screens, manager approves</td>
+                        <td><span class="checkmark">✓</span> Team hires through consensus</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Failure Response</strong></td>
+                        <td><span class="cross">✗</span> Penalized, funding cut, blame assigned</td>
+                        <td><span class="checkmark">✓</span> Expected, published, learned from</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time to Decision</strong></td>
+                        <td><span class="cross">✗</span> Weeks to months (approval chains)</td>
+                        <td><span class="checkmark">✓</span> Hours to days (team discussion)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Administration Overhead</strong></td>
+                        <td><span class="cross">✗</span> 40-60% of budget (HR, legal, management)</td>
+                        <td><span class="checkmark">✓</span> ~5% of budget (minimal facilitation)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Research Focus</strong></td>
+                        <td><span class="cross">✗</span> Political (pleasing management)</td>
+                        <td><span class="checkmark">✓</span> Scientific (solving problems)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reporting Structure</strong></td>
+                        <td><span class="cross">✗</span> Multi-layer hierarchy (5-7 levels)</td>
+                        <td><span class="checkmark">✓</span> Two layers (team → steering committee)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Meeting Culture</strong></td>
+                        <td><span class="cross">✗</span> Scheduled status updates, presentations</td>
+                        <td><span class="checkmark">✓</span> On-demand, problem-focused</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Innovation Speed</strong></td>
+                        <td><span class="cross">✗</span> Years (bureaucratic friction)</td>
+                        <td><span class="checkmark">✓</span> Months (direct action)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Accountability</strong></td>
+                        <td><span class="cross">✗</span> Process compliance (did you follow procedure?)</td>
+                        <td><span class="checkmark">✓</span> Results delivery (did you advance the science?)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Team Size</strong></td>
+                        <td><span class="cross">✗</span> Variable (10-50+ per project)</td>
+                        <td><span class="checkmark">✓</span> Fixed at 5 (optimal coordination)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>💡 Why This Works: The Science of Small Teams</h2>
+
+            <h3>Communication Complexity</h3>
+            <p style="font-size: 1.1em; line-height: 1.8;">
+                Team communication channels grow as <strong>n(n-1)/2</strong> where n is team size:
+            </p>
+            <ul style="font-size: 1.05em; margin: 20px 0;">
+                <li><strong>5 people:</strong> 10 communication channels (manageable without meetings)</li>
+                <li><strong>10 people:</strong> 45 communication channels (requires coordination)</li>
+                <li><strong>20 people:</strong> 190 communication channels (requires managers)</li>
+            </ul>
+
+            <h3>Decision Speed</h3>
+            <p style="font-size: 1.1em; line-height: 1.8; margin: 20px 0;">
+                A team of 5 can reach consensus in <strong>one conversation</strong>. Scaling to larger teams requires:
+            </p>
+            <ul style="font-size: 1.05em;">
+                <li>Sub-committees (slows decisions)</li>
+                <li>Voting mechanisms (creates winners/losers)</li>
+                <li>Management arbitration (removes team autonomy)</li>
+            </ul>
+
+            <h3>Psychological Safety</h3>
+            <p style="font-size: 1.1em; line-height: 1.8; margin: 20px 0;">
+                Small teams build trust faster. Everyone knows everyone deeply. Admitting "I don't know" or "I was wrong" 
+                becomes safe. Failure becomes a shared learning experience rather than individual blame.
+            </p>
+
+            <div class="quote-box">
+                "Bureaucracy exists to manage complexity that shouldn't exist in the first place. Keep teams small, 
+                give them authority, remove approval chains—and bureaucracy becomes unnecessary."
+            </div>
+        </section>
+
+        <section>
+            <h2>🎯 Real-World Example: Biofilm Detection Team</h2>
+
+            <div class="team-structure">
+                <h3 style="color: #5b21b6; margin-top: 0;">Team Composition</h3>
+                <div class="team-grid">
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
+                        <strong style="color: #5b21b6; display: block; margin-bottom: 10px;">Facilitator: Rosane</strong>
+                        <p style="margin: 0; color: #4a5568;">Runs local food stall. Failed at formal business school. Gets on great with people. Natural organizer who coordinates team needs, manages quarterly funding, connects with other teams. No formal research background—just passionate about clean water.</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
+                        <strong style="color: #5b21b6; display: block; margin-bottom: 10px;">Researcher 1: Miguel</strong>
+                        <p style="margin: 0; color: #4a5568;">Former appliance repair technician. Failed at engineering university (couldn't afford to continue). Interest in electronics. Learns circuit design from YouTube and online forums. Enthusiastic problem-solver.</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
+                        <strong style="color: #5b21b6; display: block; margin-bottom: 10px;">Researcher 2: Maria</strong>
+                        <p style="margin: 0; color: #4a5568;">Was a nurse who failed to get into medical school. Interested in microbes after seeing hospital infections kill patients. Learns bacterial culture from online courses. Motivated by preventing deaths she witnessed.</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
+                        <strong style="color: #5b21b6; display: block; margin-bottom: 10px;">Researcher 3: Carlos</strong>
+                        <p style="margin: 0; color: #4a5568;">Self-taught programmer who failed multiple job interviews (no CS degree). Built websites for local businesses. Interested in signal processing from YouTube lectures. Writes firmware by reading documentation and trial-and-error.</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #7c3aed;">
+                        <strong style="color: #5b21b6; display: block; margin-bottom: 10px;">Researcher 4: Elena</strong>
+                        <p style="margin: 0; color: #4a5568;">Worked in construction after Typhoon Haiyan. Failed at architecture school (couldn't afford tuition). Interest in how materials respond to stress. Learns about acoustic coupling by testing different surfaces and reading papers online.</p>
+                    </div>
+                </div>
+
+                <h3 style="color: #5b21b6; margin-top: 40px;">How a Decision Happens</h3>
+                <div style="background: white; padding: 30px; border-radius: 10px; margin-top: 20px;">
+                    <p style="font-size: 1.1em; line-height: 1.8; color: #4a5568; margin-bottom: 20px;">
+                        <strong style="color: #5b21b6;">Scenario:</strong> Team discovers that biofilm detection works better at 12 Hz than the initially planned 20 Hz. 
+                        This changes equipment requirements and experimental design.
+                    </p>
+
+                    <p style="font-size: 1.1em; line-height: 1.8; color: #4a5568; margin-bottom: 15px;">
+                        <strong style="color: #16a34a;">Traditional Hierarchy Response:</strong>
+                    </p>
+                    <ol style="font-size: 1.05em; color: #4a5568; line-height: 1.8; margin-bottom: 25px;">
+                        <li>Write proposal justifying frequency change</li>
+                        <li>Submit to project manager for approval (1 week)</li>
+                        <li>Manager escalates to department head (1 week)</li>
+                        <li>Budget review to see if new equipment affordable (2 weeks)</li>
+                        <li>Purchasing negotiates with vendors (2 weeks)</li>
+                        <li>Legal reviews contracts (1 week)</li>
+                        <li><strong>Total time: 7+ weeks</strong></li>
+                    </ol>
+
+                    <p style="font-size: 1.1em; line-height: 1.8; color: #4a5568; margin-bottom: 15px;">
+                        <strong style="color: #7c3aed;">Inverted Triangle Response:</strong>
+                    </p>
+                    <ol style="font-size: 1.05em; color: #4a5568; line-height: 1.8;">
+                        <li>Team discusses findings in afternoon meeting (2 hours)</li>
+                        <li>Consensus: 12 Hz is better, pivot immediately</li>
+                        <li>Miguel (electronics) orders new transducers from budget (same day)</li>
+                        <li>Carlos (software) updates firmware for new frequency (overnight)</li>
+                        <li>Maria (biology) prepares validation samples (next morning)</li>
+                        <li><strong>Total time: 48 hours, testing resumes</strong></li>
+                    </ol>
+                </div>
+
+                <h3 style="color: #5b21b6; margin-top: 40px;">When They "Failed"</h3>
+                <div style="background: #fef2f2; padding: 25px; border-radius: 10px; border-left: 4px solid #dc2626; margin-top: 20px;">
+                    <p style="font-size: 1.1em; line-height: 1.8; color: #4a5568; margin-bottom: 15px;">
+                        The team spent 3 months trying to detect biofilm through stainless steel. Conclusion: <strong>Doesn't work.</strong> 
+                        Reflections from steel attenuate signal too much.
+                    </p>
+                    <p style="font-size: 1.1em; line-height: 1.8; color: #4a5568;">
+                        <strong style="color: #16a34a;">Response:</strong> Published findings. Documented why it failed. Shared data with other teams. 
+                        Pivoted to composite materials where low-frequency penetration works brilliantly. 
+                        <strong>No funding cuts. No blame. Just knowledge gained.</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🚀 Tacloban R&D Center Implementation</h2>
+
+            <p style="font-size: 1.15em; line-height: 1.8; margin-bottom: 25px;">
+                The Ward Effect Technology R&D center in Tacloban, Philippines will operate entirely on the Inverted Triangle model:
+            </p>
+
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <span class="principle-icon">👥</span>
+                    <div class="principle-title">Multiple Teams of 5</div>
+                    <div class="principle-description">
+                        Initial deployment: 3-4 teams working on different aspects (biofilm detection, marine anti-fouling, 
+                        water purification, industrial flowmeters). Each team completely autonomous.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">💰</span>
+                    <div class="principle-title">Revenue Allocation</div>
+                    <div class="principle-description">
+                        80% of commercial licensing revenue and donations goes directly to research teams. 
+                        20% to legal/admin. Teams collectively decide budget priorities each quarter.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">🌏</span>
+                    <div class="principle-title">Local Talent</div>
+                    <div class="principle-description">
+                        Hire Filipino researchers with global experience. Tacloban location provides: lower cost base, 
+                        motivated team (rebuilding after Typhoon Haiyan), access to real-world deployment sites.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">🔬</span>
+                    <div class="principle-title">Shared Facilities</div>
+                    <div class="principle-description">
+                        Central lab equipment (oscilloscopes, spectrum analyzers, test chambers) shared across teams. 
+                        Steering committee maintains shared resources. Teams purchase specialized equipment from budgets.
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">📖</span>
+                    <div class="principle-title">Open Publication</div>
+                    <div class="principle-description">
+                        All water purification and public health findings published openly. Commercial application research published 
+                        after patent filing. Failed experiments published immediately (no waiting).
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <span class="principle-icon">🤝</span>
+                    <div class="principle-title">External Collaboration</div>
+                    <div class="principle-description">
+                        Teams partner directly with universities, hospitals, manufacturers for validation studies. 
+                        No corporate partnership approvals needed—teams engage partners as needed.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>⚠️ What Could Go Wrong (And How We Handle It)</h2>
+
+            <h3>1. Team Dysfunction</h3>
+            <div class="highlight-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left-color: #dc2626;">
+                <strong style="color: #991b1b;">Problem:</strong>
+                <p style="color: #7f1d1d;">
+                    5 people disagree fundamentally. Consensus becomes impossible. Progress stalls.
+                </p>
+                <strong style="color: #991b1b;">Solution:</strong>
+                <p style="color: #7f1d1d;">
+                    Team dissolves. Members join other teams or form new teams with better collaborative fit. 
+                    Steering committee facilitates transition. No forced continuation of dysfunctional teams.
+                </p>
+            </div>
+
+            <h3>2. Budget Mismanagement</h3>
+            <div class="highlight-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left-color: #dc2626;">
+                <strong style="color: #991b1b;">Problem:</strong>
+                <p style="color: #7f1d1d;">
+                    Team burns through quarterly budget in 2 weeks on unnecessary equipment.
+                </p>
+                <strong style="color: #991b1b;">Solution:</strong>
+                <p style="color: #7f1d1d;">
+                    Steering committee reviews budget request for next quarter. Team explains rationale. 
+                    If justified, funding continues. If wasteful, reduced allocation with requirement to demonstrate learning. 
+                    Peer pressure from other teams provides accountability.
+                </p>
+            </div>
+
+            <h3>3. Scope Creep</h3>
+            <div class="highlight-box" style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left-color: #dc2626;">
+                <strong style="color: #991b1b;">Problem:</strong>
+                <p style="color: #7f1d1d;">
+                    Biofilm detection team starts making commitments to hospital partners about deployment timelines, 
+                    stepping outside their research role into commercial operations.
+                </p>
+                <strong style="color: #991b1b;">Solution:</strong>
+                <p style="color: #7f1d1d;">
+                    Steering committee intervenes (their only authority to override). Reminds team of boundary: 
+                    research and validation only, not commercial deployment commitments. Connects team with appropriate 
+                    commercial partner or licensing team for external discussions.
+                </p>
+            </div>
+
+            <h3>4. Complete Research Dead-End</h3>
+            <div class="highlight-box" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left-color: #16a34a;">
+                <strong style="color: #166534;">This is NOT a problem—this is success.</strong>
+                <p style="color: #166534;">
+                    Team proves definitively that an approach doesn't work. They publish findings. Other teams avoid wasting time 
+                    on same approach. The "failed" team pivots to new research question or dissolves and members join other teams. 
+                    Knowledge advanced. No failure here.
+                </p>
+            </div>
+        </section>
+
+        <div class="quote-box" style="font-size: 1.4em;">
+            "The inverted triangle doesn't eliminate hierarchy—it inverts power. The people closest to the problem 
+            have the authority to solve it. Everyone else exists to support them."
+            <div class="author">— The Ward Effect R&D Philosophy</div>
+        </div>
+
+        <div class="cta-box">
+            <h2>Join the Revolution</h2>
+            <p>
+                Are you a researcher tired of bureaucracy slowing breakthrough work? The Tacloban R&D center is hiring teams of 5 to work on Ward Effect applications. 
+                No managers. No approval chains. Just science.
+            </p>
+            <a href="mailto:research@wardeffect.com" class="btn">Express Interest in Joining a Team</a>
+            <a href="https://wardscope.com/donate.html" class="btn">Fund Autonomous Research Teams</

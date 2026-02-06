@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Breakthrough Water Technology - Ward Effect</title>
+    <meta name="description" content="Fund chemical-free water purification research. Honest transparency: 10% success rate per application, 20+ applications pursued. Support paradigm-shift innovation.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c5364;
+        }
+
+        .back-link {
+            color: #2c5364;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #203a43;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4em;
+            color: #2c5364;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            color: #4a5568;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.8;
+        }
+
+        .mission-statement {
+            background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            font-size: 1.2em;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        /* CRITICAL DISCLAIMER */
+        .disclaimer-section {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+        }
+
+        .disclaimer-title {
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .disclaimer-content {
+            font-size: 1.2em;
+            line-height: 1.9;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .disclaimer-content strong {
+            font-size: 1.3em;
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .disclaimer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .disclaimer-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .disclaimer-card-number {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .disclaimer-card-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c5364;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #4a5568;
+            font-size: 0.95em;
+        }
+
+        /* Payment Section */
+        .payment-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #2d3748;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .section-description {
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        /* Donation Tiers */
+        .donation-tiers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .tier-card {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        }
+
+        .tier-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(44, 83, 100, 0.3);
+            border-color: #2c5364;
+        }
+
+        .tier-card.featured {
+            background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+            color: white;
+            border: none;
+            transform: scale(1.05);
+        }
+
+        .tier-card.featured:hover {
+            transform: scale(1.08) translateY(-5px);
+        }
+
+        .tier-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .tier-amount {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .tier-impact {
+            font-size: 0.95em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .tier-card.featured .tier-impact {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Payment Buttons */
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .payment-button {
+            display: block;
+            padding: 20px 30px;
+            background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .payment-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(44, 83, 100, 0.4);
+        }
+
+        .payment-button .method-name {
+            display: block;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .payment-button .method-description {
+            display: block;
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+
+        /* Impact Grid */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .impact-item {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            border-left: 4px solid #2c5364;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .impact-amount {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c5364;
+            margin-bottom: 15px;
+        }
+
+        .impact-description {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Large Donation Contact */
+        .contact-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 6px solid #f59e0b;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .contact-box-title {
+            font-size: 1.4em;
+            color: #92400e;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .contact-box-text {
+            color: #78350f;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        .contact-box a {
+            color: #92400e;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Note Box */
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .note-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .note-text {
+            color: #856404;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #2c5364;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2em;
+            }
+
+            .disclaimer-title {
+                font-size: 1.8em;
+            }
+
+            .payment-section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">💧 Ward Effect Technology</div>
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+        </header>
+
+        <div class="hero">
+            <h1>Fund Breakthrough Water Purification Research</h1>
+            <p class="hero-subtitle">Chemical-free water treatment for 2+ billion people without safe drinking water</p>
+            
+            <div class="mission-statement">
+                "We're not improving existing technology—we're replacing it. Ward Effect Technology uses controlled cavitation to eliminate pathogens without chemicals. Once proven at scale, all water purification applications will be released as open source."
+            </div>
+
+            <p><strong>This is paradigm-shift research, not incremental improvement.</strong> Your donation funds autonomous teams of enthusiastic researchers in Tacloban, Philippines, working on applications that traditional science said were impossible.</p>
+            
+            <div class="note" style="margin-top: 25px;">
+                <div class="note-title">💡 Why This Is More Achievable Than You Think</div>
+                <div class="note-text">
+                    <strong>Ward Effect Technology is approximately 30 times easier to develop than WardScope spectrum analyzer software.</strong> We've already solved the hard problems: dual processing architecture (microprocessor handles audio and memory, phone/PC handles display), resonance lock feedback, and acoustic coupling. The remaining challenges are manufacturing and deployment, not fundamental physics.
+                </div>
+            </div>
+        </div>
+
+        <!-- CRITICAL TRANSPARENCY DISCLAIMER -->
+        <div class="disclaimer-section">
+            <h2 class="disclaimer-title">⚠️ Critical Transparency: The 10% Reality</h2>
+            
+            <div class="disclaimer-content">
+                <p style="font-size: 1.3em; margin-bottom: 25px;">
+                    <strong>We are entering unknown territory. This is breakthrough research with high risk and transformative potential.</strong>
+                </p>
+
+                <div class="disclaimer-grid">
+                    <div class="disclaimer-card">
+                        <span class="disclaimer-card-number">10%</span>
+                        <div class="disclaimer-card-text">
+                            <strong>Success Rate Per Application</strong><br>
+                            Each Ward Effect application (biofilm detection, marine anti-fouling, water purification, etc.) has approximately a 10% chance of working as intended.
+                        </div>
+                    </div>
+
+                    <div class="disclaimer-card">
+                        <span class="disclaimer-card-number">20+</span>
+                        <div class="disclaimer-card-text">
+                            <strong>Applications Being Pursued</strong><br>
+                            We're pursuing 20+ different applications simultaneously. Some will work flawlessly. Others will fail or be developed outside the research center.
+                        </div>
+                    </div>
+
+                    <div class="disclaimer-card">
+                        <span class="disclaimer-card-number">90%</span>
+                        <div class="disclaimer-card-text">
+                            <strong>Teams Will "Fail" Their Targets</strong><br>
+                            We expect 90% of research teams won't achieve their original objective. But their failures eliminate dead-ends and guide the 10% who succeed.
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 30px; font-size: 1.2em; line-height: 1.8;">
+                    <strong>Why This Is Actually Good:</strong><br>
+                    Traditional R&D demands 80%+ success rates, which means only incremental improvements get funded. We embrace 90% failure because that's how paradigm shifts happen. The 10% who succeed will more than compensate for the 90% who learned what doesn't work.
+                </p>
+
+                <p style="margin-top: 25px; font-size: 1.15em; line-height: 1.8;">
+                    <strong>What You're Funding:</strong><br>
+                    Autonomous teams of enthusiastic non-experts trying unconventional approaches. We actively avoid highly educated researchers because they learned methods that have already failed 2 billion people. We need people who don't know what's "supposed" to be impossible.
+                </p>
+
+                <p style="margin-top: 25px; font-size: 1.2em; text-align: center; font-weight: bold;">
+                    If you want guaranteed ROI, this is not for you.<br>
+                    If you want to fund shots at revolutionary breakthroughs, welcome aboard.
+                </p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Years of Development</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Granted Patents (NZ)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">2B+</span>
+                <span class="stat-label">People Without Safe Water</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Open Source for Water</span>
+            </div>
+        </div>
+
+        <!-- Technical Challenges & Priorities -->
+        <div class="payment-section" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);">
+            <h2 class="section-title" style="color: #166534;">🎯 Current Technical Challenges</h2>
+            <p class="section-description" style="color: #166534; font-weight: 600;">
+                <strong>We've solved the physics. The remaining challenges are manufacturing and deployment.</strong>
+            </p>
+
+            <div class="impact-grid">
+                <div class="impact-item" style="background: white; border-left-color: #16a34a;">
+                    <div class="impact-amount" style="color: #16a34a;">🪣</div>
+                    <div class="impact-description">
+                        <strong style="color: #166534;">The $5 Bucket Challenge</strong><br>
+                        Design a bucket where dirty water is placed, pathogens are killed via controlled cavitation, and sediments precipitate out. Target cost: $5 per unit for developing countries.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #16a34a;">
+                    <div class="impact-amount" style="color: #16a34a;">🧪</div>
+                    <div class="impact-description">
+                        <strong style="color: #166534;">Chemical Removal</strong><br>
+                        Removing harmful chemicals from water. Cavitation handles pathogens; need complementary approach for chemical contaminants (arsenic, fluoride, heavy metals).
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #16a34a;">
+                    <div class="impact-amount" style="color: #16a34a;">📜</div>
+                    <div class="impact-description">
+                        <strong style="color: #166534;">Cheap Transducers on a Roll</strong><br>
+                        Developing low-cost transducers manufactured as a roll of plastic film. Allows developing countries to cut and assemble devices from rolls, eliminating expensive imports.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #16a34a;">
+                    <div class="impact-amount" style="color: #16a34a;">♻️</div>
+                    <div class="impact-description">
+                        <strong style="color: #166534;">Repurposing Mass-Produced Items</strong><br>
+                        Priority: identify existing mass-produced products we can repurpose. Using $0.50 components from global supply chains beats designing custom $5 components from scratch.
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 30px; border-radius: 10px; margin-top: 30px; border-left: 6px solid #16a34a;">
+                <p style="font-size: 1.15em; line-height: 1.8; color: #166534;">
+                    <strong>Dual Processing Architecture (Already Solved):</strong><br>
+                    Microprocessor handles audio processing and memory management. Phone or PC handles display and user interface. This splits the workload and uses devices people already own, dramatically reducing cost.
+                </p>
+            </div>
+        </div>
+
+        <!-- Choose What to Fund -->
+        <div class="payment-section" style="background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);">
+            <h2 class="section-title" style="color: #5b21b6;">🎯 Choose What Your Donation Funds</h2>
+            <p class="section-description" style="color: #5b21b6; font-weight: 600;">
+                Direct your support to the research area that matters most to you
+            </p>
+
+            <div class="impact-grid">
+                <div class="impact-item" style="background: white; border-left-color: #7c3aed;">
+                    <div class="impact-amount" style="color: #7c3aed;">🪣</div>
+                    <div class="impact-description">
+                        <strong style="color: #5b21b6;">The $5 Bucket Project</strong><br>
+                        Ultra-low-cost water purification for developing countries. Funds prototype iterations, field testing in villages, material sourcing research.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #7c3aed;">
+                    <div class="impact-amount" style="color: #7c3aed;">🧪</div>
+                    <div class="impact-description">
+                        <strong style="color: #5b21b6;">Chemical Removal Research</strong><br>
+                        Developing complementary systems to remove arsenic, fluoride, heavy metals. Funds chemistry testing, material experiments, validation studies.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #7c3aed;">
+                    <div class="impact-amount" style="color: #7c3aed;">📜</div>
+                    <div class="impact-description">
+                        <strong style="color: #5b21b6;">Roll-of-Plastic Transducers</strong><br>
+                        Manufacturing research for transducers on rolls. Funds material testing, production equipment, pilot manufacturing runs.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #7c3aed;">
+                    <div class="impact-amount" style="color: #7c3aed;">🦠</div>
+                    <div class="impact-description">
+                        <strong style="color: #5b21b6;">Hospital Superbug Detection</strong><br>
+                        50 nm biofilm detection to prevent hospital infections. Funds validation studies, hospital partnerships, clinical trials.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #7c3aed;">
+                    <div class="impact-amount" style="color: #7c3aed;">🚢</div>
+                    <div class="impact-description">
+                        <strong style="color: #5b21b6;">Marine Anti-Fouling</strong><br>
+                        Chemical-free hull protection. Funds vessel trials, commercial licensing negotiations, maritime partnerships.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #7c3aed;">
+                    <div class="impact-amount" style="color: #7c3aed;">⚖️</div>
+                    <div class="impact-description">
+                        <strong style="color: #5b21b6;">Patent Defense & Legal</strong><br>
+                        Protecting open source commitment from corporate monopolization. Funds legal defense, freedom-to-operate research, strategic publication.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #7c3aed;">
+                    <div class="impact-amount" style="color: #7c3aed;">♻️</div>
+                    <div class="impact-description">
+                        <strong style="color: #5b21b6;">Repurposing Research</strong><br>
+                        Identifying mass-produced items we can adapt for Ward Effect devices. Funds supply chain research, component testing, manufacturing partnerships.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white; border-left-color: #7c3aed;">
+                    <div class="impact-amount" style="color: #7c3aed;">💡</div>
+                    <div class="impact-description">
+                        <strong style="color: #5b21b6;">General Research Fund</strong><br>
+                        Highest priority projects decided by steering committee. Most flexible allocation for breakthrough opportunities.
+                    </div>
+                </div>
+            </div>
+
+            <div class="note" style="margin-top: 30px; background: white;">
+                <div class="note-title" style="color: #5b21b6;">📧 Specify Your Preference</div>
+                <div class="note-text" style="color: #6d28d9;">
+                    After donating, email us at <strong>donations@wardeffect.com</strong> with your payment reference and which research area you'd like to fund. If not specified, donation goes to General Research Fund for highest-priority work.
+                </div>
+            </div>
+        </div>
+
+        <!-- Donation Tiers -->
+        <div class="payment-section">
+            <h2 class="section-title">Choose Your Support Level</h2>
+            <p class="section-description">Fund high-risk, high-reward breakthrough research</p>
+
+            <div class="donation-tiers">
+                <div class="tier-card">
+                    <div class="tier-name">Research Supporter</div>
+                    <div class="tier-amount">$10</div>
+                    <div class="tier-impact">Funds 1 hour of lab work. Every hour counts in eliminating dead-ends.</div>
+                </div>
+
+                <div class="tier-card">
+                    <div class="tier-name">Equipment Fund</div>
+                    <div class="tier-amount">$50</div>
+                    <div class="tier-impact">Microcontrollers, sensors, acoustic transducers for prototype testing.</div>
+                </div>
+
+                <div class="tier-card">
+                    <div class="tier-name">Prototype Builder</div>
+                    <div class="tier-amount">$200</div>
+                    <div class="tier-impact">Complete prototype build and field testing cycle for one application.</div>
+                </div>
+
+                <div class="tier-card featured">
+                    <div class="tier-name">⚖️ Patent Defense Patron</div>
+                    <div class="tier-amount">$1,000+</div>
+                    <div class="tier-impact">Protects open source commitment from corporate monopolization. Funds legal defense, freedom-to-operate research, strategic publication to strengthen the commons.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="payment-section">
+            <h2 class="section-title">🌍 Choose Your Payment Method</h2>
+            <p class="section-description">Simple, secure ways to support breakthrough research</p>
+
+            <div class="payment-methods">
+                <a href="#" class="payment-button">
+                    <span class="method-name">☕ Ko-fi</span>
+                    <span class="method-description">0% Platform Fee • Easiest</span>
+                </a>
+
+                <a href="#" class="payment-button">
+                    <span class="method-name">💳 Stripe</span>
+                    <span class="method-description">Credit/Debit Card • Secure</span>
+                </a>
+
+                <a href="#" class="payment-button">
+                    <span class="method-name">🅿️ PayPal</span>
+                    <span class="method-description">Trusted Worldwide</span>
+                </a>
+            </div>
+
+            <div class="note">
+                <div class="note-title">📝 Payment Links Coming Soon</div>
+                <div class="note-text">Payment platform accounts are being set up. Check back in 48 hours for active donation links, or contact us below for immediate support options.</div>
+            </div>
+        </div>
+
+        <!-- Large Donations -->
+        <div class="contact-box">
+            <div class="contact-box-title">💼 Large Donations ($5,000+)</div>
+            <div class="contact-box-text">
+                For substantial contributions, we can discuss secure transfer options privately. We'll also provide detailed research plans and impact projections (while maintaining honest 10% success rate expectations).<br><br>
+                
+                <strong>Contact:</strong> <a href="mailto:admin@wardeffect.com">admin@wardeffect.com</a>
+            </div>
+        </div>
+
+        <!-- Impact Breakdown -->
+        <div class="payment-section">
+            <h2 class="section-title">💡 Your Impact</h2>
+            <p class="section-description">What your donation funds directly (with 10% success rate honesty)</p>
+
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-amount">$25</div>
+                    <div class="impact-description">ESP32 microcontroller + sensors for one prototype unit. Nine will fail, one will teach us something revolutionary.</div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">$100</div>
+                    <div class="impact-description">Complete acoustic transducer array for field testing. Most tests fail—that's how we learn.</div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">$500</div>
+                    <div class="impact-description">One week of intensive R&D work in Tacloban lab. Failed experiments published openly.</div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">$1,000</div>
+                    <div class="impact-description">Prior art research and strategic publication to block corporate monopolization attempts.</div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">$5,000</div>
+                    <div class="impact-description">Full-scale pilot installation on marine vessel or water system OR patent defense legal consultation.</div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">$10,000</div>
+                    <div class="impact-description">Major infrastructure for Tacloban R&D center OR defensive patent filing in key jurisdiction.</div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">$25,000+</div>
+                    <div class="impact-description">Legal defense fund to challenge corporate monopolization OR fund autonomous research team for one year.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Patent Defense -->
+        <div class="payment-section" style="background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%); color: white;">
+            <h2 class="section-title" style="color: white; border: none;">⚖️ Patent Defense: Protecting Open Source Water Technology</h2>
+            <p class="section-description" style="color: rgba(255,255,255,0.95);">
+                The world of corporate greed is infinite. Many will try to monopolize life-saving water technology. A critical part of R&D is defending the open source commitment.
+            </p>
+
+            <div class="impact-grid">
+                <div class="impact-item" style="background: rgba(255,255,255,0.1); border-left-color: white;">
+                    <div class="impact-amount" style="color: white;">⚔️</div>
+                    <div class="impact-description" style="color: rgba(255,255,255,0.95);">
+                        <strong style="display: block; margin-bottom: 10px; font-size: 1.1em;">Active Patent Defense</strong>
+                        Challenge attempts to monopolize water purification technology. Fund legal action against patents that block humanitarian access.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: rgba(255,255,255,0.1); border-left-color: white;">
+                    <div class="impact-amount" style="color: white;">🔓</div>
+                    <div class="impact-description" style="color: rgba(255,255,255,0.95);">
+                        <strong style="display: block; margin-bottom: 10px; font-size: 1.1em;">Strategic Publication</strong>
+                        Publish applications in the open domain to prevent future monopolization. Each publication strengthens the commons.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: rgba(255,255,255,0.1); border-left-color: white;">
+                    <div class="impact-amount" style="color: white;">🛡️</div>
+                    <div class="impact-description" style="color: rgba(255,255,255,0.95);">
+                        <strong style="display: block; margin-bottom: 10px; font-size: 1.1em;">No Exclusive Licenses</strong>
+                        Prevent any corporation from controlling access. Non-exclusive licensing ensures competition forever.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: rgba(255,255,255,0.1); border-left-color: white;">
+                    <div class="impact-amount" style="color: white;">💰</div>
+                    <div class="impact-description" style="color: rgba(255,255,255,0.95);">
+                        <strong style="display: block; margin-bottom: 10px; font-size: 1.1em;">Low Licensing Strategy</strong>
+                        Keep commercial license costs low (3-5%) to discourage circumvention attempts. Make licensing easier than fighting.
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.15); padding: 30px; border-radius: 10px; margin-top: 40px;">
+                <p style="font-size: 1.2em; line-height: 1.8; margin: 0;">
+                    <strong>"Patent Defense Patrons fund the legal and strategic work to ensure Ward Effect Technology remains free for humanitarian water applications forever. This isn't just R&D—it's protecting 2 billion people's access to clean water from corporate capture."</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- Transparency -->
+        <div class="payment-section">
+            <h2 class="section-title">🔍 Complete Transparency</h2>
+
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-amount">💯</div>
+                    <div class="impact-description">
+                        <strong>100% to R&D</strong><br>
+                        Every dollar funds technology development. 80% hands-on research, 20% legal defense and administration.
+                    </div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">📊</div>
+                    <div class="impact-description">
+                        <strong>Open Books</strong><br>
+                        Financial reports available on request. Full accountability. No hidden costs.
+                    </div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">🔓</div>
+                    <div class="impact-description">
+                        <strong>Open Source Future</strong><br>
+                        All water purification applications will be released as open source once validated.
+                    </div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">⚠️</div>
+                    <div class="impact-description">
+                        <strong>Honest Failure Rate</strong><br>
+                        10% success rate per application. We publish failures openly so others don't repeat them.
+                    </div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">▼</div>
+                    <div class="impact-description">
+                        <strong>Inverted Triangle</strong><br>
+                        Autonomous teams of 5. No bureaucracy. No administrators. Pure research velocity.
+                    </div>
+                </div>
+
+                <div class="impact-item">
+                    <div class="impact-amount">🔬</div>
+                    <div class="impact-description">
+                        <strong>Proven Foundation</strong><br>
+                        20+ years of development. 5 granted patents. Real-world validation studies ongoing.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learn More -->
+        <div class="payment-section" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);">
+            <h2 class="section-title" style="color: #92400e;">📚 Learn More About Ward Effect Technology</h2>
+            
+            <div class="impact-grid">
+                <div class="impact-item" style="background: white;">
+                    <div class="impact-amount" style="color: #2c5364;">💧</div>
+                    <div class="impact-description">
+                        <strong><a href="index.html" style="color: #2c5364; text-decoration: none;">The Technology</a></strong><br>
+                        How controlled cavitation and electromagnetic fields eliminate pathogens without chemicals.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white;">
+                    <div class="impact-amount" style="color: #2c5364;">📜</div>
+                    <div class="impact-description">
+                        <strong><a href="licensing.html" style="color: #2c5364; text-decoration: none;">Licensing Framework</a></strong><br>
+                        Open source for water, commercial for industrial. Crystal clear distinction.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white;">
+                    <div class="impact-amount" style="color: #2c5364;">🦠</div>
+                    <div class="impact-description">
+                        <strong><a href="pathogen-safety.html" style="color: #2c5364; text-decoration: none;">Pathogen Safety</a></strong><br>
+                        Hospital superbug detection and baby formula contamination monitoring.
+                    </div>
+                </div>
+
+                <div class="impact-item" style="background: white;">
+                    <div class="impact-amount" style="color: #2c5364;">▼</div>
+                    <div class="impact-description">
+                        <strong><a href="inverted-triangle.html" style="color: #2c5364; text-decoration: none;">Inverted Triangle</a></strong><br>
+                        Revolutionary R&D structure: autonomous teams, no bureaucracy, 90% failure rate embraced.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>Questions about donations or research?</strong></p>
+            <p>Contact: <a href="mailto:contact@wardeffect.com">contact@wardeffect.com</a></p>
+            <p style="margin-top: 20px;">
+                <a href="index.html">Technology</a> • 
+                <a href="licensing.html">Licensing</a> • 
+                <a href="pathogen-safety.html">Pathogen Safety</a> • 
+                <a href="inverted-triangle.html">Inverted Triangle</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #718096;">
+                © 2026 Ward Effect Technology. Open-sourced for water purification applications.<br>
+                Research conducted in Tacloban, Eastern Visayas, Philippines by Dav
