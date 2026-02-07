@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superbug & Baby Formula Safety - Ward Effect Technology</title>
-    <meta name="description" content="Finding where pathogens hide from chemical attack. Ward Effect detects biofilm in cracks, delaminated surfaces, and hidden reservoirs that defeat traditional sanitation.">
+    <title>Pathogen Safety - Ward Effect Technology</title>
+    <meta name="description" content="50nm biofilm detection for hospital superbug prevention and baby formula safety. Real-time contamination monitoring saves lives.">
     <style>
         * {
             margin: 0;
@@ -26,89 +26,77 @@
         }
 
         header {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: white;
             padding: 60px 20px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.8em;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        header .subtitle {
-            font-size: 1.4em;
+            font-size: 3em;
             margin-bottom: 15px;
-            color: #fecaca;
         }
 
         header p {
-            font-size: 1.1em;
+            font-size: 1.3em;
+            color: #b8c5d6;
             max-width: 800px;
             margin: 0 auto;
-            color: #fef2f2;
         }
 
         .back-link {
             display: inline-block;
             margin: 20px 0;
-            color: #dc2626;
+            color: #4c9aff;
             text-decoration: none;
             font-weight: 600;
+            font-size: 1.1em;
         }
 
         .back-link:hover {
             text-decoration: underline;
         }
 
-        /* Crisis Alert Box */
-        .crisis-box {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        .stat-banner {
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
             color: white;
             padding: 40px;
             border-radius: 15px;
             margin: 40px 0;
-            border: 3px solid #7f1d1d;
+            text-align: center;
         }
 
-        .crisis-box h2 {
-            font-size: 2em;
+        .stat-banner h2 {
+            font-size: 2.5em;
             margin-bottom: 20px;
-            color: white;
         }
 
-        .crisis-stats {
+        .stat-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            gap: 30px;
             margin-top: 30px;
         }
 
-        .crisis-stat {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 25px;
-            border-radius: 10px;
+        .stat-item {
             text-align: center;
-            backdrop-filter: blur(10px);
         }
 
-        .crisis-stat .number {
-            font-size: 2.5em;
+        .stat-number {
+            font-size: 3em;
             font-weight: bold;
             display: block;
-            margin-bottom: 10px;
         }
 
-        .crisis-stat .label {
-            font-size: 1em;
+        .stat-label {
+            font-size: 1.1em;
             opacity: 0.95;
+            margin-top: 10px;
         }
 
         section {
             background: white;
-            padding: 40px;
+            padding: 50px 40px;
             margin: 30px 0;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -116,192 +104,148 @@
 
         h2 {
             color: #1a1a2e;
-            font-size: 2em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 3px solid #dc2626;
+            border-bottom: 3px solid #4c9aff;
         }
 
         h3 {
             color: #2d3748;
-            font-size: 1.5em;
-            margin: 30px 0 15px 0;
+            font-size: 1.8em;
+            margin: 40px 0 20px 0;
         }
 
-        /* The Three Requirements */
-        .requirements-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
+        p {
+            font-size: 1.1em;
+            color: #4a5568;
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
 
-        .requirement-card {
-            background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+        .highlight-box {
+            background: linear-gradient(135deg, #4c9aff 0%, #00d4ff 100%);
+            color: white;
             padding: 30px;
             border-radius: 10px;
-            border-left: 5px solid #dc2626;
-            transition: transform 0.3s;
-        }
-
-        .requirement-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);
-        }
-
-        .requirement-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .requirement-title {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #dc2626;
-            margin-bottom: 15px;
-        }
-
-        .requirement-description {
-            color: #4a5568;
+            margin: 30px 0;
+            font-size: 1.2em;
             line-height: 1.8;
         }
 
-        /* Real World Story */
-        .story-box {
-            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-            border-left: 5px solid #16a34a;
-            padding: 30px;
+        .warning-box {
+            background: #fff5f5;
+            border-left: 5px solid #e53e3e;
+            padding: 25px;
             margin: 30px 0;
-            border-radius: 10px;
+            border-radius: 5px;
         }
 
-        .story-box h3 {
-            color: #166534;
+        .success-box {
+            background: #f0fff4;
+            border-left: 5px solid #00ff88;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .app-card {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #00ff88;
+        }
+
+        .app-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .app-title {
+            font-size: 1.5em;
+            color: #1a1a2e;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .app-description {
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .tech-specs {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .tech-specs ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .tech-specs li {
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #4c9aff;
+        }
+
+        .tech-specs li strong {
+            color: #1a1a2e;
+            font-size: 1.1em;
+        }
+
+        .case-study {
+            background: linear-gradient(135deg, #f7fafc 0%, #e6f2ff 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            border: 2px solid #4c9aff;
+        }
+
+        .case-study h3 {
+            color: #1a1a2e;
             margin-top: 0;
         }
 
-        .story-box .result {
-            background: #16a34a;
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-            font-size: 1.2em;
-            font-weight: 600;
-        }
-
-        /* Problem Grid */
-        .problem-grid {
+        .framework-steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin: 30px 0;
         }
 
-        .problem-card {
-            background: #fff1f2;
+        .framework-step {
+            background: white;
             padding: 25px;
             border-radius: 10px;
-            border-top: 4px solid #dc2626;
+            text-align: center;
+            border-top: 4px solid #4c9aff;
         }
 
-        .problem-card h4 {
-            color: #991b1b;
-            font-size: 1.2em;
-            margin-bottom: 15px;
-        }
-
-        .problem-card p {
-            color: #4a5568;
-            line-height: 1.6;
-        }
-
-        /* Solution Grid */
-        .solution-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
-        }
-
-        .solution-card {
-            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-            padding: 30px;
-            border-radius: 10px;
-            border-left: 5px solid #16a34a;
-        }
-
-        .solution-card h4 {
-            color: #166534;
+        .framework-step h4 {
+            color: #4c9aff;
             font-size: 1.3em;
             margin-bottom: 15px;
         }
 
-        .solution-card ul {
-            list-style: none;
-            margin: 15px 0;
-        }
-
-        .solution-card li {
-            padding: 8px 0;
-            padding-left: 25px;
-            position: relative;
-            color: #4a5568;
-        }
-
-        .solution-card li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #16a34a;
-            font-weight: bold;
-        }
-
-        /* Comparison Table */
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 30px 0;
-        }
-
-        .comparison-table th {
-            background: #1a1a2e;
-            color: white;
-            padding: 15px;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        .comparison-table td {
-            padding: 15px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .comparison-table tr:nth-child(even) {
-            background: #f7fafc;
-        }
-
-        .comparison-table .checkmark {
-            color: #16a34a;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .comparison-table .cross {
-            color: #dc2626;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        /* CTA Box */
         .cta-box {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
             color: white;
             padding: 50px;
             border-radius: 15px;
             text-align: center;
-            margin: 40px 0;
+            margin: 50px 0;
         }
 
         .cta-box h2 {
@@ -311,6 +255,7 @@
         }
 
         .cta-box p {
+            color: #b8c5d6;
             font-size: 1.2em;
             margin-bottom: 30px;
         }
@@ -318,58 +263,47 @@
         .btn {
             display: inline-block;
             padding: 15px 40px;
-            background: #dc2626;
-            color: white;
+            margin: 10px;
+            background: #00ff88;
+            color: #1a1a2e;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
             font-size: 1.1em;
-            margin: 10px;
             transition: all 0.3s;
         }
 
         .btn:hover {
-            background: #991b1b;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.4);
         }
 
         .btn-secondary {
-            background: #16a34a;
+            background: transparent;
+            color: #4c9aff;
+            border: 2px solid #4c9aff;
         }
 
         .btn-secondary:hover {
-            background: #166534;
+            background: #4c9aff;
+            color: white;
         }
 
-        /* Highlight Box */
-        .highlight-box {
-            background: #fef3c7;
-            border-left: 5px solid #f59e0b;
-            padding: 25px;
-            margin: 25px 0;
-            border-radius: 5px;
+        footer {
+            background: #1a1a2e;
+            color: #b8c5d6;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
         }
 
-        .highlight-box strong {
-            color: #92400e;
-            display: block;
-            margin-bottom: 10px;
-            font-size: 1.1em;
+        footer a {
+            color: #4c9aff;
+            text-decoration: none;
         }
 
-        .highlight-box p {
-            color: #78350f;
-            margin: 0;
-        }
-
-        ul {
-            margin: 15px 0;
-            padding-left: 30px;
-        }
-
-        li {
-            margin: 10px 0;
-            color: #4a5568;
+        footer a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
@@ -377,426 +311,331 @@
                 font-size: 2em;
             }
 
-            .requirements-grid,
-            .problem-grid,
-            .solution-grid {
-                grid-template-columns: 1fr;
+            h2 {
+                font-size: 1.8em;
             }
 
-            section {
-                padding: 25px;
+            .stat-number {
+                font-size: 2em;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>🔬 Finding Where Pathogens Hide</h1>
-        <p class="subtitle">Superbug Detection & Baby Formula Safety</p>
-        <p>Traditional sanitation fails because it can't find the hidden biofilm reservoirs. Ward Effect Technology detects the cracks, delaminations, and surfaces where pathogens hide from chemical attack.</p>
+        <h1>🦠 Pathogen Safety</h1>
+        <p>50nm Biofilm Detection for Hospital Superbug Prevention & Baby Formula Safety</p>
     </header>
 
     <div class="container">
         <a href="index.html" class="back-link">← Back to Ward Effect Technology</a>
 
-        <div class="crisis-box">
-            <h2>🚨 The Hidden Contamination Crisis</h2>
-            <p style="font-size: 1.2em; line-height: 1.8;">
-                Hospitals spray disinfectants daily. Formula factories follow strict sanitation protocols. 
-                Yet superbugs kill 700,000+ people annually and contaminated infant formula causes recurring global crises.
-            </p>
-            <p style="font-size: 1.2em; line-height: 1.8; margin-top: 15px;">
-                <strong>Why? Because pathogens hide where chemicals can't reach.</strong>
-            </p>
-
-            <div class="crisis-stats">
-                <div class="crisis-stat">
-                    <span class="number">700,000+</span>
-                    <span class="label">Deaths/year from hospital-acquired infections</span>
+        <div class="stat-banner">
+            <h2>The Silent Crisis</h2>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <span class="stat-number">700,000+</span>
+                    <span class="stat-label">Annual Deaths from Hospital-Acquired Infections</span>
                 </div>
-                <div class="crisis-stat">
-                    <span class="number">50%+</span>
-                    <span class="label">Of biofilm bacteria resist antibiotics</span>
+                <div class="stat-item">
+                    <span class="stat-number">10 Million</span>
+                    <span class="stat-label">Deaths Projected by 2050 (Antibiotic Resistance)</span>
                 </div>
-                <div class="crisis-stat">
-                    <span class="number">$28-45B</span>
-                    <span class="label">Annual cost of hospital infections (US alone)</span>
-                </div>
-                <div class="crisis-stat">
-                    <span class="number">Recurring</span>
-                    <span class="label">Infant formula contamination crises globally</span>
+                <div class="stat-item">
+                    <span class="stat-number">Multiple</span>
+                    <span class="stat-label">Infant Formula Contamination Crises Globally</span>
                 </div>
             </div>
         </div>
 
         <section>
-            <h2>🧬 The Three Requirements: Every Pathogen Needs...</h2>
-            <p style="font-size: 1.1em; margin-bottom: 30px; color: #4a5568;">
-                All pathogens—bacteria, viruses, fungi—require three things to survive and multiply. Eliminate any one, and they die. But traditional sanitation only addresses one.
+            <h2>🏥 Hospital Superbug Detection</h2>
+            
+            <p>
+                Hospital-acquired infections (HAIs) kill more people annually than car accidents and breast cancer combined. 
+                The problem isn't lack of cleaning—it's that <strong>biofilms form faster than detection methods can identify them.</strong>
             </p>
 
-            <div class="requirements-grid">
-                <div class="requirement-card">
-                    <span class="requirement-icon">🏠</span>
-                    <div class="requirement-title">1. A Place to Hide</div>
-                    <div class="requirement-description">
-                        <strong>From Chemical Attack:</strong><br>
-                        Cracks in walls, floors, equipment<br>
-                        Delaminated paint and coatings<br>
-                        Gaps in pipe joints and seals<br>
-                        Porous surfaces and rough textures<br>
-                        Biofilm layers that shield colonies<br><br>
-                        <strong>Chemicals can't penetrate these hiding places.</strong>
+            <div class="warning-box">
+                <h3 style="color: #e53e3e; margin-top: 0;">⚠️ The Biofilm Problem</h3>
+                <p>Pathogenic bacteria form protective biofilm layers in hospital water systems, on medical equipment, and in hidden infrastructure. By the time traditional detection methods identify contamination, colonies are already established and resistant to cleaning.</p>
+            </div>
+
+            <h3>Ward Effect Solution: Real-Time 50nm Detection</h3>
+
+            <div class="tech-specs">
+                <h4 style="color: #1a1a2e; font-size: 1.5em;">Technical Capabilities</h4>
+                <ul>
+                    <li><strong>50 nanometer sensitivity:</strong> Detects biofilm formation at the earliest possible stage—before visible colonies form</li>
+                    <li><strong>Non-intrusive monitoring:</strong> No water samples required. Continuous real-time monitoring through pipe walls</li>
+                    <li><strong>Pathogen identification:</strong> Acoustic signature libraries differentiate between harmless bacteria and dangerous pathogens</li>
+                    <li><strong>Early warning system:</strong> Alerts facility managers days or weeks before traditional detection methods</li>
+                    <li><strong>Zero false positives:</strong> Resonance-locked detection distinguishes biofilm from mineral deposits or harmless contamination</li>
+                </ul>
+            </div>
+
+            <div class="success-box">
+                <h3 style="color: #00875a; margin-top: 0;">✅ Impact: Prevention, Not Reaction</h3>
+                <p>Traditional methods detect outbreaks <strong>after patients are infected.</strong> Ward Effect detects biofilm formation <strong>before it becomes a health risk.</strong> This shifts hospitals from reactive crisis management to proactive prevention.</p>
+            </div>
+
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-icon">💧</div>
+                    <div class="app-title">Water System Monitoring</div>
+                    <div class="app-description">
+                        Continuous monitoring of hospital water distribution. Detects Legionella, Pseudomonas, and other waterborne pathogens before they reach patients.
                     </div>
                 </div>
 
-                <div class="requirement-card">
-                    <span class="requirement-icon">🍽️</span>
-                    <div class="requirement-title">2. Food to Eat</div>
-                    <div class="requirement-description">
-                        <strong>Organic Matter:</strong><br>
-                        Milk powder residue in cracks<br>
-                        Protein deposits in delaminated surfaces<br>
-                        Sugar accumulation in hidden gaps<br>
-                        Dead skin cells and bodily fluids (hospitals)<br>
-                        Any organic material trapped where cleaning can't reach<br><br>
-                        <strong>Powder leaks feed invisible colonies.</strong>
+                <div class="app-card">
+                    <div class="app-icon">🛏️</div>
+                    <div class="app-title">ICU Equipment</div>
+                    <div class="app-description">
+                        Real-time monitoring of ventilators, dialysis machines, and IV systems. Prevents contamination in the most vulnerable patient populations.
                     </div>
                 </div>
 
-                <div class="requirement-card">
-                    <span class="requirement-icon">💧</span>
-                    <div class="requirement-title">3. Moisture</div>
-                    <div class="requirement-description">
-                        <strong>Water Source:</strong><br>
-                        Roof leaks creating hidden dampness<br>
-                        Condensation in cracks and voids<br>
-                        High humidity environments<br>
-                        Steam penetration into delaminated layers<br>
-                        Washing water trapped in unreachable spaces<br><br>
-                        <strong>Moisture persists where air can't circulate.</strong>
+                <div class="app-card">
+                    <div class="app-icon">🚿</div>
+                    <div class="app-title">Shower & Sink Fixtures</div>
+                    <div class="app-description">
+                        Detects biofilm formation in patient room fixtures. Prevents infections during routine bathing and hygiene.
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🔬</div>
+                    <div class="app-title">Surgical Suites</div>
+                    <div class="app-description">
+                        Ultra-sensitive monitoring for operating rooms. Ensures sterile water for surgical procedures and instrument cleaning.
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🏢</div>
+                    <div class="app-title">HVAC Systems</div>
+                    <div class="app-description">
+                        Monitors cooling towers and air handling units. Prevents Legionnaires' disease outbreaks from building infrastructure.
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">👶</div>
+                    <div class="app-title">NICU Water Systems</div>
+                    <div class="app-description">
+                        Special protection for neonatal intensive care units where premature infants are most vulnerable to waterborne infections.
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <h2>🍼 Baby Formula Contamination Monitoring</h2>
+
+            <p>
+                Infant formula contamination has caused multiple global crises—Cronobacter sakazakii outbreaks, melamine poisoning, Salmonella contamination. 
+                Each incident results in infant deaths, permanent disabilities, and shattered public trust.
+            </p>
+
+            <div class="warning-box">
+                <h3 style="color: #e53e3e; margin-top: 0;">⚠️ Why Baby Formula is Critical</h3>
+                <p>Infants under 6 months have undeveloped immune systems. Contamination levels that would cause mild illness in adults can be <strong>fatal</strong> to infants. Powdered formula is not sterile, and reconstitution with contaminated water compounds the risk.</p>
+            </div>
+
+            <div class="case-study">
+                <h3>🏭 Case Study: Milk Factory "Hide, Feed, Drink" Framework</h3>
+                
+                <p>
+                    In infant formula production, contamination follows three stages that Ward Effect Technology can detect and prevent:
+                </p>
+
+                <div class="framework-steps">
+                    <div class="framework-step">
+                        <h4>1️⃣ HIDE</h4>
+                        <p>Bacteria hide in biofilm layers on processing equipment, pipes, and tanks. Traditional cleaning cannot reach these protected colonies.</p>
+                        <p style="margin-top: 15px; color: #00875a;"><strong>Ward Effect detects biofilm at 50nm—before bacteria colonies establish protective layers.</strong></p>
+                    </div>
+
+                    <div class="framework-step">
+                        <h4>2️⃣ FEED</h4>
+                        <p>Milk nutrients (proteins, sugars, fats) provide ideal food for bacterial growth. Contamination multiplies rapidly in production systems.</p>
+                        <p style="margin-top: 15px; color: #00875a;"><strong>Ward Effect monitors in real-time—catching contamination before it multiplies to dangerous levels.</strong></p>
+                    </div>
+
+                    <div class="framework-step">
+                        <h4>3️⃣ DRINK</h4>
+                        <p>Contaminated formula reaches infants. Even low bacterial counts can overwhelm undeveloped immune systems, causing severe illness or death.</p>
+                        <p style="margin-top: 15px; color: #00875a;"><strong>Ward Effect prevents this stage entirely through early detection at HIDE and FEED stages.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Production Facility Applications</h3>
+
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-icon">🚰</div>
+                    <div class="app-title">Incoming Water Quality</div>
+                    <div class="app-description">
+                        Monitors water used for formula reconstitution. Detects pathogenic bacteria before water enters production process.
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">⚙️</div>
+                    <div class="app-title">Processing Equipment</div>
+                    <div class="app-description">
+                        Real-time monitoring of mixing tanks, spray dryers, and packaging equipment. Prevents biofilm formation on contact surfaces.
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🧪</div>
+                    <div class="app-title">Quality Control Lines</div>
+                    <div class="app-description">
+                        Monitors sampling and testing equipment. Ensures QC processes don't introduce contamination.
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🚿</div>
+                    <div class="app-title">Cleaning-in-Place (CIP)</div>
+                    <div class="app-description">
+                        Verifies effectiveness of cleaning cycles. Detects any remaining biofilm that survived sanitation procedures.
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">📦</div>
+                    <div class="app-title">Packaging Systems</div>
+                    <div class="app-description">
+                        Monitors water used in steam generation for sterilization. Prevents contamination during final packaging.
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🏭</div>
+                    <div class="app-title">Facility Infrastructure</div>
+                    <div class="app-description">
+                        Monitors building water systems, HVAC condensate, and environmental controls. Prevents cross-contamination from infrastructure.
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-box">
+                <h3 style="color: #00875a; margin-top: 0;">✅ Zero Tolerance Policy</h3>
+                <p><strong>Infant formula production requires zero tolerance for pathogenic contamination.</strong> Ward Effect's 50nm sensitivity enables manufacturers to maintain this standard through continuous monitoring rather than periodic testing that misses contamination windows.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>🔬 How It Works: 50nm Biofilm Detection</h2>
 
             <div class="highlight-box">
-                <strong>The Fatal Flaw of Chemical Sanitation:</strong>
-                <p>Spraying disinfectant only kills pathogens on exposed surfaces. It cannot penetrate cracks, delaminated paint, or biofilm layers. The hidden colonies survive, multiply, and re-contaminate the "clean" facility within hours.</p>
+                <strong>50 nanometers = 0.00005 millimeters</strong><br><br>
+                This is approximately 1/2000th the width of a human hair. At this scale, we're detecting the earliest possible biofilm formation—just a few bacterial cells beginning to adhere to a surface.
             </div>
-        </section>
 
-        <section>
-            <h2>📖 Real World: Milk Powder Factory Case Study</h2>
-            
-            <div class="story-box">
-                <h3>The Problem: High EB Levels Despite Constant Sanitation</h3>
-                <p style="font-size: 1.1em; line-height: 1.8; color: #166534;">
-                    "I was working in a milk powder factory. The plant was sprayed on a regular basis with industrial-strength disinfectants. 
-                    The sanitation team followed every protocol. Yet we still had persistently high levels of Enterobacteriaceae (EB) contamination.
-                </p>
-                <p style="font-size: 1.1em; line-height: 1.8; margin-top: 15px; color: #166534;">
-                    I was talking to the cleaner one day. He said: <strong>'They are wasting their time. The roof leaks, there is powder everywhere, 
-                    and the bugs hide in cracks.'</strong>
-                </p>
+            <h3>Detection Technology</h3>
 
-                <h3 style="margin-top: 30px;">The Three-Part Solution:</h3>
-                
-                <div class="problem-grid" style="margin-top: 20px;">
-                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #16a34a;">
-                        <h4 style="color: #16a34a; margin: 0 0 10px 0;">Step 1: Stop the Moisture</h4>
-                        <p style="margin: 0; color: #166534;"><strong>Action:</strong> Fixed the roof leaks<br>
-                        <strong>Result:</strong> Eliminated hidden water source</p>
-                    </div>
+            <p>
+                Ward Effect uses parasitic oscillation feedback and resonance-locked acoustic analysis to detect minute changes in surface characteristics caused by biofilm formation.
+            </p>
 
-                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #16a34a;">
-                        <h4 style="color: #16a34a; margin: 0 0 10px 0;">Step 2: Remove the Food</h4>
-                        <p style="margin: 0; color: #166534;"><strong>Action:</strong> Stopped powder leaks (100 tonnes/month!)<br>
-                        <strong>Result:</strong> Eliminated nutrient supply to hidden colonies</p>
-                    </div>
+            <div class="tech-specs">
+                <h4 style="color: #1a1a2e; font-size: 1.5em;">Technical Process</h4>
+                <ul>
+                    <li><strong>Baseline establishment:</strong> System learns the clean surface acoustic signature during initial calibration</li>
+                    <li><strong>Continuous monitoring:</strong> Parasitic oscillation maintains resonance-locked frequency tracking</li>
+                    <li><strong>Anomaly detection:</strong> Any change in surface characteristics (biofilm formation) alters resonance frequency</li>
+                    <li><strong>Pattern matching:</strong> Acoustic signature library identifies specific pathogens vs. harmless bacteria</li>
+                    <li><strong>Alert generation:</strong> Real-time warnings when dangerous biofilm is detected</li>
+                    <li><strong>Structural protection:</strong> Non-destructive monitoring—no damage to pipes or equipment</li>
+                </ul>
+            </div>
 
-                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #16a34a;">
-                        <h4 style="color: #16a34a; margin: 0 0 10px 0;">Step 3: Eliminate the Hiding Places</h4>
-                        <p style="margin: 0; color: #166534;"><strong>Action:</strong> Fixed every crack in walls, floors, equipment<br>
-                        <strong>Result:</strong> Removed pathogen refuges from chemical attack</p>
+            <h3>Advantages Over Traditional Methods</h3>
+
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-title">⚡ Real-Time vs. Days/Weeks</div>
+                    <div class="app-description">
+                        Traditional culture methods require 24-72 hours for results. Ward Effect provides instant detection and continuous monitoring.
                     </div>
                 </div>
 
-                <div class="result">
-                    ✅ RESULT: Lowest pathogen levels ever recorded in the facility, including thermophiles
-                    <br><br>
-                    "If there is nothing to eat, nowhere to hide, and nothing to drink—they die."
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>🏥 The Superbug Problem: Delaminated Surfaces</h2>
-            
-            <p style="font-size: 1.1em; margin-bottom: 25px;">
-                Hospitals face an even more insidious challenge: <strong>delaminated surfaces</strong> where paint, coatings, or epoxy flooring 
-                separates from the substrate, creating hidden voids perfect for pathogen colonies.
-            </p>
-
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <h4>🎨 Delaminated Paint</h4>
-                    <p>Hospital walls are painted repeatedly over decades. Old paint layers separate from walls, creating microscopic gaps where MRSA, C. difficile, and other superbugs colonize—completely protected from surface disinfection.</p>
+                <div class="app-card">
+                    <div class="app-title">🎯 Specific vs. Generic</div>
+                    <div class="app-description">
+                        Acoustic signatures identify specific pathogens, not just "bacteria present." Differentiates dangerous from harmless organisms.
+                    </div>
                 </div>
 
-                <div class="problem-card">
-                    <h4>🏢 Epoxy Floor Separation</h4>
-                    <p>Operating rooms use epoxy flooring for easy cleaning. Over time, the epoxy delaminates from concrete underneath. Bacteria colonize the void between layers and emerge through microscopic cracks during surgery.</p>
+                <div class="app-card">
+                    <div class="app-title">📍 Precise vs. Sampling</div>
+                    <div class="app-description">
+                        Monitors exact locations continuously. No sampling bias or missing contamination between test points.
+                    </div>
                 </div>
 
-                <div class="problem-card">
-                    <h4>🚿 Tile and Grout Voids</h4>
-                    <p>Bathroom tiles separate from backing. Shower walls develop gaps behind seemingly intact surfaces. Moisture penetrates, pathogens colonize, and no amount of bleach reaches the reservoir.</p>
+                <div class="app-card">
+                    <div class="app-title">🔒 Non-Intrusive vs. Invasive</div>
+                    <div class="app-description">
+                        Monitors through pipe walls and equipment surfaces. No need to shut down systems or open sterile environments.
+                    </div>
                 </div>
-
-                <div class="problem-card">
-                    <h4>⚙️ Equipment Coating Failure</h4>
-                    <p>Stainless steel equipment with protective coatings. Coatings delaminate from thermal cycling. Legionella and Pseudomonas thrive in the hidden interface—invisible to visual inspection.</p>
-                </div>
-            </div>
-
-            <div class="highlight-box">
-                <strong>Why Superbugs Win:</strong>
-                <p>Delaminated surfaces can harbor millions of bacteria in a single square centimeter. They emerge in mass regardless of surface cleaning. Traditional inspection cannot detect delamination until it's severe. By then, the pathogen reservoir is massive.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>⚡ How Ward Effect Technology Solves This</h2>
-
-            <div class="solution-grid">
-                <div class="solution-card">
-                    <h4>🔍 Detects Hidden Biofilm Reservoirs</h4>
-                    <ul>
-                        <li>Ultra-narrow bandwidth (0.01-0.1 Hz) detects 50-500 nm biofilm formation</li>
-                        <li>Identifies cracks and delaminations before visual inspection can see them</li>
-                        <li>Finds moisture trapped in hidden voids</li>
-                        <li>Maps biofilm location inside walls, floors, equipment</li>
-                        <li>Non-intrusive—works through paint, coatings, composite materials</li>
-                    </ul>
-                </div>
-
-                <div class="solution-card">
-                    <h4>🎯 Targets Specific Pathogens</h4>
-                    <ul>
-                        <li>Acoustic signature library identifies pathogen species</li>
-                        <li>Differentiates MRSA from normal skin flora</li>
-                        <li>Detects Enterobacteriaceae in food processing</li>
-                        <li>Identifies Legionella in water systems</li>
-                        <li>Real-time monitoring vs. weekly swab tests</li>
-                    </ul>
-                </div>
-
-                <div class="solution-card">
-                    <h4>💥 Active Pathogen Destruction</h4>
-                    <ul>
-                        <li>Controlled cavitation penetrates biofilm layers</li>
-                        <li>Mechanical lysis—works even on antibiotic-resistant strains</li>
-                        <li>Reaches pathogens in cracks and delaminated surfaces</li>
-                        <li>No chemicals required—prevents resistance development</li>
-                        <li>Automated treatment when contamination detected</li>
-                    </ul>
-                </div>
-
-                <div class="solution-card">
-                    <h4>🏗️ Structural Integrity Assessment</h4>
-                    <ul>
-                        <li>Detects delaminated paint before it becomes pathogen reservoir</li>
-                        <li>Identifies coating failures in food processing equipment</li>
-                        <li>Maps areas requiring structural repair</li>
-                        <li>Prevents contamination by addressing root cause</li>
-                        <li>Guides targeted maintenance instead of facility-wide remediation</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>📊 Ward Effect vs. Traditional Sanitation</h2>
-
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Capability</th>
-                        <th>Chemical Sanitation</th>
-                        <th>Ward Effect Technology</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Detects biofilm in cracks</td>
-                        <td><span class="cross">✗</span> Cannot detect hidden contamination</td>
-                        <td><span class="checkmark">✓</span> Detects 50 nm biofilm formation</td>
-                    </tr>
-                    <tr>
-                        <td>Finds delaminated surfaces</td>
-                        <td><span class="cross">✗</span> Only sees severe visible damage</td>
-                        <td><span class="checkmark">✓</span> Detects early-stage delamination</td>
-                    </tr>
-                    <tr>
-                        <td>Reaches pathogens in hidden voids</td>
-                        <td><span class="cross">✗</span> Chemicals cannot penetrate</td>
-                        <td><span class="checkmark">✓</span> Low-frequency penetration through materials</td>
-                    </tr>
-                    <tr>
-                        <td>Works on antibiotic-resistant strains</td>
-                        <td><span class="cross">✗</span> Resistance develops to biocides</td>
-                        <td><span class="checkmark">✓</span> Mechanical lysis—no resistance possible</td>
-                    </tr>
-                    <tr>
-                        <td>Real-time monitoring</td>
-                        <td><span class="cross">✗</span> Weekly/monthly swab testing</td>
-                        <td><span class="checkmark">✓</span> Continuous or on-demand detection</td>
-                    </tr>
-                    <tr>
-                        <td>Identifies pathogen species</td>
-                        <td><span class="cross">✗</span> Requires lab culture (48-72 hrs)</td>
-                        <td><span class="checkmark">✓</span> Acoustic signature matching (minutes)</td>
-                    </tr>
-                    <tr>
-                        <td>Prevents recontamination</td>
-                        <td><span class="cross">✗</span> Reservoirs persist and re-seed</td>
-                        <td><span class="checkmark">✓</span> Eliminates hidden reservoirs</td>
-                    </tr>
-                    <tr>
-                        <td>Guides structural repairs</td>
-                        <td><span class="cross">✗</span> No insight into building defects</td>
-                        <td><span class="checkmark">✓</span> Maps moisture leaks, cracks, delamination</td>
-                    </tr>
-                    <tr>
-                        <td>Environmental impact</td>
-                        <td><span class="cross">✗</span> Chemical waste, resistance development</td>
-                        <td><span class="checkmark">✓</span> Zero chemicals, zero waste</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>🎯 Critical Applications</h2>
-
-            <h3>🏥 Hospital Superbug Control (Open Source)</h3>
-            <ul>
-                <li><strong>Operating Rooms:</strong> Detect delaminated flooring before surgical site infections occur</li>
-                <li><strong>ICU Units:</strong> Monitor for MRSA, VRE, C. difficile in hidden wall/floor voids</li>
-                <li><strong>Dialysis Centers:</strong> Find biofilm in water system cracks that defeat chemical treatment</li>
-                <li><strong>NICU:</strong> Protect immunocompromised infants from environmental pathogens</li>
-                <li><strong>Burn Units:</strong> Detect Pseudomonas in delaminated surfaces before patient exposure</li>
-            </ul>
-
-            <h3>🍼 Baby Formula Production (Open Source)</h3>
-            <ul>
-                <li><strong>Spray Dryers:</strong> Find powder accumulation in cracks feeding Cronobacter colonies</li>
-                <li><strong>Filling Lines:</strong> Detect delaminated equipment coatings harboring Salmonella</li>
-                <li><strong>Storage Silos:</strong> Identify moisture ingress creating pathogen reservoirs</li>
-                <li><strong>Processing Equipment:</strong> Map biofilm in joints and seals missed by CIP (clean-in-place)</li>
-                <li><strong>Building Structure:</strong> Find roof leaks and wall cracks before they contaminate product</li>
-            </ul>
-
-            <h3>🏭 Food Processing Generally (Open Source for Infant/Elderly Products)</h3>
-            <ul>
-                <li><strong>Dairy Plants:</strong> Detect thermophile hiding places in pasteurization equipment</li>
-                <li><strong>Meat Processing:</strong> Find Listeria reservoirs in floor drains and delaminated walls</li>
-                <li><strong>Beverage Production:</strong> Identify yeast/mold in hidden tank coating delaminations</li>
-                <li><strong>Bakeries:</strong> Detect moisture and nutrient accumulation feeding pathogen growth</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>💡 The Paradigm Shift</h2>
-
-            <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 30px; border-radius: 10px; border-left: 5px solid #3b82f6;">
-                <h3 style="color: #1e40af; margin-top: 0;">From "Clean the Surface" to "Eliminate the Reservoir"</h3>
-                
-                <p style="font-size: 1.1em; line-height: 1.8; color: #1e3a8a;">
-                    <strong>Traditional Approach:</strong><br>
-                    Spray disinfectant → Pathogens hide in cracks → Survive chemical attack → Re-emerge and multiply → 
-                    Spray again → Repeat forever → Never actually solve the problem
-                </p>
-
-                <p style="font-size: 1.1em; line-height: 1.8; margin-top: 20px; color: #1e3a8a;">
-                    <strong>Ward Effect Approach:</strong><br>
-                    Detect hidden reservoirs → Identify structural defects → Fix the hiding places → 
-                    Remove food sources → Eliminate moisture → Destroy remaining biofilm with cavitation → 
-                    <strong>Solve the root cause</strong>
-                </p>
-            </div>
-
-            <div class="highlight-box" style="margin-top: 30px;">
-                <strong>The Fundamental Truth:</strong>
-                <p>You cannot sanitize a structurally compromised facility. Cracks, delaminations, and hidden voids will always defeat surface cleaning. Ward Effect Technology finds these defects before they become pathogen reservoirs—preventing contamination instead of chasing it.</p>
-            </div>
-        </section>
-
-        <section style="background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); border-left: 5px solid #dc2626;">
-            <h2 style="color: #991b1b;">🔓 Open Source Commitment</h2>
-            
-            <p style="font-size: 1.2em; line-height: 1.8; color: #7f1d1d;">
-                <strong>All applications of Ward Effect Technology for hospital superbug detection and baby formula safety are 
-                open source—no license fees, no royalties, no restrictions.</strong>
-            </p>
-
-            <p style="font-size: 1.1em; line-height: 1.8; margin-top: 20px; color: #7f1d1d;">
-                Why? Because 700,000 people die annually from hospital-acquired infections. Because contaminated formula kills 
-                infants globally. Because protecting vulnerable populations cannot wait for profit optimization.
-            </p>
-
-            <h3 style="color: #991b1b; margin-top: 30px;">What This Means:</h3>
-            <ul style="font-size: 1.1em; color: #7f1d1d;">
-                <li>Hospitals can deploy immediately—no licensing negotiations</li>
-                <li>Formula manufacturers can integrate freely—at any scale</li>
-                <li>Medical device makers can incorporate technology—no royalties</li>
-                <li>Researchers can validate and improve—share findings with community</li>
-                <li>Governments can mandate implementation—no patent barriers</li>
-            </ul>
-
-            <div style="background: #991b1b; color: white; padding: 25px; border-radius: 10px; margin-top: 30px;">
-                <p style="font-size: 1.2em; margin: 0; line-height: 1.8;">
-                    <strong>"Infant safety and hospital infection control are human rights, not business opportunities. 
-                    Ward Effect Technology for these applications belongs to humanity."</strong>
-                </p>
-                <p style="margin-top: 15px; font-size: 1em; opacity: 0.9;">
-                    - David Ward, Inventor
-                </p>
             </div>
         </section>
 
         <div class="cta-box">
-            <h2>Ready to Eliminate Hidden Pathogen Reservoirs?</h2>
-            <p>Whether you're protecting hospital patients or ensuring infant formula safety, Ward Effect Technology provides the detection and elimination capabilities traditional sanitation cannot.</p>
-            
-            <a href="mailto:opensource@wardeffect.com" class="btn btn-secondary">Get Open Source Access</a>
-            <a href="licensing.html" class="btn">View Licensing Framework</a>
-            <a href="https://wardscope.com/donate.html" class="btn">Fund Development</a>
+            <h2>🚀 Implement Pathogen Detection</h2>
+            <p>Protect vulnerable populations through early biofilm detection.<br>Open source for hospitals and infant formula manufacturers.</p>
+            <a href="licensing.html" class="btn">Get Open Source Access</a>
+            <a href="mailto:research@wardeffect.com" class="btn btn-secondary">Partner with Research Team</a>
         </div>
 
         <section>
-            <h2>📧 Contact Information</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px;">
-                <div>
-                    <h3 style="color: #16a34a;">🏥 Hospital Implementation</h3>
-                    <p><strong>Email:</strong> opensource@wardeffect.com</p>
-                    <p>For medical facilities deploying superbug detection systems</p>
-                </div>
+            <h2>📧 Contact & Partnerships</h2>
 
-                <div>
-                    <h3 style="color: #16a34a;">🍼 Formula Production</h3>
-                    <p><strong>Email:</strong> opensource@wardeffect.com</p>
-                    <p>For infant formula and food safety applications</p>
-                </div>
+            <p>
+                Ward Effect pathogen detection is <strong>open source for all public health applications.</strong> We welcome partnerships with:
+            </p>
 
-                <div>
-                    <h3 style="color: #3b82f6;">🔬 Research Collaboration</h3>
-                    <p><strong>Email:</strong> info@wardeffect.com</p>
-                    <p>For academic validation studies and technical partnerships</p>
-                </div>
+            <ul style="font-size: 1.1em; line-height: 2; margin: 30px 0; margin-left: 40px;">
+                <li>Hospitals and healthcare systems implementing infection prevention programs</li>
+                <li>Infant formula manufacturers upgrading quality control systems</li>
+                <li>Public health organizations conducting clinical trials</li>
+                <li>Research institutions studying biofilm detection methods</li>
+                <li>Government agencies developing pathogen monitoring standards</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Research Contact:</strong> research@wardeffect.com<br>
+                <strong>For:</strong> Clinical trials, facility pilots, research partnerships<br>
+                <strong>Response Time:</strong> 24-48 hours for partnership proposals
+            </div>
+
+            <div class="success-box">
+                <h3 style="color: #00875a; margin-top: 0;">✅ Open Source Commitment</h3>
+                <p>Hospital superbug detection and baby formula safety are <strong>open source forever.</strong> No licensing fees. No royalties. No restrictions. If your application protects vulnerable populations from life-threatening contamination, access is free.</p>
             </div>
         </section>
+
+        <div class="back-link" style="text-align: center; margin: 40px 0;">
+            <a href="index.html" style="font-size: 1.2em;">← Back to Ward Effect Technology</a>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Ward Effect Technology. Open source for water purification. Commercial licensing for industrial applications.</p>
+        <p style="margin-top: 10px;">Operated by David Ward, Tacloban, Eastern Visayas, Philippines</p>
+        <p style="margin-top: 20px;">
+            <a href="index.html">Home</a> | 
+            <a href="licensing.html">Licensing</a> | 
+            <a href="mailto:research@wardeffect.com">Research Partnerships</a> | 
+            <a href="donate.html">Donate</a>
+        </p>
+    </footer>
 </body>
 </html>
