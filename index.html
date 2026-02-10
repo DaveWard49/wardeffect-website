@@ -178,7 +178,7 @@
             gap: 20px;
             max-width: 1400px;
             margin: 0 auto;
-            align-items: stretch;
+            align-items: stretch; /* Forces all children to have the same height */
         }
 
         .path-card {
@@ -195,15 +195,14 @@
             flex: 1 1 auto;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            /* align-items and justify-content removed to allow img to fill */
         }
 
         .center-photo img {
             width: 100%;
-            height: auto;
+            height: 100%; /* Changed from auto to 100% to match box height */
             max-height: 600px;
-            object-fit: contain;
+            object-fit: cover; /* Changed from contain to cover to prevent gaps */
             border-radius: 15px;
             display: block;
         }
