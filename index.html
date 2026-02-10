@@ -176,33 +176,31 @@
         .paths-container {
             display: flex;
             gap: 20px;
-            max-width: 1400px;
+            max-width: 1800px;
             margin: 0 auto;
-            align-items: stretch; /* Forces all children to have the same height */
+            align-items: stretch;
         }
 
         .path-card {
             background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
-            padding: 25px;
+            padding: 30px;
             border-radius: 15px;
             border: 2px solid;
             position: relative;
             overflow: hidden;
-            flex: 0 0 24%;
+            flex: 1 1 0;
         }
 
         .center-photo {
-            flex: 1 1 auto;
+            flex: 1 1 0;
             display: flex;
             flex-direction: column;
-            /* align-items and justify-content removed to allow img to fill */
         }
 
         .center-photo img {
             width: 100%;
-            height: 100%; /* Changed from auto to 100% to match box height */
-            max-height: 600px;
-            object-fit: cover; /* Changed from contain to cover to prevent gaps */
+            height: 100%;
+            object-fit: cover;
             border-radius: 15px;
             display: block;
         }
@@ -249,14 +247,14 @@
         }
 
         .path-title {
-            font-size: 3.2em;
+            font-size: 2.4em;
             color: white;
             margin-bottom: 10px;
             font-weight: bold;
         }
 
         .path-subtitle {
-            font-size: 2em;
+            font-size: 1.5em;
             margin-bottom: 15px;
             font-weight: 600;
         }
@@ -273,7 +271,7 @@
             color: #b8c5d6;
             margin-bottom: 15px;
             line-height: 1.6;
-            font-size: 1.8em;
+            font-size: 1.3em;
         }
 
         .path-examples {
@@ -286,7 +284,7 @@
             padding-left: 25px;
             position: relative;
             color: #b8c5d6;
-            font-size: 1.76em;
+            font-size: 1.2em;
         }
 
         .path-examples li::before {
