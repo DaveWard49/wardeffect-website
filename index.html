@@ -175,26 +175,33 @@
 
         .paths-container {
             display: flex;
-            gap: 20px;
-            max-width: 1800px;
+            gap: 0;
+            max-width: 100%;
             margin: 0 auto;
             align-items: stretch;
+            padding: 0 20px;
         }
 
         .path-card {
             background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
-            padding: 30px;
+            padding: 35px;
             border-radius: 15px;
             border: 2px solid;
             position: relative;
             overflow: hidden;
-            flex: 1 1 0;
+            width: 33.333%;
+            flex: 0 0 calc(33.333% - 14px);
+            margin: 0 7px;
+            box-sizing: border-box;
         }
 
         .center-photo {
-            flex: 1 1 0;
+            width: 33.333%;
+            flex: 0 0 calc(33.333% - 14px);
+            margin: 0 7px;
             display: flex;
-            flex-direction: column;
+            position: relative;
+            box-sizing: border-box;
         }
 
         .center-photo img {
@@ -206,10 +213,16 @@
         }
 
         .photo-copyright {
-            color: rgba(255,255,255,0.5);
-            font-size: 0.7em;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.65em;
             text-align: center;
-            margin-top: 8px;
+            background: rgba(0,0,0,0.5);
+            padding: 4px 8px;
+            border-radius: 0 0 15px 15px;
         }
 
         .photo-copyright a {
