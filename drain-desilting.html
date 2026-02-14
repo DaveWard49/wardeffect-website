@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WardFlow Drain De-Silting System - Ward Effect Technology</title>
+    <meta name="description" content="Revolutionary chemical-free drain de-silting system. 98% cost reduction, fully automated, patent-protected technology. Manufacturing partnerships, supplier opportunities, and open-source development.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0f0f1e;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header - matches site */
+        header {
+            background: rgba(26, 26, 46, 0.95);
+            padding: 20px 0;
+            border-bottom: 2px solid #4c9aff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #4c9aff 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #b8c5d6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #4c9aff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(76, 154, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-tagline {
+            font-size: 1.5em;
+            color: #4c9aff;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #b8c5d6;
+            margin-bottom: 20px;
+        }
+
+        .cost-savings {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00d464;
+            margin-top: 20px;
+        }
+
+        /* System Components Section */
+        .section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .component {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid;
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s;
+        }
+
+        .component:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(76, 154, 255, 0.2);
+        }
+
+        .component.blue { border-color: #4c9aff; }
+        .component.orange { border-color: #ff9500; }
+        .component.green { border-color: #00d464; }
+        .component.purple { border-color: #a78bfa; }
+        .component.red { border-color: #ff6b6b; }
+        .component.gold { border-color: #ffd700; }
+
+        .component .number {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .component h3 {
+            font-size: 1.5em;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .component p {
+            color: #b8c5d6;
+            font-size: 1.05em;
+        }
+
+        /* Patent Badge */
+        .patent-badge {
+            background: linear-gradient(135deg, rgba(76, 154, 255, 0.1), rgba(0, 212, 255, 0.1));
+            border: 2px solid rgba(76, 154, 255, 0.3);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin: 60px auto;
+            max-width: 900px;
+        }
+
+        .patent-badge h3 {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .patent-badge .countries {
+            font-size: 1.4em;
+            color: #4c9aff;
+            margin: 20px 0;
+        }
+
+        .patent-badge .stats {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #00d4ff;
+            margin-top: 15px;
+        }
+
+        .patent-badge .patent-list {
+            font-size: 1em;
+            color: #a0b4c8;
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+
+        /* Tabs */
+        .tabs {
+            margin: 60px 0;
+        }
+
+        .tab-buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab-button {
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(76, 154, 255, 0.3);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .tab-button:hover {
+            border-color: #4c9aff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(76, 154, 255, 0.3);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, rgba(76, 154, 255, 0.15), rgba(0, 212, 255, 0.15));
+            border-color: #4c9aff;
+        }
+
+        .tab-button .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .tab-button h3 {
+            font-size: 1.4em;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .tab-button p {
+            color: #a0b4c8;
+            font-size: 1.05em;
+        }
+
+        .tab-content {
+            display: none;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(76, 154, 255, 0.2);
+            border-radius: 16px;
+            padding: 50px;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .tab-content h3 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .tab-content h4 {
+            color: #4c9aff;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+        }
+
+        .tab-content p {
+            color: #b8c5d6;
+            font-size: 1.15em;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .tab-content ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .tab-content ul li {
+            padding: 10px 0 10px 30px;
+            color: #b8c5d6;
+            position: relative;
+        }
+
+        .tab-content ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00d464;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* CTA Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4c9aff 0%, #00d4ff 100%);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(76, 154, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #a78bfa;
+            border: 2px solid #a78bfa;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(167, 139, 250, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* Info Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(76, 154, 255, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .card h4 {
+            color: #4c9aff;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .card p, .card ul li {
+            color: #b8c5d6;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: rgba(0, 212, 100, 0.08);
+            border-left: 4px solid #00d464;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box strong {
+            color: #00d464;
+        }
+
+        .highlight-box p {
+            color: #b8c5d6;
+            margin: 5px 0;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .stat .number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #4c9aff;
+        }
+
+        .stat .label {
+            font-size: 1.1em;
+            color: #a0b4c8;
+            margin-top: 10px;
+        }
+
+        /* Contact Form */
+        .contact-section {
+            max-width: 700px;
+            margin: 60px auto;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(76, 154, 255, 0.2);
+            border-radius: 16px;
+            padding: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid rgba(76, 154, 255, 0.3);
+            border-radius: 8px;
+            font-size: 1em;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4c9aff;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(26, 26, 46, 0.95);
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(76, 154, 255, 0.2);
+            margin-top: 80px;
+            color: #6688aa;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #a78bfa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero-tagline {
+                font-size: 1.2em;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .tab-buttons {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                min-width: 100%;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .tab-content {
+                padding: 30px 20px;
+            }
+
+            .contact-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">⚡ Ward Effect</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="licensing.html">Licensing</a>
+                <a href="pathogen-safety.html">Pathogens</a>
+                <a href="inverted-triangle.html">Research Structure</a>
+                <a href="drain-desilting.html" class="active">Drain De-Silting</a>
+                <a href="gallery.html">Transparency</a>
+                <a href="donate.html">Donate</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>WardFlow Drain De-Silting System</h1>
+            <p class="hero-tagline">Chemical-Free Municipal Drainage Maintenance</p>
+            <p>Automated • Cost-Effective • Environmentally Safe • Patent Protected</p>
+            <p class="cost-savings">98% Cost Reduction vs. Traditional Methods</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Complete System Components</h2>
+            
+            <div class="component-grid">
+                <div class="component blue">
+                    <div class="number" style="color: #4c9aff;">①</div>
+                    <h3>Spider Excavator</h3>
+                    <p>Adjustable legs, lowered into drain, excavates settled silt from drain bottom</p>
+                </div>
+                
+                <div class="component orange">
+                    <div class="number" style="color: #ff9500;">②</div>
+                    <h3>Trommel Screen</h3>
+                    <p>Rotating screen (10-25mm mesh) separates debris, Ward sensor controlled</p>
+                </div>
+                
+                <div class="component green">
+                    <div class="number" style="color: #00d464;">③</div>
+                    <h3>Floating Barge</h3>
+                    <p>Debris transport, floats on water surface, modular design</p>
+                </div>
+                
+                <div class="component purple">
+                    <div class="number" style="color: #a78bfa;">④</div>
+                    <h3>Mixing Tank</h3>
+                    <p>Ward sensors monitor silt/water ratio, wireless control center</p>
+                </div>
+                
+                <div class="component red">
+                    <div class="number" style="color: #ff6b6b;">⑤</div>
+                    <h3>Pipeline System</h3>
+                    <p>Ward flow meters, pumps slurry out, connects to barge</p>
+                </div>
+                
+                <div class="component gold">
+                    <div class="number" style="color: #ffd700;">⑥</div>
+                    <h3>Ward Effect Sensors</h3>
+                    <p>$20/unit, wireless control, integrates all system components</p>
+                </div>
+            </div>
+
+            <div class="patent-badge">
+                <h3>PATENTED TECHNOLOGY - GLOBAL PROTECTION</h3>
+                <div class="countries">🇳🇿 New Zealand | 🇺🇸 United States | 🇵🇭 Philippines | 🇮🇳 India</div>
+                <div class="stats">7 Granted Patents | 2 Pending Applications</div>
+                <div class="patent-list">
+                    NZ 738314 • NZ 739314 • NZ 770993 • NZ 778527 • US 11,287,302 B2 • PH 1/2019/550219 • India
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: rgba(255, 255, 255, 0.02);">
+        <div class="container">
+            <h2 class="section-title">The Urban Flooding Crisis</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h4>The Problem</h4>
+                    <ul>
+                        <li>1.8 billion people affected by urban flooding</li>
+                        <li>Silt reduces drain capacity 30-60% in 2-5 years</li>
+                        <li>Traditional de-silting: $50-200 per meter</li>
+                        <li>Chemical treatments contaminate waterways</li>
+                        <li>Mechanical dredging disrupts infrastructure</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>The WardFlow Solution</h4>
+                    <ul>
+                        <li>Under $1.00 per cubic meter operating cost</li>
+                        <li>100% chemical-free operation</li>
+                        <li>70-90% reduction in sediment buildup</li>
+                        <li>Zero infrastructure disruption</li>
+                        <li>Fully automated with Ward sensors</li>
+                        <li>15-20 year operational lifespan</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>System Cost</h4>
+                    <ul>
+                        <li>Complete system: $2,310 - $8,460</li>
+                        <li>DIY components: $335 - $1,320</li>
+                        <li>Compare to proprietary: $14,000+</li>
+                        <li>Operating: <$1/m³ vs $50-200/meter</li>
+                        <li>Low energy: <100W per unit</li>
+                        <li>Minimal maintenance required</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Three Ways to Participate</h2>
+            
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <div class="tab-button active" onclick="switchTab(0)">
+                        <div class="icon">🤝</div>
+                        <h3>Preferred Supplier</h3>
+                        <p>Component Manufacturers</p>
+                    </div>
+                    <div class="tab-button" onclick="switchTab(1)">
+                        <div class="icon">🏭</div>
+                        <h3>Manufacturing Partner</h3>
+                        <p>License or Development</p>
+                    </div>
+                    <div class="tab-button" onclick="switchTab(2)">
+                        <div class="icon">🌍</div>
+                        <h3>Open-Source Support</h3>
+                        <p>Philanthropic Funding</p>
+                    </div>
+                </div>
+
+                <!-- Tab 1: Preferred Supplier -->
+                <div class="tab-content active" id="tab-0">
+                    <h3>Join the WardFlow Preferred Supplier Network</h3>
+                    <p>Manufacturers of excavators, trommels, barges, mixing tanks, or pipeline systems can become preferred suppliers, delivering complete turnkey WardFlow systems to municipalities worldwide.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Financial Opportunity:</strong> $5,310 component cost → $6,903 wholesale → $8,000-$12,000 retail</p>
+                        <p><strong>Integration Margin:</strong> 30% premium for turnkey system delivery</p>
+                        <p><strong>Market:</strong> $16.4 billion global drainage maintenance market</p>
+                    </div>
+
+                    <h4>Partnership Models</h4>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h4 style="color: white;">Component Supply</h4>
+                            <p>Manufacture to Ward specifications, volume orders, competitive wholesale pricing</p>
+                        </div>
+                        <div class="card">
+                            <h4 style="color: white;">Integrated System Supplier</h4>
+                            <p>Coordinate all components, factory integration, single-shipment delivery, exclusive territory</p>
+                        </div>
+                        <div class="card">
+                            <h4 style="color: white;">Hybrid Partnership</h4>
+                            <p>2-3 manufacturers collaborate, shared integration, co-branded delivery</p>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Apply as Preferred Supplier</a>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Manufacturing Partnership -->
+                <div class="tab-content" id="tab-1">
+                    <h3>WardFlow Manufacturing Partnership</h3>
+                    <p>License WardFlow technology for exclusive territorial manufacturing rights or participate in funded development program.</p>
+
+                    <h4>Two Partnership Options</h4>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h4 style="color: white;">Manufacturing License</h4>
+                            <ul>
+                                <li>8-12% royalty on net sales</li>
+                                <li>Exclusive territorial rights</li>
+                                <li>Complete technical specifications</li>
+                                <li>Patent protection included</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4 style="color: white;">Funded Development</h4>
+                            <ul>
+                                <li>$2.5M - $4M over 24 months</li>
+                                <li>Prototype development</li>
+                                <li>Field trials & certification</li>
+                                <li>Revenue sharing model</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="number">$16.4B</div>
+                            <div class="label">Global Market</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">$24B+</div>
+                            <div class="label">By 2030</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">98%</div>
+                            <div class="label">Cost Savings</div>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Request Partnership Information</a>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Open-Source -->
+                <div class="tab-content" id="tab-2">
+                    <h3>Support Open-Source WardFlow Development</h3>
+                    <p>Help us develop DIY-accessible drain de-silting technology for communities worldwide. All drinking water applications will be open-source and freely available.</p>
+
+                    <div class="highlight-box">
+                        <p><strong style="font-size: 1.4em;">Funding Request: $50,000 - $100,000</strong></p>
+                        <p>12-month development program for Phase 1 R&D</p>
+                    </div>
+
+                    <h4>Open-Source Deliverables</h4>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h4 style="color: white;">Complete BOM</h4>
+                            <p>Full parts list with supplier links, $335-$1,320 total</p>
+                        </div>
+                        <div class="card">
+                            <h4 style="color: white;">CAD Files</h4>
+                            <p>SolidWorks & FreeCAD formats</p>
+                        </div>
+                        <div class="card">
+                            <h4 style="color: white;">Firmware</h4>
+                            <p>Arduino/ESP32 code (GPL v3)</p>
+                        </div>
+                        <div class="card">
+                            <h4 style="color: white;">Documentation</h4>
+                            <p>Video tutorials, assembly guides, performance data</p>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="number">750</div>
+                            <div class="label">Systems Built (5yr)</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">2.75M</div>
+                            <div class="label">People Protected</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">1,500km</div>
+                            <div class="label">Drains Cleared</div>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="donate.html" class="btn btn-primary">Donate to This Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact" style="background: rgba(255, 255, 255, 0.02);">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <div class="contact-section">
+                <form action="mailto:contact@wardeffect.com" method="GET" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="interest">I'm Interested In:</label>
+                        <select id="interest" name="subject" required>
+                            <option value="">-- Select Option --</option>
+                            <option value="Preferred Supplier Inquiry">Becoming a Preferred Supplier</option>
+                            <option value="Manufacturing Partnership">Manufacturing Partnership</option>
+                            <option value="Open-Source Donation">Supporting Open-Source Development</option>
+                            <option value="Purchase Inquiry">Purchasing a System</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization:</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="body" required placeholder="Tell us about your interest in WardFlow..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                </form>
+                <p style="text-align: center; margin-top: 20px; color: #a0b4c8;">
+                    Or email directly: <a href="mailto:contact@wardeffect.com" style="color: #4c9aff;">contact@wardeffect.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ward Effect Technology. Open source for water purification.</p>
+        <p>Operated by David Ward, Tacloban, Eastern Visayas, Philippines</p>
+        <p style="margin-top: 15px;"><a href="mailto:contact@wardeffect.com" style="color: #4c9aff;">contact@wardeffect.com</a></p>
+        <p style="margin-top: 15px;">
+            <a href="index.html">Home</a> | 
+            <a href="licensing.html">Licensing</a> |
+            <a href="pathogen-safety.html">Pathogen Safety</a> |
+            <a href="inverted-triangle.html">Research Structure</a> |
+            <a href="drain-desilting.html">Drain De-Silting</a> |
+            <a href="gallery.html">Transparency</a> |
+            <a href="donate.html">Donate</a>
+        </p>
+        <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.7;">
+            Patents: NZ 738314, NZ 739314, NZ 770993, NZ 778527, US 11,287,302 B2, PH 1/2019/550219, India
+        </p>
+    </footer>
+
+    <script>
+        function switchTab(index) {
+            // Remove active class from all
+            const buttons = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Add active to selected
+            buttons[index].classList.add('active');
+            document.getElementById('tab-' + index).classList.add('active');
+            
+            // Scroll to tabs
+            document.querySelector('.tabs').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+</body>
+</html>
