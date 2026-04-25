@@ -1,1 +1,199 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ward Effect Technology - Mission</title></head><body><p>TEST2</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ward Effect Technology - Mission</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1D3A;--navy-mid:#112240;--navy-light:#1a3a6b;--amber:#E8A838;--amber-light:#F2C46D;--white:#FFFFFF;--text-muted:rgba(255,255,255,0.65);--border:rgba(232,168,56,0.2);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Exo 2',sans-serif;background:var(--navy);color:var(--white);-webkit-font-smoothing:antialiased;}
+nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 2.5rem;height:60px;flex-wrap:wrap;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--amber);text-decoration:none;white-space:nowrap;margin-right:2.5rem;flex-shrink:0;}
+.nav-links{display:flex;align-items:center;gap:2rem;flex:1;}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:0.88rem;text-transform:uppercase;transition:color 0.2s;}
+.nav-links a:hover{color:var(--amber-light);}
+.nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.4rem 1rem;border-radius:4px;font-weight:600!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;flex-shrink:0;}
+.hamburger span{display:block;width:26px;height:3px;background:var(--amber);border-radius:2px;}
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:5rem 2rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(232,168,56,0.07) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{max-width:900px;position:relative;}
+.hero-eyebrow{display:inline-block;font-size:0.78rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);border:1px solid var(--border);padding:0.4rem 1.2rem;border-radius:2px;margin-bottom:2rem;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:600;line-height:1.1;color:var(--white);margin-bottom:1.5rem;}
+.hero h1 em{color:var(--amber-light);font-style:italic;}
+.hero-mission{font-size:clamp(1.1rem,2vw,1.35rem);color:var(--text-muted);line-height:1.8;max-width:750px;margin:0 auto 2.5rem;}
+.hero-bucket{background:rgba(232,168,56,0.08);border:2px solid var(--amber);border-radius:8px;display:inline-block;padding:1.2rem 2.5rem;margin:1rem 0 2.5rem;}
+.bucket-label{font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:0.3rem;}
+.bucket-goal{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--white);}
+.bucket-sub{font-size:0.9rem;color:var(--text-muted);}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn-primary{background:var(--amber);color:var(--navy);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s;}
+.btn-primary:hover{background:var(--amber-light);transform:translateY(-2px);}
+.btn-outline{background:transparent;color:var(--amber);border:1px solid var(--amber);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:500;font-size:0.95rem;transition:all 0.2s;}
+.pillars{padding:6rem 2rem;background:var(--navy-mid);}
+.pillars-inner{max-width:1100px;margin:0 auto;}
+.section-label{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;display:block;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;color:var(--white);margin-bottom:3.5rem;}
+.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
+.pillar{border-top:2px solid var(--border);padding-top:2rem;}
+.pillar-number{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:rgba(232,168,56,0.2);line-height:1;margin-bottom:1rem;}
+.pillar h3{font-size:1rem;font-weight:600;color:var(--amber-light);margin-bottom:0.8rem;text-transform:uppercase;}
+.pillar p{color:var(--text-muted);font-size:0.95rem;line-height:1.75;}
+.principle{padding:6rem 2rem;background:var(--navy);}
+.principle-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;}
+.principle-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:600;color:var(--white);line-height:1.25;margin-bottom:1.5rem;margin-top:1rem;}
+.principle-text p{color:var(--text-muted);font-size:1rem;line-height:1.8;margin-bottom:1rem;}
+.principle-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.stat-box{background:rgba(232,168,56,0.05);border:1px solid var(--border);border-radius:6px;padding:1.5rem;text-align:center;}
+.stat-number{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;color:var(--amber);line-height:1;}
+.stat-label{font-size:0.8rem;color:var(--text-muted);margin-top:0.4rem;text-transform:uppercase;}
+.applications{padding:6rem 2rem;background:var(--navy-mid);}
+.applications-inner{max-width:1100px;margin:0 auto;}
+.apps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;}
+.app-card{background:var(--navy);border:1px solid var(--border);border-radius:6px;padding:1.8rem 1.5rem;transition:border-color 0.2s,transform 0.2s;}
+.app-card:hover{border-color:var(--amber);transform:translateY(-3px);}
+.app-icon{font-size:2rem;margin-bottom:1rem;}
+.app-card h3{font-size:0.9rem;font-weight:600;color:var(--amber-light);text-transform:uppercase;margin-bottom:0.6rem;}
+.app-card p{font-size:0.88rem;color:var(--text-muted);line-height:1.6;}
+.cta-banner{padding:6rem 2rem;background:var(--navy-light);border-top:1px solid var(--border);text-align:center;}
+.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;color:var(--white);margin-bottom:1rem;}
+.cta-banner p{color:var(--text-muted);font-size:1.1rem;max-width:600px;margin:0 auto 2rem;}
+footer{background:rgba(5,12,25,0.95);padding:3rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--border);}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--amber);font-weight:600;}
+.footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+.footer-links a{color:var(--text-muted);text-decoration:none;font-size:0.85rem;}
+.footer-links a:hover{color:var(--amber-light);}
+footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
+@media(min-width:769px){.nav-links{display:flex!important;}.hamburger{display:none!important;}}
+@media(max-width:768px){
+  nav{height:auto;padding:0.8rem 1rem;}
+  .nav-logo{flex:1;}
+  .hamburger{display:flex;order:2;}
+  .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;}
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);}
+  .pillars-grid{grid-template-columns:1fr;}
+  .principle-inner{grid-template-columns:1fr;gap:3rem;}
+  .apps-grid{grid-template-columns:repeat(2,1fr);}
+  footer{flex-direction:column;text-align:center;}
+}
+@media(max-width:480px){.apps-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Ward Effect&#8482;</a>
+  <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  <div class="nav-links">
+    <a href="index.html">Mission</a>
+    <a href="patents.html">Patents</a>
+    <a href="technology.html">Technology</a>
+    <a href="commercialisation.html">Commercialisation</a>
+    <a href="about.html">About</a>
+    <a href="https://wardscope.com/affiliates.html" class="nav-cta">Apply</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Ward Effect Technology &#8212; Est. 2008</div>
+    <h1>Technology That <em>Improves</em> Every Life It Touches</h1>
+    <p class="hero-mission">All improvement in living conditions is the result of improved technology. Old technology is replaced by better technology that is always less expensive. Our aim is to provide technology that is at least half the cost of existing solutions &#8212; with twice the performance.</p>
+    <div class="hero-bucket">
+      <div class="bucket-label">Primary Mission</div>
+      <div class="bucket-goal">The $5 Water Purification Bucket</div>
+      <div class="bucket-sub">Chemical-free. Safe drinking water for every person on earth.</div>
+    </div>
+    <div class="hero-btns">
+      <a href="technology.html" class="btn-primary">Explore the Technology</a>
+      <a href="https://wardscope.com/affiliates.html" class="btn-outline">Commercial Opportunities</a>
+    </div>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="pillars-inner">
+    <span class="section-label">Our Principles</span>
+    <h2 class="section-title">Three Laws of Technological Progress</h2>
+    <div class="pillars-grid">
+      <div class="pillar">
+        <div class="pillar-number">01</div>
+        <h3>Better Replaces Good</h3>
+        <p>All improvement in living conditions follows from improved technology. Every generation of technology is replaced by the next. Ward Effect Technology is that next generation.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-number">02</div>
+        <h3>Half the Cost</h3>
+        <p>New technology must cost less than what it replaces. Our standard: at least half the cost of existing solutions. Transformative price reductions that put technology within reach of every person on earth.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-number">03</div>
+        <h3>Twice the Performance</h3>
+        <p>Cost reduction alone is not enough. Ward Effect technology delivers at minimum twice the performance of existing solutions. Less cost. More capability. Every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principle">
+  <div class="principle-inner">
+    <div class="principle-text">
+      <span class="section-label">The Science</span>
+      <h2>A Breakthrough 50 Years in the Making</h2>
+      <p>The Ward Effect deliberately engineers stable parasitic oscillation in a sensing circuit where the medium being measured is physically inside the feedback loop. The oscillation fingerprint changes measurably based on the condition of that medium.</p>
+      <p>The result: nano-resolution measurement of physical and chemical properties without expensive laboratory equipment, without consumables, without trained operators.</p>
+      <p>Five patents granted. Twelve provisional applications filed. Protected across five jurisdictions including New Zealand, USA, and India.</p>
+    </div>
+    <div class="principle-stats">
+      <div class="stat-box"><div class="stat-number">5</div><div class="stat-label">Patents Granted</div></div>
+      <div class="stat-box"><div class="stat-number">50+</div><div class="stat-label">Years Research</div></div>
+      <div class="stat-box"><div class="stat-number">$5</div><div class="stat-label">Target Cost</div></div>
+      <div class="stat-box"><div class="stat-number">2x</div><div class="stat-label">Performance Target</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="applications">
+  <div class="applications-inner">
+    <span class="section-label">Applications</span>
+    <h2 class="section-title">Where Ward Effect Changes Everything</h2>
+    <div class="apps-grid">
+      <div class="app-card"><div class="app-icon">&#128167;</div><h3>Water Purification</h3><p>Chemical-free drinking water purification. The $5 bucket target. Open source for humanitarian use worldwide.</p></div>
+      <div class="app-card"><div class="app-icon">&#128295;</div><h3>Pipeline Integrity</h3><p>Real-time leak detection and structural monitoring for water, gas, and industrial pipelines.</p></div>
+      <div class="app-card"><div class="app-icon">&#127754;</div><h3>Drain De-Silting</h3><p>Non-invasive detection and monitoring of sediment buildup in drainage and irrigation systems.</p></div>
+      <div class="app-card"><div class="app-icon">&#127959;</div><h3>Structural Testing</h3><p>Acoustic sensing for structural integrity assessment of bridges, buildings, and infrastructure.</p></div>
+      <div class="app-card"><div class="app-icon">&#129514;</div><h3>Chemical Detection</h3><p>Chlorine dosing monitoring and contaminant detection without laboratory equipment.</p></div>
+      <div class="app-card"><div class="app-icon">&#129440;</div><h3>Pathogen Safety</h3><p>Biofilm and pathogen detection in water systems, food processing, and medical facilities.</p></div>
+      <div class="app-card"><div class="app-icon">&#9889;</div><h3>Cavitation Control</h3><p>Detection and characterisation of cavitation in pumps, valves, and water treatment systems.</p></div>
+      <div class="app-card"><div class="app-icon">&#128225;</div><h3>Spectrum Analysis</h3><p>Professional FFT spectrum analysis tools. WardScope PC and Mobile available now worldwide.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>The Opportunity Is Open</h2>
+  <p>Ward Effect Technology is available for commercial licensing, territorial manufacturing, and affiliate distribution. All water purification applications will be open-sourced upon validation.</p>
+  <a href="https://wardscope.com/affiliates.html" class="btn-primary">View Commercial Opportunities</a>
+</section>
+
+<footer>
+  <div class="footer-logo">Ward Effect&#8482; Technology</div>
+  <div class="footer-links">
+    <a href="index.html">Mission</a>
+    <a href="patents.html">Patents</a>
+    <a href="technology.html">Technology</a>
+    <a href="commercialisation.html">Commercialisation</a>
+    <a href="about.html">About</a>
+    <a href="https://wardscope.com">WardScope.com</a>
+  </div>
+  <p>&#169; 2026 Ward Effect Technology. Tacloban, Philippines.</p>
+</footer>
+
+<script>
+document.addEventListener('click',function(e){if(!e.target.closest('#lang-selector')){}});
+</script>
+</body>
+</html>
