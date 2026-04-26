@@ -4,19 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Commercialisation - Ward Effect Technology</title>
+<meta name="description" content="Ward Effect Technology devices available for wholesale purchase by affiliates. One base unit, twenty applications.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0B1D3A;--navy-mid:#112240;--navy-light:#1a3a6b;--amber:#E8A838;--amber-light:#F2C46D;--white:#FFFFFF;--text-muted:rgba(255,255,255,0.65);--border:rgba(232,168,56,0.2);}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Exo 2',sans-serif;background:var(--navy);color:var(--white);-webkit-font-smoothing:antialiased;}
+
 nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 2.5rem;height:60px;flex-wrap:wrap;}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--amber);text-decoration:none;white-space:nowrap;margin-right:2.5rem;flex-shrink:0;}
 .nav-links{display:flex;align-items:center;gap:2rem;flex:1;}
 .nav-links a{color:var(--text-muted);text-decoration:none;font-size:0.88rem;text-transform:uppercase;transition:color 0.2s;}
-.nav-links a:hover{color:var(--amber-light);}
+.nav-links a:hover,.nav-links a.active{color:var(--amber-light);}
 .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.4rem 1rem;border-radius:4px;font-weight:600!important;}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;flex-shrink:0;}
 .hamburger span{display:block;width:26px;height:3px;background:var(--amber);border-radius:2px;}
+
 .hero{padding:6rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(232,168,56,0.06) 0%,transparent 60%);pointer-events:none;}
 .hero-inner{max-width:800px;margin:0 auto;position:relative;}
@@ -24,64 +27,69 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bott
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:600;line-height:1.1;color:var(--white);margin-bottom:1.2rem;}
 .hero h1 em{color:var(--amber-light);font-style:italic;}
 .hero p{font-size:1.1rem;color:var(--text-muted);line-height:1.8;max-width:650px;margin:0 auto;}
+
 .section{padding:5rem 2rem;max-width:1100px;margin:0 auto;}
 .section-label{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;display:block;}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:600;color:var(--white);margin-bottom:2.5rem;}
-.patent-card{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:6px;padding:2rem;margin-bottom:1.5rem;}
-.patent-card.pending{border-left-color:var(--amber-light);background:rgba(26,58,107,0.3);}
-.patent-id{font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--amber);margin-bottom:0.6rem;}
-.patent-card.pending .patent-id{color:var(--amber-light);}
-.patent-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--white);margin-bottom:0.8rem;}
-.patent-meta{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;}
-.patent-badge{font-size:0.75rem;background:rgba(232,168,56,0.1);border:1px solid var(--border);color:var(--amber-light);padding:0.25rem 0.8rem;border-radius:20px;}
-.patent-badge.new{background:var(--amber);color:var(--navy);font-weight:700;border-color:var(--amber);}
-.patent-desc{color:var(--text-muted);font-size:0.95rem;line-height:1.75;}
-.patent-claims{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
-.patent-claims h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--amber);margin-bottom:0.6rem;}
-.patent-claims ul{list-style:none;display:flex;flex-wrap:wrap;gap:0.5rem;}
-.patent-claims ul li{font-size:0.82rem;color:var(--text-muted);background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:0.25rem 0.7rem;border-radius:4px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:600;color:var(--white);margin-bottom:1.5rem;}
+
+/* Model cards */
+.model-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:4rem;}
+.model-card{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-radius:8px;padding:2rem;}
+.model-card.featured{border-color:var(--amber);border-left:3px solid var(--amber);}
+.model-card h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--white);margin-bottom:0.8rem;}
+.model-card p{color:var(--text-muted);font-size:0.95rem;line-height:1.75;}
+.model-label{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:0.5rem;display:block;}
+
+/* Device table */
+.table-wrap{overflow-x:auto;margin-top:2rem;}
+table{width:100%;border-collapse:collapse;font-size:0.92rem;}
+thead tr{border-bottom:1px solid var(--amber);opacity:0.7;}
+thead th{text-align:left;padding:0.7rem 1rem;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);font-weight:500;}
+tbody tr{border-bottom:1px solid var(--border);transition:background 0.15s;}
+tbody tr:hover{background:rgba(232,168,56,0.03);}
+tbody tr:last-child{border-bottom:none;}
+tbody td{padding:0.85rem 1rem;color:var(--text-muted);vertical-align:middle;}
+tbody td:first-child{color:rgba(255,255,255,0.3);font-size:0.78rem;width:36px;text-align:center;}
+tbody td:nth-child(2){color:var(--white);font-weight:500;}
+.section-row td{background:rgba(232,168,56,0.05);color:var(--amber)!important;font-size:0.72rem!important;letter-spacing:0.2em;text-transform:uppercase;padding:0.5rem 1rem!important;font-weight:500;}
+.section-row td:first-child{color:var(--amber)!important;}
+
+.badge{display:inline-block;font-size:0.72rem;font-weight:500;padding:0.2rem 0.7rem;border-radius:20px;border:1px solid var(--border);color:var(--amber-light);background:rgba(232,168,56,0.08);white-space:nowrap;}
+
+.note-box{background:rgba(232,168,56,0.05);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:6px;padding:1.5rem 2rem;margin:3rem 0;color:var(--text-muted);font-size:0.95rem;line-height:1.75;}
+.note-box strong{color:var(--amber-light);}
+
 .divider{height:1px;background:var(--border);margin:3rem 0;}
+
 .cta-banner{padding:5rem 2rem;background:var(--navy-light);border-top:1px solid var(--border);text-align:center;}
 .cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--white);margin-bottom:1rem;}
 .cta-banner p{color:var(--text-muted);font-size:1.05rem;max-width:600px;margin:0 auto 2rem;}
 .btn-primary{background:var(--amber);color:var(--navy);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s;display:inline-block;}
 .btn-primary:hover{background:var(--amber-light);}
+
 footer{background:rgba(5,12,25,0.95);padding:3rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--border);}
 .footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--amber);font-weight:600;}
 .footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
 .footer-links a{color:var(--text-muted);text-decoration:none;font-size:0.85rem;}
 .footer-links a:hover{color:var(--amber-light);}
 footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
+
 @media(min-width:769px){.nav-links{display:flex!important;}.hamburger{display:none!important;}}
-@media(max-width:768px){nav{height:auto;padding:0.8rem 1rem;} .nav-logo{flex:1;} .hamburger{display:flex;order:2;} .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;} .nav-links.open{display:flex;} .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);} .patent-meta{gap:0.5rem;} footer{flex-direction:column;text-align:center;}}
-</style>
-<style>
-table{width:100%;border-collapse:collapse;margin-top:2rem;}
-thead tr{background:rgba(232,168,56,0.1);border-bottom:2px solid var(--amber);}
-th{font-family:'Exo 2',sans-serif;font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--amber);padding:1rem 1.2rem;text-align:left;}
-td{padding:1rem 1.2rem;font-size:0.92rem;color:var(--text-muted);border-bottom:1px solid var(--border);vertical-align:top;line-height:1.6;}
-tr:hover td{background:rgba(232,168,56,0.03);}
-tr.section-row td{background:rgba(11,29,58,0.8);color:var(--amber);font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.15em;padding:0.6rem 1.2rem;border-bottom:1px solid var(--amber);}
-.status{display:inline-block;font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;padding:0.2rem 0.7rem;border-radius:20px;}
-.status-exists{background:rgba(34,197,94,0.12);color:#4ade80;border:1px solid rgba(34,197,94,0.3);}
-.status-phase1{background:rgba(232,168,56,0.2);color:var(--amber);border:1px solid var(--amber);}
-.status-phase2{background:rgba(232,168,56,0.1);color:var(--amber-light);border:1px solid var(--border);}
-.status-phase3{background:rgba(232,168,56,0.06);color:rgba(242,196,109,0.6);border:1px solid rgba(232,168,56,0.2);}
-.status-phase4{background:rgba(99,102,241,0.1);color:#818cf8;border:1px solid rgba(99,102,241,0.3);}
-.status-planned{background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.35);border:1px solid rgba(255,255,255,0.1);}
-.app-name{color:var(--white);font-weight:500;}
-.platform-box{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-radius:8px;padding:2.5rem;margin-bottom:2rem;}
-.platform-box p{color:var(--text-muted);font-size:1rem;line-height:1.85;margin-bottom:1rem;}
-.platform-box p:last-child{margin-bottom:0;}
-.platform-box strong{color:var(--white);}
-.adaptor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem;}
-.adaptor-item{border-top:2px solid var(--border);padding-top:1.5rem;}
-.adaptor-item h4{font-size:0.9rem;font-weight:600;color:var(--amber-light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.6rem;}
-.adaptor-item p{font-size:0.88rem;color:var(--text-muted);line-height:1.7;}
-@media(max-width:768px){th,td{padding:0.7rem 0.6rem;font-size:0.82rem;}.hide-mobile{display:none;}.adaptor-grid{grid-template-columns:1fr;}}
+@media(max-width:768px){
+  nav{height:auto;padding:0.8rem 1rem;}
+  .nav-logo{flex:1;}
+  .hamburger{display:flex;order:2;}
+  .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;}
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);}
+  .model-grid{grid-template-columns:1fr;}
+  thead th:last-child,tbody td:last-child{display:none;}
+  footer{flex-direction:column;text-align:center;}
+}
 </style>
 </head>
 <body>
+
 <nav>
   <a href="index.html" class="nav-logo">Ward Effect&#8482;</a>
   <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -89,7 +97,7 @@ tr.section-row td{background:rgba(11,29,58,0.8);color:var(--amber);font-size:0.7
     <a href="index.html">Mission</a>
     <a href="patents.html">Patents</a>
     <a href="technology.html">Technology</a>
-    <a href="commercialisation.html">Commercialisation</a>
+    <a href="commercialisation.html" class="active">Commercialisation</a>
     <a href="about.html">About</a>
     <a href="https://wardscope.com/affiliates.html" class="nav-cta">Apply</a>
   </div>
@@ -97,309 +105,94 @@ tr.section-row td{background:rgba(11,29,58,0.8);color:var(--amber);font-size:0.7
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">Commercial Applications</div>
-    <h1>Ward Effect <em>Applications</em></h1>
-    <p>One base unit — library-configured for each application. The speaker and microphone module is interchangeable, adapting the same core hardware to every use case.</p>
+    <div class="hero-eyebrow">Affiliate Programme</div>
+    <h1>One Base Unit.<br><em>Twenty Applications.</em></h1>
+    <p>Ward Effect devices are sold wholesale to affiliates. Each device is built on a single universal base unit — the Ward Effect Node — with interchangeable application heads and libraries.</p>
   </div>
 </section>
 
 <div class="section">
 
-  <!-- PLATFORM CONCEPT -->
-  <span class="section-label">The Platform</span>
-  <h2 class="section-title">One Base Unit — Interchangeable Modules</h2>
+  <span class="section-label">The Model</span>
+  <h2 class="section-title">How It Works</h2>
 
-  <div class="platform-box">
-    <p>Ward Effect Technology is built around a single base unit — the same concept as a digital multimeter that measures voltage, current, resistance, and continuity with the same instrument, or a professional power tool platform where one battery and motor unit accepts twenty different tool heads.</p>
-    <p>The Ward Effect base unit contains the microcontroller, amplifier, LEF library system, power management, and communications. <strong>What changes between applications is the transducer module</strong> — the speaker and microphone configuration adapted for the specific measurement task. A contact transducer on a pipe detects leaks. A submerged module in a bucket purifies water. A surface-mounted array on a tile detects delamination. A clamp-on module on a tank monitors chlorine. The base unit is identical in every case.</p>
-    <p>The library does the rest. Each application loads its own LEF library — the pre-built set of oscillation fingerprints for that specific measurement task. Swapping the transducer module and loading the matching library reconfigures the instrument completely. No new electronics. No new firmware. No new training.</p>
-  </div>
-
-  <div class="adaptor-grid">
-    <div class="adaptor-item">
-      <h4>&#9881; The Base Unit</h4>
-      <p>ESP32 microcontroller, LM386 amplifier, LEF library system, LoRa mesh networking, LiPo power management, SD logging. One unit. All applications. Target cost: 5 at scale.</p>
+  <div class="model-grid">
+    <div class="model-card featured">
+      <span class="model-label">Core hardware</span>
+      <h3>The Base Unit</h3>
+      <p>The Ward Effect Node — LM386 amplifier and ESP32 microcontroller. This is the universal instrument. It does not change between applications. Affiliates sell the base unit as the entry product.</p>
     </div>
-    <div class="adaptor-item">
-      <h4>&#128268; Interchangeable Modules</h4>
-      <p>Contact transducers, clamp-on sensors, submerged probes, surface-mounted arrays, flexible PVDF sheets. Each module is a speaker/microphone pair configured for its application — like a power tool adaptor.</p>
-    </div>
-    <div class="adaptor-item">
-      <h4>&#128218; The Library</h4>
-      <p>Each application ships with its own LEF library — pre-built oscillation fingerprints for that measurement task. Swap the module, load the library, the instrument is reconfigured. No new hardware required.</p>
+    <div class="model-card">
+      <span class="model-label">Application system</span>
+      <h3>Head + Library</h3>
+      <p>Each application requires a matching transducer head — the mic/speaker assembly shaped and housed for the specific task — and a spectral fingerprint library loaded into the unit. Head and library are sold as upgrades.</p>
     </div>
   </div>
 
-  <!-- APPLICATION TABLE -->
-  
-  <!-- COMMERCIAL MODEL -->
-  <div style="margin-top:4rem;">
-    <span class="section-label">Commercial Model</span>
-    <h2 class="section-title">Buy the Base — Add What You Need</h2>
-
-    <div class="platform-box">
-      <p>The Ward Effect commercial model is straightforward. The customer buys one base unit. Every additional application is unlocked by purchasing the matching transducer module and library. The base unit never changes. Capability grows with each module added.</p>
-      <p>Each application module is available in <strong>wired or wireless configuration</strong>. The choice is entirely application-driven — wired for fixed, accessible targets where a cable is no inconvenience; wireless for remote, rotating, submerged, or hazardous environments where cable access is impractical. The base unit accepts both. The Ward Effect locks onto a stable oscillation in either configuration — the fingerprint library is simply built for the chosen setup.</p>
-    </div>
-
-    <!-- Flow diagram -->
-    <div style="display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:0;align-items:center;margin:2.5rem 0;text-align:center;">
-      <div style="background:rgba(232,168,56,0.08);border:2px solid var(--amber);border-radius:8px;padding:1.5rem;">
-        <div style="font-size:2rem;margin-bottom:0.5rem;">&#9881;</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--white);font-weight:600;margin-bottom:0.3rem;">Base Unit</div>
-        <div style="font-size:0.78rem;color:var(--text-muted);">One-time purchase<br>ESP32 · Amplifier · LEF System</div>
-      </div>
-      <div style="font-size:1.5rem;color:var(--amber);padding:0 1rem;">+</div>
-      <div style="background:rgba(232,168,56,0.05);border:1px solid var(--border);border-radius:8px;padding:1.5rem;">
-        <div style="font-size:2rem;margin-bottom:0.5rem;">&#128268;</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--white);font-weight:600;margin-bottom:0.3rem;">Transducer Module</div>
-        <div style="font-size:0.78rem;color:var(--text-muted);">Wired or Wireless<br>Speaker · Mic · Casing</div>
-      </div>
-      <div style="font-size:1.5rem;color:var(--amber);padding:0 1rem;">+</div>
-      <div style="background:rgba(232,168,56,0.05);border:1px solid var(--border);border-radius:8px;padding:1.5rem;">
-        <div style="font-size:2rem;margin-bottom:0.5rem;">&#128218;</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--white);font-weight:600;margin-bottom:0.3rem;">Application Library</div>
-        <div style="font-size:0.78rem;color:var(--text-muted);">Software purchase<br>LEF fingerprint database</div>
-      </div>
-    </div>
-
-    <!-- Wired vs Wireless -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;">
-      <div style="border-top:2px solid var(--amber);padding-top:1.5rem;">
-        <h4 style="color:var(--amber-light);font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.8rem;">&#128395; Wired Module</h4>
-        <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.7;margin-bottom:0.8rem;">Standard plug connector. No battery required. Ideal for fixed, accessible targets where a cable presents no inconvenience.</p>
-        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.6;"><strong style="color:rgba(255,255,255,0.5);">Best for:</strong> Pipes, tanks, tiles, laboratory equipment, structural testing, fixed monitoring installations.</p>
-      </div>
-      <div style="border-top:2px solid var(--border);padding-top:1.5rem;">
-        <h4 style="color:var(--amber-light);font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.8rem;">&#128225; Wireless Module</h4>
-        <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.7;margin-bottom:0.8rem;">Battery powered transducer. Same base unit, same library system. The fingerprint is built for the wireless configuration.</p>
-        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.6;"><strong style="color:rgba(255,255,255,0.5);">Best for:</strong> Ship hulls, buried pipes, rotating machinery, offshore structures, hazardous or inaccessible locations.</p>
-      </div>
-    </div>
-
-    <!-- Example journey -->
-    <div style="background:rgba(11,29,58,0.6);border:1px solid var(--border);border-radius:8px;padding:2rem;">
-      <h4 style="color:var(--amber);font-size:0.82rem;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:1.2rem;">Example Customer Journey</h4>
-      <div style="display:flex;flex-direction:column;gap:0.8rem;">
-        <div style="display:flex;align-items:flex-start;gap:1rem;">
-          <div style="background:var(--amber);color:var(--navy);font-size:0.72rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px;white-space:nowrap;margin-top:0.1rem;">Step 1</div>
-          <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.6;margin:0;">Buys <strong style="color:var(--white);">base unit</strong> with wired tile testing module and library. Immediately operational for detecting hollow tiles and delamination on construction sites.</p>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:1rem;">
-          <div style="background:var(--amber);color:var(--navy);font-size:0.72rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px;white-space:nowrap;margin-top:0.1rem;">Step 2</div>
-          <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.6;margin:0;">Adds <strong style="color:var(--white);">pipeline leak detection module + library</strong>. Same base unit now detects leaks in water mains. Wired module — fixed installation.</p>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:1rem;">
-          <div style="background:var(--amber);color:var(--navy);font-size:0.72rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px;white-space:nowrap;margin-top:0.1rem;">Step 3</div>
-          <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.6;margin:0;">Adds <strong style="color:var(--white);">wireless marine fouling module + library</strong>. Same base unit now monitors hull fouling remotely. Wireless chosen — submerged, inaccessible surface.</p>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:1rem;">
-          <div style="background:rgba(232,168,56,0.3);color:var(--amber);font-size:0.72rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px;white-space:nowrap;margin-top:0.1rem;">Result</div>
-          <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.6;margin:0;">Three applications. One base unit. Hardware purchased once. Revenue generated per module and per library sold.</p>
-        </div>
-      </div>
-    </div>
+  <div class="note-box">
+    <strong>For affiliates:</strong> Buy the base unit and application heads at wholesale price. Sell at retail. As your customers expand into new applications, they purchase additional heads and libraries — ongoing revenue from a single installed base.
   </div>
 
-<div style="margin-top:4rem;"><span style="font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:#E8A838;margin-bottom:1rem;display:block;">Commercial Model</span><h2 style="font-family:Cormorant Garamond,serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:600;color:#FFFFFF;margin-bottom:1.5rem;">Buy the Base — Add What You Need</h2><div style="background:rgba(232,168,56,0.04);border:1px solid rgba(232,168,56,0.2);border-radius:8px;padding:2.5rem;margin-bottom:2rem;"><p style="color:rgba(255,255,255,0.65);font-size:1rem;line-height:1.85;margin-bottom:1rem;">The customer buys one base unit. Every additional application is unlocked by purchasing the matching transducer module and library. The base unit never changes. Capability grows with each module added.</p><p style="color:rgba(255,255,255,0.65);font-size:1rem;line-height:1.85;">Each application module is available in <strong style="color:#fff;">wired or wireless configuration</strong>. The choice is entirely application-driven — wired for fixed accessible targets where a cable is no inconvenience; wireless for remote, rotating, submerged, or hazardous environments. The base unit accepts both. The Ward Effect locks onto a stable oscillation in either configuration — the fingerprint library is simply built for the chosen setup.</p></div><div style="display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:0;align-items:center;margin:2.5rem 0;text-align:center;"><div style="background:rgba(232,168,56,0.08);border:2px solid #E8A838;border-radius:8px;padding:1.5rem;"><div style="font-size:2rem;margin-bottom:0.5rem;">&#9881;</div><div style="font-family:Cormorant Garamond,serif;font-size:1.1rem;color:#fff;font-weight:600;margin-bottom:0.3rem;">Base Unit</div><div style="font-size:0.78rem;color:rgba(255,255,255,0.65);">One-time purchase<br>ESP32 · Amplifier · LEF System</div></div><div style="font-size:1.5rem;color:#E8A838;padding:0 1rem;">+</div><div style="background:rgba(232,168,56,0.05);border:1px solid rgba(232,168,56,0.2);border-radius:8px;padding:1.5rem;"><div style="font-size:2rem;margin-bottom:0.5rem;">&#128268;</div><div style="font-family:Cormorant Garamond,serif;font-size:1.1rem;color:#fff;font-weight:600;margin-bottom:0.3rem;">Transducer Module</div><div style="font-size:0.78rem;color:rgba(255,255,255,0.65);">Wired or Wireless<br>Speaker · Mic · Casing</div></div><div style="font-size:1.5rem;color:#E8A838;padding:0 1rem;">+</div><div style="background:rgba(232,168,56,0.05);border:1px solid rgba(232,168,56,0.2);border-radius:8px;padding:1.5rem;"><div style="font-size:2rem;margin-bottom:0.5rem;">&#128218;</div><div style="font-family:Cormorant Garamond,serif;font-size:1.1rem;color:#fff;font-weight:600;margin-bottom:0.3rem;">Application Library</div><div style="font-size:0.78rem;color:rgba(255,255,255,0.65);">Software purchase<br>LEF fingerprint database</div></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;"><div style="border-top:2px solid #E8A838;padding-top:1.5rem;"><h4 style="color:#F2C46D;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.8rem;">Wired Module</h4><p style="color:rgba(255,255,255,0.65);font-size:0.9rem;line-height:1.7;margin-bottom:0.8rem;">Standard plug connector. No battery required. Ideal for fixed accessible targets.</p><p style="color:rgba(255,255,255,0.65);font-size:0.85rem;line-height:1.6;"><strong style="color:rgba(255,255,255,0.4);">Best for:</strong> Pipes, tanks, tiles, laboratory equipment, structural testing, fixed monitoring.</p></div><div style="border-top:2px solid rgba(232,168,56,0.2);padding-top:1.5rem;"><h4 style="color:#F2C46D;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.8rem;">Wireless Module</h4><p style="color:rgba(255,255,255,0.65);font-size:0.9rem;line-height:1.7;margin-bottom:0.8rem;">Battery powered transducer. Same base unit, same library system. Fingerprint built for wireless configuration.</p><p style="color:rgba(255,255,255,0.65);font-size:0.85rem;line-height:1.6;"><strong style="color:rgba(255,255,255,0.4);">Best for:</strong> Ship hulls, buried pipes, rotating machinery, offshore structures, hazardous locations.</p></div></div><div style="background:rgba(11,29,58,0.6);border:1px solid rgba(232,168,56,0.2);border-radius:8px;padding:2rem;"><h4 style="color:#E8A838;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:1.2rem;">Example Customer Journey</h4><div style="display:flex;flex-direction:column;gap:0.8rem;"><div style="display:flex;align-items:flex-start;gap:1rem;"><div style="background:#E8A838;color:#0B1D3A;font-size:0.72rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px;white-space:nowrap;margin-top:0.1rem;">Step 1</div><p style="color:rgba(255,255,255,0.65);font-size:0.9rem;line-height:1.6;margin:0;">Buys <strong style="color:#fff;">base unit</strong> with wired tile testing module and library. Immediately operational for detecting hollow tiles on construction sites.</p></div><div style="display:flex;align-items:flex-start;gap:1rem;"><div style="background:#E8A838;color:#0B1D3A;font-size:0.72rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px;white-space:nowrap;margin-top:0.1rem;">Step 2</div><p style="color:rgba(255,255,255,0.65);font-size:0.9rem;line-height:1.6;margin:0;">Adds <strong style="color:#fff;">pipeline leak detection module + library</strong>. Same base unit now detects leaks in water mains.</p></div><div style="display:flex;align-items:flex-start;gap:1rem;"><div style="background:#E8A838;color:#0B1D3A;font-size:0.72rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px;white-space:nowrap;margin-top:0.1rem;">Step 3</div><p style="color:rgba(255,255,255,0.65);font-size:0.9rem;line-height:1.6;margin:0;">Adds <strong style="color:#fff;">wireless marine fouling module + library</strong>. Same base unit monitors hull fouling remotely.</p></div><div style="display:flex;align-items:flex-start;gap:1rem;"><div style="background:rgba(232,168,56,0.3);color:#E8A838;font-size:0.72rem;font-weight:700;padding:0.2rem 0.6rem;border-radius:20px;white-space:nowrap;margin-top:0.1rem;">Result</div><p style="color:rgba(255,255,255,0.65);font-size:0.9rem;line-height:1.6;margin:0;">Three applications. One base unit. Hardware purchased once. Revenue per module and library sold.</p></div></div></div></div>
-<h2 class="section-title" style="margin-top:4rem;">Application Register</h2>
+  <div class="divider"></div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Application</th>
-        <th>Sector</th>
-        <th class="hide-mobile">What It Measures / Does</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
+  <span class="section-label">Device Catalogue</span>
+  <h2 class="section-title">Products Under Development</h2>
+  <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.75;margin-bottom:0.5rem;">All devices listed below are Ward Effect Technology products in development, to be made available for wholesale to affiliates. The first device to market is the <strong style="color:var(--amber-light);">tile tester</strong>.</p>
 
-      <tr class="section-row"><td colspan="5">Existing — Software Products</td></tr>
-      <tr>
-        <td>1</td>
-        <td><span class="app-name">WardScope PC Analyzer</span></td>
-        <td>Software</td>
-        <td class="hide-mobile">Real-time FFT spectrum analysis for Windows 10/11. 20 memory slots, A/B/C/D weighting, 33 languages.</td>
-        <td><span class="status status-exists">Exists</span></td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td><span class="app-name">WardScope Mobile</span></td>
-        <td>Software</td>
-        <td class="hide-mobile">Real-time FFT spectrum analysis for Android. Free on Play Store, premium from 4.99. GPS, 33 languages.</td>
-        <td><span class="status status-exists">Exists</span></td>
-      </tr>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Device</th>
+          <th>What it measures or controls</th>
+          <th>Sector</th>
+        </tr>
+      </thead>
+      <tbody>
 
-      <tr class="section-row"><td colspan="5">Phase 1 — First Hardware Applications</td></tr>
-      <tr>
-        <td>3</td>
-        <td><span class="app-name">Auto Titration</span></td>
-        <td>Laboratory / Water</td>
-        <td class="hide-mobile">Automated chemical concentration measurement without laboratory reagents or consumables.</td>
-        <td><span class="status status-phase1">Phase 1</span></td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td><span class="app-name">Tile Testing</span></td>
-        <td>Construction / QC</td>
-        <td class="hide-mobile">Non-intrusive detection of hollow tiles, delamination, and adhesive bond failure.</td>
-        <td><span class="status status-phase1">Phase 1</span></td>
-      </tr>
+        <tr class="section-row"><td colspan="4">Construction &amp; materials</td></tr>
+        <tr><td>1</td><td>Tile tester</td><td>Hollow, loose, cracked, or delaminated tiles</td><td><span class="badge">Construction</span></td></tr>
+        <tr><td>2</td><td>Concrete integrity probe</td><td>Voids, cracks, and delamination in concrete slabs</td><td><span class="badge">Construction</span></td></tr>
+        <tr><td>3</td><td>Weld inspector</td><td>Subsurface weld defects and inclusions</td><td><span class="badge">Industrial</span></td></tr>
+        <tr><td>4</td><td>Composite delamination probe</td><td>Layer separation in carbon fibre, fibreglass, and laminates</td><td><span class="badge">Aerospace / marine</span></td></tr>
 
-      <tr class="section-row"><td colspan="5">Phase 2 — Pipeline &amp; Infrastructure</td></tr>
-      <tr>
-        <td>5</td>
-        <td><span class="app-name">Pipeline Leak Detection</span></td>
-        <td>Water / Infrastructure</td>
-        <td class="hide-mobile">Leak location and flow anomaly in buried and above-ground pipelines.</td>
-        <td><span class="status status-phase2">Phase 2</span></td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td><span class="app-name">Drain De-Silting</span></td>
-        <td>Water / Municipal</td>
-        <td class="hide-mobile">Sediment buildup detection in drainage and irrigation systems.</td>
-        <td><span class="status status-phase2">Phase 2</span></td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td><span class="app-name">Water Hammer Detection</span></td>
-        <td>Water / Infrastructure</td>
-        <td class="hide-mobile">Transient pressure event detection and localisation in pipelines.</td>
-        <td><span class="status status-phase2">Phase 2</span></td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td><span class="app-name">Flow Rate Monitoring</span></td>
-        <td>Industrial / Water</td>
-        <td class="hide-mobile">Non-intrusive flow detection and rate measurement.</td>
-        <td><span class="status status-phase2">Phase 2</span></td>
-      </tr>
+        <tr class="section-row"><td colspan="4">Pipeline &amp; infrastructure</td></tr>
+        <tr><td>5</td><td>Pipe leak detector</td><td>Acoustic signature of active leaks in pressurised pipes</td><td><span class="badge">Infrastructure</span></td></tr>
+        <tr><td>6</td><td>Pipe wall thickness probe</td><td>Corrosion and wall thinning — clamp-on, no pipe cutting</td><td><span class="badge">Infrastructure</span></td></tr>
+        <tr><td>7</td><td>Flow composition monitor</td><td>Fluid type and mix — water, oil, slurry, multiphase</td><td><span class="badge">Oil &amp; gas / mining</span></td></tr>
+        <tr><td>8</td><td>Water hammer scanner</td><td>Pressure transient and surge events in pipelines</td><td><span class="badge">Infrastructure</span></td></tr>
+        <tr><td>9</td><td>Blockage locator</td><td>Position and nature of partial or full pipe blockages</td><td><span class="badge">Infrastructure</span></td></tr>
 
-      <tr class="section-row"><td colspan="5">Phase 3 — Water Quality &amp; Treatment</td></tr>
-      <tr>
-        <td>9</td>
-        <td><span class="app-name">Chlorine Dosing Monitoring</span></td>
-        <td>Water Treatment</td>
-        <td class="hide-mobile">Probe-free HOCl speciation and chlorine concentration monitoring.</td>
-        <td><span class="status status-phase3">Phase 3</span></td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td><span class="app-name">Water Quality Monitoring</span></td>
-        <td>Water Treatment</td>
-        <td class="hide-mobile">pH, temperature, chemical composition, and contamination detection.</td>
-        <td><span class="status status-phase3">Phase 3</span></td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td><span class="app-name">Biofilm Detection</span></td>
-        <td>Water / Medical</td>
-        <td class="hide-mobile">Biofilm and bacterial colony growth in pipes and containers at micron scale.</td>
-        <td><span class="status status-phase3">Phase 3</span></td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td><span class="app-name">Pathogen Detection</span></td>
-        <td>Medical / Food Safety</td>
-        <td class="hide-mobile">MRSA, bacteria, pathogens in water systems and food processing surfaces.</td>
-        <td><span class="status status-phase3">Phase 3</span></td>
-      </tr>
+        <tr class="section-row"><td colspan="4">Water &amp; liquids</td></tr>
+        <tr><td>10</td><td>Water quality analyser</td><td>Contaminant identification by spectral fingerprint</td><td><span class="badge">Utilities / labs</span></td></tr>
+        <tr><td>11</td><td>Titration monitor</td><td>Chemical reaction endpoint detection in liquids</td><td><span class="badge">Laboratory / industrial</span></td></tr>
+        <tr><td>12</td><td>Biofilm detector</td><td>Biological fouling on surfaces and inside pipes</td><td><span class="badge">Water / food industry</span></td></tr>
 
-      <tr class="section-row"><td colspan="5">Phase 4 — Humanitarian (Open Source on Validation)</td></tr>
-      <tr>
-        <td>13</td>
-        <td><span class="app-name">Water Purification —  Bucket</span></td>
-        <td>Humanitarian</td>
-        <td class="hide-mobile">Chemical-free cavitation purification. To be open-sourced — free for all humanitarian use worldwide.</td>
-        <td><span class="status status-phase4">Phase 4</span></td>
-      </tr>
+        <tr class="section-row"><td colspan="4">Agriculture &amp; environment</td></tr>
+        <tr><td>13</td><td>Soil composition probe</td><td>Soil density, moisture, and composition by layer</td><td><span class="badge">Agriculture</span></td></tr>
+        <tr><td>14</td><td>Canal de-silting controller</td><td>Controls silt composition feeding a pump — enables silt removal by conventional pumps</td><td><span class="badge">Agriculture / civil</span></td></tr>
+        <tr><td>15</td><td>Tree health probe</td><td>Internal decay, cavities, and rot in timber and trees</td><td><span class="badge">Forestry / arboriculture</span></td></tr>
 
-      <tr class="section-row"><td colspan="5">Planned — Patent Protected</td></tr>
-      <tr>
-        <td>14</td>
-        <td><span class="app-name">Structural Integrity Testing</span></td>
-        <td>Infrastructure</td>
-        <td class="hide-mobile">Acoustic sensing for bridges, buildings, and civil structures.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td><span class="app-name">Reinforced Concrete Testing</span></td>
-        <td>Construction</td>
-        <td class="hide-mobile">Rebar corrosion, delamination, and structural degradation detection.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td><span class="app-name">Marine Fouling Prevention</span></td>
-        <td>Marine</td>
-        <td class="hide-mobile">Biological fouling detection on hulls, propellers, and offshore structures.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
-      <tr>
-        <td>17</td>
-        <td><span class="app-name">Ship Hull Anti-Fouling</span></td>
-        <td>Marine</td>
-        <td class="hide-mobile">Active cavitation anti-fouling — chemical free, low power.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
-      <tr>
-        <td>18</td>
-        <td><span class="app-name">Cavitation Control</span></td>
-        <td>Industrial</td>
-        <td class="hide-mobile">Cavitation detection and characterisation in pumps and valves.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
-      <tr>
-        <td>19</td>
-        <td><span class="app-name">LPG / Fuel Level Sensing</span></td>
-        <td>Energy</td>
-        <td class="hide-mobile">Non-intrusive level detection in pressurised gas containers.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
-      <tr>
-        <td>20</td>
-        <td><span class="app-name">Bearing &amp; Machine Condition</span></td>
-        <td>Industrial</td>
-        <td class="hide-mobile">Wear detection, fault diagnosis, and predictive maintenance.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
-      <tr>
-        <td>21</td>
-        <td><span class="app-name">HVAC Fault Diagnosis</span></td>
-        <td>Building Services</td>
-        <td class="hide-mobile">Hydraulic and compressed air system fault detection.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
-      <tr>
-        <td>22</td>
-        <td><span class="app-name">Domestic Plumbing Diagnosis</span></td>
-        <td>Consumer</td>
-        <td class="hide-mobile">Smartphone-based plumbing fault detection without specialist equipment.</td>
-        <td><span class="status status-planned">Planned</span></td>
-      </tr>
+        <tr class="section-row"><td colspan="4">Food &amp; processing</td></tr>
+        <tr><td>16</td><td>Fermentation monitor</td><td>Fermentation stage tracking in brew, wine, and bioprocess</td><td><span class="badge">Food &amp; beverage</span></td></tr>
+        <tr><td>17</td><td>Homogenisation probe</td><td>Emulsion consistency and particle distribution in processing</td><td><span class="badge">Food / pharma</span></td></tr>
 
-    </tbody>
-  </table>
+        <tr class="section-row"><td colspan="4">Medical &amp; biological</td></tr>
+        <tr><td>18</td><td>Biofilm treatment probe</td><td>Targeted acoustic removal of biological surface attachment</td><td><span class="badge">Medical devices</span></td></tr>
+        <tr><td>19</td><td>Tissue analyser</td><td>Non-invasive acoustic response of biological tissue</td><td><span class="badge">Healthcare</span></td></tr>
+        <tr><td>20</td><td>Bone density probe</td><td>Acoustic measurement of bone mass and structural integrity</td><td><span class="badge">Orthopaedics</span></td></tr>
 
-  <div style="margin-top:2rem;display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;">
-    <div style="display:flex;align-items:center;gap:0.5rem;"><span class="status status-exists">Exists</span><span style="color:var(--text-muted);font-size:0.85rem;">Available now</span></div>
-    <div style="display:flex;align-items:center;gap:0.5rem;"><span class="status status-phase1">Phase 1</span><span style="color:var(--text-muted);font-size:0.85rem;">First hardware applications</span></div>
-    <div style="display:flex;align-items:center;gap:0.5rem;"><span class="status status-phase2">Phase 2</span><span style="color:var(--text-muted);font-size:0.85rem;">Pipeline &amp; infrastructure</span></div>
-    <div style="display:flex;align-items:center;gap:0.5rem;"><span class="status status-phase3">Phase 3</span><span style="color:var(--text-muted);font-size:0.85rem;">Water quality &amp; treatment</span></div>
-    <div style="display:flex;align-items:center;gap:0.5rem;"><span class="status status-phase4">Phase 4</span><span style="color:var(--text-muted);font-size:0.85rem;">Humanitarian — open source</span></div>
-    <div style="display:flex;align-items:center;gap:0.5rem;"><span class="status status-planned">Planned</span><span style="color:var(--text-muted);font-size:0.85rem;">Patent protected — awaiting development</span></div>
+      </tbody>
+    </table>
   </div>
 
 </div>
 
 <section class="cta-banner">
-  <h2>Interested in a Specific Application?</h2>
-  <p>Territorial licensing and manufacturing rights are available. Submit an application through WardScope.com.</p>
-  <a href="https://wardscope.com/affiliates.html" class="btn-primary">View Licensing Opportunities</a>
+  <h2>Become an Affiliate</h2>
+  <p>Wholesale pricing, affiliate support, and application head availability are managed through WardScope.com.</p>
+  <a href="https://wardscope.com/affiliates.html" class="btn-primary">Apply at WardScope.com</a>
 </section>
 
 <footer>
@@ -414,7 +207,6 @@ tr.section-row td{background:rgba(11,29,58,0.8);color:var(--amber);font-size:0.7
   </div>
   <p>&#169; 2026 Ward Effect Technology. Tacloban, Philippines.</p>
 </footer>
+
 </body>
 </html>
-
-

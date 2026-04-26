@@ -17,8 +17,9 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bott
 .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.4rem 1rem;border-radius:4px;font-weight:600!important;}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;flex-shrink:0;}
 .hamburger span{display:block;width:26px;height:3px;background:var(--amber);border-radius:2px;}
-.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:5rem 2rem;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(232,168,56,0.07) 0%,transparent 60%);pointer-events:none;}
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:5rem 2rem;position:relative;overflow:hidden;background-image:url('water-crisis.png');background-size:cover;background-position:center 40%;}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(11,29,58,0.82) 0%,rgba(11,29,58,0.75) 50%,rgba(11,29,58,0.92) 100%);pointer-events:none;}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(232,168,56,0.08) 0%,transparent 65%);pointer-events:none;}
 .hero-inner{max-width:900px;position:relative;}
 .hero-eyebrow{display:inline-block;font-size:0.78rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);border:1px solid var(--border);padding:0.4rem 1.2rem;border-radius:2px;margin-bottom:2rem;}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:600;line-height:1.1;color:var(--white);margin-bottom:1.5rem;}
