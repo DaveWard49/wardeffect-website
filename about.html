@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Ward Effect Technology</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1D3A;--navy-mid:#112240;--navy-light:#1a3a6b;--amber:#E8A838;--amber-light:#F2C46D;--white:#FFFFFF;--text-muted:rgba(255,255,255,0.65);--border:rgba(232,168,56,0.2);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Exo 2',sans-serif;background:var(--navy);color:var(--white);-webkit-font-smoothing:antialiased;}
+nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 2.5rem;height:60px;flex-wrap:wrap;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--amber);text-decoration:none;white-space:nowrap;margin-right:2.5rem;flex-shrink:0;}
+.nav-links{display:flex;align-items:center;gap:2rem;flex:1;}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:0.88rem;text-transform:uppercase;transition:color 0.2s;}
+.nav-links a:hover{color:var(--amber-light);}
+.nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.4rem 1rem;border-radius:4px;font-weight:600!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;flex-shrink:0;}
+.hamburger span{display:block;width:26px;height:3px;background:var(--amber);border-radius:2px;}
+.hero{padding:6rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(232,168,56,0.06) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{max-width:800px;margin:0 auto;position:relative;}
+.hero-eyebrow{display:inline-block;font-size:0.78rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);border:1px solid var(--border);padding:0.4rem 1.2rem;border-radius:2px;margin-bottom:2rem;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:600;line-height:1.1;color:var(--white);margin-bottom:1.2rem;}
+.hero h1 em{color:var(--amber-light);font-style:italic;}
+.hero p{font-size:1.1rem;color:var(--text-muted);line-height:1.8;max-width:650px;margin:0 auto;}
+.section{padding:5rem 2rem;max-width:1100px;margin:0 auto;}
+.section-label{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;display:block;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:600;color:var(--white);margin-bottom:2.5rem;}
+.patent-card{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:6px;padding:2rem;margin-bottom:1.5rem;}
+.patent-card.pending{border-left-color:var(--amber-light);background:rgba(26,58,107,0.3);}
+.patent-id{font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--amber);margin-bottom:0.6rem;}
+.patent-card.pending .patent-id{color:var(--amber-light);}
+.patent-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--white);margin-bottom:0.8rem;}
+.patent-meta{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;}
+.patent-badge{font-size:0.75rem;background:rgba(232,168,56,0.1);border:1px solid var(--border);color:var(--amber-light);padding:0.25rem 0.8rem;border-radius:20px;}
+.patent-badge.new{background:var(--amber);color:var(--navy);font-weight:700;border-color:var(--amber);}
+.patent-desc{color:var(--text-muted);font-size:0.95rem;line-height:1.75;}
+.patent-claims{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
+.patent-claims h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--amber);margin-bottom:0.6rem;}
+.patent-claims ul{list-style:none;display:flex;flex-wrap:wrap;gap:0.5rem;}
+.patent-claims ul li{font-size:0.82rem;color:var(--text-muted);background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:0.25rem 0.7rem;border-radius:4px;}
+.divider{height:1px;background:var(--border);margin:3rem 0;}
+.cta-banner{padding:5rem 2rem;background:var(--navy-light);border-top:1px solid var(--border);text-align:center;}
+.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--white);margin-bottom:1rem;}
+.cta-banner p{color:var(--text-muted);font-size:1.05rem;max-width:600px;margin:0 auto 2rem;}
+.btn-primary{background:var(--amber);color:var(--navy);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s;display:inline-block;}
+.btn-primary:hover{background:var(--amber-light);}
+footer{background:rgba(5,12,25,0.95);padding:3rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--border);}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--amber);font-weight:600;}
+.footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+.footer-links a{color:var(--text-muted);text-decoration:none;font-size:0.85rem;}
+.footer-links a:hover{color:var(--amber-light);}
+footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
+@media(min-width:769px){.nav-links{display:flex!important;}.hamburger{display:none!important;}}
+@media(max-width:768px){nav{height:auto;padding:0.8rem 1rem;} .nav-logo{flex:1;} .hamburger{display:flex;order:2;} .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;} .nav-links.open{display:flex;} .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);} .patent-meta{gap:0.5rem;} footer{flex-direction:column;text-align:center;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Ward Effect&#8482;</a>
+  <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  <div class="nav-links">
+    <a href="index.html">Mission</a>
+    <a href="patents.html">Patents</a>
+    <a href="technology.html">Technology</a>
+    <a href="commercialisation.html">Commercialisation</a>
+    <a href="about.html">About</a>
+    <a href="https://wardscope.com/affiliates.html" class="nav-cta">Apply</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">The Inventor</div>
+    <h1>David Ward &mdash; <em>50 Years</em> of Research</h1>
+    <p>Ward Effect Technology is the work of one inventor, working alone, over five decades of research and experimentation. The result is a portfolio of granted patents and a technology that is ready to change how the world measures, monitors, and purifies water.</p>
+  </div>
+</section>
+
+<div class="section">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-bottom:4rem;">
+    <div>
+      <span class="section-label">Background</span>
+      <h2 class="section-title">The Inventor</h2>
+      <p style="color:var(--text-muted);font-size:1rem;line-height:1.8;margin-bottom:1.2rem;">David Ward is the sole inventor of Ward Effect Technology, based in Tacloban, Eastern Visayas, Philippines. With over 50 years of research experience and a Six Sigma Black Belt background, Dave has applied rigorous process thinking to the development of sensing technology that breaks fundamental assumptions of the field.</p>
+      <p style="color:var(--text-muted);font-size:1rem;line-height:1.8;margin-bottom:1.2rem;">Ward Effect Technology was founded in 2008 to commercialise the core patent portfolio. The humanitarian mission &mdash; the  water purification bucket &mdash; has been the driving goal throughout. All commercial revenue funds the research and development required to validate and open-source this technology.</p>
+      <p style="color:var(--text-muted);font-size:1rem;line-height:1.8;">Dave works alone with electronic components sourced locally in the Philippines and internationally. The Ward Effect Node PCB is designed in KiCad. WardScope software is developed in Python and Flutter. The entire technology stack &mdash; hardware, software, and IP &mdash; is the work of one person.</p>
+    </div>
+    <div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem;">
+        <div class="stat-box"><div class="stat-number">50+</div><div class="stat-label">Years Research</div></div>
+        <div class="stat-box"><div class="stat-number">2008</div><div class="stat-label">Founded</div></div>
+        <div class="stat-box"><div class="stat-number">5</div><div class="stat-label">Patents Granted</div></div>
+        <div class="stat-box"><div class="stat-number">6&#963;</div><div class="stat-label">Black Belt</div></div>
+      </div>
+      <div class="patent-card" style="border-left-color:var(--amber);">
+        <div class="patent-id">Based In</div>
+        <div style="color:var(--white);font-weight:600;margin-bottom:0.4rem;">Tacloban, Eastern Visayas, Philippines</div>
+        <p style="color:var(--text-muted);font-size:0.88rem;line-height:1.6;">All research, development, and patent prosecution conducted from Tacloban. Components sourced from DigiKey, Makerlab, e-Gizmo Manila, Lazada, and Shopee.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <span class="section-label">Credentials</span>
+  <h2 class="section-title">Professional Background</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:4rem;">
+    <div style="border-top:2px solid var(--border);padding-top:1.5rem;">
+      <h3 style="color:var(--amber-light);font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.8rem;">Six Sigma Black Belt</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.7;">50+ large-scale process improvement projects. Rigorous application of statistical process control and measurement system analysis to technology development.</p>
+    </div>
+    <div style="border-top:2px solid var(--border);padding-top:1.5rem;">
+      <h3 style="color:var(--amber-light);font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.8rem;">Sole Inventor</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Named sole inventor on all granted patents. All claims developed, tested, and prosecuted independently. No corporate backing. No institutional funding.</p>
+    </div>
+    <div style="border-top:2px solid var(--border);padding-top:1.5rem;">
+      <h3 style="color:var(--amber-light);font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.8rem;">Full Stack Developer</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Developed WardScope PC (Python/PySide6), WardScope Mobile (Flutter/Android), and Ward Effect Node PCB (KiCad) independently. 33-language localisation across all products.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <span class="section-label">The Mission</span>
+  <h2 class="section-title">Why This Matters</h2>
+
+  <div style="background:rgba(232,168,56,0.05);border:1px solid var(--border);border-radius:8px;padding:3rem;text-align:center;max-width:800px;margin:0 auto;">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--amber-light);font-style:italic;line-height:1.4;margin-bottom:1.5rem;">"All improvement in living conditions is the result of improved technology. Our aim is to provide a bucket that will purify water and cost .00."</div>
+    <div style="font-size:0.85rem;color:var(--text-muted);letter-spacing:0.1em;text-transform:uppercase;">David Ward &mdash; Founder, Ward Effect Technology</div>
+  </div>
+</div>
+
+<section class="cta-banner">
+  <h2>Work With Us</h2>
+  <p>All commercial enquiries, affiliate applications, and licensing proposals are handled through WardScope.com.</p>
+  <a href="https://wardscope.com/affiliates.html" class="btn-primary">Go to WardScope.com</a>
+</section>
+
+<footer>
+  <div class="footer-logo">Ward Effect&#8482; Technology</div>
+  <div class="footer-links">
+    <a href="index.html">Mission</a>
+    <a href="patents.html">Patents</a>
+    <a href="technology.html">Technology</a>
+    <a href="commercialisation.html">Commercialisation</a>
+    <a href="about.html">About</a>
+    <a href="https://wardscope.com">WardScope.com</a>
+  </div>
+  <p>&#169; 2026 Ward Effect Technology. Tacloban, Philippines.</p>
+</footer>
+</body>
+</html>

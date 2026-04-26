@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patents - Ward Effect Technology</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1D3A;--navy-mid:#112240;--navy-light:#1a3a6b;--amber:#E8A838;--amber-light:#F2C46D;--white:#FFFFFF;--text-muted:rgba(255,255,255,0.65);--border:rgba(232,168,56,0.2);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Exo 2',sans-serif;background:var(--navy);color:var(--white);-webkit-font-smoothing:antialiased;}
+nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 2.5rem;height:60px;flex-wrap:wrap;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--amber);text-decoration:none;white-space:nowrap;margin-right:2.5rem;flex-shrink:0;}
+.nav-links{display:flex;align-items:center;gap:2rem;flex:1;}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:0.88rem;text-transform:uppercase;transition:color 0.2s;}
+.nav-links a:hover{color:var(--amber-light);}
+.nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.4rem 1rem;border-radius:4px;font-weight:600!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;flex-shrink:0;}
+.hamburger span{display:block;width:26px;height:3px;background:var(--amber);border-radius:2px;}
+.hero{padding:6rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(232,168,56,0.06) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{max-width:800px;margin:0 auto;position:relative;}
+.hero-eyebrow{display:inline-block;font-size:0.78rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);border:1px solid var(--border);padding:0.4rem 1.2rem;border-radius:2px;margin-bottom:2rem;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:600;line-height:1.1;color:var(--white);margin-bottom:1.2rem;}
+.hero h1 em{color:var(--amber-light);font-style:italic;}
+.hero p{font-size:1.1rem;color:var(--text-muted);line-height:1.8;max-width:650px;margin:0 auto;}
+.section{padding:5rem 2rem;max-width:1100px;margin:0 auto;}
+.section-label{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;display:block;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:600;color:var(--white);margin-bottom:2.5rem;}
+.patent-card{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:6px;padding:2rem;margin-bottom:1.5rem;}
+.patent-card.pending{border-left-color:var(--amber-light);background:rgba(26,58,107,0.3);}
+.patent-id{font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--amber);margin-bottom:0.6rem;}
+.patent-card.pending .patent-id{color:var(--amber-light);}
+.patent-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--white);margin-bottom:0.8rem;}
+.patent-meta{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;}
+.patent-badge{font-size:0.75rem;background:rgba(232,168,56,0.1);border:1px solid var(--border);color:var(--amber-light);padding:0.25rem 0.8rem;border-radius:20px;}
+.patent-badge.new{background:var(--amber);color:var(--navy);font-weight:700;border-color:var(--amber);}
+.patent-desc{color:var(--text-muted);font-size:0.95rem;line-height:1.75;}
+.patent-claims{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
+.patent-claims h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--amber);margin-bottom:0.6rem;}
+.patent-claims ul{list-style:none;display:flex;flex-wrap:wrap;gap:0.5rem;}
+.patent-claims ul li{font-size:0.82rem;color:var(--text-muted);background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:0.25rem 0.7rem;border-radius:4px;}
+.divider{height:1px;background:var(--border);margin:3rem 0;}
+.cta-banner{padding:5rem 2rem;background:var(--navy-light);border-top:1px solid var(--border);text-align:center;}
+.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--white);margin-bottom:1rem;}
+.cta-banner p{color:var(--text-muted);font-size:1.05rem;max-width:600px;margin:0 auto 2rem;}
+.btn-primary{background:var(--amber);color:var(--navy);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s;display:inline-block;}
+.btn-primary:hover{background:var(--amber-light);}
+footer{background:rgba(5,12,25,0.95);padding:3rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--border);}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--amber);font-weight:600;}
+.footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+.footer-links a{color:var(--text-muted);text-decoration:none;font-size:0.85rem;}
+.footer-links a:hover{color:var(--amber-light);}
+footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
+@media(min-width:769px){.nav-links{display:flex!important;}.hamburger{display:none!important;}}
+@media(max-width:768px){nav{height:auto;padding:0.8rem 1rem;} .nav-logo{flex:1;} .hamburger{display:flex;order:2;} .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;} .nav-links.open{display:flex;} .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);} .patent-meta{gap:0.5rem;} footer{flex-direction:column;text-align:center;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Ward Effect&#8482;</a>
+  <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  <div class="nav-links">
+    <a href="index.html">Mission</a>
+    <a href="patents.html">Patents</a>
+    <a href="technology.html">Technology</a>
+    <a href="commercialisation.html">Commercialisation</a>
+    <a href="about.html">About</a>
+    <a href="https://wardscope.com/affiliates.html" class="nav-cta">Apply</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Intellectual Property Portfolio</div>
+    <h1>Patents &amp; <em>Protection</em></h1>
+    <p>Ward Effect Technology is protected by a portfolio of granted patents across five jurisdictions, with additional applications under examination. The IP covers the core Ward Effect principle and its applications across sensing, purification, and structural testing.</p>
+  </div>
+</section>
+
+<div class="section">
+  <span class="section-label">Granted Patents</span>
+  <h2 class="section-title">Confirmed Intellectual Property</h2>
+
+  <div class="patent-card">
+    <div class="patent-id">NZ 739314 &mdash; Granted</div>
+    <div class="patent-title">Electromagnetic Acoustic Sensing System</div>
+    <div class="patent-meta">
+      <span class="patent-badge">New Zealand</span>
+      <span class="patent-badge">Granted</span>
+      <span class="patent-badge">PCT/NZ2019/050002</span>
+    </div>
+    <p class="patent-desc">Foundation patent establishing the core Ward Effect principle &mdash; deliberate engineering of stable parasitic oscillation in a feedback circuit where the medium being measured is physically inside the loop. The oscillation fingerprint changes measurably based on medium condition, enabling nano-resolution measurement without laboratory equipment.</p>
+    <div class="patent-claims">
+      <h4>Key Claims</h4>
+      <ul>
+        <li>Parasitic oscillation feedback loop</li>
+        <li>Medium-inside-circuit architecture</li>
+        <li>Non-intrusive volume measurement</li>
+        <li>Self-calibrating sensing</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="patent-card">
+    <div class="patent-id">NZ 770993 &mdash; Granted</div>
+    <div class="patent-title">Acoustic Sensing and Water Purification System</div>
+    <div class="patent-meta">
+      <span class="patent-badge">New Zealand</span>
+      <span class="patent-badge">Granted</span>
+    </div>
+    <p class="patent-desc">Extends Ward Effect to water purification applications. Covers the use of controlled cavitation and acoustic sensing for chemical-free pathogen destruction, chlorine dosing detection, and water quality monitoring. The foundation of the  water purification bucket mission.</p>
+    <div class="patent-claims">
+      <h4>Key Claims</h4>
+      <ul>
+        <li>Chemical-free water purification</li>
+        <li>Cavitation pathogen destruction</li>
+        <li>Chlorine dosing detection</li>
+        <li>Water quality monitoring</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="patent-card">
+    <div class="patent-id">NZ 778527 &mdash; Granted</div>
+    <div class="patent-title">Library-Configured Acoustic Sensing and Actuation System</div>
+    <div class="patent-meta">
+      <span class="patent-badge">New Zealand</span>
+      <span class="patent-badge">Granted</span>
+    </div>
+    <p class="patent-desc">Covers the LEF (Library Entry Format) sparse library system enabling configurable multi-application sensing from a single hardware platform. The three-tier retrieval architecture allows the same Ward Effect node to serve pipeline leak detection, structural testing, water purification, and drain de-silting applications through library configuration alone.</p>
+    <div class="patent-claims">
+      <h4>Key Claims</h4>
+      <ul>
+        <li>LEF sparse library system</li>
+        <li>Three-tier retrieval architecture</li>
+        <li>Multi-application single platform</li>
+        <li>Library-configured switching</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="patent-card">
+    <div class="patent-id">USA &amp; India &mdash; Granted</div>
+    <div class="patent-title">Ward Effect Technology &mdash; International Portfolio</div>
+    <div class="patent-meta">
+      <span class="patent-badge">United States</span>
+      <span class="patent-badge">India</span>
+      <span class="patent-badge">Philippines</span>
+      <span class="patent-badge">PCT/NZ2019/050002</span>
+      <span class="patent-badge">Granted</span>
+    </div>
+    <p class="patent-desc">Core Ward Effect patents granted in the United States, India, and Philippines via the PCT international patent application PCT/NZ2019/050002. International protection ensures Ward Effect Technology cannot be manufactured or distributed in these major markets without a licence from Ward Effect Technology Ltd.</p>
+    <div class="patent-claims">
+      <h4>Jurisdictions</h4>
+      <ul>
+        <li>New Zealand (3 patents)</li>
+        <li>United States</li>
+        <li>India</li>
+        <li>Philippines</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <span class="section-label">Patent Pending</span>
+  <h2 class="section-title">Applications Under Examination</h2>
+
+  <div class="patent-card pending">
+    <div class="patent-id">Case 831742 &mdash; Now Under Examination at IPONZ</div>
+    <div class="patent-title">Multi Sensor &mdash; Consolidated Application</div>
+    <div class="patent-meta">
+      <span class="patent-badge new">NOW UNDER EXAMINATION</span>
+      <span class="patent-badge">New Zealand</span>
+      <span class="patent-badge">12 Provisionals Consolidated</span>
+    </div>
+    <p class="patent-desc">Consolidates 12 provisional applications into a single comprehensive patent covering the full Ward Effect multi-sensor ecosystem. This application significantly expands the protected IP to cover all current and planned commercial applications of Ward Effect Technology.</p>
+    <div class="patent-claims">
+      <h4>Applications Covered</h4>
+      <ul>
+        <li>Multi-sensor configurations</li>
+        <li>Drain de-silting detection</li>
+        <li>Chlorine dosing monitoring</li>
+        <li>Pipeline leak detection</li>
+        <li>Cavitation water purification</li>
+        <li>Reinforced concrete testing</li>
+        <li>Marine fouling prevention</li>
+        <li>Structural integrity monitoring</li>
+        <li>Pathogen detection</li>
+        <li>Chemical contamination sensing</li>
+        <li>IoT node architecture</li>
+        <li>LoRa mesh networking</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="cta-banner">
+  <h2>Licensing Enquiries</h2>
+  <p>Ward Effect Technology is available for commercial licensing and territorial manufacturing rights. Contact us through WardScope.com for licensing discussions.</p>
+  <a href="https://wardscope.com/affiliates.html" class="btn-primary">View Licensing Opportunities</a>
+</section>
+
+<footer>
+  <div class="footer-logo">Ward Effect&#8482; Technology</div>
+  <div class="footer-links">
+    <a href="index.html">Mission</a>
+    <a href="patents.html">Patents</a>
+    <a href="technology.html">Technology</a>
+    <a href="commercialisation.html">Commercialisation</a>
+    <a href="about.html">About</a>
+    <a href="https://wardscope.com">WardScope.com</a>
+  </div>
+  <p>&#169; 2026 Ward Effect Technology. Tacloban, Philippines.</p>
+</footer>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('#lang-selector')){}});</script>
+</body>
+</html>
