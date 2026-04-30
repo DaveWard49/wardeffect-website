@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Technology - Ward Effect Technology</title>
+<title>Technology - Ward Effect® Sensing Principle</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0B1D3A;--navy-mid:#112240;--navy-light:#1a3a6b;--amber:#E8A838;--amber-light:#F2C46D;--white:#FFFFFF;--text-muted:rgba(255,255,255,0.65);--border:rgba(232,168,56,0.2);}
+:root{--navy:#0B1D3A;--navy-mid:#112240;--navy-light:#1a3a6b;--amber:#E8A838;--amber-light:#F2C46D;--white:#FFFFFF;--text-muted:rgba(255,255,255,0.65);--border:rgba(232,168,56,0.2);--border-solid:#E8A838;}
 *{margin:0;padding:0;box-sizing:border-box;}
-html{overflow-x:hidden;}body{overflow-x:hidden;font-family:'Exo 2',sans-serif;background:var(--navy);color:var(--white);-webkit-font-smoothing:antialiased;}
+html{overflow-x:hidden;}
+body{overflow-x:hidden;font-family:'Exo 2',sans-serif;background:var(--navy);color:var(--white);-webkit-font-smoothing:antialiased;}
+
 nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 2.5rem;height:60px;flex-wrap:wrap;}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--amber);text-decoration:none;white-space:nowrap;margin-right:2.5rem;flex-shrink:0;}
 .nav-links{display:flex;align-items:center;gap:2rem;flex:1;}
@@ -17,189 +19,382 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bott
 .nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.4rem 1rem;border-radius:4px;font-weight:600!important;}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;flex-shrink:0;}
 .hamburger span{display:block;width:26px;height:3px;background:var(--amber);border-radius:2px;}
+
+/* ── HERO ── */
 .hero{padding:6rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(232,168,56,0.06) 0%,transparent 60%);pointer-events:none;}
-.hero-inner{max-width:800px;margin:0 auto;position:relative;}
-.hero-eyebrow{display:inline-block;font-size:0.78rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);border:1px solid var(--border);padding:0.4rem 1.2rem;border-radius:2px;margin-bottom:2rem;}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:600;line-height:1.1;color:var(--white);margin-bottom:1.2rem;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(232,168,56,0.07) 0%,transparent 65%);pointer-events:none;}
+.hero-inner{max-width:820px;margin:0 auto;position:relative;}
+.eyebrow{display:inline-block;font-size:0.78rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);border:1px solid var(--border);padding:0.4rem 1.2rem;border-radius:2px;margin-bottom:2rem;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.8rem);font-weight:600;line-height:1.1;color:var(--white);margin-bottom:1.5rem;}
 .hero h1 em{color:var(--amber-light);font-style:italic;}
-.hero p{font-size:1.1rem;color:var(--text-muted);line-height:1.8;max-width:650px;margin:0 auto;}
-.section{padding:5rem 2rem;max-width:1100px;margin:0 auto;}
-.section-label{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem;display:block;}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:600;color:var(--white);margin-bottom:2.5rem;}
-.patent-card{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:6px;padding:2rem;margin-bottom:1.5rem;}
-.patent-card.pending{border-left-color:var(--amber-light);background:rgba(26,58,107,0.3);}
-.patent-id{font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--amber);margin-bottom:0.6rem;}
-.patent-card.pending .patent-id{color:var(--amber-light);}
-.patent-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--white);margin-bottom:0.8rem;}
-.patent-meta{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;}
-.patent-badge{font-size:0.75rem;background:rgba(232,168,56,0.1);border:1px solid var(--border);color:var(--amber-light);padding:0.25rem 0.8rem;border-radius:20px;}
-.patent-badge.new{background:var(--amber);color:var(--navy);font-weight:700;border-color:var(--amber);}
-.patent-desc{color:var(--text-muted);font-size:0.95rem;line-height:1.75;}
-.patent-claims{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
-.patent-claims h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--amber);margin-bottom:0.6rem;}
-.patent-claims ul{list-style:none;display:flex;flex-wrap:wrap;gap:0.5rem;}
-.patent-claims ul li{font-size:0.82rem;color:var(--text-muted);background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:0.25rem 0.7rem;border-radius:4px;}
-.divider{height:1px;background:var(--border);margin:3rem 0;}
+.hero-lead{font-size:clamp(1.05rem,1.8vw,1.25rem);color:var(--text-muted);line-height:1.85;max-width:720px;margin:0 auto;}
+
+/* ── SECTION ── */
+.section{padding:5rem 2rem;max-width:1060px;margin:0 auto;}
+.section-label{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:0.8rem;display:block;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:600;color:var(--white);margin-bottom:1.8rem;line-height:1.2;}
+.body-text{color:var(--text-muted);font-size:1rem;line-height:1.9;margin-bottom:1.2rem;}
+.body-text strong{color:var(--white);font-weight:500;}
+
+/* ── PRINCIPLE BLOCK ── */
+.principle-block{background:rgba(232,168,56,0.05);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:6px;padding:2rem 2.2rem;margin:2.5rem 0;}
+.principle-block p{color:var(--text-muted);font-size:1rem;line-height:1.9;}
+.principle-block strong{color:var(--amber-light);font-weight:500;}
+
+/* ── DIAGRAM CONTAINER ── */
+.diagram-wrap{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;padding:2rem;margin:2.5rem 0;}
+.diagram-caption{text-align:center;font-size:0.85rem;color:var(--text-muted);margin-top:1.2rem;line-height:1.6;max-width:680px;margin-left:auto;margin-right:auto;}
+
+/* ── THREE COLUMN CARDS ── */
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin:2.5rem 0;}
+.col-card{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-radius:8px;padding:1.8rem;}
+.col-card h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--amber-light);margin-bottom:0.8rem;font-weight:600;}
+.col-card p{font-size:0.92rem;color:var(--text-muted);line-height:1.8;}
+
+/* ── MECHANISM STEPS ── */
+.steps{counter-reset:step;margin:2.5rem 0;}
+.step{display:grid;grid-template-columns:48px 1fr;gap:1.2rem;margin-bottom:2rem;align-items:start;}
+.step-num{counter-increment:step;font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--amber);opacity:0.5;line-height:1;text-align:center;}
+.step-body h4{font-size:1rem;font-weight:500;color:var(--white);margin-bottom:0.5rem;}
+.step-body p{font-size:0.92rem;color:var(--text-muted);line-height:1.8;}
+
+/* ── QUOTE BLOCK ── */
+.tech-quote{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2rem 0;margin:3rem 0;text-align:center;}
+.tech-quote p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.8rem);color:var(--amber-light);font-style:italic;line-height:1.6;max-width:760px;margin:0 auto;}
+
+/* ── KIPO BOX ── */
+.kipo-box{background:rgba(26,58,107,0.35);border:1px solid rgba(232,168,56,0.35);border-radius:8px;padding:2rem;margin:2.5rem 0;}
+.kipo-box h4{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--amber-light);margin-bottom:1rem;font-weight:600;}
+.kipo-box p{font-size:0.92rem;color:var(--text-muted);line-height:1.85;}
+
+/* ── DIVIDER ── */
+.divider{height:1px;background:var(--border);margin:0;}
+
+/* ── ALT SECTION BG ── */
+.alt-bg{background:var(--navy-mid);}
+
+/* ── CTA ── */
 .cta-banner{padding:5rem 2rem;background:var(--navy-light);border-top:1px solid var(--border);text-align:center;}
-.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--white);margin-bottom:1rem;}
-.cta-banner p{color:var(--text-muted);font-size:1.05rem;max-width:600px;margin:0 auto 2rem;}
+.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:var(--white);margin-bottom:1rem;}
+.cta-banner p{color:var(--text-muted);font-size:1.05rem;max-width:580px;margin:0 auto 2rem;}
 .btn-primary{background:var(--amber);color:var(--navy);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s;display:inline-block;}
 .btn-primary:hover{background:var(--amber-light);}
+
+/* ── FOOTER ── */
 footer{background:rgba(5,12,25,0.95);padding:3rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--border);}
 .footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--amber);font-weight:600;}
 .footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
 .footer-links a{color:var(--text-muted);text-decoration:none;font-size:0.85rem;}
 .footer-links a:hover{color:var(--amber-light);}
 footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
+
+/* ── RESPONSIVE ── */
 @media(min-width:769px){.nav-links{display:flex!important;}.hamburger{display:none!important;}}
-@media(max-width:768px){nav{height:auto;padding:0.8rem 1rem;} .nav-logo{flex:1;} .hamburger{display:flex;order:2;} .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;} .nav-links.open{display:flex;} .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);} .patent-meta{gap:0.5rem;} footer{flex-direction:column;text-align:center;}}
-</style>
-<style>
-.tech-block{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-radius:8px;padding:2.5rem;margin-bottom:2rem;}
-.tech-block h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--amber-light);margin-bottom:1rem;}
-.tech-block p{color:var(--text-muted);font-size:1rem;line-height:1.85;margin-bottom:1rem;}
-.tech-block p:last-child{margin-bottom:0;}
-.tech-block strong{color:var(--white);}
-.loop-diagram{background:var(--navy-mid);border:1px solid var(--border);border-radius:8px;padding:2rem;text-align:center;margin:1.5rem 0;font-family:'Exo 2',monospace;font-size:0.9rem;color:var(--amber-light);line-height:2;}
-.principle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem;}
-.principle-item{border-top:2px solid var(--border);padding-top:1.5rem;}
-.principle-item h4{font-size:0.9rem;font-weight:600;color:var(--amber-light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.6rem;}
-.principle-item p{font-size:0.88rem;color:var(--text-muted);line-height:1.7;}
-.quote-block{background:rgba(232,168,56,0.06);border-left:3px solid var(--amber);border-radius:0 8px 8px 0;padding:1.5rem 2rem;margin:2rem 0;}
-.quote-block p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--white);line-height:1.7;}
-.params-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem;}
-.param-box{background:var(--navy);border:1px solid var(--border);border-radius:6px;padding:1.2rem;text-align:center;}
-.param-box h4{font-size:0.82rem;font-weight:600;color:var(--amber);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.4rem;}
-.param-box p{font-size:0.82rem;color:var(--text-muted);line-height:1.5;}
-@media(max-width:768px){.principle-grid{grid-template-columns:1fr;}.params-grid{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:480px){.params-grid{grid-template-columns:1fr;}}
+@media(max-width:768px){
+  nav{height:auto;padding:0.8rem 1rem;}
+  .nav-logo{flex:1;}
+  .hamburger{display:flex;order:2;}
+  .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;}
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);}
+  .three-col{grid-template-columns:1fr;}
+  footer{flex-direction:column;text-align:center;}
+}
 </style>
 </head>
 <body>
+
 <nav>
-  <a href="index.html" class="nav-logo">Ward Effect&#8482;</a>
+  <a href="index.html" class="nav-logo">Ward Effect&#174;</a>
   <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   <div class="nav-links">
     <a href="index.html">Mission</a>
     <a href="patents.html">Patents</a>
     <a href="technology.html">Technology</a>
     <a href="commercialisation.html">Commercialisation</a>
-    <a href="https://wardscope.com/affiliates.html" class="nav-cta">Apply</a>
+    <a href="mailto:dave@wardeffect.com" class="nav-cta">Enquire</a>
   </div>
 </nav>
 
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">Technical Report — April 2026</div>
-    <h1>How Ward Effect <em>Works</em></h1>
-    <p>Operating principles, physical basis, and nano-resolution measurement. By Dave Ward, Sole Inventor.</p>
+    <div class="eyebrow">Ward Effect® Technology — The Sensing Principle</div>
+    <h1>The Object Does Not Get <em>Measured.</em><br>It Controls the Circuit.</h1>
+    <p class="hero-lead">Every conventional sensor measures something external to itself. The Ward Effect® is fundamentally different. The medium being investigated is placed physically inside the feedback loop of an oscillating circuit — and becomes a controlling component of that circuit. What was once an amplifier becomes a tuning device. A microscopic change in the object produces a measurable change in the circuit. This is the Ward Effect®.</p>
   </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- ══ THE PRINCIPLE ════════════════════════════════════════ -->
+<div class="alt-bg">
 <div class="section">
+  <span class="section-label">The Core Principle</span>
+  <h2 class="section-title">Parasitic Oscillation as a Precision Instrument</h2>
 
-  <div class="tech-block">
-    <h3>1. The Conventional Approach and Its Limitations</h3>
-    <p>Conventional acoustic and electromagnetic sensing operates on a fundamental assumption: the sensor is separate from the medium being measured. A transducer emits a signal into the medium, that signal is modified by the medium's properties, and the returning signal is captured and analysed by computing systems. The sensor is outside the measurement. The medium is the object being observed.</p>
-    <p>This separation creates an inherent resolution limit. The precision of the measurement is constrained by the resolution of the sensor, the signal-to-noise characteristics of the electronics, and the processing power available to analyse the returned signal. These constraints are physical and economic. Higher resolution demands better components, more sophisticated signal processing, and greater computing power.</p>
-    <p><strong>The Ward Effect discards this assumption entirely.</strong></p>
+  <p class="body-text">In conventional electronics, parasitic oscillation is a fault. It is the unintended behaviour that occurs when an amplifier — designed purely to amplify — begins to oscillate because stray capacitance and inductance create an unintended feedback path. Engineers spend considerable effort eliminating it.</p>
+
+  <p class="body-text"><strong>The Ward Effect® does the opposite.</strong> It deliberately engineers stable parasitic oscillation. The amplifier is not corrected. It is allowed — through precise component selection — to depart completely from its design specification and behave instead as a tank circuit or tuning circuit. The LM386 audio amplifier, a device designed solely to amplify audio signals, becomes, under Ward Effect® conditions, a precision resonance-sensing instrument. This is the classical definition of parasitic oscillation: a device that, due to parasitic behaviour, operates in a mode entirely outside its design intent.</p>
+
+  <div class="principle-block">
+    <p><strong>The critical distinction:</strong> In a conventional sensor, the measurement object is external. A probe touches it, a beam reflects from it, a field passes through it. The sensor and the object are separate. In the Ward Effect®, the object is placed inside the oscillating feedback loop. <strong>The object's resonance does not merely influence the circuit — it controls the circuit's oscillating frequency.</strong> Remove the object and the circuit behaves differently. Change the object's condition by the smallest measurable amount and the circuit's frequency shifts in a way that can be precisely detected.</p>
   </div>
 
-  <div class="tech-block">
-    <h3>2. The Ward Effect: Core Operating Principle</h3>
-    <h4 style="color:var(--amber);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;">2.1 Deliberate Parasitic Oscillation</h4>
-    <p>In conventional electronics, parasitic oscillation is an unwanted condition. It occurs when an amplifier's output signal finds an unintended feedback path back to its input — and the loop gain exceeds unity at some frequency. Engineers spend considerable effort eliminating parasitic oscillation from their designs.</p>
-    <p>The Ward Effect deliberately engineers this condition. A microphone and speaker are placed in close physical proximity. The speaker drives an acoustic signal into the surrounding medium. That signal couples acoustically back into the microphone. The microphone output is amplified and returned to the speaker. The loop gain exceeds unity and the circuit enters sustained oscillation.</p>
-    <p><strong>This is not an uncontrolled instability.</strong> Once established, the parasitic oscillation locks onto a stable operating point determined by the physical properties of the circuit, the acoustic coupling path, and critically, the properties of the medium through which the acoustic signal travels. The oscillation is self-sustaining, deterministic, and stable.</p>
-
-    <h4 style="color:var(--amber);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin:1.5rem 0 1rem;">2.2 The Medium as Part of the Oscillator</h4>
-    <p>This is the fundamental departure from all conventional sensing technology. In the Ward Effect, the medium being measured is not external to the instrument. It is physically incorporated into the oscillation loop itself.</p>
-    <div class="loop-diagram">
-      SPEAKER &nbsp;&rarr;&nbsp; [acoustic path through medium] &nbsp;&rarr;&nbsp; MICROPHONE &nbsp;&rarr;&nbsp; AMPLIFIER &nbsp;&rarr;&nbsp; SPEAKER<br>
-      &uarr; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &darr;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&nbsp; MEDIUM IS INSIDE THE LOOP &nbsp;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-    </div>
-    <p>The physical properties of the medium — its density, viscosity, chemical composition, structural integrity, flow characteristics, temperature — directly shape which stable oscillation state the loop locks onto. A change in the medium produces a corresponding change in the stable oscillation state. The medium is not being probed. <strong>The medium is part of the instrument itself.</strong></p>
-
-    <h4 style="color:var(--amber);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin:1.5rem 0 1rem;">2.3 The Circuit Beyond Its Design Specifications</h4>
-    <p>Once parasitic oscillation is established, the circuit components no longer operate according to their datasheets. The LM386 is not functioning as an audio amplifier. The ESP32 is not functioning as a microcontroller executing firmware in the conventional sense. The entire circuit has entered a new operating regime governed by the physics of the feedback loop rather than the design specifications of the individual components.</p>
-    <div class="quote-block"><p>"This is why the Ward Effect cannot be replicated by conventional means. Throwing more processing power at a conventional sensing problem improves the analysis of the signal. In the Ward Effect, there is no separate analysis step. The measurement is the stable oscillation state itself — and that state is determined by physics, not by computation."</p></div>
-  </div>
-
-  <div class="tech-block">
-    <h3>3. EQ Settings: Controlling the Oscillation</h3>
-    <p>Before the oscillation is established, the ESP32 applies a set of equalisation and volume parameters to the signal path. These parameters are stored in the ESP32's RAM as a library of profiles — millions of configurations representing different operating states.</p>
-    <p>The EQ settings perform two distinct functions. First, they determine the initial conditions under which the oscillation locks — effectively selecting which stable state the loop will settle into. Second, they control the sensitivity and selectivity of the oscillation to specific properties of the medium.</p>
-    <p>One EQ profile may make the oscillation highly sensitive to changes in chlorine concentration while remaining relatively insensitive to temperature. Another profile may be tuned for flow rate detection. Another for detection of specific mineral deposits or biofilm formation. <strong>The EQ setting is the tunable coupling filter between the medium's properties and the oscillation's stable state.</strong></p>
-    <p>The stable oscillation state is therefore a function of two independent variables: the physical and chemical properties of the medium, and the EQ and volume settings applied by the ESP32. By holding the EQ settings constant and observing changes in the oscillation state, changes in the medium are detected at extraordinary resolution.</p>
-  </div>
-
-  <div class="tech-block">
-    <h3>4. Nano-Resolution: How It Is Achieved</h3>
-    <h4 style="color:var(--amber);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;">4.1 Oscillation Fingerprints</h4>
-    <p>When the circuit locks into a stable parasitic oscillation state, the frequency spectrum of that oscillation is not a single peak. It is a complex pattern of narrow peaks whose positions, amplitudes, and spacings are uniquely determined by the combined state of the medium and the EQ settings. This pattern is the oscillation fingerprint.</p>
-    <p>The critical property of these peaks is their extraordinary narrowness. Once the parasitic oscillation is established and stable, the frequency resolution of the peaks departs dramatically from the specifications of the components involved. <strong>The peaks achieve nano-Hertz (nHz) resolution — measured in billionths of a Hertz — far beyond what any component in the circuit could achieve operating within its normal design parameters.</strong></p>
-
-    <h4 style="color:var(--amber);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin:1.5rem 0 1rem;">4.2 Why Nano-Resolution Emerges</h4>
-    <p>The nano-resolution is not achieved by the electronics. It is a property of the stable oscillation physics. In a conventional system, frequency resolution is limited by the measurement time and the noise floor of the electronics. In a stable parasitic oscillation, the loop self-reinforces continuously, effectively integrating over time in a manner that concentrates spectral energy into extremely narrow peaks.</p>
-    <p>The quality factor of the oscillation — the ratio of the energy stored in the loop to the energy dissipated per cycle — is vastly higher than the Q-factor of any individual component. The medium itself contributes to this Q-factor, further sharpening the peaks.</p>
-    <div class="quote-block"><p>"No high-powered computer can replicate this. The resolution is not a product of processing power applied to a sensor signal. It is a physical property of the stable oscillation state. The Ward Effect does not measure and then compute. It is the measurement."</p></div>
-
-    <h4 style="color:var(--amber);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin:1.5rem 0 1rem;">4.3 Pattern Matching: The Library</h4>
-    <p>Measurement in the Ward Effect proceeds as follows: an EQ profile is selected from the library — for example, a profile configured for chlorine detection. The profile is applied and the circuit establishes its stable parasitic oscillation state. The oscillation fingerprint is recorded and compared against the library of stored fingerprints for that EQ profile. A match identifies the medium condition with nano-resolution precision.</p>
-    <p>This is pattern recognition, not signal analysis. The process is analogous to fingerprint identification — each unique condition of the medium under each unique EQ setting produces a fingerprint as distinctive as a human fingerprint. The library is the database of known fingerprints. Measurement is the act of matching an observed fingerprint to a known entry.</p>
-  </div>
-
-  <div class="tech-block">
-    <h3>5. Multi-Parameter Measurement Over Time</h3>
-    <p>The Ward Effect is not limited to measuring a single parameter. By sequentially applying different EQ profiles — each tuned to a different physical or chemical property — the system measures multiple parameters from the same medium using the same hardware.</p>
-    <div class="params-grid">
-      <div class="param-box"><h4>Temperature</h4><p>Thermal properties detected through oscillation fingerprint shift</p></div>
-      <div class="param-box"><h4>Flow Rate</h4><p>Fluid velocity and flow state via acoustic coupling changes</p></div>
-      <div class="param-box"><h4>Chemical Composition</h4><p>Chlorine, pH, HOCl speciation, contaminants</p></div>
-      <div class="param-box"><h4>Structural Integrity</h4><p>Corrosion, delamination, biofilm, scale buildup</p></div>
-      <div class="param-box"><h4>Pressure</h4><p>Internal pressure states and transient events</p></div>
-      <div class="param-box"><h4>Biological Content</h4><p>Biofilm, algae, bacteria, pathogens at micron scale</p></div>
-    </div>
-    <p style="margin-top:1.5rem;">Pipelines, water systems, and industrial processes do not change their chlorine concentration in milliseconds. The time required to sweep through a library and match a fingerprint is negligible relative to the timescale of the physical changes being monitored. Sequential multi-parameter measurement over time costs nothing in terms of measurement quality and everything in terms of hardware simplicity.</p>
-    <div class="quote-block"><p>"A low-powered ESP32 measures what high-powered computers cannot — not because it processes faster, but because it does not need to process at all. The physics of the stable parasitic oscillation performs the measurement."</p></div>
-  </div>
-
-  <div class="tech-block">
-    <h3>6. Why This Is Patentable</h3>
-    <p>The Ward Effect required eight patent examination reports and extensive expert review before receiving its first granted patent. Professors of acoustics and audio engineers evaluated the technology against the framework of conventional amplifier and sensing theory — and found it appeared to violate known principles.</p>
-    <p>It does not violate known principles. It operates in a regime those principles were never written to describe.</p>
-    <p>Conventional acoustic engineering asks: how do we prevent parasitic oscillation? The Ward Effect asks: what useful stable states does parasitic oscillation produce when the medium is part of the loop? These are not the same question. <strong>The second question had never been systematically asked or answered before.</strong></p>
-    <p>The patent examiner who finally granted the first patent articulated the insight precisely: the Ward Effect does the exact opposite of what everyone else does. It is not an improvement on conventional sensing. It is a different physical regime, producing measurement resolution that conventional approaches cannot reach regardless of the resources applied.</p>
-  </div>
-
-  <div class="tech-block">
-    <h3>7. Summary</h3>
-    <p>The Ward Effect operates by deliberately engineering stable parasitic oscillation in a circuit where the medium to be measured is physically incorporated into the oscillation loop. The stable oscillation state is jointly determined by the properties of the medium and the EQ settings applied before oscillation begins. Once established, the oscillation produces narrow spectral peaks at nano-Hertz resolution — far beyond the specifications of the individual components — as a direct physical consequence of the stable loop dynamics.</p>
-    <p>Measurement proceeds by pattern matching the observed oscillation fingerprint against a pre-built library of known fingerprints. Multiple parameters are measured sequentially by applying different EQ profiles tuned to different properties of the medium. The entire system operates on low-power hardware because the physics of the oscillation performs the measurement — not computational processing power.</p>
-    <p><strong>This is not incremental improvement on existing sensing technology. It is a fundamentally different physical mechanism, producing capabilities that existing approaches cannot replicate.</strong></p>
-    <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:0.82rem;color:rgba(255,255,255,0.3);">Ward Effect Technology &nbsp;|&nbsp; Dave Ward, Sole Inventor &nbsp;|&nbsp; April 2026 &nbsp;|&nbsp; Patents NZ 739314 / 770993 / 778527 &nbsp;|&nbsp; USA &nbsp;|&nbsp; India &nbsp;|&nbsp; Philippines</div>
-  </div>
-
+  <p class="body-text">This is why experts who evaluated the technology without this understanding could not account for how a nano-scale change in an object could produce a measurable circuit response. They assumed a conventional sensing architecture. The Ward Effect® is not a conventional sensing architecture. The sensitivity is not despite the microscopic scale of the change — it is <strong>because</strong> the object is a controlling component. A controlling component does not need to change much to change what it controls.</p>
+</div>
 </div>
 
+<div class="divider"></div>
+
+<!-- ══ DIAGRAM ══════════════════════════════════════════════ -->
+<div class="section">
+  <span class="section-label">Principle Diagram</span>
+  <h2 class="section-title">EQ Sets the Balance. Object Resonance Controls the Response.</h2>
+
+  <div class="diagram-wrap">
+    <svg width="100%" viewBox="0 0 680 520" role="img">
+      <title>Ward Effect® — how object resonance controls the circuit</title>
+      <desc>Diagram showing EQ balance point on the left of the frequency spectrum, large gap, and object resonance controlling the circuit on the right. A nano-scale shift in object resonance produces a measurable circuit response.</desc>
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+
+      <text font-family="'Exo 2',sans-serif" font-size="14" font-weight="500" fill="rgba(255,255,255,0.9)" x="340" y="36" text-anchor="middle">Ward Effect® — object resonance controls the circuit</text>
+
+      <!-- Frequency axis -->
+      <line x1="60" y1="220" x2="615" y2="220" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+      <line x1="605" y1="220" x2="618" y2="220" stroke="rgba(255,255,255,0.3)" stroke-width="1" marker-end="url(#arr)"/>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(255,255,255,0.35)" x="340" y="244" text-anchor="middle">Frequency spectrum</text>
+
+      <!-- EQ block -->
+      <rect x="68" y="118" width="118" height="94" rx="8" fill="rgba(232,168,56,0.15)" stroke="#E8A838" stroke-width="1"/>
+      <text font-family="'Exo 2',sans-serif" font-size="14" font-weight="500" fill="#F2C46D" x="127" y="158" text-anchor="middle" dominant-baseline="central">EQ settings</text>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(232,168,56,0.7)" x="127" y="178" text-anchor="middle" dominant-baseline="central">balance point</text>
+
+      <!-- EQ sits on axis -->
+      <line x1="127" y1="212" x2="127" y2="244" stroke="rgba(255,255,255,0.5)" stroke-width="2.5"/>
+
+      <!-- Gap arrow -->
+      <line x1="194" y1="196" x2="552" y2="196" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" stroke-dasharray="4 3" marker-end="url(#arr)" marker-start="url(#arr)"/>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(255,255,255,0.4)" x="373" y="187" text-anchor="middle">Large gap — this distance creates the sensitivity</text>
+
+      <!-- Object resonance square -->
+      <rect x="558" y="208" width="20" height="20" rx="3" fill="#E8A838" stroke="#F2C46D" stroke-width="1"/>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(232,168,56,0.85)" x="568" y="193" text-anchor="middle">Object</text>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(232,168,56,0.85)" x="568" y="205" text-anchor="middle">resonance</text>
+
+      <!-- Operating point vertical bar -->
+      <rect x="121" y="220" width="12" height="54" rx="2" fill="rgba(255,255,255,0.5)"/>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(255,255,255,0.45)" x="88" y="292" text-anchor="middle">Operating</text>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(255,255,255,0.45)" x="88" y="304" text-anchor="middle">point</text>
+
+      <!-- Ghost resonance square shifted -->
+      <rect x="543" y="208" width="20" height="20" rx="3" fill="none" stroke="#E8A838" stroke-width="1" stroke-dasharray="3 2" opacity="0.4"/>
+      <line x1="552" y1="218" x2="541" y2="218" stroke="#E8A838" stroke-width="1.2" marker-end="url(#arr)" opacity="0.7"/>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(232,168,56,0.6)" x="495" y="260" text-anchor="middle">Nano-scale shift</text>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(232,168,56,0.6)" x="495" y="273" text-anchor="middle">in object resonance</text>
+
+      <!-- Feedback path -->
+      <path d="M 543 218 Q 390 285 145 282" fill="none" stroke="#E8A838" stroke-width="1" stroke-dasharray="5 3" opacity="0.4"/>
+
+      <!-- Response arrow -->
+      <line x1="127" y1="276" x2="127" y2="316" stroke="#E8A838" stroke-width="1.8" marker-end="url(#arr)" opacity="0.85"/>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(232,168,56,0.7)" x="60" y="306" text-anchor="middle">Measurable</text>
+      <text font-family="'Exo 2',sans-serif" font-size="12" fill="rgba(232,168,56,0.7)" x="60" y="318" text-anchor="middle">circuit shift</text>
+
+      <!-- Separator -->
+      <line x1="60" y1="342" x2="620" y2="342" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" stroke-dasharray="2 4"/>
+
+      <!-- Bottom cards -->
+      <!-- Radio tuner -->
+      <rect x="68" y="360" width="178" height="138" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+      <text font-family="'Exo 2',sans-serif" font-size="13" font-weight="500" fill="rgba(255,255,255,0.85)" x="157" y="388" text-anchor="middle">Radio tuner analogy</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" x="157" y="408" text-anchor="middle">Same hardware.</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" x="157" y="424" text-anchor="middle">Adjust the tuning knob</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" x="157" y="440" text-anchor="middle">and the circuit responds</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" x="157" y="456" text-anchor="middle">to a completely different</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(255,255,255,0.5)" x="157" y="472" text-anchor="middle">property of the object.</text>
+
+      <!-- LM386 -->
+      <rect x="260" y="360" width="178" height="138" rx="8" fill="rgba(13,110,84,0.12)" stroke="rgba(29,158,117,0.35)" stroke-width="0.5"/>
+      <text font-family="'Exo 2',sans-serif" font-size="13" font-weight="500" fill="#9FE1CB" x="349" y="388" text-anchor="middle">LM386 amplifier</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(159,225,203,0.6)" x="349" y="408" text-anchor="middle">Designed to amplify.</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(159,225,203,0.6)" x="349" y="424" text-anchor="middle">Parasitic oscillation</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(159,225,203,0.6)" x="349" y="440" text-anchor="middle">causes it to depart</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(159,225,203,0.6)" x="349" y="456" text-anchor="middle">from spec and behave</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(159,225,203,0.6)" x="349" y="472" text-anchor="middle">as a tank circuit.</text>
+
+      <!-- Key principle -->
+      <rect x="452" y="360" width="168" height="138" rx="8" fill="rgba(24,95,165,0.15)" stroke="rgba(55,138,221,0.35)" stroke-width="0.5"/>
+      <text font-family="'Exo 2',sans-serif" font-size="13" font-weight="500" fill="#85B7EB" x="536" y="388" text-anchor="middle">Key principle</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(133,183,235,0.6)" x="536" y="408" text-anchor="middle">The object is not</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(133,183,235,0.6)" x="536" y="424" text-anchor="middle">measured externally.</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(133,183,235,0.6)" x="536" y="442" text-anchor="middle">It is inside the loop.</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(133,183,235,0.6)" x="536" y="460" text-anchor="middle">Its resonance</text>
+      <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(133,183,235,0.6)" x="536" y="476" text-anchor="middle">controls the circuit.</text>
+    </svg>
+    <p class="diagram-caption">The EQ is set once, creating a balance point far from the object's resonant frequency. Because the gap between the EQ setting and the object resonance is large, even a nano-scale shift in the object's condition disturbs the balance and produces a measurable change in the circuit's oscillating frequency. The object is not being probed — it is a controlling component.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ HOW IT WORKS ══════════════════════════════════════════ -->
+<div class="alt-bg">
+<div class="section">
+  <span class="section-label">The Mechanism</span>
+  <h2 class="section-title">How the Ward Effect® Circuit Works — Step by Step</h2>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-body">
+        <h4>The circuit is built around the object</h4>
+        <p>A microphone, speaker, amplifier, and EQ filter are configured in a feedback loop with the object — vessel, pipe, water sample, or structural element — physically inside that loop. Power is applied. The amplifier, operating in its parasitic mode, begins to oscillate. The oscillating frequency is not the amplifier's designed frequency. It is determined by the combined resonance of the circuit and the object inside it.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-body">
+        <h4>The EQ is adjusted to create the balance point</h4>
+        <p>The EQ filter is tuned until a stable balance is established between the circuit's operating point and the object's resonant frequency. This balance is the key. The EQ is set far from the object resonance — a deliberate gap. That gap is what makes the circuit sensitive. Think of a radio tuner: the same hardware, but the position of the tuning knob determines which station — which property of the incoming signal — the circuit responds to.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-body">
+        <h4>The object's condition changes — the circuit responds</h4>
+        <p>When the condition of the object changes — the level of liquid in a pipe drops, a trace of chlorine enters the water, a micro-crack forms in a concrete structure, biofilm begins to accumulate on a surface — its resonant frequency shifts. Because the object controls the circuit, that shift is immediately reflected in the circuit's oscillating frequency. The shift is measurable with standard frequency analysis. No laboratory. No consumables. No trained operator required.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div class="step-body">
+        <h4>Adjust the EQ — measure a different property</h4>
+        <p>This is where the Ward Effect® becomes an entirely new class of instrument. By adjusting the EQ to a different balance point, the circuit becomes sensitive to a different property of the same object. The hardware does not change. The object does not change. Only the EQ setting changes — and the circuit now responds to chlorine concentration instead of water level, or cavitation instead of flow rate. One device. Multiple measurement capabilities. This is the Ward Effect® LEF library system: a catalogue of EQ settings, each unlocking a different measurement from the same circuit.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tech-quote">
+    <p>"The amplifier is not corrected. It is deliberately allowed to operate outside its design specification — and in doing so, it becomes something the designer never intended: a precision sensing instrument of extraordinary sensitivity."</p>
+  </div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ WHY EXPERTS MISSED IT ════════════════════════════════ -->
+<div class="section">
+  <span class="section-label">The Novelty</span>
+  <h2 class="section-title">Why Conventional Expertise Did Not See It</h2>
+
+  <p class="body-text">The Ward Effect® was subjected to international patent examination by the Korean Intellectual Property Office (KIPO) as International Searching Authority for PCT/NZ2019/050002. KIPO examined five prior art documents spanning 1986 to 2014. All 13 claims were found novel, inventive, and industrially applicable.</p>
+
+  <p class="body-text">The reason other experts failed to reach the same conclusion is straightforward: they applied the framework of conventional sensing to a technology that is not conventional sensing. When an examiner — or an engineer — looks at a circuit and asks "where is the sensor?", the Ward Effect® gives an answer they are not expecting: <strong>the object is the sensor.</strong> The object is inside the loop. Its resonance controls the oscillation. There is no probe. There is no external measurement. The circuit and the object are one system.</p>
+
+  <div class="three-col">
+    <div class="col-card">
+      <h3>Conventional assumption</h3>
+      <p>The sensor is external to the measurement object. It emits, reflects, or contacts. The object is passive. The sensor is active. This is the mental model that failed to accommodate the Ward Effect®.</p>
+    </div>
+    <div class="col-card">
+      <h3>Ward Effect® reality</h3>
+      <p>The object is inside the feedback loop. It is an active component of the oscillating circuit. Its resonance state determines the circuit's frequency. The object and the circuit cannot be separated — they are one system.</p>
+    </div>
+    <div class="col-card">
+      <h3>Why nano-scale changes are detectable</h3>
+      <p>Because the object controls the circuit, not merely influences it. A controlling component does not need to change significantly to change what it controls. The gap between EQ balance point and object resonance amplifies even the smallest shift into a measurable frequency change.</p>
+    </div>
+  </div>
+
+  <div class="kipo-box">
+    <h4>KIPO Examination — PCT/NZ2019/050002</h4>
+    <p>The Korean Intellectual Property Office, acting as International Searching Authority, found that the Ward Effect® — in which a parasitic oscillation circuit self-oscillates to produce a frequency of a non-stationary standing wave controlled by changes in the vessel or pipe being measured, differing from the resonant frequency of the pipe or vessel — was not obvious to a person skilled in the art from any of the five prior art documents examined, alone or in combination. All 13 claims of PCT/NZ2019/050002 were found novel, inventive, and industrially applicable.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ LEF LIBRARY SYSTEM ════════════════════════════════════ -->
+<div class="alt-bg">
+<div class="section">
+  <span class="section-label">The Digital Evolution</span>
+  <h2 class="section-title">From Analogue Balance to the LEF Library System</h2>
+
+  <p class="body-text">The original Ward Effect® patents (NZ 739314, NZ 770993, NZ 778527) describe analogue implementations: manual EQ adjustment, single-band operation, a skilled operator finding the balance point by hand. The technology works — but it requires human expertise to configure for each new application.</p>
+
+  <p class="body-text">Case 831742 — the Library-Configured Acoustic Sensing and Actuation System, now under examination at IPONZ — is the digital evolution of that principle. A microcontroller replaces the human operator. An ESP32-based Ward Effect® Node cycles through EQ settings automatically, guided by a sparse Library Entry Format (LEF) system that stores pre-validated balance points for specific measurement tasks at 100:1 compression.</p>
+
+  <p class="body-text">The three-tier LEF retrieval architecture means the same hardware can be reconfigured in real time to measure water chlorine levels, then pipeline leak signatures, then cavitation events, then biofilm accumulation — simply by loading a different library entry. The radio tuner metaphor becomes automated: instead of a human turning the knob, the system cycles through a catalogue of known tuning positions, each calibrated to a specific property of the object being measured.</p>
+
+  <div class="principle-block">
+    <p><strong>The result:</strong> A single Ward Effect® Node, costing a fraction of conventional laboratory instrumentation, can replace multiple specialist sensors — each of which would require separate hardware, consumables, calibration, and trained operators. The humanitarian application — chemical-free water purification monitoring at $5 per installation — becomes achievable at scale because the technology is self-configuring, self-calibrating, and requires no specialist maintenance.</p>
+  </div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ APPLICATIONS ══════════════════════════════════════════ -->
+<div class="section">
+  <span class="section-label">Applications</span>
+  <h2 class="section-title">What the Ward Effect® Measures — and How</h2>
+
+  <div class="three-col">
+    <div class="col-card">
+      <h3>Water quality &amp; purification</h3>
+      <p>Probe-free chlorine (HOCl) dosing optimisation. pH speciation. Biofilm and pathogen detection in distribution pipes. Chemical-free purification through acoustic cavitation control. The $5 bucket target for humanitarian deployment.</p>
+    </div>
+    <div class="col-card">
+      <h3>Pipeline integrity</h3>
+      <p>Real-time acoustic leak detection using Ward Effect® frequency signatures. Multi-path leak localisation. Corrosion monitoring. Cavitation event detection in pumps and valves. Continuous monitoring overlay compatible with existing pipeline infrastructure.</p>
+    </div>
+    <div class="col-card">
+      <h3>Structural monitoring</h3>
+      <p>Non-invasive detection of rebar corrosion and delamination in reinforced concrete. Structural decay monitoring in bridges and buildings. Marine fouling detection on hulls and underwater structures at under 1W operating power.</p>
+    </div>
+    <div class="col-card">
+      <h3>Drain &amp; irrigation</h3>
+      <p>Non-invasive sediment accumulation detection in drainage and irrigation channels. Flow monitoring and blockage detection. De-silting programme optimisation using acoustic baseline comparison.</p>
+    </div>
+    <div class="col-card">
+      <h3>Industrial process</h3>
+      <p>In-vessel content measurement without intrusive probes — critical for toxic, corrosive, or sterile process environments. LPG and liquid level sensing. Load cell applications via resonance shift. Food processing hygiene monitoring.</p>
+    </div>
+    <div class="col-card">
+      <h3>Environmental</h3>
+      <p>Waterway and aquifer quality monitoring using LoRa mesh sensor networks. Remote deployment without mains power. Distributed monitoring of large catchment areas at a fraction of the cost of conventional instrumentation networks.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CTA ═══════════════════════════════════════════════════ -->
 <section class="cta-banner">
-  <h2>Commercial Opportunities</h2>
-  <p>Ward Effect Technology is available for commercial licensing and territorial manufacturing. All enquiries through WardScope.com.</p>
-  <a href="https://wardscope.com/affiliates.html" class="btn-primary">View Opportunities</a>
+  <h2>Explore the Licensing Opportunity</h2>
+  <p>Ward Effect® Technology is available for commercial licensing, research partnerships, and territorial manufacturing arrangements across all application domains.</p>
+  <a href="mailto:dave@wardeffect.com" class="btn-primary">Enquire About Licensing</a>
 </section>
 
 <footer>
-  <div class="footer-logo">Ward Effect&#8482; Technology</div>
+  <div class="footer-logo">Ward Effect&#174; Technology</div>
   <div class="footer-links">
     <a href="index.html">Mission</a>
     <a href="patents.html">Patents</a>
     <a href="technology.html">Technology</a>
     <a href="commercialisation.html">Commercialisation</a>
-    <a href="https://wardscope.com">WardScope.com</a>
   </div>
-  <p>&#169; 2026 Ward Effect Technology. Tacloban, Philippines.</p>
+  <p>&#169; 2026 Ward Effect&#174; Technology. Tacloban, Philippines.</p>
 </footer>
+
+<script>
+document.querySelector('.hamburger').addEventListener('click', function() {
+  this.classList.toggle('open');
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+</script>
 </body>
 </html>
