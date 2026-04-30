@@ -108,11 +108,17 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
   <a href="index.html" class="nav-logo">Ward Effect&#174;</a>
   <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   <div class="nav-links">
-    <a href="index.html">Mission</a>
-    <a href="patents.html">Patents</a>
-    <a href="technology.html">Technology</a>
-    <a href="commercialisation.html">Commercialisation</a>
-    <a href="mailto:dave@wardeffect.com" class="nav-cta">Enquire</a>
+    <a href="index.html" data-i18n="nav__mission">Mission</a>
+    <a href="patents.html" data-i18n="nav__patents">Patents</a>
+    <a href="technology.html" data-i18n="nav__technology">Technology</a>
+    <a href="why-experts-missed-it.html" data-i18n="nav__expert_assessment">Expert Assessment</a>
+    <a href="commercialisation.html" data-i18n="nav__commercialisation">Commercialisation</a>
+    
+    <div id="we-lang-selector" style="position:relative;margin-left:1rem;flex-shrink:0;">
+      <button id="we-lang-btn" onclick="toggleWELang()" style="background:rgba(255,255,255,0.08);border:1px solid rgba(232,168,56,0.4);border-radius:4px;color:rgba(255,255,255,0.7);font-family:'Exo 2',sans-serif;font-size:0.82rem;padding:0.3rem 0.7rem;cursor:pointer;white-space:nowrap;">&#127760; Language &#9660;</button>
+      <div id="we-lang-menu" style="display:none;position:absolute;top:calc(100% + 6px);right:0;background:#112240;border:1px solid rgba(232,168,56,0.25);border-radius:6px;min-width:190px;max-height:320px;overflow-y:auto;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,0.45);"></div>
+    </div>
+    <a href="mailto:dave@wardeffect.com" class="nav-cta" data-i18n="nav__enquire">Enquire</a>
   </div>
 </nav>
 
@@ -120,8 +126,8 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 <section class="hero">
   <div class="hero-inner">
     <div class="eyebrow">Ward Effect® Technology — The Sensing Principle</div>
-    <h1>The Object Does Not Get <em>Measured.</em><br>It Controls the Circuit.</h1>
-    <p class="hero-lead">Every conventional sensor measures something external to itself. The Ward Effect® is fundamentally different. The medium being investigated is placed physically inside the feedback loop of an oscillating circuit — and becomes a controlling component of that circuit. What was once an amplifier becomes a tuning device. A microscopic change in the object produces a measurable change in the circuit. This is the Ward Effect®.</p>
+    <h1 data-i18n="tech__h1a">The Object Does Not Get <em>Measured.</em><br data-i18n="tech__h1c">It Controls the Circuit.</h1>
+    <p class="hero-lead" data-i18n="tech__lead">Every conventional sensor measures something external to itself. The Ward Effect® is fundamentally different. The medium being investigated is placed physically inside the feedback loop of an oscillating circuit — and becomes a controlling component of that circuit. What was once an amplifier becomes a tuning device. A microscopic change in the object produces a measurable change in the circuit. This is the Ward Effect®.</p>
   </div>
 </section>
 
@@ -130,10 +136,10 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 <!-- ══ THE PRINCIPLE ════════════════════════════════════════ -->
 <div class="alt-bg">
 <div class="section">
-  <span class="section-label">The Core Principle</span>
-  <h2 class="section-title">Parasitic Oscillation as a Precision Instrument</h2>
+  <span class="section-label" data-i18n="tech__principle_label">The Core Principle</span>
+  <h2 class="section-title" data-i18n="tech__principle_title">Parasitic Oscillation as a Precision Instrument</h2>
 
-  <p class="body-text">In conventional electronics, parasitic oscillation is a fault. It is the unintended behaviour that occurs when an amplifier — designed purely to amplify — begins to oscillate because stray capacitance and inductance create an unintended feedback path. Engineers spend considerable effort eliminating it.</p>
+  <p class="body-text" data-i18n="tech__principle_p1">In conventional electronics, parasitic oscillation is a fault. It is the unintended behaviour that occurs when an amplifier — designed purely to amplify — begins to oscillate because stray capacitance and inductance create an unintended feedback path. Engineers spend considerable effort eliminating it.</p>
 
   <p class="body-text"><strong>The Ward Effect® does the opposite.</strong> It deliberately engineers stable parasitic oscillation. The amplifier is not corrected. It is allowed — through precise component selection — to depart completely from its design specification and behave instead as a tank circuit or tuning circuit. The LM386 audio amplifier, a device designed solely to amplify audio signals, becomes, under Ward Effect® conditions, a precision resonance-sensing instrument. This is the classical definition of parasitic oscillation: a device that, due to parasitic behaviour, operates in a mode entirely outside its design intent.</p>
 
@@ -141,7 +147,7 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
     <p><strong>The critical distinction:</strong> In a conventional sensor, the measurement object is external. A probe touches it, a beam reflects from it, a field passes through it. The sensor and the object are separate. In the Ward Effect®, the object is placed inside the oscillating feedback loop. <strong>The object's resonance does not merely influence the circuit — it controls the circuit's oscillating frequency.</strong> Remove the object and the circuit behaves differently. Change the object's condition by the smallest measurable amount and the circuit's frequency shifts in a way that can be precisely detected.</p>
   </div>
 
-  <p class="body-text">This is why experts who evaluated the technology without this understanding could not account for how a nano-scale change in an object could produce a measurable circuit response. They assumed a conventional sensing architecture. The Ward Effect® is not a conventional sensing architecture. The sensitivity is not despite the microscopic scale of the change — it is <strong>because</strong> the object is a controlling component. A controlling component does not need to change much to change what it controls.</p>
+  <p class="body-text" data-i18n="tech__principle_p3">This is why experts who evaluated the technology without this understanding could not account for how a nano-scale change in an object could produce a measurable circuit response. They assumed a conventional sensing architecture. The Ward Effect® is not a conventional sensing architecture. The sensitivity is not despite the microscopic scale of the change — it is <strong>because</strong> the object is a controlling component. A controlling component does not need to change much to change what it controls.</p>
 </div>
 </div>
 
@@ -149,8 +155,8 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 
 <!-- ══ DIAGRAM ══════════════════════════════════════════════ -->
 <div class="section">
-  <span class="section-label">Principle Diagram</span>
-  <h2 class="section-title">EQ Sets the Balance. Object Resonance Controls the Response.</h2>
+  <span class="section-label" data-i18n="tech__diagram_label">Principle Diagram</span>
+  <h2 class="section-title" data-i18n="tech__diagram_title">EQ Sets the Balance. Object Resonance Controls the Response.</h2>
 
   <div class="diagram-wrap">
     <svg width="100%" viewBox="0 0 680 520" role="img">
@@ -236,7 +242,7 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
       <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(133,183,235,0.6)" x="536" y="460" text-anchor="middle">Its resonance</text>
       <text font-family="'Exo 2',sans-serif" font-size="11" fill="rgba(133,183,235,0.6)" x="536" y="476" text-anchor="middle">controls the circuit.</text>
     </svg>
-    <p class="diagram-caption">The EQ is set once, creating a balance point far from the object's resonant frequency. Because the gap between the EQ setting and the object resonance is large, even a nano-scale shift in the object's condition disturbs the balance and produces a measurable change in the circuit's oscillating frequency. The object is not being probed — it is a controlling component.</p>
+    <p class="diagram-caption" data-i18n="tech__diagram_caption">The EQ is set once, creating a balance point far from the object's resonant frequency. Because the gap between the EQ setting and the object resonance is large, even a nano-scale shift in the object's condition disturbs the balance and produces a measurable change in the circuit's oscillating frequency. The object is not being probed — it is a controlling component.</p>
   </div>
 </div>
 
@@ -245,29 +251,29 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 <!-- ══ HOW IT WORKS ══════════════════════════════════════════ -->
 <div class="alt-bg">
 <div class="section">
-  <span class="section-label">The Mechanism</span>
+  <span class="section-label" data-i18n="tech__mechanism_label">The Mechanism</span>
   <h2 class="section-title">How the Ward Effect® Circuit Works — Step by Step</h2>
 
   <div class="steps">
     <div class="step">
       <div class="step-num">01</div>
       <div class="step-body">
-        <h4>The circuit is built around the object</h4>
-        <p>A microphone, speaker, amplifier, and EQ filter are configured in a feedback loop with the object — vessel, pipe, water sample, or structural element — physically inside that loop. Power is applied. The amplifier, operating in its parasitic mode, begins to oscillate. The oscillating frequency is not the amplifier's designed frequency. It is determined by the combined resonance of the circuit and the object inside it.</p>
+        <h4 data-i18n="tech__step1_h">The circuit is built around the object</h4>
+        <p data-i18n="tech__step1_p">A microphone, speaker, amplifier, and EQ filter are configured in a feedback loop with the object — vessel, pipe, water sample, or structural element — physically inside that loop. Power is applied. The amplifier, operating in its parasitic mode, begins to oscillate. The oscillating frequency is not the amplifier's designed frequency. It is determined by the combined resonance of the circuit and the object inside it.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-num">02</div>
       <div class="step-body">
-        <h4>The EQ is adjusted to create the balance point</h4>
-        <p>The EQ filter is tuned until a stable balance is established between the circuit's operating point and the object's resonant frequency. This balance is the key. The EQ is set far from the object resonance — a deliberate gap. That gap is what makes the circuit sensitive. Think of a radio tuner: the same hardware, but the position of the tuning knob determines which station — which property of the incoming signal — the circuit responds to.</p>
+        <h4 data-i18n="tech__step2_h">The EQ is adjusted to create the balance point</h4>
+        <p data-i18n="tech__step2_p">The EQ filter is tuned until a stable balance is established between the circuit's operating point and the object's resonant frequency. This balance is the key. The EQ is set far from the object resonance — a deliberate gap. That gap is what makes the circuit sensitive. Think of a radio tuner: the same hardware, but the position of the tuning knob determines which station — which property of the incoming signal — the circuit responds to.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-num">03</div>
       <div class="step-body">
         <h4>The object's condition changes — the circuit responds</h4>
-        <p>When the condition of the object changes — the level of liquid in a pipe drops, a trace of chlorine enters the water, a micro-crack forms in a concrete structure, biofilm begins to accumulate on a surface — its resonant frequency shifts. Because the object controls the circuit, that shift is immediately reflected in the circuit's oscillating frequency. The shift is measurable with standard frequency analysis. No laboratory. No consumables. No trained operator required.</p>
+        <p data-i18n="tech__step3_p">When the condition of the object changes — the level of liquid in a pipe drops, a trace of chlorine enters the water, a micro-crack forms in a concrete structure, biofilm begins to accumulate on a surface — its resonant frequency shifts. Because the object controls the circuit, that shift is immediately reflected in the circuit's oscillating frequency. The shift is measurable with standard frequency analysis. No laboratory. No consumables. No trained operator required.</p>
       </div>
     </div>
     <div class="step">
@@ -280,7 +286,7 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
   </div>
 
   <div class="tech-quote">
-    <p>"The amplifier is not corrected. It is deliberately allowed to operate outside its design specification — and in doing so, it becomes something the designer never intended: a precision sensing instrument of extraordinary sensitivity."</p>
+    <p data-i18n="tech__quote">"The amplifier is not corrected. It is deliberately allowed to operate outside its design specification — and in doing so, it becomes something the designer never intended: a precision sensing instrument of extraordinary sensitivity."</p>
   </div>
 </div>
 </div>
@@ -289,25 +295,25 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 
 <!-- ══ WHY EXPERTS MISSED IT ════════════════════════════════ -->
 <div class="section">
-  <span class="section-label">The Novelty</span>
-  <h2 class="section-title">Why Conventional Expertise Did Not See It</h2>
+  <span class="section-label" data-i18n="tech__novelty_label">The Novelty</span>
+  <h2 class="section-title" data-i18n="tech__novelty_title">Why Conventional Expertise Did Not See It</h2>
 
   <p class="body-text">The Ward Effect® was subjected to international patent examination by the Korean Intellectual Property Office (KIPO) as International Searching Authority for PCT/NZ2019/050002. KIPO examined five prior art documents spanning 1986 to 2014. All 13 claims were found novel, inventive, and industrially applicable.</p>
 
-  <p class="body-text">The reason other experts failed to reach the same conclusion is straightforward: they applied the framework of conventional sensing to a technology that is not conventional sensing. When an examiner — or an engineer — looks at a circuit and asks "where is the sensor?", the Ward Effect® gives an answer they are not expecting: <strong>the object is the sensor.</strong> The object is inside the loop. Its resonance controls the oscillation. There is no probe. There is no external measurement. The circuit and the object are one system.</p>
+  <p class="body-text" data-i18n="tech__novelty_p2">The reason other experts failed to reach the same conclusion is straightforward: they applied the framework of conventional sensing to a technology that is not conventional sensing. When an examiner — or an engineer — looks at a circuit and asks "where is the sensor?", the Ward Effect® gives an answer they are not expecting: <strong>the object is the sensor.</strong> The object is inside the loop. Its resonance controls the oscillation. There is no probe. There is no external measurement. The circuit and the object are one system.</p>
 
   <div class="three-col">
     <div class="col-card">
-      <h3>Conventional assumption</h3>
-      <p>The sensor is external to the measurement object. It emits, reflects, or contacts. The object is passive. The sensor is active. This is the mental model that failed to accommodate the Ward Effect®.</p>
+      <h3 data-i18n="tech__col1_h">Conventional assumption</h3>
+      <p data-i18n="tech__col1_p">The sensor is external to the measurement object. It emits, reflects, or contacts. The object is passive. The sensor is active. This is the mental model that failed to accommodate the Ward Effect®.</p>
     </div>
     <div class="col-card">
       <h3>Ward Effect® reality</h3>
-      <p>The object is inside the feedback loop. It is an active component of the oscillating circuit. Its resonance state determines the circuit's frequency. The object and the circuit cannot be separated — they are one system.</p>
+      <p data-i18n="tech__col2_p">The object is inside the feedback loop. It is an active component of the oscillating circuit. Its resonance state determines the circuit's frequency. The object and the circuit cannot be separated — they are one system.</p>
     </div>
     <div class="col-card">
-      <h3>Why nano-scale changes are detectable</h3>
-      <p>Because the object controls the circuit, not merely influences it. A controlling component does not need to change significantly to change what it controls. The gap between EQ balance point and object resonance amplifies even the smallest shift into a measurable frequency change.</p>
+      <h3 data-i18n="tech__col3_h">Why nano-scale changes are detectable</h3>
+      <p data-i18n="tech__col3_p">Because the object controls the circuit, not merely influences it. A controlling component does not need to change significantly to change what it controls. The gap between EQ balance point and object resonance amplifies even the smallest shift into a measurable frequency change.</p>
     </div>
   </div>
 
@@ -322,14 +328,14 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 <!-- ══ LEF LIBRARY SYSTEM ════════════════════════════════════ -->
 <div class="alt-bg">
 <div class="section">
-  <span class="section-label">The Digital Evolution</span>
-  <h2 class="section-title">From Analogue Balance to the LEF Library System</h2>
+  <span class="section-label" data-i18n="tech__lef_label">The Digital Evolution</span>
+  <h2 class="section-title" data-i18n="tech__lef_title">From Analogue Balance to the LEF Library System</h2>
 
   <p class="body-text">The original Ward Effect® patents (NZ 739314, NZ 770993, NZ 778527) describe analogue implementations: manual EQ adjustment, single-band operation, a skilled operator finding the balance point by hand. The technology works — but it requires human expertise to configure for each new application.</p>
 
   <p class="body-text">Case 831742 — the Library-Configured Acoustic Sensing and Actuation System, now under examination at IPONZ — is the digital evolution of that principle. A microcontroller replaces the human operator. An ESP32-based Ward Effect® Node cycles through EQ settings automatically, guided by a sparse Library Entry Format (LEF) system that stores pre-validated balance points for specific measurement tasks at 100:1 compression.</p>
 
-  <p class="body-text">The three-tier LEF retrieval architecture means the same hardware can be reconfigured in real time to measure water chlorine levels, then pipeline leak signatures, then cavitation events, then biofilm accumulation — simply by loading a different library entry. The radio tuner metaphor becomes automated: instead of a human turning the knob, the system cycles through a catalogue of known tuning positions, each calibrated to a specific property of the object being measured.</p>
+  <p class="body-text" data-i18n="tech__lef_p3">The three-tier LEF retrieval architecture means the same hardware can be reconfigured in real time to measure water chlorine levels, then pipeline leak signatures, then cavitation events, then biofilm accumulation — simply by loading a different library entry. The radio tuner metaphor becomes automated: instead of a human turning the knob, the system cycles through a catalogue of known tuning positions, each calibrated to a specific property of the object being measured.</p>
 
   <div class="principle-block">
     <p><strong>The result:</strong> A single Ward Effect® Node, costing a fraction of conventional laboratory instrumentation, can replace multiple specialist sensors — each of which would require separate hardware, consumables, calibration, and trained operators. The humanitarian application — chemical-free water purification monitoring at $5 per installation — becomes achievable at scale because the technology is self-configuring, self-calibrating, and requires no specialist maintenance.</p>
@@ -341,42 +347,42 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 
 <!-- ══ APPLICATIONS ══════════════════════════════════════════ -->
 <div class="section">
-  <span class="section-label">Applications</span>
+  <span class="section-label" data-i18n="tech__apps_label">Applications</span>
   <h2 class="section-title">What the Ward Effect® Measures — and How</h2>
 
   <div class="three-col">
     <div class="col-card">
-      <h3>Water quality &amp; purification</h3>
-      <p>Probe-free chlorine (HOCl) dosing optimisation. pH speciation. Biofilm and pathogen detection in distribution pipes. Chemical-free purification through acoustic cavitation control. The $5 bucket target for humanitarian deployment.</p>
+      <h3 data-i18n="tech__app1_h">Water quality &amp; purification</h3>
+      <p data-i18n="tech__app1_p">Probe-free chlorine (HOCl) dosing optimisation. pH speciation. Biofilm and pathogen detection in distribution pipes. Chemical-free purification through acoustic cavitation control. The $5 bucket target for humanitarian deployment.</p>
     </div>
     <div class="col-card">
-      <h3>Pipeline integrity</h3>
-      <p>Real-time acoustic leak detection using Ward Effect® frequency signatures. Multi-path leak localisation. Corrosion monitoring. Cavitation event detection in pumps and valves. Continuous monitoring overlay compatible with existing pipeline infrastructure.</p>
+      <h3 data-i18n="tech__app2_h">Pipeline integrity</h3>
+      <p data-i18n="tech__app2_p">Real-time acoustic leak detection using Ward Effect® frequency signatures. Multi-path leak localisation. Corrosion monitoring. Cavitation event detection in pumps and valves. Continuous monitoring overlay compatible with existing pipeline infrastructure.</p>
     </div>
     <div class="col-card">
-      <h3>Structural monitoring</h3>
-      <p>Non-invasive detection of rebar corrosion and delamination in reinforced concrete. Structural decay monitoring in bridges and buildings. Marine fouling detection on hulls and underwater structures at under 1W operating power.</p>
+      <h3 data-i18n="tech__app3_h">Structural monitoring</h3>
+      <p data-i18n="tech__app3_p">Non-invasive detection of rebar corrosion and delamination in reinforced concrete. Structural decay monitoring in bridges and buildings. Marine fouling detection on hulls and underwater structures at under 1W operating power.</p>
     </div>
     <div class="col-card">
-      <h3>Drain &amp; irrigation</h3>
-      <p>Non-invasive sediment accumulation detection in drainage and irrigation channels. Flow monitoring and blockage detection. De-silting programme optimisation using acoustic baseline comparison.</p>
+      <h3 data-i18n="tech__app4_h">Drain &amp; irrigation</h3>
+      <p data-i18n="tech__app4_p">Non-invasive sediment accumulation detection in drainage and irrigation channels. Flow monitoring and blockage detection. De-silting programme optimisation using acoustic baseline comparison.</p>
     </div>
     <div class="col-card">
-      <h3>Industrial process</h3>
-      <p>In-vessel content measurement without intrusive probes — critical for toxic, corrosive, or sterile process environments. LPG and liquid level sensing. Load cell applications via resonance shift. Food processing hygiene monitoring.</p>
+      <h3 data-i18n="tech__app5_h">Industrial process</h3>
+      <p data-i18n="tech__app5_p">In-vessel content measurement without intrusive probes — critical for toxic, corrosive, or sterile process environments. LPG and liquid level sensing. Load cell applications via resonance shift. Food processing hygiene monitoring.</p>
     </div>
     <div class="col-card">
-      <h3>Environmental</h3>
-      <p>Waterway and aquifer quality monitoring using LoRa mesh sensor networks. Remote deployment without mains power. Distributed monitoring of large catchment areas at a fraction of the cost of conventional instrumentation networks.</p>
+      <h3 data-i18n="tech__app6_h">Environmental</h3>
+      <p data-i18n="tech__app6_p">Waterway and aquifer quality monitoring using LoRa mesh sensor networks. Remote deployment without mains power. Distributed monitoring of large catchment areas at a fraction of the cost of conventional instrumentation networks.</p>
     </div>
   </div>
 </div>
 
 <!-- ══ CTA ═══════════════════════════════════════════════════ -->
 <section class="cta-banner">
-  <h2>Explore the Licensing Opportunity</h2>
+  <h2 data-i18n="tech__cta_title">Explore the Licensing Opportunity</h2>
   <p>Ward Effect® Technology is available for commercial licensing, research partnerships, and territorial manufacturing arrangements across all application domains.</p>
-  <a href="mailto:dave@wardeffect.com" class="btn-primary">Enquire About Licensing</a>
+  <a href="mailto:dave@wardeffect.com" class="btn-primary" data-i18n="tech__cta_btn">Enquire About Licensing</a>
 </section>
 
 <footer>
@@ -385,9 +391,10 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
     <a href="index.html">Mission</a>
     <a href="patents.html">Patents</a>
     <a href="technology.html">Technology</a>
+    <a href="why-experts-missed-it.html">Expert Assessment</a>
     <a href="commercialisation.html">Commercialisation</a>
   </div>
-  <p>&#169; 2026 Ward Effect&#174; Technology. Tacloban, Philippines.</p>
+  <p data-i18n="footer__copyright">&#169; 2026 Ward Effect&#174; Technology. Tacloban, Philippines.</p>
 </footer>
 
 <script>
@@ -395,6 +402,105 @@ document.querySelector('.hamburger').addEventListener('click', function() {
   this.classList.toggle('open');
   document.querySelector('.nav-links').classList.toggle('open');
 });
+</script>
+
+<script src="translations.js"></script>
+<script>
+const WE_LANGS=[
+  {code:'en',label:'&#127468;&#127463; English'},
+  {code:'af',label:'Afrikaans'},
+  {code:'ar',label:'&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;'},
+  {code:'zh-CN',label:'&#20013;&#25991; (&#31616;&#20307;)'},
+  {code:'zh-TW',label:'&#20013;&#25991; (&#32321;&#39636;)'},
+  {code:'hr',label:'Hrvatski'},
+  {code:'cs',label:'&#268;e&#353;tina'},
+  {code:'da',label:'Dansk'},
+  {code:'nl',label:'Nederlands'},
+  {code:'fi',label:'Suomi'},
+  {code:'fr',label:'Fran&#231;ais'},
+  {code:'de',label:'Deutsch'},
+  {code:'el',label:'&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;'},
+  {code:'hi',label:'&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;'},
+  {code:'hu',label:'Magyar'},
+  {code:'id',label:'Bahasa Indonesia'},
+  {code:'it',label:'Italiano'},
+  {code:'ja',label:'&#26085;&#26412;&#35486;'},
+  {code:'ko',label:'&#54620;&#44397;&#50612;'},
+  {code:'ms',label:'Bahasa Melayu'},
+  {code:'no',label:'Norsk'},
+  {code:'fa',label:'&#1601;&#1575;&#1585;&#1587;&#1610;'},
+  {code:'pl',label:'Polski'},
+  {code:'pt',label:'Portugu&#234;s'},
+  {code:'ro',label:'Rom&#226;n&#259;'},
+  {code:'ru',label:'&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;'},
+  {code:'es',label:'Espa&#241;ol'},
+  {code:'sv',label:'Svenska'},
+  {code:'tl',label:'Filipino'},
+  {code:'th',label:'&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;'},
+  {code:'tr',label:'T&#252;rk&#231;e'},
+  {code:'uk',label:'&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;'},
+  {code:'ur',label:'&#1575;&#1585;&#1583;&#1608;'},
+  {code:'vi',label:'Ti&#7871;ng Vi&#7879;t'}
+];
+let weCurrentLang='en';
+let weOriginals={};
+
+document.addEventListener('DOMContentLoaded',function(){
+  const menu=document.getElementById('we-lang-menu');
+  if(!menu)return;
+  WE_LANGS.forEach(function(l){
+    const b=document.createElement('button');
+    b.innerHTML=l.label;
+    b.style.cssText='display:block;width:100%;text-align:left;background:none;border:none;padding:0.5rem 1rem;color:rgba(255,255,255,0.7);font-family:Exo 2,sans-serif;font-size:0.85rem;cursor:pointer;';
+    b.onmouseenter=function(){this.style.background='rgba(232,168,56,0.1)';this.style.color='#F2C46D';};
+    b.onmouseleave=function(){this.style.background='none';this.style.color='rgba(255,255,255,0.7)';};
+    b.onclick=function(){applyWELang(l.code,l.label);document.getElementById('we-lang-menu').style.display='none';};
+    menu.appendChild(b);
+  });
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    const k=el.getAttribute('data-i18n');
+    if(k)weOriginals[k]=el.innerHTML;
+  });
+});
+
+function toggleWELang(){
+  const m=document.getElementById('we-lang-menu');
+  m.style.display=m.style.display==='block'?'none':'block';
+}
+
+document.addEventListener('click',function(e){
+  const sel=document.getElementById('we-lang-selector');
+  if(sel&&!sel.contains(e.target)){
+    const m=document.getElementById('we-lang-menu');
+    if(m)m.style.display='none';
+  }
+});
+
+function applyWELang(code,label){
+  if(code===weCurrentLang)return;
+  const btn=document.getElementById('we-lang-btn');
+  if(code==='en'){
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      const k=el.getAttribute('data-i18n');
+      if(k&&weOriginals[k]!==undefined)el.innerHTML=weOriginals[k];
+    });
+    btn.innerHTML='&#127760; Language &#9660;';
+    document.documentElement.dir='ltr';
+    weCurrentLang='en';
+    return;
+  }
+  if(typeof WE_TRANSLATIONS==='undefined'){return;}
+  const t=WE_TRANSLATIONS[code];
+  if(!t)return;
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    const k=el.getAttribute('data-i18n');
+    if(k&&t[k])el.innerHTML=t[k];
+  });
+  btn.innerHTML=label+' &#9660;';
+  weCurrentLang=code;
+  const rtl=['ar','fa','ur','he'];
+  document.documentElement.dir=rtl.includes(code)?'rtl':'ltr';
+}
 </script>
 </body>
 </html>

@@ -81,93 +81,98 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
   <a href="index.html" class="nav-logo">Ward Effect&#174;</a>
   <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   <div class="nav-links">
-    <a href="index.html">Mission</a>
-    <a href="patents.html">Patents</a>
-    <a href="technology.html">Technology</a>
-    <a href="why-experts-missed-it.html">Expert Assessment</a>
-    <a href="commercialisation.html" class="active">Commercialisation</a>
-    <a href="mailto:dave@wardeffect.com" class="nav-cta">Enquire</a>
+    <a href="index.html" data-i18n="nav__mission">Mission</a>
+    <a href="patents.html" data-i18n="nav__patents">Patents</a>
+    <a href="technology.html" data-i18n="nav__technology">Technology</a>
+    <a href="why-experts-missed-it.html" data-i18n="nav__expert_assessment">Expert Assessment</a>
+    <a href="commercialisation.html" class="active" data-i18n="nav__commercialisation">Commercialisation</a>
+    
+    <div id="we-lang-selector" style="position:relative;margin-left:1rem;flex-shrink:0;">
+      <button id="we-lang-btn" onclick="toggleWELang()" style="background:rgba(255,255,255,0.08);border:1px solid rgba(232,168,56,0.4);border-radius:4px;color:rgba(255,255,255,0.7);font-family:'Exo 2',sans-serif;font-size:0.82rem;padding:0.3rem 0.7rem;cursor:pointer;white-space:nowrap;">&#127760; Language &#9660;</button>
+      <div id="we-lang-menu" style="display:none;position:absolute;top:calc(100% + 6px);right:0;background:#112240;border:1px solid rgba(232,168,56,0.25);border-radius:6px;min-width:190px;max-height:320px;overflow-y:auto;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,0.45);"></div>
+    </div>
+    <a href="mailto:dave@wardeffect.com" class="nav-cta" data-i18n="nav__enquire">Enquire</a>
   </div>
 </nav>
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">Licensing &amp; Commercialisation</div>
-    <h1>One Base Unit.<br><em>Twenty Applications.</em></h1>
+    <div class="hero-eyebrow" data-i18n="comm__eyebrow">Licensing &amp; Commercialisation</div>
+    <h1 data-i18n="comm__h1a">One Base Unit.<br data-i18n="comm__h1b"><em>Twenty Applications.</em></h1>
     <p>Ward Effect® devices are made available to licensees and territorial partners through wholesale arrangements. Each device is built on a single universal base unit — the Ward Effect® Node — with interchangeable application heads and LEF libraries.</p>
   </div>
 </section>
 
 <div class="section">
 
-  <span class="section-label">The Model</span>
-  <h2 class="section-title">How It Works</h2>
+  <span class="section-label" data-i18n="comm__model_label">The Model</span>
+  <h2 class="section-title" data-i18n="comm__model_title">How It Works</h2>
 
   <div class="model-grid">
     <div class="model-card featured">
-      <span class="model-label">Core hardware</span>
-      <h3>The Base Unit</h3>
+      <span class="model-label" data-i18n="comm__card1_label">Core hardware</span>
+      <h3 data-i18n="comm__card1_h">The Base Unit</h3>
       <p>The Ward Effect® Node — LM386 amplifier and ESP32 microcontroller. This is the universal instrument. It does not change between applications. Licensees sell the base unit as the entry product, then grow revenue through additional heads and libraries.</p>
     </div>
     <div class="model-card">
-      <span class="model-label">Application system</span>
-      <h3>Head + Library</h3>
-      <p>Each application requires a matching transducer head — the mic/speaker assembly shaped and housed for the specific task — and a spectral fingerprint LEF library loaded into the unit. Head and library are sold as upgrades, generating ongoing revenue from a single installed base.</p>
+      <span class="model-label" data-i18n="comm__card2_label">Application system</span>
+      <h3 data-i18n="comm__card2_h">Head + Library</h3>
+      <p data-i18n="comm__card2_p">Each application requires a matching transducer head — the mic/speaker assembly shaped and housed for the specific task — and a spectral fingerprint LEF library loaded into the unit. Head and library are sold as upgrades, generating ongoing revenue from a single installed base.</p>
     </div>
   </div>
 
   <div class="note-box">
-    <strong>For territorial licensees:</strong> Purchase the base unit and application heads at wholesale price. Set your own retail price. As your customers expand into new applications, they purchase additional heads and libraries — recurring revenue from a single installed base. Exclusive territorial rights are available. Contact dave@wardeffect.com to discuss arrangements.
+    <strong data-i18n="comm__note_strong">For territorial licensees:</strong> Purchase the base unit and application heads at wholesale price. Set your own retail price. As your customers expand into new applications, they purchase additional heads and libraries — recurring revenue from a single installed base. Exclusive territorial rights are available. Contact dave@wardeffect.com to discuss arrangements.
   </div>
 
   <div class="divider"></div>
 
-  <span class="section-label">Device Catalogue</span>
-  <h2 class="section-title">Products Under Development</h2>
-  <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.75;margin-bottom:0.5rem;">All devices listed below are Ward Effect® Technology products in development, to be made available for wholesale to territorial licensees. The first device to market is the <strong style="color:var(--amber-light);">tile tester</strong>.</p>
+  <span class="section-label" data-i18n="comm__catalogue_label">Device Catalogue</span>
+  <h2 class="section-title" data-i18n="comm__catalogue_title">Products Under Development</h2>
+  <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.75;margin-bottom:0.5rem;">All devices listed below are Ward Effect® Technology products in development, to be made available for wholesale to territorial licensees. The first device to market is the <strong style="color:var(--amber-light);" data-i18n="comm__first_device">tile tester</strong>.</p>
 
   <div class="table-wrap">
     <table>
       <thead>
         <tr>
           <th>#</th>
-          <th>Device</th>
-          <th>What it measures or controls</th>
-          <th>Sector</th>
+          <th data-i18n="comm__th_device">Device</th>
+          <th data-i18n="comm__th_measures">What it measures or controls</th>
+          <th data-i18n="comm__th_sector">Sector</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="section-row"><td colspan="4">Construction &amp; materials</td></tr>
-        <tr><td>1</td><td>Tile tester</td><td>Hollow, loose, cracked, or delaminated tiles</td><td><span class="badge">Construction</span></td></tr>
-        <tr><td>2</td><td>Concrete integrity probe</td><td>Voids, cracks, and delamination in concrete slabs</td><td><span class="badge">Construction</span></td></tr>
-        <tr><td>3</td><td>Weld inspector</td><td>Subsurface weld defects and inclusions</td><td><span class="badge">Industrial</span></td></tr>
-        <tr><td>4</td><td>Composite delamination probe</td><td>Layer separation in carbon fibre, fibreglass, and laminates</td><td><span class="badge">Aerospace / marine</span></td></tr>
+        <tr class="section-row"><td colspan="4" data-i18n="comm__cat1">Construction &amp; materials</td></tr>
+        <tr><td>1</td><td data-i18n="comm__d1_name">Tile tester</td><td data-i18n="comm__d1_desc">Hollow, loose, cracked, or delaminated tiles</td><td><span class="badge" data-i18n="comm__d1_sector">Construction</span></td></tr>
+        <tr><td>2</td><td data-i18n="comm__d2_name">Concrete integrity probe</td><td data-i18n="comm__d2_desc">Voids, cracks, and delamination in concrete slabs</td><td><span class="badge">Construction</span></td></tr>
+        <tr><td>3</td><td data-i18n="comm__d3_name">Weld inspector</td><td data-i18n="comm__d3_desc">Subsurface weld defects and inclusions</td><td><span class="badge" data-i18n="comm__d3_sector">Industrial</span></td></tr>
+        <tr><td>4</td><td data-i18n="comm__d4_name">Composite delamination probe</td><td data-i18n="comm__d4_desc">Layer separation in carbon fibre, fibreglass, and laminates</td><td><span class="badge" data-i18n="comm__d4_sector">Aerospace / marine</span></td></tr>
 
-        <tr class="section-row"><td colspan="4">Pipeline &amp; infrastructure</td></tr>
-        <tr><td>5</td><td>Pipe leak detector</td><td>Acoustic signature of active leaks in pressurised pipes</td><td><span class="badge">Infrastructure</span></td></tr>
-        <tr><td>6</td><td>Pipe wall thickness probe</td><td>Corrosion and wall thinning — clamp-on, no pipe cutting</td><td><span class="badge">Infrastructure</span></td></tr>
-        <tr><td>7</td><td>Flow composition monitor</td><td>Fluid type and mix — water, oil, slurry, multiphase</td><td><span class="badge">Oil &amp; gas / mining</span></td></tr>
-        <tr><td>8</td><td>Water hammer scanner</td><td>Pressure transient and surge events in pipelines</td><td><span class="badge">Infrastructure</span></td></tr>
-        <tr><td>9</td><td>Blockage locator</td><td>Position and nature of partial or full pipe blockages</td><td><span class="badge">Infrastructure</span></td></tr>
+        <tr class="section-row"><td colspan="4" data-i18n="comm__cat2">Pipeline &amp; infrastructure</td></tr>
+        <tr><td>5</td><td data-i18n="comm__d5_name">Pipe leak detector</td><td data-i18n="comm__d5_desc">Acoustic signature of active leaks in pressurised pipes</td><td><span class="badge" data-i18n="comm__d5_sector">Infrastructure</span></td></tr>
+        <tr><td>6</td><td data-i18n="comm__d6_name">Pipe wall thickness probe</td><td data-i18n="comm__d6_desc">Corrosion and wall thinning — clamp-on, no pipe cutting</td><td><span class="badge">Infrastructure</span></td></tr>
+        <tr><td>7</td><td data-i18n="comm__d7_name">Flow composition monitor</td><td data-i18n="comm__d7_desc">Fluid type and mix — water, oil, slurry, multiphase</td><td><span class="badge" data-i18n="comm__d7_sector">Oil &amp; gas / mining</span></td></tr>
+        <tr><td>8</td><td data-i18n="comm__d8_name">Water hammer scanner</td><td data-i18n="comm__d8_desc">Pressure transient and surge events in pipelines</td><td><span class="badge">Infrastructure</span></td></tr>
+        <tr><td>9</td><td data-i18n="comm__d9_name">Blockage locator</td><td data-i18n="comm__d9_desc">Position and nature of partial or full pipe blockages</td><td><span class="badge">Infrastructure</span></td></tr>
 
-        <tr class="section-row"><td colspan="4">Water &amp; liquids</td></tr>
-        <tr><td>10</td><td>Water quality analyser</td><td>Contaminant identification by spectral fingerprint</td><td><span class="badge">Utilities / labs</span></td></tr>
-        <tr><td>11</td><td>Titration monitor</td><td>Chemical reaction endpoint detection in liquids</td><td><span class="badge">Laboratory / industrial</span></td></tr>
-        <tr><td>12</td><td>Biofilm detector</td><td>Biological fouling on surfaces and inside pipes</td><td><span class="badge">Water / food industry</span></td></tr>
+        <tr class="section-row"><td colspan="4" data-i18n="comm__cat3">Water &amp; liquids</td></tr>
+        <tr><td>10</td><td data-i18n="comm__d10_name">Water quality analyser</td><td data-i18n="comm__d10_desc">Contaminant identification by spectral fingerprint</td><td><span class="badge" data-i18n="comm__d10_sector">Utilities / labs</span></td></tr>
+        <tr><td>11</td><td data-i18n="comm__d11_name">Titration monitor</td><td data-i18n="comm__d11_desc">Chemical reaction endpoint detection in liquids</td><td><span class="badge" data-i18n="comm__d11_sector">Laboratory / industrial</span></td></tr>
+        <tr><td>12</td><td data-i18n="comm__d12_name">Biofilm detector</td><td data-i18n="comm__d12_desc">Biological fouling on surfaces and inside pipes</td><td><span class="badge" data-i18n="comm__d12_sector">Water / food industry</span></td></tr>
 
-        <tr class="section-row"><td colspan="4">Agriculture &amp; environment</td></tr>
-        <tr><td>13</td><td>Soil composition probe</td><td>Soil density, moisture, and composition by layer</td><td><span class="badge">Agriculture</span></td></tr>
-        <tr><td>14</td><td>Canal de-silting controller</td><td>Controls silt composition feeding a pump — enables silt removal by conventional pumps</td><td><span class="badge">Agriculture / civil</span></td></tr>
-        <tr><td>15</td><td>Tree health probe</td><td>Internal decay, cavities, and rot in timber and trees</td><td><span class="badge">Forestry / arboriculture</span></td></tr>
+        <tr class="section-row"><td colspan="4" data-i18n="comm__cat4">Agriculture &amp; environment</td></tr>
+        <tr><td>13</td><td data-i18n="comm__d13_name">Soil composition probe</td><td data-i18n="comm__d13_desc">Soil density, moisture, and composition by layer</td><td><span class="badge" data-i18n="comm__d13_sector">Agriculture</span></td></tr>
+        <tr><td>14</td><td data-i18n="comm__d14_name">Canal de-silting controller</td><td data-i18n="comm__d14_desc">Controls silt composition feeding a pump — enables silt removal by conventional pumps</td><td><span class="badge" data-i18n="comm__d14_sector">Agriculture / civil</span></td></tr>
+        <tr><td>15</td><td data-i18n="comm__d15_name">Tree health probe</td><td data-i18n="comm__d15_desc">Internal decay, cavities, and rot in timber and trees</td><td><span class="badge" data-i18n="comm__d15_sector">Forestry / arboriculture</span></td></tr>
 
-        <tr class="section-row"><td colspan="4">Food &amp; processing</td></tr>
-        <tr><td>16</td><td>Fermentation monitor</td><td>Fermentation stage tracking in brew, wine, and bioprocess</td><td><span class="badge">Food &amp; beverage</span></td></tr>
-        <tr><td>17</td><td>Homogenisation probe</td><td>Emulsion consistency and particle distribution in processing</td><td><span class="badge">Food / pharma</span></td></tr>
+        <tr class="section-row"><td colspan="4" data-i18n="comm__cat5">Food &amp; processing</td></tr>
+        <tr><td>16</td><td data-i18n="comm__d16_name">Fermentation monitor</td><td data-i18n="comm__d16_desc">Fermentation stage tracking in brew, wine, and bioprocess</td><td><span class="badge" data-i18n="comm__d16_sector">Food &amp; beverage</span></td></tr>
+        <tr><td>17</td><td data-i18n="comm__d17_name">Homogenisation probe</td><td data-i18n="comm__d17_desc">Emulsion consistency and particle distribution in processing</td><td><span class="badge" data-i18n="comm__d17_sector">Food / pharma</span></td></tr>
 
-        <tr class="section-row"><td colspan="4">Medical &amp; biological</td></tr>
-        <tr><td>18</td><td>Biofilm treatment probe</td><td>Targeted acoustic removal of biological surface attachment</td><td><span class="badge">Medical devices</span></td></tr>
-        <tr><td>19</td><td>Tissue analyser</td><td>Non-invasive acoustic response of biological tissue</td><td><span class="badge">Healthcare</span></td></tr>
-        <tr><td>20</td><td>Bone density probe</td><td>Acoustic measurement of bone mass and structural integrity</td><td><span class="badge">Orthopaedics</span></td></tr>
+        <tr class="section-row"><td colspan="4" data-i18n="comm__cat6">Medical &amp; biological</td></tr>
+        <tr><td>18</td><td data-i18n="comm__d18_name">Biofilm treatment probe</td><td data-i18n="comm__d18_desc">Targeted acoustic removal of biological surface attachment</td><td><span class="badge" data-i18n="comm__d18_sector">Medical devices</span></td></tr>
+        <tr><td>19</td><td data-i18n="comm__d19_name">Tissue analyser</td><td data-i18n="comm__d19_desc">Non-invasive acoustic response of biological tissue</td><td><span class="badge" data-i18n="comm__d19_sector">Healthcare</span></td></tr>
+        <tr><td>20</td><td data-i18n="comm__d20_name">Bone density probe</td><td data-i18n="comm__d20_desc">Acoustic measurement of bone mass and structural integrity</td><td><span class="badge" data-i18n="comm__d20_sector">Orthopaedics</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -175,9 +180,9 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 </div>
 
 <section class="cta-banner">
-  <h2>Enquire About Licensing</h2>
-  <p>Territorial licensing, wholesale pricing, and application head arrangements are available directly from Ward Effect® Technology. Contact us to discuss the opportunity for your territory.</p>
-  <a href="mailto:dave@wardeffect.com" class="btn-primary">Contact dave@wardeffect.com</a>
+  <h2 data-i18n="comm__cta_title">Enquire About Licensing</h2>
+  <p data-i18n="comm__cta_p">Territorial licensing, wholesale pricing, and application head arrangements are available directly from Ward Effect® Technology. Contact us to discuss the opportunity for your territory.</p>
+  <a href="mailto:dave@wardeffect.com" class="btn-primary" data-i18n="comm__cta_btn">Contact dave@wardeffect.com</a>
 </section>
 
 <footer>
@@ -189,7 +194,7 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
     <a href="why-experts-missed-it.html">Expert Assessment</a>
     <a href="commercialisation.html">Commercialisation</a>
   </div>
-  <p>&#169; 2026 Ward Effect&#174; Technology. Tacloban, Philippines.</p>
+  <p data-i18n="footer__copyright">&#169; 2026 Ward Effect&#174; Technology. Tacloban, Philippines.</p>
 </footer>
 
 <script>
@@ -197,6 +202,105 @@ document.querySelector('.hamburger').addEventListener('click',function(){
   this.classList.toggle('open');
   document.querySelector('.nav-links').classList.toggle('open');
 });
+</script>
+
+<script src="translations.js"></script>
+<script>
+const WE_LANGS=[
+  {code:'en',label:'&#127468;&#127463; English'},
+  {code:'af',label:'Afrikaans'},
+  {code:'ar',label:'&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;'},
+  {code:'zh-CN',label:'&#20013;&#25991; (&#31616;&#20307;)'},
+  {code:'zh-TW',label:'&#20013;&#25991; (&#32321;&#39636;)'},
+  {code:'hr',label:'Hrvatski'},
+  {code:'cs',label:'&#268;e&#353;tina'},
+  {code:'da',label:'Dansk'},
+  {code:'nl',label:'Nederlands'},
+  {code:'fi',label:'Suomi'},
+  {code:'fr',label:'Fran&#231;ais'},
+  {code:'de',label:'Deutsch'},
+  {code:'el',label:'&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;'},
+  {code:'hi',label:'&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;'},
+  {code:'hu',label:'Magyar'},
+  {code:'id',label:'Bahasa Indonesia'},
+  {code:'it',label:'Italiano'},
+  {code:'ja',label:'&#26085;&#26412;&#35486;'},
+  {code:'ko',label:'&#54620;&#44397;&#50612;'},
+  {code:'ms',label:'Bahasa Melayu'},
+  {code:'no',label:'Norsk'},
+  {code:'fa',label:'&#1601;&#1575;&#1585;&#1587;&#1610;'},
+  {code:'pl',label:'Polski'},
+  {code:'pt',label:'Portugu&#234;s'},
+  {code:'ro',label:'Rom&#226;n&#259;'},
+  {code:'ru',label:'&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;'},
+  {code:'es',label:'Espa&#241;ol'},
+  {code:'sv',label:'Svenska'},
+  {code:'tl',label:'Filipino'},
+  {code:'th',label:'&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;'},
+  {code:'tr',label:'T&#252;rk&#231;e'},
+  {code:'uk',label:'&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;'},
+  {code:'ur',label:'&#1575;&#1585;&#1583;&#1608;'},
+  {code:'vi',label:'Ti&#7871;ng Vi&#7879;t'}
+];
+let weCurrentLang='en';
+let weOriginals={};
+
+document.addEventListener('DOMContentLoaded',function(){
+  const menu=document.getElementById('we-lang-menu');
+  if(!menu)return;
+  WE_LANGS.forEach(function(l){
+    const b=document.createElement('button');
+    b.innerHTML=l.label;
+    b.style.cssText='display:block;width:100%;text-align:left;background:none;border:none;padding:0.5rem 1rem;color:rgba(255,255,255,0.7);font-family:Exo 2,sans-serif;font-size:0.85rem;cursor:pointer;';
+    b.onmouseenter=function(){this.style.background='rgba(232,168,56,0.1)';this.style.color='#F2C46D';};
+    b.onmouseleave=function(){this.style.background='none';this.style.color='rgba(255,255,255,0.7)';};
+    b.onclick=function(){applyWELang(l.code,l.label);document.getElementById('we-lang-menu').style.display='none';};
+    menu.appendChild(b);
+  });
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    const k=el.getAttribute('data-i18n');
+    if(k)weOriginals[k]=el.innerHTML;
+  });
+});
+
+function toggleWELang(){
+  const m=document.getElementById('we-lang-menu');
+  m.style.display=m.style.display==='block'?'none':'block';
+}
+
+document.addEventListener('click',function(e){
+  const sel=document.getElementById('we-lang-selector');
+  if(sel&&!sel.contains(e.target)){
+    const m=document.getElementById('we-lang-menu');
+    if(m)m.style.display='none';
+  }
+});
+
+function applyWELang(code,label){
+  if(code===weCurrentLang)return;
+  const btn=document.getElementById('we-lang-btn');
+  if(code==='en'){
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      const k=el.getAttribute('data-i18n');
+      if(k&&weOriginals[k]!==undefined)el.innerHTML=weOriginals[k];
+    });
+    btn.innerHTML='&#127760; Language &#9660;';
+    document.documentElement.dir='ltr';
+    weCurrentLang='en';
+    return;
+  }
+  if(typeof WE_TRANSLATIONS==='undefined'){return;}
+  const t=WE_TRANSLATIONS[code];
+  if(!t)return;
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    const k=el.getAttribute('data-i18n');
+    if(k&&t[k])el.innerHTML=t[k];
+  });
+  btn.innerHTML=label+' &#9660;';
+  weCurrentLang=code;
+  const rtl=['ar','fa','ur','he'];
+  document.documentElement.dir=rtl.includes(code)?'rtl':'ltr';
+}
 </script>
 </body>
 </html>
