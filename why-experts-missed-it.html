@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Experts Dismissed It - Ward Effect® Technology</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1D3A;--navy-mid:#112240;--navy-light:#1a3a6b;--amber:#E8A838;--amber-light:#F2C46D;--white:#FFFFFF;--text-muted:rgba(255,255,255,0.65);--border:rgba(232,168,56,0.2);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{overflow-x:hidden;}
+body{overflow-x:hidden;font-family:'Exo 2',sans-serif;background:var(--navy);color:var(--white);-webkit-font-smoothing:antialiased;}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 2.5rem;height:60px;flex-wrap:wrap;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--amber);text-decoration:none;white-space:nowrap;margin-right:2.5rem;flex-shrink:0;}
+.nav-links{display:flex;align-items:center;gap:2rem;flex:1;}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:0.88rem;text-transform:uppercase;transition:color 0.2s;}
+.nav-links a:hover{color:var(--amber-light);}
+.nav-cta{background:var(--amber)!important;color:var(--navy)!important;padding:0.4rem 1rem;border-radius:4px;font-weight:600!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;flex-shrink:0;}
+.hamburger span{display:block;width:26px;height:3px;background:var(--amber);border-radius:2px;}
+
+/* ── HERO ── */
+.hero{padding:6rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(232,168,56,0.06) 0%,transparent 65%);pointer-events:none;}
+.hero-inner{max-width:820px;margin:0 auto;position:relative;}
+.eyebrow{display:inline-block;font-size:0.78rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);border:1px solid var(--border);padding:0.4rem 1.2rem;border-radius:2px;margin-bottom:2rem;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4.4rem);font-weight:600;line-height:1.1;color:var(--white);margin-bottom:1.5rem;}
+.hero h1 em{color:var(--amber-light);font-style:italic;}
+.hero-lead{font-size:clamp(1.05rem,1.8vw,1.2rem);color:var(--text-muted);line-height:1.85;max-width:700px;margin:0 auto;}
+
+/* ── LAYOUT ── */
+.section{padding:5rem 2rem;max-width:860px;margin:0 auto;}
+.section-wide{padding:5rem 2rem;max-width:1060px;margin:0 auto;}
+.section-label{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:0.8rem;display:block;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:600;color:var(--white);margin-bottom:1.8rem;line-height:1.2;}
+.body-text{color:var(--text-muted);font-size:1rem;line-height:1.9;margin-bottom:1.3rem;}
+.body-text strong{color:var(--white);font-weight:500;}
+
+/* ── BERLIN STORY ── */
+.berlin-wrap{background:rgba(11,29,58,0.6);border:1px solid rgba(232,168,56,0.35);border-radius:12px;padding:3rem;margin:3rem 0;position:relative;overflow:hidden;}
+.berlin-wrap::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--amber);}
+.berlin-city{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--amber);margin-bottom:1.5rem;display:block;padding-left:0.5rem;}
+.berlin-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:600;color:var(--white);line-height:1.4;margin-bottom:1.5rem;font-style:italic;}
+.berlin-quote em{color:var(--amber-light);}
+.berlin-body{color:var(--text-muted);font-size:1rem;line-height:1.9;}
+.berlin-body strong{color:var(--white);font-weight:500;}
+.berlin-resolution{margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border);}
+.berlin-resolution p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--amber-light);line-height:1.6;font-style:italic;}
+
+/* ── WHITEBOARD VISUAL ── */
+.whiteboard-wrap{background:rgba(255,255,255,0.97);border-radius:10px;padding:2.5rem;margin:2.5rem 0;position:relative;}
+.whiteboard-title{font-family:'Exo 2',sans-serif;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:#888;margin-bottom:1.5rem;text-align:center;}
+.whiteboard-equations{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.eq-block{text-align:center;}
+.eq-block .eq{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#1a1a2e;line-height:1.8;}
+.eq-block .eq-label{font-size:0.75rem;color:#888;margin-top:0.3rem;letter-spacing:0.1em;text-transform:uppercase;}
+.whiteboard-note{text-align:center;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #e8e8e8;}
+.whiteboard-note p{font-size:0.88rem;color:#666;line-height:1.6;}
+.whiteboard-note strong{color:#333;}
+/* Strikethrough overlay -->*/
+.struck{position:relative;display:inline-block;}
+.struck::after{content:'';position:absolute;top:50%;left:-4px;right:-4px;height:2px;background:#E8593C;transform:rotate(-6deg);}
+
+/* ── PRINCIPLE BLOCK ── */
+.principle-block{background:rgba(232,168,56,0.05);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:6px;padding:2rem 2.2rem;margin:2.5rem 0;}
+.principle-block p{color:var(--text-muted);font-size:1rem;line-height:1.9;}
+.principle-block strong{color:var(--amber-light);font-weight:500;}
+
+/* ── FIVE REASONS ── */
+.reasons{margin:2.5rem 0;}
+.reason{display:grid;grid-template-columns:56px 1fr;gap:1.2rem;margin-bottom:2.2rem;align-items:start;}
+.reason-num{font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:var(--amber);opacity:0.35;line-height:1;text-align:center;}
+.reason-body h4{font-size:1rem;font-weight:500;color:var(--white);margin-bottom:0.5rem;}
+.reason-body p{font-size:0.95rem;color:var(--text-muted);line-height:1.85;}
+
+/* ── DIVIDER ── */
+.divider{height:1px;background:var(--border);margin:0;}
+.alt-bg{background:var(--navy-mid);}
+
+/* ── PULL QUOTE ── */
+.pull-quote{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2.5rem 0;margin:3rem 0;text-align:center;}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.9rem);color:var(--amber-light);font-style:italic;line-height:1.6;max-width:720px;margin:0 auto;}
+
+/* ── STRATEGIC BOX ── */
+.strategy-box{background:rgba(26,58,107,0.35);border:1px solid rgba(232,168,56,0.35);border-radius:8px;padding:2rem;margin:2.5rem 0;}
+.strategy-box h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--amber-light);margin-bottom:1rem;font-weight:600;}
+.strategy-box p{font-size:0.95rem;color:var(--text-muted);line-height:1.85;margin-bottom:0.8rem;}
+.strategy-box p:last-child{margin-bottom:0;}
+
+/* ── THREE COL ── */
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin:2.5rem 0;}
+.col-card{background:rgba(232,168,56,0.04);border:1px solid var(--border);border-radius:8px;padding:1.8rem;}
+.col-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--amber-light);margin-bottom:0.8rem;font-weight:600;}
+.col-card p{font-size:0.9rem;color:var(--text-muted);line-height:1.8;}
+
+/* ── CTA ── */
+.cta-banner{padding:5rem 2rem;background:var(--navy-light);border-top:1px solid var(--border);text-align:center;}
+.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:var(--white);margin-bottom:1rem;}
+.cta-banner p{color:var(--text-muted);font-size:1.05rem;max-width:580px;margin:0 auto 2rem;}
+.btn-primary{background:var(--amber);color:var(--navy);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s;display:inline-block;}
+.btn-primary:hover{background:var(--amber-light);}
+.btn-outline{background:transparent;color:var(--amber);border:1px solid var(--amber);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:500;font-size:0.95rem;transition:all 0.2s;display:inline-block;margin-left:1rem;}
+.btn-outline:hover{background:rgba(232,168,56,0.1);}
+
+/* ── FOOTER ── */
+footer{background:rgba(5,12,25,0.95);padding:3rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--border);}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--amber);font-weight:600;}
+.footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+.footer-links a{color:var(--text-muted);text-decoration:none;font-size:0.85rem;}
+.footer-links a:hover{color:var(--amber-light);}
+footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
+
+/* ── RESPONSIVE ── */
+@media(min-width:769px){.nav-links{display:flex!important;}.hamburger{display:none!important;}}
+@media(max-width:768px){
+  nav{height:auto;padding:0.8rem 1rem;}
+  .nav-logo{flex:1;}
+  .hamburger{display:flex;order:2;}
+  .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;}
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);}
+  .three-col{grid-template-columns:1fr;}
+  .whiteboard-equations{grid-template-columns:1fr 1fr;}
+  .berlin-wrap{padding:2rem 1.5rem;}
+  footer{flex-direction:column;text-align:center;}
+}
+@media(max-width:480px){
+  .whiteboard-equations{grid-template-columns:1fr;}
+  .reason{grid-template-columns:40px 1fr;}
+  .btn-outline{margin-left:0;margin-top:1rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Ward Effect&#174;</a>
+  <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  <div class="nav-links">
+    <a href="index.html">Mission</a>
+    <a href="patents.html">Patents</a>
+    <a href="technology.html">Technology</a>
+    <a href="why-experts-missed-it.html">Expert Assessment</a>
+    <a href="commercialisation.html">Commercialisation</a>
+    <a href="mailto:dave@wardeffect.com" class="nav-cta">Enquire</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ═══════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Ward Effect® Technology — Expert Assessment</div>
+    <h1>Why Experts Said <em>This Cannot Work</em> — and Why They Were Wrong</h1>
+    <p class="hero-lead">The Ward Effect® was not misunderstood because experts were insufficiently qualified. It was misunderstood because they were perfectly qualified — in conventional sensing theory. And conventional sensing theory does not contain the Ward Effect®. Every equation they wrote was correct. Every conclusion they reached was wrong. This is why.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ BERLIN ════════════════════════════════════════════════ -->
+<div class="section">
+  <span class="section-label">Berlin — A First-Hand Account</span>
+  <h2 class="section-title">The Professor, the Whiteboard, and the Working Device</h2>
+
+  <div class="berlin-wrap">
+    <span class="berlin-city">&#9679; Berlin, Germany — Ward Effect® Technology Demonstration</span>
+    <div class="berlin-quote">
+      "This cannot work."<br>
+      <em>— Professor of Electronics, Berlin</em>
+    </div>
+    <div class="berlin-body">
+      <p>The Ward Effect® device was demonstrated to a company in Berlin. Present was a professor of electronics — a qualified expert with decades of experience in circuit theory and sensor design. He was shown the device operating. He observed the Ward Effect® producing measurable, repeatable results in real time.</p>
+      <p style="margin-top:1rem;">His response was not to question the results. He went to the whiteboard and filled it with equations — impedance formulae, resonance calculations, transfer functions. Standard circuit theory, correctly applied. When he had finished, he turned around and said again:</p>
+    </div>
+    <div class="berlin-resolution">
+      <p>"This cannot work. The equations show it is impossible."</p>
+    </div>
+  </div>
+
+  <p class="body-text">He was not wrong about the equations. Every formula on that whiteboard was mathematically correct. What he had not accounted for — what conventional circuit theory does not account for — was that <strong>parasitic oscillation had already changed the operating mode of the amplifier before a single equation was written.</strong></p>
+
+  <p class="body-text">The LM386 amplifier in the Ward Effect® circuit is not operating as an amplifier. Under the conditions deliberately created by the Ward Effect® configuration, parasitic oscillation causes the device to depart entirely from its design specification. It is no longer behaving according to its datasheet. It is no longer a device to which standard amplifier equations apply. It has become, through parasitic behaviour, something closer to a tank circuit — a resonant tuning device.</p>
+
+  <p class="body-text">The professor's equations described an amplifier. The device in front of him was not an amplifier. The equations were correct. The premise was wrong. The device worked — and continues to work — precisely because parasitic oscillation invalidated every equation he wrote before he wrote them.</p>
+
+  <div class="pull-quote">
+    <p>"The equations were correct. The premise was wrong. Parasitic oscillation had already changed what the device was — before a single calculation began."</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ THE WHITEBOARD ═════════════════════════════════════════ -->
+<div class="alt-bg">
+<div class="section">
+  <span class="section-label">What Was Written on the Whiteboard</span>
+  <h2 class="section-title">Correct Equations. Wrong Device.</h2>
+
+  <p class="body-text">The equations a qualified electronics expert would write when evaluating a circuit containing an LM386 amplifier are entirely standard. They are taught in every electronics engineering course. They are correct — for an amplifier operating within its design specification.</p>
+
+  <div class="whiteboard-wrap">
+    <div class="whiteboard-title">Standard amplifier circuit equations — all correct, all inapplicable</div>
+    <div class="whiteboard-equations">
+      <div class="eq-block">
+        <div class="eq"><span class="struck">f = 1 / (2π√LC)</span></div>
+        <div class="eq-label">Resonant frequency</div>
+      </div>
+      <div class="eq-block">
+        <div class="eq"><span class="struck">A<sub>v</sub> = −g<sub>m</sub>·R<sub>L</sub></span></div>
+        <div class="eq-label">Voltage gain (amplifier)</div>
+      </div>
+      <div class="eq-block">
+        <div class="eq"><span class="struck">Z = R + j(ωL − 1/ωC)</span></div>
+        <div class="eq-label">Circuit impedance</div>
+      </div>
+      <div class="eq-block">
+        <div class="eq"><span class="struck">P<sub>osc</sub> = loop gain ≥ 1</span></div>
+        <div class="eq-label">Barkhausen criterion</div>
+      </div>
+      <div class="eq-block">
+        <div class="eq"><span class="struck">SNR = P<sub>signal</sub>/P<sub>noise</sub></span></div>
+        <div class="eq-label">Signal-to-noise ratio</div>
+      </div>
+      <div class="eq-block">
+        <div class="eq"><span class="struck">H(jω) = V<sub>out</sub>/V<sub>in</sub></span></div>
+        <div class="eq-label">Transfer function</div>
+      </div>
+    </div>
+    <div class="whiteboard-note">
+      <p><strong>What invalidates all of the above:</strong> The LM386 is not operating as an amplifier. Parasitic oscillation has caused it to depart from its design specification. It is behaving as a tank circuit. None of these equations apply to the device that is actually in the circuit.</p>
+    </div>
+  </div>
+
+  <p class="body-text">The Barkhausen criterion — the condition that loop gain must equal or exceed unity for oscillation to be sustained — is particularly instructive. A conventional electronics engineer seeing oscillation in an amplifier circuit would immediately apply this criterion and then work to eliminate the oscillation by reducing gain or adding stabilising components. The Ward Effect® deliberately satisfies this criterion and then goes further: it allows the resulting oscillation to be controlled by the object placed inside the feedback loop.</p>
+
+  <div class="principle-block">
+    <p><strong>The critical insight that the whiteboard missed:</strong> Once parasitic oscillation is established and stabilised, the amplifier is no longer the correct model for the device's behaviour. A new model is required — one in which the device acts as a resonant tuning circuit whose oscillating frequency is determined not by the amplifier's own components alone, but by the combined resonance of the circuit and the object physically inside its feedback loop. <strong>This model does not exist in conventional electronics textbooks. It is the Ward Effect®.</strong></p>
+  </div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ FIVE REASONS ═══════════════════════════════════════════ -->
+<div class="section">
+  <span class="section-label">The Analysis</span>
+  <h2 class="section-title">Five Reasons Qualified Experts Reached the Wrong Conclusion</h2>
+
+  <div class="reasons">
+
+    <div class="reason">
+      <div class="reason-num">01</div>
+      <div class="reason-body">
+        <h4>They were trained to eliminate parasitic oscillation</h4>
+        <p>Every electronics engineer learns, from their first course, that parasitic oscillation is a fault. It is an unintended behaviour caused by stray capacitance and inductance creating an unplanned feedback path. The entire profession's training is oriented toward suppressing it — adding decoupling capacitors, reducing gain, improving PCB layout. The Ward Effect® inverts this completely. An expert encountering a deliberately oscillating LM386 circuit would instinctively look for the design flaw and propose the fix. The possibility that the oscillation is intentional, stable, and useful is not in their mental model.</p>
+      </div>
+    </div>
+
+    <div class="reason">
+      <div class="reason-num">02</div>
+      <div class="reason-body">
+        <h4>They applied the wrong device model</h4>
+        <p>The LM386 is one of the most widely used audio amplifier ICs in the world. It is in millions of products. Every engineer who has used it has used it as an amplifier — because that is what it is designed to be. When they saw it in the Ward Effect® circuit, they modelled it as an amplifier, applied amplifier equations, and reached conclusions about what is and is not possible for an amplifier circuit. The device in front of them was not functioning as an amplifier. Their model was wrong. Their conclusions followed logically from the wrong model.</p>
+      </div>
+    </div>
+
+    <div class="reason">
+      <div class="reason-num">03</div>
+      <div class="reason-body">
+        <h4>The object-inside-the-loop architecture has no precedent in conventional sensing</h4>
+        <p>Every conventional sensor architecture places the sensor outside the object being measured. A probe touches it. A beam reflects from it. A field passes through it. The object is passive. The sensor is active. The Ward Effect® places the object physically inside the oscillating feedback loop — it becomes an active component of the circuit, controlling its frequency. There is no prior art that uses this architecture. When an expert looks at the Ward Effect® and asks "where is the sensor?", the answer — the object is the sensor, it is inside the loop — is not a category that exists in their analytical framework.</p>
+      </div>
+    </div>
+
+    <div class="reason">
+      <div class="reason-num">04</div>
+      <div class="reason-body">
+        <h4>The sensitivity mechanism is counterintuitive at the scale being claimed</h4>
+        <p>When told that a nano-scale change in an object's condition produces a measurable change in circuit frequency, a conventional electronics engineer's immediate response is scepticism — because in conventional sensing, a nano-scale change requires a nano-scale sensor with extraordinary signal conditioning to detect. What they do not account for is that the Ward Effect® does not measure the change directly. The object controls the circuit. A controlling component does not need to change much to change what it controls. The sensitivity is not of the measurement — it is of the control relationship. This distinction is invisible without understanding the underlying architecture.</p>
+      </div>
+    </div>
+
+    <div class="reason">
+      <div class="reason-num">05</div>
+      <div class="reason-body">
+        <h4>The technology is not derivable from prior art by incremental steps</h4>
+        <p>The Korean Intellectual Property Office examined five prior art documents spanning 28 years and found the Ward Effect® novel and inventive. This is because there is no incremental path from conventional sensing to the Ward Effect®. You cannot improve an external probe-based sensor and arrive at object-inside-the-loop parasitic oscillation control. The conceptual leap required — unlearn parasitic oscillation as a fault, recognise it as a tool, place the object inside the loop, discover that EQ tuning selects which property is measured — has no obvious starting point in any prior literature. An expert working forward from existing knowledge would not arrive here.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ WHAT KIPO SAW ══════════════════════════════════════════ -->
+<div class="alt-bg">
+<div class="section">
+  <span class="section-label">What KIPO Understood</span>
+  <h2 class="section-title">The Examination That Got It Right</h2>
+
+  <p class="body-text">The Korean Intellectual Property Office (KIPO), acting as International Searching Authority for PCT/NZ2019/050002, conducted a thorough prior art search across five documents spanning 1986 to 2014. Their conclusion — all 13 claims novel, inventive, and industrially applicable — is significant not merely as a legal finding but as a technical one.</p>
+
+  <p class="body-text">KIPO's examiners correctly identified the core novelty: a parasitic oscillation circuit in which the oscillating frequency of a non-stationary standing wave is controlled by changes in the vessel or pipe being measured, and in which this frequency differs from the resonant frequency of the pipe or vessel itself. They found that this principle — and not merely its implementation — was not obvious from any prior art document, alone or in combination.</p>
+
+  <div class="three-col">
+    <div class="col-card">
+      <h3>What other experts saw</h3>
+      <p>An LM386 circuit with unusual behaviour. An amplifier that appeared to oscillate. Results that contradicted their equations. Conclusion: the device cannot work as claimed, therefore there must be an error in the claimed results.</p>
+    </div>
+    <div class="col-card">
+      <h3>What KIPO found</h3>
+      <p>A novel sensing architecture in which the measurement medium is physically inside the oscillating feedback loop and controls the circuit's frequency. A principle not present in any of five prior art documents examined. All 13 claims: novel, inventive, industrially applicable.</p>
+    </div>
+    <div class="col-card">
+      <h3>The difference</h3>
+      <p>KIPO examined the principle, not the device. Experts who dismissed the Ward Effect® examined the device and applied conventional device models. The principle is what is patented. The principle is what works. The device is merely one expression of it.</p>
+    </div>
+  </div>
+
+  <div class="strategy-box">
+    <h4>The strategic implication for potential licensees</h4>
+    <p>The Ward Effect® is practically impossible to reverse-engineer from observation of the output alone. A competitor who saw a Ward Effect® Node measuring chlorine levels in a water pipe would observe a small circuit with an amplifier and standard components. They would have no way to deduce from the measurement output that the mechanism is deliberately engineered parasitic oscillation with the water physically inside the feedback loop and EQ tuning selecting which property is measured.</p>
+    <p>They would assume a conventional sensor with proprietary calibration. They would attempt to replicate it using conventional sensing approaches. They would fail — not because the measurements cannot be replicated, but because the architecture that produces them cannot be derived from conventional sensing theory, and the patent portfolio protects the architecture itself across five jurisdictions.</p>
+    <p>This is why the Ward Effect® represents a genuinely defensible competitive position for any licensee who secures territorial rights: the technology cannot be independently discovered without 50 years of prior research and the specific conceptual framework that makes parasitic oscillation a tool rather than a fault.</p>
+  </div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ NZ PATENT EXAMINATION ════════════════════════════════ -->
+<div class="alt-bg">
+<div class="section">
+  <span class="section-label">New Zealand — NZ 739314</span>
+  <h2 class="section-title">Eight Examination Reports. Three Examiners. One Moment of Recognition.</h2>
+
+  <p class="body-text">The path to granting NZ 739314 — the foundation Ward Effect® patent — was not straightforward. The application went through <strong>eight examination reports</strong>, reviewed by <strong>three different examiners</strong>, with additional assessment by acoustic experts. The same pattern repeated itself: qualified professionals, applying the correct analytical framework for the technology they believed they were examining, reaching conclusions that the Ward Effect® contradicted.</p>
+
+  <p class="body-text">After years of examination, a direct discussion was arranged with the lead patent examiner. In that conversation, working through the principle face to face, something shifted. The examiner stopped, considered what was being described, and said:</p>
+
+  <div class="berlin-wrap" style="margin:2.5rem 0;">
+    <span class="berlin-city">&#9679; IPONZ — New Zealand Intellectual Property Office</span>
+    <div class="berlin-quote">
+      "Oh I see — you are doing the <em>exact opposite</em> of what everyone else is doing."
+    </div>
+    <div class="berlin-body">
+      <p>That moment of recognition — after eight examination reports, three examiners, and external acoustic expert review — was the turning point. The lead examiner had understood something that the entire examination process had not: the Ward Effect® is not a variation on conventional sensing. It inverts the relationship between the sensor and the object entirely. Once that inversion was grasped, the novelty was self-evident.</p>
+    </div>
+  </div>
+
+  <p class="body-text">NZ 739314 was granted. The same principle was then submitted for PCT international examination, assigned to the Korean Intellectual Property Office (KIPO) as International Searching Authority. The contrast with the New Zealand examination could not have been more stark.</p>
+
+  <div class="strategy-box" style="margin:2.5rem 0;">
+    <h4>Korea — Three Weeks from Submission to Grant</h4>
+    <p>From the date the PCT application was sent to Korea to the date it was returned to New Zealand with the examination result: <strong>three weeks.</strong> KIPO examined five prior art documents spanning 28 years. All 13 claims were found novel, inventive, and industrially applicable — without a single objection.</p>
+    <p>The same technology. The same claims. Eight examination reports and years of resistance in New Zealand. Three weeks and a clean grant in Korea. The difference was not in the quality of the examination — KIPO's examiners were thorough and rigorous. The difference was that KIPO examined the <strong>principle</strong>, not the device. They identified what the Ward Effect® was actually doing — a non-stationary standing wave controlled by the object inside the feedback loop, differing from the object's own resonant frequency — and found nothing in 28 years of prior art that approached it.</p>
+  </div>
+
+  <div class="three-col">
+    <div class="col-card">
+      <h3>New Zealand examination</h3>
+      <p>8 examination reports. 3 examiners. Acoustic expert review. Years of process. Resolution came only in direct conversation with the lead examiner, when the inversion principle was explained face to face and finally understood.</p>
+    </div>
+    <div class="col-card">
+      <h3>The turning point</h3>
+      <p>"You are doing the exact opposite of what everyone else is doing." Six words that captured 50 years of research, a novel sensing architecture, and the reason every prior examination had reached the wrong conclusion.</p>
+    </div>
+    <div class="col-card">
+      <h3>Korea — PCT examination</h3>
+      <p>3 weeks. 5 prior art documents examined. 28 years of prior art coverage. All 13 claims: novel, inventive, industrially applicable. Not a single objection. The principle was self-evidently novel to an examiner who approached it without a prior framework to override.</p>
+    </div>
+  </div>
+
+  <div class="pull-quote">
+    <p>"You are doing the exact opposite of what everyone else is doing." — Lead Patent Examiner, IPONZ, after eight examination reports and years of scrutiny.</p>
+  </div>
+
+  <p class="body-text">The New Zealand examination process is not a failure story — it is a validation story. Every examiner who raised an objection was applying the correct analytical framework for the technology they believed they were examining. The Ward Effect® kept contradicting that framework because it is not the technology they believed they were examining. Eight rounds of examination, conducted rigorously and in good faith, produced the same result as the Berlin professor's whiteboard: correct analysis of the wrong model.</p>
+
+  <p class="body-text">When the right model was finally applied — when the lead examiner grasped that the Ward Effect® inverts the conventional sensor-object relationship — the objections dissolved. Not because the standard was lowered. Because the technology was finally seen for what it actually is.</p>
+
+</div>
+</div>
+
+
+<div class="divider"></div>
+
+<!-- ══ NZ EXAMINATION ══════════════════════════════════════════ -->
+<div class="alt-bg">
+<div class="section">
+  <span class="section-label">NZ 739314 — Patent Prosecution History</span>
+  <h2 class="section-title">Eight Reports. Three Examiners. One Sentence That Said Everything.</h2>
+
+  <p class="body-text">The prosecution of NZ 739314 — the foundation Ward Effect® patent — was not straightforward. It required eight examination reports across three different examiners. Acoustic experts were called in to review the claims. The process culminated in a direct discussion with the lead patent examiner. What took place in that discussion captures the nature of the Ward Effect® better than any technical document.</p>
+
+  <div class="berlin-wrap" style="margin:2.5rem 0;">
+    <span class="berlin-city">&#9679; Intellectual Property Office of New Zealand — NZ 739314 Examination</span>
+    <div class="berlin-quote">
+      "Oh I see — you are doing the exact opposite of what everyone else is doing."<br>
+      <em>— Lead Patent Examiner, IPONZ</em>
+    </div>
+    <div class="berlin-body">
+      <p>After eight examination reports, acoustic expert reviews, and three different examiners attempting to fit the Ward Effect® into existing patent classifications, the lead examiner finally identified what the technology actually is. Not a variant of impedance spectroscopy. Not a form of acoustic emission testing. Not an improvement on existing resonance sensing. <strong>The opposite of all of them.</strong></p>
+      <p style="margin-top:1rem;">Where every other sensing technology places the sensor outside the object and measures what comes back, the Ward Effect® places the object inside the circuit and lets its resonance control the oscillation. The examiner had processed thousands of patent applications. He had never seen this architecture before. Eight reports to get there — because there was no prior classification to slot it into.</p>
+    </div>
+    <div class="berlin-resolution">
+      <p>The patent was granted. NZ 739314 stands as the foundation of the Ward Effect® portfolio.</p>
+    </div>
+  </div>
+
+  <div class="three-col">
+    <div class="col-card">
+      <h3>Eight examination reports</h3>
+      <p>Not because the claims were weak. Because the technology had no prior classification. Each examiner approached it through the lens of existing sensing technology. Each found that it did not fit. The process of elimination eventually led to the correct conclusion: this is genuinely new art.</p>
+    </div>
+    <div class="col-card">
+      <h3>Acoustic experts consulted</h3>
+      <p>The patent office sought specialist external review. Acoustic engineers examined the claims. Their involvement confirms that the Ward Effect® was taken seriously as a technical matter — and that its novelty required expert validation beyond standard examination procedures.</p>
+    </div>
+    <div class="col-card">
+      <h3>Three weeks — New Zealand to Korea and back</h3>
+      <p>Once NZ 739314 was granted, the PCT application was submitted to KIPO as International Searching Authority. Three weeks from filing to return — all 13 claims found novel, inventive, and industrially applicable. The same technology that took years in NZ took three weeks in Korea. The difference was the framework the examiner applied, not the technology.</p>
+    </div>
+  </div>
+
+  <div class="strategy-box">
+    <h4>What the NZ examination history tells a potential licensee</h4>
+    <p>A technology that required eight examination reports and acoustic expert review before being granted is not a weak patent dressed up to look novel. It is a technology so genuinely outside existing frameworks that the patent office itself had difficulty classifying it. That difficulty is the clearest possible evidence of genuine novelty.</p>
+    <p>The lead examiner's words — "you are doing the exact opposite of what everyone else is doing" — are not a casual observation. They are the conclusion reached after exhaustive examination by multiple qualified professionals. They describe, in one sentence, why the Ward Effect® cannot be replicated by improving existing technology: you cannot get to "the opposite" by incremental steps from "conventional."</p>
+    <p>The KIPO contrast reinforces this. Three weeks is not the timeline of a marginal or questionable application. It is the timeline of an examiner who understood the principle immediately and found nothing in the prior art to contradict it. The Ward Effect® is novel. The examination history of NZ 739314 is the proof.</p>
+  </div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ CLOSING ════════════════════════════════════════════════ -->
+<div class="section">
+  <span class="section-label">The Conclusion</span>
+  <h2 class="section-title">The Whiteboard in Berlin Was Full of Correct Equations</h2>
+
+  <p class="body-text">The professor in Berlin was not wrong. His equations were correct. His mathematics was sound. His application of conventional circuit theory to the device he believed he was looking at was entirely proper. If the LM386 in the Ward Effect® circuit had been operating as an amplifier, every conclusion he reached would have been valid.</p>
+
+  <p class="body-text">But the LM386 was not operating as an amplifier. It had already departed from its design specification before he wrote the first equation. Parasitic oscillation had already transformed it into something that no amplifier equation describes. The whiteboard was full of the right answers to the wrong question.</p>
+
+  <p class="body-text">This is the nature of a genuinely novel technology. It does not fit existing frameworks because existing frameworks were built without it. The expert sees an anomaly and concludes the anomaly must be an error. The inventor sees the anomaly and asks what it means. Fifty years of asking that question, and seven granted patents across five jurisdictions, is what the Ward Effect® represents.</p>
+
+  <div class="pull-quote">
+    <p>"The device worked in Berlin. It worked when the professor said it could not. It works now. The equations on the whiteboard are still there — and they are still wrong about this device."</p>
+  </div>
+</div>
+
+<!-- ══ CTA ════════════════════════════════════════════════════ -->
+<section class="cta-banner">
+  <h2>Understand the Technology. Explore the Opportunity.</h2>
+  <p>The Ward Effect® is available for commercial licensing, research partnerships, and territorial manufacturing across all application domains.</p>
+  <a href="technology.html" class="btn-primary">Read the Technical Page</a>
+  <a href="mailto:dave@wardeffect.com" class="btn-outline">Enquire About Licensing</a>
+</section>
+
+<footer>
+  <div class="footer-logo">Ward Effect&#174; Technology</div>
+  <div class="footer-links">
+    <a href="index.html">Mission</a>
+    <a href="patents.html">Patents</a>
+    <a href="technology.html">Technology</a>
+    <a href="why-experts-missed-it.html">Expert Assessment</a>
+    <a href="commercialisation.html">Commercialisation</a>
+  </div>
+  <p>&#169; 2026 Ward Effect&#174; Technology. Tacloban, Philippines.</p>
+</footer>
+
+<script>
+document.querySelector('.hamburger').addEventListener('click',function(){
+  this.classList.toggle('open');
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+</script>
+</body>
+</html>
