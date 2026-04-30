@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Patents - Ward Effect Technology</title>
+<title>Patents - Ward Effect® Technology</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0B1D3A;--navy-mid:#112240;--navy-light:#1a3a6b;--amber:#E8A838;--amber-light:#F2C46D;--white:#FFFFFF;--text-muted:rgba(255,255,255,0.65);--border:rgba(232,168,56,0.2);}
@@ -35,6 +35,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,29,58,0.97);border-bott
 .patent-meta{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;}
 .patent-badge{font-size:0.75rem;background:rgba(232,168,56,0.1);border:1px solid var(--border);color:var(--amber-light);padding:0.25rem 0.8rem;border-radius:20px;}
 .patent-badge.new{background:var(--amber);color:var(--navy);font-weight:700;border-color:var(--amber);}
+.patent-badge.lapsed{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.15);color:rgba(255,255,255,0.4);}
 .patent-desc{color:var(--text-muted);font-size:0.95rem;line-height:1.75;}
 .patent-claims{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
 .patent-claims h4{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--amber);margin-bottom:0.6rem;}
@@ -53,19 +54,28 @@ footer{background:rgba(5,12,25,0.95);padding:3rem 2.5rem;display:flex;justify-co
 .footer-links a:hover{color:var(--amber-light);}
 footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 @media(min-width:769px){.nav-links{display:flex!important;}.hamburger{display:none!important;}}
-@media(max-width:768px){nav{height:auto;padding:0.8rem 1rem;} .nav-logo{flex:1;} .hamburger{display:flex;order:2;} .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;} .nav-links.open{display:flex;} .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);} .patent-meta{gap:0.5rem;} footer{flex-direction:column;text-align:center;}}
+@media(max-width:768px){
+  nav{height:auto;padding:0.8rem 1rem;}
+  .nav-logo{flex:1;}
+  .hamburger{display:flex;order:2;}
+  .nav-links{display:none;flex-direction:column;width:100%;order:4;gap:0;padding:0.5rem 0;}
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:0.7rem 0.5rem;border-bottom:1px solid var(--border);}
+  .patent-meta{gap:0.5rem;}
+  footer{flex-direction:column;text-align:center;}
+}
 </style>
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-logo">Ward Effect&#8482;</a>
+  <a href="index.html" class="nav-logo">Ward Effect&#174;</a>
   <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   <div class="nav-links">
     <a href="index.html">Mission</a>
     <a href="patents.html">Patents</a>
     <a href="technology.html">Technology</a>
     <a href="commercialisation.html">Commercialisation</a>
-    <a href="https://wardscope.com/affiliates.html" class="nav-cta">Apply</a>
+    <a href="mailto:dave@wardeffect.com" class="nav-cta">Enquire</a>
   </div>
 </nav>
 
@@ -73,7 +83,7 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
   <div class="hero-inner">
     <div class="hero-eyebrow">Intellectual Property Portfolio</div>
     <h1>Patents &amp; <em>Protection</em></h1>
-    <p>Ward Effect Technology is protected by a portfolio of granted patents across five jurisdictions, with the consolidated Multi Sensor application now under examination at IPONZ. All patents are held by David George Ward, sole inventor.</p>
+    <p>Ward Effect® Technology is protected by a portfolio of granted patents across multiple jurisdictions, with a further full application now under examination at IPONZ. All patents are held by David George Ward, sole inventor.</p>
   </div>
 </section>
 
@@ -81,17 +91,18 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
   <span class="section-label">Granted Patents</span>
   <h2 class="section-title">Confirmed Intellectual Property</h2>
 
+  <!-- NZ 739314 -->
   <div class="patent-card">
-    <div class="patent-id">NZ 739314 &mdash; Granted 2019 &mdash; Renewed to January 2026</div>
+    <div class="patent-id">NZ 739314 &mdash; Granted 2019</div>
     <div class="patent-title">Method and Device for Measuring Volume of Contents of a Vessel or Pipe Using Circuit Oscillator</div>
     <div class="patent-meta">
       <span class="patent-badge">New Zealand</span>
-      <span class="patent-badge">USA</span>
       <span class="patent-badge">Philippines</span>
+      <span class="patent-badge lapsed">USA &mdash; Granted via PCT, now lapsed</span>
       <span class="patent-badge">PCT/NZ2019/050002</span>
       <span class="patent-badge">Filed 23 Jan 2018</span>
     </div>
-    <p class="patent-desc">The foundation patent establishing the Ward Effect principle. A circuit comprising a microphone, speaker, frequency control device, volume control device, amplifier, frequency reader and spectrum analyser is set up around a container or vessel. Oscillation is created by applying power to the amplifier. The oscillating frequency of the circuit changes measurably as the volume of contents changes &mdash; providing a non-intrusive method of measuring content in liquid, solid, semi-solid or granular form. The method is particularly useful where intrusive measurement creates issues with product safety, toxicity or corrosivity, and where access to vessels or pipes is difficult. Applications include pipeline inspection, in-situ remote measurement, and detection of biofilm or algal growth at micron scale.</p>
+    <p class="patent-desc">The foundation patent establishing the Ward Effect® principle. A circuit comprising a microphone, speaker, frequency control device, volume control device, amplifier, frequency reader and spectrum analyser is set up around a container or vessel. Oscillation is created by applying power to the amplifier. The oscillating frequency of the circuit changes measurably as the volume of contents changes &mdash; providing a non-intrusive method of measuring content in liquid, solid, semi-solid or granular form. The method is particularly useful where intrusive measurement creates issues with product safety, toxicity or corrosivity, and where access to vessels or pipes is difficult. Applications include pipeline inspection, in-situ remote measurement, and detection of biofilm or algal growth at micron scale.</p>
     <div class="patent-claims">
       <h4>Key Applications</h4>
       <ul>
@@ -104,16 +115,17 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
     </div>
   </div>
 
+  <!-- NZ 770993 -->
   <div class="patent-card">
-    <div class="patent-id">NZ 770993 &mdash; Granted 2023 &mdash; Philippines granted</div>
+    <div class="patent-id">NZ 770993 &mdash; Granted 2023</div>
     <div class="patent-title">Method and Device for Measuring Properties of Contents of a Vessel or Pipe using Circuit Oscillator Coupled with Resonating Sensor</div>
     <div class="patent-meta">
       <span class="patent-badge">New Zealand</span>
-      <span class="patent-badge">Philippines</span>
+      <span class="patent-badge">Philippines &mdash; Granted</span>
       <span class="patent-badge">Filed 11 Dec 2020</span>
       <span class="patent-badge">Patent of Addition to NZ 739314</span>
     </div>
-    <p class="patent-desc">An improvement on NZ 739314 incorporating a resonant able object (90) as a sensor that establishes sympathetic resonance with the target object. Power applied to the amplifier creates an initial fixed standing wave. Adjusting or changing components invokes a new parasitic behaviour &mdash; now called the Ward Effect &mdash; and reading the oscillating frequency determines changes in conditions inside the vessel. This improvement allows smaller amplifiers and speakers to be used, reducing noise levels significantly, and greatly simplifies component selection for a wide range of target objects.</p>
+    <p class="patent-desc">An improvement on NZ 739314 incorporating a resonant able object (90) as a sensor that establishes sympathetic resonance with the target object. Power applied to the amplifier creates an initial fixed standing wave. Adjusting or changing components invokes a new parasitic behaviour &mdash; now called the Ward Effect® &mdash; and reading the oscillating frequency determines changes in conditions inside the vessel. This improvement allows smaller amplifiers and speakers to be used, reducing noise levels significantly, and greatly simplifies component selection for a wide range of target objects. Note: the Philippines grant and related analogue-based patents will be superseded by the ESP32-based Ward Effect® Node system currently in development.</p>
     <div class="patent-claims">
       <h4>Key Improvements</h4>
       <ul>
@@ -126,6 +138,7 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
     </div>
   </div>
 
+  <!-- NZ 778527 -->
   <div class="patent-card">
     <div class="patent-id">NZ 778527 &mdash; Granted 2023</div>
     <div class="patent-title">Method and Device for Measuring Presence or Absence of the Contents of a Container or Pipe using Circuit Oscillator Coupled with Resonating Sensor</div>
@@ -150,11 +163,12 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
 
   <div class="divider"></div>
 
+  <!-- Case 831742 -->
   <span class="section-label">Patent Pending &mdash; Now Under Examination</span>
-  <h2 class="section-title">Case 831742 &mdash; Multi Sensor</h2>
+  <h2 class="section-title">Case 831742 &mdash; Library-Configured Acoustic Sensing and Actuation System</h2>
 
   <div class="patent-card pending">
-    <div class="patent-id">Case 831742 &mdash; Under Examination at IPONZ &mdash; April 2026</div>
+    <div class="patent-id">Case 831742 &mdash; Full Application Under Examination at IPONZ &mdash; April 2026</div>
     <div class="patent-title">Library-Configured Acoustic Sensing and Actuation System</div>
     <div class="patent-meta">
       <span class="patent-badge new">NOW UNDER EXAMINATION</span>
@@ -162,7 +176,7 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
       <span class="patent-badge">Applicant: Ward Effect Technology</span>
       <span class="patent-badge">Inventor: David George Ward</span>
     </div>
-    <p class="patent-desc">The analogue Ward Effect systems of NZ 739314, NZ 770993 and NZ 778527 rely on manual adjustment, single-band operation, and limited ability to resolve multiple simultaneous variables. This invention overcomes these limitations through microcontroller-controlled cycling of a digitally adjustable EQ filter, configured by a sparse Library Entry Format (LEF) system with three-tier retrieval. This bidirectional architecture removes embedded-processor constraints, enabling real-time multi-library interrogation and cross-library vector analysis. Confirmed by KIPO as International Searching Authority: all 13 claims found novel, inventive, and industrially applicable.</p>
+    <p class="patent-desc">The analogue Ward Effect® systems of NZ 739314, NZ 770993 and NZ 778527 rely on manual adjustment, single-band operation, and limited ability to resolve multiple simultaneous variables. This invention overcomes these limitations through microcontroller-controlled cycling of a digitally adjustable EQ filter, configured by a sparse Library Entry Format (LEF) system with three-tier retrieval. This bidirectional architecture removes embedded-processor constraints, enabling real-time multi-library interrogation and cross-library vector analysis across a wide range of industrial, environmental, and humanitarian applications.</p>
     <div class="patent-claims">
       <h4>Key Inventive Concepts</h4>
       <ul>
@@ -182,28 +196,33 @@ footer p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
     </div>
   </div>
 
+  <!-- KIPO box — correctly attributed to PCT/NZ2019/050002 -->
   <div style="background:rgba(232,168,56,0.05);border:1px solid var(--border);border-radius:8px;padding:2rem;margin-top:2rem;">
-    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--amber-light);margin-bottom:1rem;">KIPO Confirmation — All 13 Claims Novel &amp; Inventive</h3>
-    <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.75;">The Korean Intellectual Property Office (KIPO), acting as International Searching Authority for PCT/NZ2019/050002, examined five prior art documents spanning 1986&ndash;2014 and found that the Ward Effect &mdash; in which a parasitic oscillation circuit self-oscillates to produce a frequency of a non-stationary standing wave controlled by changes in the vessel or pipe being measured, differing from the resonant frequency of the pipe or vessel &mdash; was not obvious to a person skilled in the art from any of those documents alone or in combination. All 13 claims were found novel, inventive, and industrially applicable.</p>
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--amber-light);margin-bottom:1rem;">KIPO Examination &mdash; PCT/NZ2019/050002 &mdash; All 13 Claims Novel &amp; Inventive</h3>
+    <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.75;">The Korean Intellectual Property Office (KIPO), acting as International Searching Authority for PCT application PCT/NZ2019/050002, examined five prior art documents spanning 1986&ndash;2014 and found that the Ward Effect® &mdash; in which a parasitic oscillation circuit self-oscillates to produce a frequency of a non-stationary standing wave controlled by changes in the vessel or pipe being measured, differing from the resonant frequency of the pipe or vessel &mdash; was not obvious to a person skilled in the art from any of those documents alone or in combination. All 13 claims of PCT/NZ2019/050002 were found novel, inventive, and industrially applicable.</p>
   </div>
 </div>
 
+<div style="max-width:1100px;margin:0 auto;padding:2rem 2rem 3rem;">
+  <p style="font-size:0.82rem;color:rgba(255,255,255,0.35);line-height:1.7;border-top:1px solid var(--border);padding-top:1.5rem;text-align:center;">
+    <strong style="color:rgba(255,255,255,0.5);font-weight:600;">Patent Status Disclaimer:</strong> The patent information on this page is provided for general reference only and reflects the status known to Ward Effect Technology at the time of publication. Patent status, including grant, renewal, lapse, and examination outcomes, may change. Current and authoritative status of any patent should be verified directly with the relevant national patent office — including the Intellectual Property Office of New Zealand (IPONZ), the United States Patent and Trademark Office (USPTO), the Intellectual Property Office of the Philippines (IPOPHL), and the Indian Patent Office (IPO).
+  </p>
+</div>
 <section class="cta-banner">
   <h2>Licensing Enquiries</h2>
-  <p>Ward Effect Technology is available for commercial licensing and territorial manufacturing rights. All enquiries are handled through WardScope.com.</p>
-  <a href="https://wardscope.com/affiliates.html" class="btn-primary">View Licensing Opportunities</a>
+  <p>Ward Effect® Technology is available for commercial licensing, research partnerships, and territorial manufacturing arrangements. Contact us directly to discuss opportunities.</p>
+  <a href="mailto:dave@wardeffect.com" class="btn-primary">Enquire About Licensing</a>
 </section>
 
 <footer>
-  <div class="footer-logo">Ward Effect&#8482; Technology</div>
+  <div class="footer-logo">Ward Effect&#174; Technology</div>
   <div class="footer-links">
     <a href="index.html">Mission</a>
     <a href="patents.html">Patents</a>
     <a href="technology.html">Technology</a>
     <a href="commercialisation.html">Commercialisation</a>
-    <a href="https://wardscope.com">WardScope.com</a>
   </div>
-  <p>&#169; 2026 Ward Effect Technology. Tacloban, Philippines.</p>
+  <p>&#169; 2026 Ward Effect&#174; Technology. Tacloban, Philippines.</p>
 </footer>
 </body>
 </html>
