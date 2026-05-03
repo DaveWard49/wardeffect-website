@@ -19,14 +19,14 @@ Upload these 5 files to your Cloudflare Pages project for wardeffect.com:
 - Open source vs commercial distinction
 - Use case examples
 - Decision tree for licensing
-- Contact: licensing@wardeffect.com
+- Contact: resonancesensor@gmail.com
 
 ### **pathogen-safety.html**
 - Hospital superbug detection page
 - Baby formula contamination monitoring
 - Real-world milk factory case study
 - Three requirements for pathogen survival
-- Contact: research@wardeffect.com
+- Contact: resonancesensor@gmail.com
 
 ### **inverted-triangle.html**
 - Revolutionary R&D structure page
@@ -34,7 +34,7 @@ Upload these 5 files to your Cloudflare Pages project for wardeffect.com:
 - No bureaucracy model
 - 90% failure rate embraced
 - Team example: Rosane, Miguel, Maria, Carlos, Elena
-- Contact: research@wardeffect.com (to join a team)
+- Contact: resonancesensor@gmail.com (to join a team)
 
 ### **donate.html**
 - Donations page
@@ -43,9 +43,9 @@ Upload these 5 files to your Cloudflare Pages project for wardeffect.com:
 - Technical challenges explained
 - Payment methods: Ko-fi, Stripe, PayPal (placeholders)
 - Contacts:
-  - donations@wardeffect.com (donation inquiries)
-  - admin@wardeffect.com (large donations $5,000+)
-  - contact@wardeffect.com (general)
+  - resonancesensor@gmail.com (donation inquiries)
+  - resonancesensor@gmail.com (large donations $5,000+)
+  - resonancesensor@gmail.com (general)
 
 ---
 
@@ -74,11 +74,11 @@ Upload these 5 files to your Cloudflare Pages project for wardeffect.com:
 ## 📧 EMAIL ADDRESSES (All Active via Cloudflare)
 
 ### WardEffect.com:
-- contact@wardeffect.com - General inquiries (Communications Lead)
-- donations@wardeffect.com - Donation questions (Communications Lead)
-- admin@wardeffect.com - Large donations, business (Admin/Legal Lead)
-- research@wardeffect.com - Technical partnerships (Technical Lead)
-- licensing@wardeffect.com - Commercial licensing (Admin/Legal Lead)
+- resonancesensor@gmail.com - General inquiries (Communications Lead)
+- resonancesensor@gmail.com - Donation questions (Communications Lead)
+- resonancesensor@gmail.com - Large donations, business (Admin/Legal Lead)
+- resonancesensor@gmail.com - Technical partnerships (Technical Lead)
+- resonancesensor@gmail.com - Commercial licensing (Admin/Legal Lead)
 
 ### WardScope.com:
 - contact@wardscope.com
@@ -185,4 +185,5 @@ Currently: "Running a revolutionary R&D organization... from a spare room!" 🚀
 
 Created: February 2026
 Version: 1.0 - Ready for Launch
-Contact: contact@wardeffect.com
+Contact: resonancesensor@gmail.com
+

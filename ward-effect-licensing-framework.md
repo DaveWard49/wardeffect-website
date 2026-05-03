@@ -227,7 +227,7 @@ WardScope Mobile and WardScope PC operate under commercial license. Revenue from
 - **NO** → Commercial License
 
 ### **Question 5:** Still uncertain?
-- **Contact:** licensing@wardeffect.com
+- **Contact:** resonancesensor@gmail.com
 - **Default:** If life/health impact uncertain, err toward Open Source
 
 ---
@@ -375,20 +375,20 @@ WardScope Mobile and WardScope PC operate under commercial license. Revenue from
 ## 📧 LICENSING CONTACT & PROCESS
 
 ### **To Apply for Open Source Access:**
-1. Email: opensource@wardeffect.com
+1. Email: resonancesensor@gmail.com
 2. Describe application (verify it qualifies)
 3. Receive instant approval + documentation access
 4. No fees, no contracts, no delays
 
 ### **To Apply for Commercial License:**
-1. Email: licensing@wardeffect.com
+1. Email: resonancesensor@gmail.com
 2. Describe application and estimated volume
 3. Receive quote within 48 hours
 4. Sign standard license agreement
 5. Receive documentation and support access
 
 ### **For Gray Area Applications:**
-Email: classify@wardeffect.com with detailed description
+Email: resonancesensor@gmail.com with detailed description
 
 ---
 
@@ -536,9 +536,9 @@ Annual public reporting of license revenue and allocation (starting 2027)
 ---
 
 **Contact:**  
-licensing@wardeffect.com  
-opensource@wardeffect.com  
-classify@wardeffect.com
+resonancesensor@gmail.com  
+resonancesensor@gmail.com  
+resonancesensor@gmail.com
 
 **Website:**  
 https://wardeffect.com/licensing
@@ -552,3 +552,4 @@ https://wardeffect.com/licensing
 *"Technology for humanity. Sustainable through commerce. Accessible to all who need it."*
 
 **- David Ward, Inventor, Ward Effect Technology**
+

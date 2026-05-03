@@ -2,7 +2,7 @@
 # Run ONCE. Generates JSON files for all languages.
 # Place this script in: C:\Users\Admin\Documents\wardeffect-website\locales\
 
-$ApiKey   = "REDACTED_API_KEY"
+$ApiKey   = "AIzaSyAtdQG8Z21UdGubI_XnLNPfu5BuWDmvS-8"
 $ApiUrl   = "https://translation.googleapis.com/language/translate/v2"
 $EnFile   = "$PSScriptRoot\en.json"
 $OutDir   = $PSScriptRoot

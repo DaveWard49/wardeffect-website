@@ -295,7 +295,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Hoof + Biblioteek",
     "comm__card2_p": "Elke toepassing vereis 'n bypassende transducerkop – die mikrofoon/luidspreker-samestelling wat gevorm en gehuisves is vir die spesifieke taak – en 'n spektrale vingerafdruk-LEF-biblioteek wat in die eenheid gelaai word. Die kop en biblioteek word as opgraderings verkoop, wat deurlopende inkomste genereer uit 'n enkele geïnstalleerde basis.",
     "comm__note_strong": "Vir territoriale lisensiehouers:",
-    "comm__note_p": "Koop die basiseenheid en toepassingskoppe teen groothandelprys. Stel jou eie kleinhandelprys vas. Soos jou kliënte uitbrei na nuwe toepassings, koop hulle bykomende koppe en biblioteke — herhalende inkomste uit 'n enkele geïnstalleerde basis. Eksklusiewe territoriale regte is beskikbaar. Kontak dave@wardeffect.com om reëlings te bespreek.",
+    "comm__note_p": "Koop die basiseenheid en toepassingskoppe teen groothandelprys. Stel jou eie kleinhandelprys vas. Soos jou kliënte uitbrei na nuwe toepassings, koop hulle bykomende koppe en biblioteke — herhalende inkomste uit 'n enkele geïnstalleerde basis. Eksklusiewe territoriale regte is beskikbaar. Kontak resonancesensor@gmail.com om reëlings te bespreek.",
     "comm__catalogue_label": "Toestelkatalogus",
     "comm__catalogue_title": "Produkte onder ontwikkeling",
     "comm__catalogue_p": "Alle toestelle wat hieronder gelys word, is Ward Effect® Technology-produkte in ontwikkeling, wat beskikbaar gestel sal word vir groothandel aan territoriale lisensiehouers. Die eerste toestel wat bemark word, is die",
@@ -367,7 +367,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedie",
     "comm__cta_title": "Navraag doen oor lisensiëring",
     "comm__cta_p": "Territoriale lisensiëring, groothandelpryse en toepassingshoofreëlings is direk beskikbaar vanaf Ward Effect® Technology. Kontak ons om die geleentheid vir u gebied te bespreek.",
-    "comm__cta_btn": "Kontak dave@wardeffect.com"
+    "comm__cta_btn": "Kontak resonancesensor@gmail.com"
   },
   "ar": {
     "nav__ward_effect": "تأثير وارد®",
@@ -665,7 +665,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "رأس + مكتبة",
     "comm__card2_p": "يتطلب كل تطبيق رأس محول طاقة متوافقًا - وهو عبارة عن مجموعة ميكروفون/مكبر صوت مصممة ومجهزة خصيصًا للمهمة المحددة - ومكتبة بصمة طيفية LEF محملة في الوحدة. يُباع رأس المحول والمكتبة كترقيات، مما يدرّ إيرادات مستمرة من قاعدة مستخدمين واحدة.",
     "comm__note_strong": "بالنسبة لحاملي التراخيص الإقليمية:",
-    "comm__note_p": "اشترِ الوحدة الأساسية ورؤوس التطبيقات بسعر الجملة. حدد سعر التجزئة الخاص بك. مع توسع عملائك في تطبيقات جديدة، يشترون رؤوسًا ومكتبات إضافية، ما يضمن لك إيرادات متكررة من قاعدة عملاء واحدة. تتوفر حقوق حصرية في مناطق محددة. تواصل مع dave@wardeffect.com لمناقشة الترتيبات.",
+    "comm__note_p": "اشترِ الوحدة الأساسية ورؤوس التطبيقات بسعر الجملة. حدد سعر التجزئة الخاص بك. مع توسع عملائك في تطبيقات جديدة، يشترون رؤوسًا ومكتبات إضافية، ما يضمن لك إيرادات متكررة من قاعدة عملاء واحدة. تتوفر حقوق حصرية في مناطق محددة. تواصل مع resonancesensor@gmail.com لمناقشة الترتيبات.",
     "comm__catalogue_label": "كتالوج الأجهزة",
     "comm__catalogue_title": "المنتجات قيد التطوير",
     "comm__catalogue_p": "جميع الأجهزة المذكورة أدناه هي منتجات تقنية Ward Effect® قيد التطوير، وستُطرح للبيع بالجملة للمرخص لهم في مناطقهم. أول جهاز يُطرح في السوق هو...",
@@ -737,7 +737,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "جراحة العظام",
     "comm__cta_title": "استفسر عن التراخيص",
     "comm__cta_p": "تتوفر تراخيص التوزيع الإقليمي، وأسعار الجملة، وترتيبات رأس التطبيق مباشرةً من شركة Ward Effect® Technology. تواصلوا معنا لمناقشة الفرص المتاحة في منطقتكم.",
-    "comm__cta_btn": "للتواصل، راسل dave@wardeffect.com"
+    "comm__cta_btn": "للتواصل، راسل resonancesensor@gmail.com"
   },
   "zh-CN": {
     "nav__ward_effect": "沃德效应®",
@@ -1035,7 +1035,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "头部 + 图书馆",
     "comm__card2_p": "每种应用都需要一个匹配的传感器头——即专为特定任务而设计的麦克风/扬声器组件——以及加载到设备中的频谱指纹LEF库。传感器头和库作为升级配件出售，从而从单一的安装用户群中获得持续的收入。",
     "comm__note_strong": "对于区域性许可证持有者：",
-    "comm__note_p": "以批发价购买主机和应用头。自行设定零售价。随着客户拓展应用领域，他们会购买更多应用头和库——单一客户群带来持续收入。独家区域代理权现已开放。请联系 dave@wardeffect.com 洽谈合作事宜。",
+    "comm__note_p": "以批发价购买主机和应用头。自行设定零售价。随着客户拓展应用领域，他们会购买更多应用头和库——单一客户群带来持续收入。独家区域代理权现已开放。请联系 resonancesensor@gmail.com 洽谈合作事宜。",
     "comm__catalogue_label": "设备目录",
     "comm__catalogue_title": "正在开发中的产品",
     "comm__catalogue_p": "以下列出的所有设备均为 Ward Effect® 技术正在开发中的产品，将以批发形式提供给区域授权经销商。首款上市的设备是……",
@@ -1107,7 +1107,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "骨科",
     "comm__cta_title": "咨询许可事宜",
     "comm__cta_p": "沃德效应®技术公司可直接提供区域授权、批发价格和应用头安排。请联系我们，探讨您所在区域的合作机会。",
-    "comm__cta_btn": "请联系 dave@wardeffect.com"
+    "comm__cta_btn": "请联系 resonancesensor@gmail.com"
   },
   "hr": {
     "nav__ward_effect": "Wardov efekt®",
@@ -1405,7 +1405,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Voditelj + Knjižnica",
     "comm__card2_p": "Svaka primjena zahtijeva odgovarajuću glavu pretvarača - sklop mikrofona/zvučnika oblikovan i smješten za određeni zadatak - i LEF biblioteku spektralnih otisaka prstiju učitanu u uređaj. Glava i biblioteka prodaju se kao nadogradnje, generirajući kontinuirani prihod iz jedne instalirane baze.",
     "comm__note_strong": "Za teritorijalne nositelje licenci:",
-    "comm__note_p": "Kupite osnovnu jedinicu i aplikacijske glave po veleprodajnoj cijeni. Postavite vlastitu maloprodajnu cijenu. Kako se vaši kupci šire na nove aplikacije, kupuju dodatne glave i biblioteke - ponavljajući prihod od jedne instalirane baze. Dostupna su ekskluzivna teritorijalna prava. Kontaktirajte dave@wardeffect.com kako biste razgovarali o dogovorima.",
+    "comm__note_p": "Kupite osnovnu jedinicu i aplikacijske glave po veleprodajnoj cijeni. Postavite vlastitu maloprodajnu cijenu. Kako se vaši kupci šire na nove aplikacije, kupuju dodatne glave i biblioteke - ponavljajući prihod od jedne instalirane baze. Dostupna su ekskluzivna teritorijalna prava. Kontaktirajte resonancesensor@gmail.com kako biste razgovarali o dogovorima.",
     "comm__catalogue_label": "Katalog uređaja",
     "comm__catalogue_title": "Proizvodi u razvoju",
     "comm__catalogue_p": "Svi uređaji navedeni u nastavku su proizvodi tvrtke Ward Effect® Technology u razvoju, koji će biti dostupni za veleprodaju teritorijalnim licenciranim korisnicima. Prvi uređaj na tržištu je",
@@ -1477,7 +1477,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedija",
     "comm__cta_title": "Upit o licenciranju",
     "comm__cta_p": "Teritorijalno licenciranje, veleprodajne cijene i dogovori o voditelju aplikacije dostupni su izravno od tvrtke Ward Effect® Technology. Kontaktirajte nas kako biste razgovarali o mogućnostima za vaše područje.",
-    "comm__cta_btn": "Kontaktirajte dave@wardeffect.com"
+    "comm__cta_btn": "Kontaktirajte resonancesensor@gmail.com"
   },
   "cs": {
     "nav__ward_effect": "Wardův efekt®",
@@ -1775,7 +1775,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Vedoucí + Knihovna",
     "comm__card2_p": "Každá aplikace vyžaduje odpovídající hlavu měniče – sestavu mikrofonu/reproduktoru tvarovanou a umístěnou pro specifický úkol – a knihovnu spektrálních otisků prstů LEF nahranou do jednotky. Hlava a knihovna se prodávají jako upgrady, což generuje trvalý příjem z jediné instalované základny.",
     "comm__note_strong": "Pro držitele územních licencí:",
-    "comm__note_p": "Kupte si základní jednotku a aplikační hlavy za velkoobchodní cenu. Nastavte si vlastní maloobchodní cenu. Jakmile vaši zákazníci expandují do nových aplikací, kupují si další hlavy a knihovny – opakující se příjem z jedné instalované základny. K dispozici jsou exkluzivní teritoriální práva. Pro sjednání ujednání kontaktujte dave@wardeffect.com.",
+    "comm__note_p": "Kupte si základní jednotku a aplikační hlavy za velkoobchodní cenu. Nastavte si vlastní maloobchodní cenu. Jakmile vaši zákazníci expandují do nových aplikací, kupují si další hlavy a knihovny – opakující se příjem z jedné instalované základny. K dispozici jsou exkluzivní teritoriální práva. Pro sjednání ujednání kontaktujte resonancesensor@gmail.com.",
     "comm__catalogue_label": "Katalog zařízení",
     "comm__catalogue_title": "Produkty ve vývoji",
     "comm__catalogue_p": "Všechna níže uvedená zařízení jsou produkty společnosti Ward Effect® Technology, které jsou ve vývoji a budou zpřístupněny velkoobchodně držitelům teritoriálních licencí. Prvním zařízením na trhu je",
@@ -1847,7 +1847,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedie",
     "comm__cta_title": "Dotaz na licencování",
     "comm__cta_p": "Teritoriální licence, velkoobchodní ceny a dohody o podání žádosti jsou k dispozici přímo od společnosti Ward Effect® Technology. Kontaktujte nás a proberte s námi příležitosti pro vaši oblast.",
-    "comm__cta_btn": "Kontaktujte dave@wardeffect.com"
+    "comm__cta_btn": "Kontaktujte resonancesensor@gmail.com"
   },
   "da": {
     "nav__ward_effect": "Ward Effect®",
@@ -2145,7 +2145,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Leder + Bibliotek",
     "comm__card2_p": "Hver applikation kræver et matchende transducerhoved – mikrofon/højttaler-enheden, der er formet og indbygget til den specifikke opgave – og et spektral fingeraftryks-LEF-bibliotek indlæst i enheden. Hoved og bibliotek sælges som opgraderinger, hvilket genererer løbende indtægter fra en enkelt installeret base.",
     "comm__note_strong": "For territoriale licenshavere:",
-    "comm__note_p": "Køb basisenheden og applikationshovederne til engrospris. Fastsæt din egen detailpris. Efterhånden som dine kunder udvider til nye applikationer, køber de yderligere hoveder og biblioteker – tilbagevendende indtægter fra en enkelt installeret base. Eksklusive territoriale rettigheder er tilgængelige. Kontakt dave@wardeffect.com for at drøfte aftaler.",
+    "comm__note_p": "Køb basisenheden og applikationshovederne til engrospris. Fastsæt din egen detailpris. Efterhånden som dine kunder udvider til nye applikationer, køber de yderligere hoveder og biblioteker – tilbagevendende indtægter fra en enkelt installeret base. Eksklusive territoriale rettigheder er tilgængelige. Kontakt resonancesensor@gmail.com for at drøfte aftaler.",
     "comm__catalogue_label": "Enhedskatalog",
     "comm__catalogue_title": "Produkter under udvikling",
     "comm__catalogue_p": "Alle enheder, der er anført nedenfor, er Ward Effect® Technology-produkter under udvikling, som skal gøres tilgængelige for engros til territoriale licenstagere. Den første enhed på markedet er",
@@ -2217,7 +2217,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopædi",
     "comm__cta_title": "Forespørg om licensering",
     "comm__cta_p": "Territorial licensering, engrospriser og applikationsaftaler er tilgængelige direkte fra Ward Effect® Technology. Kontakt os for at drøfte mulighederne for dit område.",
-    "comm__cta_btn": "Kontakt dave@wardeffect.com"
+    "comm__cta_btn": "Kontakt resonancesensor@gmail.com"
   },
   "nl": {
     "nav__ward_effect": "Ward Effect®",
@@ -2515,7 +2515,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Hoofd + Bibliotheek",
     "comm__card2_p": "Voor elke toepassing is een bijpassende transducerkop nodig – de microfoon/luidsprekercombinatie die specifiek voor de betreffende taak is ontworpen en gehuisvest – en een in het apparaat geladen LEF-spectrale vingerafdrukbibliotheek. De kop en de bibliotheek worden als upgrades verkocht, wat zorgt voor doorlopende inkomsten uit één geïnstalleerde basis.",
     "comm__note_strong": "Voor territoriale licentiehouders:",
-    "comm__note_p": "Koop de basiseenheid en applicatiekoppen tegen groothandelsprijs. Bepaal uw eigen verkoopprijs. Naarmate uw klanten nieuwe toepassingen gaan gebruiken, kopen ze extra koppen en bibliotheken – wat zorgt voor terugkerende inkomsten vanuit één geïnstalleerde basis. Exclusieve territoriale rechten zijn beschikbaar. Neem contact op met dave@wardeffect.com om de mogelijkheden te bespreken.",
+    "comm__note_p": "Koop de basiseenheid en applicatiekoppen tegen groothandelsprijs. Bepaal uw eigen verkoopprijs. Naarmate uw klanten nieuwe toepassingen gaan gebruiken, kopen ze extra koppen en bibliotheken – wat zorgt voor terugkerende inkomsten vanuit één geïnstalleerde basis. Exclusieve territoriale rechten zijn beschikbaar. Neem contact op met resonancesensor@gmail.com om de mogelijkheden te bespreken.",
     "comm__catalogue_label": "Apparaatcatalogus",
     "comm__catalogue_title": "Producten in ontwikkeling",
     "comm__catalogue_p": "Alle onderstaande apparaten zijn Ward Effect® Technology-producten in ontwikkeling, die in de groothandel beschikbaar zullen worden gesteld aan territoriale licentiehouders. Het eerste apparaat dat op de markt komt is de",
@@ -2587,7 +2587,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Orthopedie",
     "comm__cta_title": "Informeer naar de mogelijkheden voor een vergunning.",
     "comm__cta_p": "Territoriale licenties, groothandelsprijzen en afspraken over applicatiebeheer zijn rechtstreeks verkrijgbaar bij Ward Effect® Technology. Neem contact met ons op om de mogelijkheden voor uw regio te bespreken.",
-    "comm__cta_btn": "Neem contact op met dave@wardeffect.com"
+    "comm__cta_btn": "Neem contact op met resonancesensor@gmail.com"
   },
   "fi": {
     "nav__ward_effect": "Ward-vaikutus®",
@@ -2885,7 +2885,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Pää + Kirjasto",
     "comm__card2_p": "Jokainen sovellus vaatii sopivan kaiutinpään – kyseistä tehtävää varten muotoillun ja koteloidun mikrofoni-/kaiutinkokoonpanon – ja yksikköön ladatun spektraalisen sormenjälki-LEF-kirjaston. Pää ja kirjasto myydään päivityksinä, mikä tuottaa jatkuvia tuloja yhdestä asennetusta laitekannasta.",
     "comm__note_strong": "Alueellisille lisenssinhaltijoille:",
-    "comm__note_p": "Osta perusyksikkö ja levityspäät tukkuhintaan. Aseta oma vähittäishinta. Kun asiakkaasi laajentavat uusiin sovelluksiin, he ostavat lisää päitä ja kirjastoja – toistuvaa tuloa yhdestä asennetusta laitekannasta. Saatavilla on yksinoikeus alueellisiin tarkoituksiin. Ota yhteyttä osoitteeseen dave@wardeffect.com keskustellaksesi järjestelyistä.",
+    "comm__note_p": "Osta perusyksikkö ja levityspäät tukkuhintaan. Aseta oma vähittäishinta. Kun asiakkaasi laajentavat uusiin sovelluksiin, he ostavat lisää päitä ja kirjastoja – toistuvaa tuloa yhdestä asennetusta laitekannasta. Saatavilla on yksinoikeus alueellisiin tarkoituksiin. Ota yhteyttä osoitteeseen resonancesensor@gmail.com keskustellaksesi järjestelyistä.",
     "comm__catalogue_label": "Laiteluettelo",
     "comm__catalogue_title": "Kehittämisvaiheessa olevat tuotteet",
     "comm__catalogue_p": "Kaikki alla luetellut laitteet ovat kehitteillä olevia Ward Effect® Technology -tuotteita, jotka tulevat tukkumyyntiin alueellisille lisenssinhaltijoille. Ensimmäinen markkinoille tuleva laite on",
@@ -2957,7 +2957,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedia",
     "comm__cta_title": "Tiedustele lisensoinnista",
     "comm__cta_p": "Alueelliset lisensointipalvelut, tukkuhinnat ja sovelluspääsopimukset ovat saatavilla suoraan Ward Effect® Technologylta. Ota yhteyttä keskustellaksesi alueesi mahdollisuuksista.",
-    "comm__cta_btn": "Ota yhteyttä: dave@wardeffect.com"
+    "comm__cta_btn": "Ota yhteyttä: resonancesensor@gmail.com"
   },
   "fr": {
     "nav__ward_effect": "Effet Ward®",
@@ -3255,7 +3255,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Tête + Bibliothèque",
     "comm__card2_p": "Chaque application requiert une tête de transducteur adaptée (l'ensemble microphone/haut-parleur conçu et intégré pour la tâche spécifique) et une bibliothèque spectrale LEF chargée dans l'appareil. La tête et la bibliothèque sont vendues comme mises à niveau, générant ainsi des revenus continus grâce à une base installée unique.",
     "comm__note_strong": "Pour les titulaires de licences territoriales :",
-    "comm__note_p": "Achetez l'unité de base et les têtes d'application au prix de gros. Fixez votre propre prix de détail. À mesure que vos clients développent de nouvelles applications, ils achètent des têtes et des bibliothèques supplémentaires, générant ainsi des revenus récurrents à partir d'une seule base installée. Des droits territoriaux exclusifs sont disponibles. Contactez dave@wardeffect.com pour discuter des modalités.",
+    "comm__note_p": "Achetez l'unité de base et les têtes d'application au prix de gros. Fixez votre propre prix de détail. À mesure que vos clients développent de nouvelles applications, ils achètent des têtes et des bibliothèques supplémentaires, générant ainsi des revenus récurrents à partir d'une seule base installée. Des droits territoriaux exclusifs sont disponibles. Contactez resonancesensor@gmail.com pour discuter des modalités.",
     "comm__catalogue_label": "Catalogue des appareils",
     "comm__catalogue_title": "Produits en développement",
     "comm__catalogue_p": "Tous les dispositifs énumérés ci-dessous sont des produits Ward Effect® Technology en cours de développement, destinés à la vente en gros aux titulaires de licence territoriaux. Le premier dispositif commercialisé est le",
@@ -3327,7 +3327,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Orthopédie",
     "comm__cta_title": "Renseignez-vous sur les licences",
     "comm__cta_p": "Des licences territoriales, des tarifs de gros et des solutions pour les têtes d'application sont disponibles directement auprès de Ward Effect® Technology. Contactez-nous pour discuter des opportunités offertes sur votre territoire.",
-    "comm__cta_btn": "Contactez dave@wardeffect.com"
+    "comm__cta_btn": "Contactez resonancesensor@gmail.com"
   },
   "de": {
     "nav__ward_effect": "Ward Effect®",
@@ -3625,7 +3625,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Leiter + Bibliothek",
     "comm__card2_p": "Für jede Anwendung wird ein passender Wandlerkopf benötigt – die Mikrofon-/Lautsprechereinheit ist für die jeweilige Aufgabe geformt und untergebracht – sowie eine spektrale Fingerabdruckbibliothek (LEF), die in das Gerät geladen ist. Wandlerkopf und Bibliothek werden als Upgrades angeboten und generieren so fortlaufende Einnahmen aus einer einzigen installierten Basis.",
     "comm__note_strong": "Für Gebietslizenznehmer:",
-    "comm__note_p": "Erwerben Sie die Basiseinheit und die Applikationsköpfe zum Großhandelspreis. Legen Sie Ihren eigenen Einzelhandelspreis fest. Wenn Ihre Kunden neue Anwendungsbereiche erschließen, erwerben sie zusätzliche Köpfe und Bibliotheken – so generieren Sie wiederkehrende Einnahmen aus einer einzigen installierten Basis. Exklusive Gebietsrechte sind verfügbar. Kontaktieren Sie dave@wardeffect.com, um die Details zu besprechen.",
+    "comm__note_p": "Erwerben Sie die Basiseinheit und die Applikationsköpfe zum Großhandelspreis. Legen Sie Ihren eigenen Einzelhandelspreis fest. Wenn Ihre Kunden neue Anwendungsbereiche erschließen, erwerben sie zusätzliche Köpfe und Bibliotheken – so generieren Sie wiederkehrende Einnahmen aus einer einzigen installierten Basis. Exklusive Gebietsrechte sind verfügbar. Kontaktieren Sie resonancesensor@gmail.com, um die Details zu besprechen.",
     "comm__catalogue_label": "Gerätekatalog",
     "comm__catalogue_title": "Produkte in der Entwicklung",
     "comm__catalogue_p": "Alle unten aufgeführten Geräte sind Ward Effect®-Technologieprodukte in der Entwicklung, die regionalen Lizenznehmern im Großhandel zur Verfügung gestellt werden sollen. Das erste Gerät, das auf den Markt kommt, ist das/die/das …",
@@ -3697,7 +3697,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Orthopädie",
     "comm__cta_title": "Informationen zur Lizenzierung anfordern",
     "comm__cta_p": "Gebietslizenzen, Großhandelspreise und Vereinbarungen zur Anwendungssteuerung sind direkt bei Ward Effect® Technology erhältlich. Kontaktieren Sie uns, um die Möglichkeiten für Ihr Gebiet zu besprechen.",
-    "comm__cta_btn": "Kontaktieren Sie dave@wardeffect.com"
+    "comm__cta_btn": "Kontaktieren Sie resonancesensor@gmail.com"
   },
   "el": {
     "nav__ward_effect": "Εφέ Ward®",
@@ -3995,7 +3995,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Κεφάλαιο + Βιβλιοθήκη",
     "comm__card2_p": "Κάθε εφαρμογή απαιτεί μια αντίστοιχη κεφαλή μετατροπέα — το συγκρότημα μικροφώνου/ηχείου που έχει διαμορφωθεί και στεγαστεί για τη συγκεκριμένη εργασία — και μια βιβλιοθήκη LEF φασματικού δακτυλικού αποτυπώματος που έχει φορτωθεί στη μονάδα. Η κεφαλή και η βιβλιοθήκη πωλούνται ως αναβαθμίσεις, δημιουργώντας συνεχή έσοδα από μία μόνο εγκατεστημένη βάση.",
     "comm__note_strong": "Για τους κατόχους εδαφικών αδειών:",
-    "comm__note_p": "Αγοράστε τη βασική μονάδα και τις κεφαλές εφαρμογών σε τιμή χονδρικής. Ορίστε τη δική σας τιμή λιανικής. Καθώς οι πελάτες σας επεκτείνονται σε νέες εφαρμογές, αγοράζουν επιπλέον κεφαλές και βιβλιοθήκες — επαναλαμβανόμενα έσοδα από μία μόνο εγκατεστημένη βάση. Διατίθενται αποκλειστικά εδαφικά δικαιώματα. Επικοινωνήστε με το dave@wardeffect.com για να συζητήσετε τις ρυθμίσεις.",
+    "comm__note_p": "Αγοράστε τη βασική μονάδα και τις κεφαλές εφαρμογών σε τιμή χονδρικής. Ορίστε τη δική σας τιμή λιανικής. Καθώς οι πελάτες σας επεκτείνονται σε νέες εφαρμογές, αγοράζουν επιπλέον κεφαλές και βιβλιοθήκες — επαναλαμβανόμενα έσοδα από μία μόνο εγκατεστημένη βάση. Διατίθενται αποκλειστικά εδαφικά δικαιώματα. Επικοινωνήστε με το resonancesensor@gmail.com για να συζητήσετε τις ρυθμίσεις.",
     "comm__catalogue_label": "Κατάλογος συσκευών",
     "comm__catalogue_title": "Προϊόντα υπό ανάπτυξη",
     "comm__catalogue_p": "Όλες οι συσκευές που αναφέρονται παρακάτω είναι προϊόντα Ward Effect® Technology υπό ανάπτυξη, τα οποία θα διατεθούν χονδρικά σε κατόχους τοπικών αδειών. Η πρώτη συσκευή που θα κυκλοφορήσει στην αγορά είναι η",
@@ -4067,7 +4067,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ορθοπεδική",
     "comm__cta_title": "Ερωτηθείτε σχετικά με την αδειοδότηση",
     "comm__cta_p": "Οι εδαφικές άδειες, οι τιμές χονδρικής και οι ρυθμίσεις για την κεφαλή της εφαρμογής είναι διαθέσιμες απευθείας από την Ward Effect® Technology. Επικοινωνήστε μαζί μας για να συζητήσουμε την ευκαιρία για την περιοχή σας.",
-    "comm__cta_btn": "Επικοινωνήστε με το dave@wardeffect.com"
+    "comm__cta_btn": "Επικοινωνήστε με το resonancesensor@gmail.com"
   },
   "hi": {
     "nav__ward_effect": "वार्ड इफेक्ट®",
@@ -4365,7 +4365,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "हेड + लाइब्रेरी",
     "comm__card2_p": "प्रत्येक एप्लिकेशन के लिए एक उपयुक्त ट्रांसड्यूसर हेड (विशेष कार्य के लिए आकार और संरचना में निर्मित माइक/स्पीकर असेंबली) और यूनिट में लोड की गई स्पेक्ट्रल फिंगरप्रिंट LEF लाइब्रेरी की आवश्यकता होती है। हेड और लाइब्रेरी को अपग्रेड के रूप में बेचा जाता है, जिससे एक ही स्थापित आधार से निरंतर राजस्व प्राप्त होता है।",
     "comm__note_strong": "क्षेत्रीय लाइसेंसधारियों के लिए:",
-    "comm__note_p": "बेस यूनिट और एप्लीकेशन हेड्स को थोक मूल्य पर खरीदें। खुदरा मूल्य स्वयं निर्धारित करें। जैसे-जैसे आपके ग्राहक नए अनुप्रयोगों में विस्तार करते हैं, वे अतिरिक्त हेड्स और लाइब्रेरी खरीदते हैं - एक ही स्थापित आधार से आवर्ती आय। विशिष्ट क्षेत्रीय अधिकार उपलब्ध हैं। व्यवस्थाओं पर चर्चा करने के लिए dave@wardeffect.com से संपर्क करें।",
+    "comm__note_p": "बेस यूनिट और एप्लीकेशन हेड्स को थोक मूल्य पर खरीदें। खुदरा मूल्य स्वयं निर्धारित करें। जैसे-जैसे आपके ग्राहक नए अनुप्रयोगों में विस्तार करते हैं, वे अतिरिक्त हेड्स और लाइब्रेरी खरीदते हैं - एक ही स्थापित आधार से आवर्ती आय। विशिष्ट क्षेत्रीय अधिकार उपलब्ध हैं। व्यवस्थाओं पर चर्चा करने के लिए resonancesensor@gmail.com से संपर्क करें।",
     "comm__catalogue_label": "उपकरण सूची",
     "comm__catalogue_title": "विकास के अधीन उत्पाद",
     "comm__catalogue_p": "नीचे सूचीबद्ध सभी उपकरण वार्ड इफेक्ट® टेक्नोलॉजी के विकास के अधीन उत्पाद हैं, जिन्हें क्षेत्रीय लाइसेंसधारियों को थोक बिक्री के लिए उपलब्ध कराया जाएगा। बाजार में आने वाला पहला उपकरण यह है:",
@@ -4437,7 +4437,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "हड्डी रोग",
     "comm__cta_title": "लाइसेंसिंग के बारे में पूछताछ करें",
     "comm__cta_p": "वार्ड इफेक्ट® टेक्नोलॉजी से क्षेत्रीय लाइसेंसिंग, थोक मूल्य निर्धारण और एप्लिकेशन हेड व्यवस्थाएं सीधे उपलब्ध हैं। अपने क्षेत्र के लिए अवसरों पर चर्चा करने के लिए हमसे संपर्क करें।",
-    "comm__cta_btn": "dave@wardeffect.com पर संपर्क करें"
+    "comm__cta_btn": "resonancesensor@gmail.com पर संपर्क करें"
   },
   "hu": {
     "nav__ward_effect": "Ward Effect®",
@@ -4735,7 +4735,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Fej + Könyvtár",
     "comm__card2_p": "Minden alkalmazáshoz megfelelő jelátalakító fejre van szükség – a mikrofon/hangszóró szerelvényt az adott feladathoz igazítva és elhelyezve –, valamint egy spektrális ujjlenyomatú LEF könyvtárra, amelyet a készülékbe kell tölteni. A fejet és a könyvtárat frissítésként értékesítik, így folyamatos bevételt generálnak egyetlen telepített bázisból.",
     "comm__note_strong": "Területi engedélyesek számára:",
-    "comm__note_p": "Vásárolja meg az alapegységet és a felhordófejeket nagykereskedelmi áron. Állítsa be saját kiskereskedelmi árat. Ahogy ügyfelei új alkalmazások felé fordulnak, további fejeket és könyvtárakat vásárolnak – ismétlődő bevételt biztosítva egyetlen telepített bázisból. Kizárólagos területi jogok állnak rendelkezésre. A részletek megbeszéléséhez vegye fel a kapcsolatot a dave@wardeffect.com címen.",
+    "comm__note_p": "Vásárolja meg az alapegységet és a felhordófejeket nagykereskedelmi áron. Állítsa be saját kiskereskedelmi árat. Ahogy ügyfelei új alkalmazások felé fordulnak, további fejeket és könyvtárakat vásárolnak – ismétlődő bevételt biztosítva egyetlen telepített bázisból. Kizárólagos területi jogok állnak rendelkezésre. A részletek megbeszéléséhez vegye fel a kapcsolatot a resonancesensor@gmail.com címen.",
     "comm__catalogue_label": "Eszközkatalógus",
     "comm__catalogue_title": "Fejlesztés alatt álló termékek",
     "comm__catalogue_p": "Az alább felsorolt összes eszköz fejlesztés alatt álló Ward Effect® Technology termék, amelyeket nagykereskedelmi forgalomban fognak bocsátani a területi licenctulajdonosok számára. Az első forgalomba kerülő eszköz a",
@@ -4807,7 +4807,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopédia",
     "comm__cta_title": "Érdeklődjön az engedélyezésről",
     "comm__cta_p": "Területi licencelés, nagykereskedelmi árképzés és alkalmazásközpont-megállapodások közvetlenül a Ward Effect® Technology-tól érhetők el. Lépjen kapcsolatba velünk, hogy megbeszélhessük az Ön területére vonatkozó lehetőségeket.",
-    "comm__cta_btn": "Kapcsolat: dave@wardeffect.com"
+    "comm__cta_btn": "Kapcsolat: resonancesensor@gmail.com"
   },
   "id": {
     "nav__ward_effect": "Ward Effect®",
@@ -5105,7 +5105,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Kepala + Perpustakaan",
     "comm__card2_p": "Setiap aplikasi membutuhkan kepala transduser yang sesuai — rakitan mikrofon/speaker yang dibentuk dan ditempatkan untuk tugas spesifik tersebut — dan pustaka LEF sidik jari spektral yang dimuat ke dalam unit. Kepala dan pustaka tersebut dijual sebagai peningkatan, menghasilkan pendapatan berkelanjutan dari satu basis pelanggan yang terpasang.",
     "comm__note_strong": "Untuk pemegang lisensi teritorial:",
-    "comm__note_p": "Beli unit dasar dan kepala aplikasi dengan harga grosir. Tetapkan harga ritel Anda sendiri. Saat pelanggan Anda beralih ke aplikasi baru, mereka membeli kepala dan pustaka tambahan — pendapatan berulang dari satu basis pelanggan yang sudah terpasang. Hak teritorial eksklusif tersedia. Hubungi dave@wardeffect.com untuk membahas pengaturan.",
+    "comm__note_p": "Beli unit dasar dan kepala aplikasi dengan harga grosir. Tetapkan harga ritel Anda sendiri. Saat pelanggan Anda beralih ke aplikasi baru, mereka membeli kepala dan pustaka tambahan — pendapatan berulang dari satu basis pelanggan yang sudah terpasang. Hak teritorial eksklusif tersedia. Hubungi resonancesensor@gmail.com untuk membahas pengaturan.",
     "comm__catalogue_label": "Katalog Perangkat",
     "comm__catalogue_title": "Produk yang Sedang Dikembangkan",
     "comm__catalogue_p": "Semua perangkat yang tercantum di bawah ini adalah produk Ward Effect® Technology yang sedang dalam pengembangan, dan akan tersedia untuk penjualan grosir kepada pemegang lisensi di wilayah tertentu. Perangkat pertama yang dipasarkan adalah...",
@@ -5177,7 +5177,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedi",
     "comm__cta_title": "Tanyakan tentang Perizinan",
     "comm__cta_p": "Lisensi teritorial, harga grosir, dan pengaturan kepala aplikasi tersedia langsung dari Ward Effect® Technology. Hubungi kami untuk membahas peluang bagi wilayah Anda.",
-    "comm__cta_btn": "Hubungi dave@wardeffect.com"
+    "comm__cta_btn": "Hubungi resonancesensor@gmail.com"
   },
   "it": {
     "nav__ward_effect": "Ward Effect®",
@@ -5475,7 +5475,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Responsabile + Biblioteca",
     "comm__card2_p": "Ogni applicazione richiede una testina trasduttrice corrispondente (il gruppo microfono/altoparlante sagomato e alloggiato per lo specifico compito) e una libreria LEF di impronte spettrali caricata nell'unità. Testina e libreria vengono vendute come aggiornamenti, generando entrate continue da un'unica base installata.",
     "comm__note_strong": "Per i titolari di licenza territoriale:",
-    "comm__note_p": "Acquista l'unità base e le testine applicative a prezzo all'ingrosso. Stabilisci il tuo prezzo al dettaglio. Man mano che i tuoi clienti espandono le proprie applicazioni, acquisteranno testine e librerie aggiuntive, generando entrate ricorrenti da un'unica base installata. Sono disponibili diritti territoriali esclusivi. Contatta dave@wardeffect.com per discutere le modalità.",
+    "comm__note_p": "Acquista l'unità base e le testine applicative a prezzo all'ingrosso. Stabilisci il tuo prezzo al dettaglio. Man mano che i tuoi clienti espandono le proprie applicazioni, acquisteranno testine e librerie aggiuntive, generando entrate ricorrenti da un'unica base installata. Sono disponibili diritti territoriali esclusivi. Contatta resonancesensor@gmail.com per discutere le modalità.",
     "comm__catalogue_label": "Catalogo dispositivi",
     "comm__catalogue_title": "Prodotti in fase di sviluppo",
     "comm__catalogue_p": "Tutti i dispositivi elencati di seguito sono prodotti Ward Effect® Technology in fase di sviluppo, che saranno resi disponibili all'ingrosso ai licenziatari territoriali. Il primo dispositivo a essere commercializzato è il",
@@ -5547,7 +5547,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedia",
     "comm__cta_title": "Richiedi informazioni sulle licenze",
     "comm__cta_p": "Le licenze territoriali, i prezzi all'ingrosso e gli accordi con i responsabili delle applicazioni sono disponibili direttamente da Ward Effect® Technology. Contattateci per discutere le opportunità per il vostro territorio.",
-    "comm__cta_btn": "Contatta dave@wardeffect.com"
+    "comm__cta_btn": "Contatta resonancesensor@gmail.com"
   },
   "ja": {
     "nav__ward_effect": "ワード効果®",
@@ -5845,7 +5845,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "ヘッド + ライブラリ",
     "comm__card2_p": "各アプリケーションには、特定の用途に合わせて形状と筐体が設計されたトランスデューサーヘッド（マイク／スピーカーアセンブリ）と、ユニットにロードされたスペクトルフィンガープリントLEFライブラリが必要です。ヘッドとライブラリはアップグレードとして販売され、単一の設置ベースから継続的な収益を生み出します。",
     "comm__note_strong": "地域免許取得者向け：",
-    "comm__note_p": "ベースユニットとアプリケーションヘッドを卸売価格で購入できます。小売価格は自由に設定可能です。お客様が新しいアプリケーションに展開するにつれて、追加のヘッドやライブラリを購入していただくため、単一の導入ベースから継続的な収益が得られます。独占販売権もご用意しております。詳細については、dave@wardeffect.comまでお問い合わせください。",
+    "comm__note_p": "ベースユニットとアプリケーションヘッドを卸売価格で購入できます。小売価格は自由に設定可能です。お客様が新しいアプリケーションに展開するにつれて、追加のヘッドやライブラリを購入していただくため、単一の導入ベースから継続的な収益が得られます。独占販売権もご用意しております。詳細については、resonancesensor@gmail.comまでお問い合わせください。",
     "comm__catalogue_label": "デバイスカタログ",
     "comm__catalogue_title": "開発中の製品",
     "comm__catalogue_p": "下記に記載されているすべてのデバイスは、開発中のWard Effect®テクノロジー製品であり、地域ライセンス取得者向けに卸売販売される予定です。最初に市場に投入されるデバイスは",
@@ -5917,7 +5917,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "整形外科",
     "comm__cta_title": "ライセンスについてのお問い合わせ",
     "comm__cta_p": "地域ライセンス、卸売価格、およびアプリケーションヘッドの契約については、Ward Effect® Technologyから直接お問い合わせください。お客様の地域でのビジネスチャンスについてご相談をご希望の場合は、当社までご連絡ください。",
-    "comm__cta_btn": "dave@wardeffect.comまでご連絡ください。"
+    "comm__cta_btn": "resonancesensor@gmail.comまでご連絡ください。"
   },
   "ko": {
     "nav__ward_effect": "워드 이펙트®",
@@ -6215,7 +6215,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "머리 + 도서관",
     "comm__card2_p": "각 애플리케이션에는 해당 작업에 맞게 모양과 하우징이 제작된 마이크/스피커 어셈블리인 트랜스듀서 헤드와 장치에 로드된 스펙트럼 지문 LEF 라이브러리가 필요합니다. 헤드와 라이브러리는 업그레이드 옵션으로 판매되어 단일 설치 기반에서 지속적인 수익을 창출합니다.",
     "comm__note_strong": "지역별 라이선스 소지자의 경우:",
-    "comm__note_p": "기본 장치와 애플리케이션 헤드를 도매가로 구매하세요. 소매가는 직접 설정할 수 있습니다. 고객이 새로운 애플리케이션으로 확장함에 따라 추가 헤드와 라이브러리를 구매하게 되므로, 단일 설치 기반에서 지속적인 수익을 창출할 수 있습니다. 독점 지역 판매권도 제공됩니다. 자세한 사항은 dave@wardeffect.com으로 문의하십시오.",
+    "comm__note_p": "기본 장치와 애플리케이션 헤드를 도매가로 구매하세요. 소매가는 직접 설정할 수 있습니다. 고객이 새로운 애플리케이션으로 확장함에 따라 추가 헤드와 라이브러리를 구매하게 되므로, 단일 설치 기반에서 지속적인 수익을 창출할 수 있습니다. 독점 지역 판매권도 제공됩니다. 자세한 사항은 resonancesensor@gmail.com으로 문의하십시오.",
     "comm__catalogue_label": "기기 카탈로그",
     "comm__catalogue_title": "개발 중인 제품",
     "comm__catalogue_p": "아래에 나열된 모든 기기는 Ward Effect® Technology에서 개발 중인 제품으로, 지역 라이선스 계약자에게 도매로 제공될 예정입니다. 시장에 출시될 첫 번째 기기는 다음과 같습니다.",
@@ -6287,7 +6287,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "정형 외과",
     "comm__cta_title": "라이선스 문의",
     "comm__cta_p": "Ward Effect® Technology는 지역별 라이선스, 도매 가격 및 애플리케이션 헤드 계약을 직접 제공합니다. 귀하의 지역에 적합한 기회에 대해 문의해 주십시오.",
-    "comm__cta_btn": "dave@wardeffect.com으로 연락주세요."
+    "comm__cta_btn": "resonancesensor@gmail.com으로 연락주세요."
   },
   "ms": {
     "nav__ward_effect": "Kesan Ward®",
@@ -6585,7 +6585,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Ketua + Perpustakaan",
     "comm__card2_p": "Setiap aplikasi memerlukan kepala transduser yang sepadan — pemasangan mikrofon/pembesar suara yang dibentuk dan ditempatkan untuk tugas khusus — dan pustaka LEF cap jari spektrum yang dimuatkan ke dalam unit. Kepala dan pustaka dijual sebagai naik taraf, menjana pendapatan berterusan daripada satu pangkalan yang dipasang.",
     "comm__note_strong": "Untuk pemegang lesen wilayah:",
-    "comm__note_p": "Beli unit asas dan kepala aplikasi pada harga borong. Tetapkan harga runcit anda sendiri. Apabila pelanggan anda berkembang ke aplikasi baharu, mereka membeli kepala dan pustaka tambahan — hasil berulang daripada satu pangkalan yang dipasang. Hak wilayah eksklusif tersedia. Hubungi dave@wardeffect.com untuk membincangkan pengaturan.",
+    "comm__note_p": "Beli unit asas dan kepala aplikasi pada harga borong. Tetapkan harga runcit anda sendiri. Apabila pelanggan anda berkembang ke aplikasi baharu, mereka membeli kepala dan pustaka tambahan — hasil berulang daripada satu pangkalan yang dipasang. Hak wilayah eksklusif tersedia. Hubungi resonancesensor@gmail.com untuk membincangkan pengaturan.",
     "comm__catalogue_label": "Katalog Peranti",
     "comm__catalogue_title": "Produk Dalam Pembangunan",
     "comm__catalogue_p": "Semua peranti yang disenaraikan di bawah adalah produk Teknologi Ward Effect® yang sedang dibangunkan, untuk disediakan secara borong kepada pemegang lesen wilayah. Peranti pertama yang dipasarkan ialah",
@@ -6657,7 +6657,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedik",
     "comm__cta_title": "Bertanya Mengenai Pelesenan",
     "comm__cta_p": "Pelesenan wilayah, harga borong dan pengaturan ketua aplikasi boleh didapati terus daripada Ward Effect® Technology. Hubungi kami untuk membincangkan peluang untuk wilayah anda.",
-    "comm__cta_btn": "Hubungi dave@wardeffect.com"
+    "comm__cta_btn": "Hubungi resonancesensor@gmail.com"
   },
   "no": {
     "nav__ward_effect": "Ward Effect®",
@@ -6955,7 +6955,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Leder + Bibliotek",
     "comm__card2_p": "Hver applikasjon krever et matchende transduserhode – mikrofon-/høyttalerenheten formet og plassert for den spesifikke oppgaven – og et spektral fingeravtrykks-LEF-bibliotek lastet inn i enheten. Hode og bibliotek selges som oppgraderinger, noe som genererer løpende inntekter fra en enkelt installert base.",
     "comm__note_strong": "For territoriale lisensinnehavere:",
-    "comm__note_p": "Kjøp basisenheten og applikasjonshodene til engrospris. Sett din egen utsalgspris. Etter hvert som kundene dine utvider til nye applikasjoner, kjøper de flere hoder og biblioteker – gjentakende inntekter fra en enkelt installert base. Eksklusive territoriale rettigheter er tilgjengelige. Kontakt dave@wardeffect.com for å diskutere avtaler.",
+    "comm__note_p": "Kjøp basisenheten og applikasjonshodene til engrospris. Sett din egen utsalgspris. Etter hvert som kundene dine utvider til nye applikasjoner, kjøper de flere hoder og biblioteker – gjentakende inntekter fra en enkelt installert base. Eksklusive territoriale rettigheter er tilgjengelige. Kontakt resonancesensor@gmail.com for å diskutere avtaler.",
     "comm__catalogue_label": "Enhetskatalog",
     "comm__catalogue_title": "Produkter under utvikling",
     "comm__catalogue_p": "Alle enhetene som er oppført nedenfor er Ward Effect® Technology-produkter under utvikling, som skal gjøres tilgjengelige for engros til territoriale lisensinnehavere. Den første enheten på markedet er",
@@ -7027,7 +7027,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedi",
     "comm__cta_title": "Spør om lisensiering",
     "comm__cta_p": "Territorial lisens, engrospriser og avtaler om applikasjonsledere er tilgjengelig direkte fra Ward Effect® Technology. Kontakt oss for å diskutere muligheten for ditt område.",
-    "comm__cta_btn": "Kontakt dave@wardeffect.com"
+    "comm__cta_btn": "Kontakt resonancesensor@gmail.com"
   },
   "fa": {
     "nav__ward_effect": "وارد افکت®",
@@ -7325,7 +7325,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "رئیس + کتابخانه",
     "comm__card2_p": "هر کاربرد به یک سر مبدل منطبق - مجموعه میکروفون/بلندگو که برای کار خاص شکل گرفته و در آن قرار گرفته است - و یک کتابخانه اثر انگشت طیفی LEF که در واحد بارگذاری شده است، نیاز دارد. سر و کتابخانه به عنوان ارتقا فروخته می‌شوند و از یک پایه نصب شده، درآمد مداوم ایجاد می‌کنند.",
     "comm__note_strong": "برای دارندگان مجوز منطقه‌ای:",
-    "comm__note_p": "واحد پایه و هدهای برنامه را با قیمت عمده فروشی خریداری کنید. قیمت خرده فروشی خود را تعیین کنید. با گسترش استفاده از برنامه‌های جدید، مشتریان شما هدها و کتابخانه‌های اضافی خریداری می‌کنند - درآمد مستمر از یک پایه نصب شده. حقوق انحصاری منطقه‌ای در دسترس است. برای بحث در مورد ترتیبات با dave@wardeffect.com تماس بگیرید.",
+    "comm__note_p": "واحد پایه و هدهای برنامه را با قیمت عمده فروشی خریداری کنید. قیمت خرده فروشی خود را تعیین کنید. با گسترش استفاده از برنامه‌های جدید، مشتریان شما هدها و کتابخانه‌های اضافی خریداری می‌کنند - درآمد مستمر از یک پایه نصب شده. حقوق انحصاری منطقه‌ای در دسترس است. برای بحث در مورد ترتیبات با resonancesensor@gmail.com تماس بگیرید.",
     "comm__catalogue_label": "کاتالوگ دستگاه",
     "comm__catalogue_title": "محصولات در حال توسعه",
     "comm__catalogue_p": "تمام دستگاه‌های ذکر شده در زیر، محصولات Ward Effect® Technology در حال توسعه هستند که قرار است به صورت عمده در اختیار دارندگان مجوز منطقه‌ای قرار گیرند. اولین دستگاهی که به بازار عرضه می‌شود،",
@@ -7397,7 +7397,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "ارتوپدی",
     "comm__cta_title": "درباره مجوزها استعلام کنید",
     "comm__cta_p": "صدور مجوز منطقه‌ای، قیمت‌گذاری عمده‌فروشی و هماهنگی‌های لازم برای صدور مجوز، مستقیماً از Ward Effect® Technology امکان‌پذیر است. برای گفتگو در مورد فرصت‌های موجود در منطقه خود، با ما تماس بگیرید.",
-    "comm__cta_btn": "با dave@wardeffect.com تماس بگیرید"
+    "comm__cta_btn": "با resonancesensor@gmail.com تماس بگیرید"
   },
   "pl": {
     "nav__ward_effect": "Efekt Warda®",
@@ -7695,7 +7695,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Głowa + Biblioteka",
     "comm__card2_p": "Każda aplikacja wymaga dopasowanej głowicy przetwornika – zespołu mikrofonu i głośnika o kształcie i obudowie dostosowanej do konkretnego zadania – oraz biblioteki LEF z odciskiem widmowym wgranej do urządzenia. Głowica i biblioteka są sprzedawane jako aktualizacje, generując stały dochód z jednej zainstalowanej bazy.",
     "comm__note_strong": "Dla licencjobiorców terytorialnych:",
-    "comm__note_p": "Kup jednostkę bazową i głowice aplikacyjne w cenie hurtowej. Ustal własną cenę detaliczną. W miarę jak Twoi klienci rozszerzają swoją działalność o nowe aplikacje, kupują dodatkowe głowice i biblioteki – generując cykliczny przychód z jednej zainstalowanej bazy. Dostępne są wyłączne prawa terytorialne. Skontaktuj się z dave@wardeffect.com, aby omówić szczegóły.",
+    "comm__note_p": "Kup jednostkę bazową i głowice aplikacyjne w cenie hurtowej. Ustal własną cenę detaliczną. W miarę jak Twoi klienci rozszerzają swoją działalność o nowe aplikacje, kupują dodatkowe głowice i biblioteki – generując cykliczny przychód z jednej zainstalowanej bazy. Dostępne są wyłączne prawa terytorialne. Skontaktuj się z resonancesensor@gmail.com, aby omówić szczegóły.",
     "comm__catalogue_label": "Katalog urządzeń",
     "comm__catalogue_title": "Produkty w fazie rozwoju",
     "comm__catalogue_p": "Wszystkie wymienione poniżej urządzenia to produkty z technologią Ward Effect® w fazie rozwoju, które będą dostępne hurtowo dla licencjobiorców terytorialnych. Pierwszym urządzeniem, które trafi na rynek, jest",
@@ -7767,7 +7767,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedia",
     "comm__cta_title": "Zapytaj o licencję",
     "comm__cta_p": "Licencje terytorialne, ceny hurtowe i ustalenia dotyczące głównych aplikacji są dostępne bezpośrednio w firmie Ward Effect® Technology. Skontaktuj się z nami, aby omówić możliwości dla Twojego terytorium.",
-    "comm__cta_btn": "Kontakt: dave@wardeffect.com"
+    "comm__cta_btn": "Kontakt: resonancesensor@gmail.com"
   },
   "pt": {
     "nav__ward_effect": "Efeito Ward®",
@@ -8065,7 +8065,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Cabeçalho + Biblioteca",
     "comm__card2_p": "Cada aplicação requer uma cabeça de transdutor compatível — o conjunto microfone/alto-falante com formato e alojado para a tarefa específica — e uma biblioteca LEF de impressão digital espectral carregada na unidade. A cabeça e a biblioteca são vendidas como atualizações, gerando receita contínua a partir de uma única base instalada.",
     "comm__note_strong": "Para titulares de licenças territoriais:",
-    "comm__note_p": "Adquira a unidade base e os cabeçotes de aplicação a preço de atacado. Defina seu próprio preço de varejo. À medida que seus clientes expandem para novas aplicações, eles adquirem cabeçotes e bibliotecas adicionais — receita recorrente a partir de uma única base instalada. Direitos territoriais exclusivos estão disponíveis. Entre em contato com dave@wardeffect.com para discutir os detalhes.",
+    "comm__note_p": "Adquira a unidade base e os cabeçotes de aplicação a preço de atacado. Defina seu próprio preço de varejo. À medida que seus clientes expandem para novas aplicações, eles adquirem cabeçotes e bibliotecas adicionais — receita recorrente a partir de uma única base instalada. Direitos territoriais exclusivos estão disponíveis. Entre em contato com resonancesensor@gmail.com para discutir os detalhes.",
     "comm__catalogue_label": "Catálogo de dispositivos",
     "comm__catalogue_title": "Produtos em desenvolvimento",
     "comm__catalogue_p": "Todos os dispositivos listados abaixo são produtos da Tecnologia Ward Effect® em desenvolvimento, que serão disponibilizados para venda por atacado a licenciados territoriais. O primeiro dispositivo a chegar ao mercado é o",
@@ -8137,7 +8137,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedia",
     "comm__cta_title": "Informe-se sobre o licenciamento.",
     "comm__cta_p": "Licenciamento territorial, preços de atacado e acordos de distribuição de equipamentos estão disponíveis diretamente com a Ward Effect® Technology. Entre em contato conosco para discutir as oportunidades para o seu território.",
-    "comm__cta_btn": "Entre em contato com dave@wardeffect.com"
+    "comm__cta_btn": "Entre em contato com resonancesensor@gmail.com"
   },
   "ro": {
     "nav__ward_effect": "Efect Ward®",
@@ -8435,7 +8435,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Șef + Bibliotecă",
     "comm__card2_p": "Fiecare aplicație necesită un cap de traductor potrivit — ansamblul microfon/difuzor format și găzduit pentru sarcina specifică — și o bibliotecă LEF cu amprentă spectrală încărcată în unitate. Capul și biblioteca sunt vândute ca upgrade-uri, generând venituri continue dintr-o singură bază instalată.",
     "comm__note_strong": "Pentru licențiații teritoriali:",
-    "comm__note_p": "Achiziționați unitatea de bază și componentele de aplicație la preț en-gros. Stabiliți-vă propriul preț de vânzare cu amănuntul. Pe măsură ce clienții dvs. se extind în aplicații noi, aceștia achiziționează componente și biblioteci suplimentare - venituri recurente dintr-o singură bază instalată. Sunt disponibile drepturi teritoriale exclusive. Contactați dave@wardeffect.com pentru a discuta aranjamentele.",
+    "comm__note_p": "Achiziționați unitatea de bază și componentele de aplicație la preț en-gros. Stabiliți-vă propriul preț de vânzare cu amănuntul. Pe măsură ce clienții dvs. se extind în aplicații noi, aceștia achiziționează componente și biblioteci suplimentare - venituri recurente dintr-o singură bază instalată. Sunt disponibile drepturi teritoriale exclusive. Contactați resonancesensor@gmail.com pentru a discuta aranjamentele.",
     "comm__catalogue_label": "Catalog de dispozitive",
     "comm__catalogue_title": "Produse în curs de dezvoltare",
     "comm__catalogue_p": "Toate dispozitivele enumerate mai jos sunt produse Ward Effect® Technology aflate în curs de dezvoltare, care vor fi disponibile pentru vânzare en-gros către licențiații teritoriali. Primul dispozitiv lansat pe piață este",
@@ -8507,7 +8507,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedie",
     "comm__cta_title": "Întrebați despre licențiere",
     "comm__cta_p": "Licențierea teritorială, prețurile en-gros și aranjamentele pentru aplicații sunt disponibile direct de la Ward Effect® Technology. Contactați-ne pentru a discuta oportunitatea pentru teritoriul dumneavoastră.",
-    "comm__cta_btn": "Contactați dave@wardeffect.com"
+    "comm__cta_btn": "Contactați resonancesensor@gmail.com"
   },
   "ru": {
     "nav__ward_effect": "Эффект защиты®",
@@ -8805,7 +8805,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Глава + Библиотека",
     "comm__card2_p": "Для каждого приложения требуется соответствующая головка преобразователя — микрофонно-динамиковый блок, имеющий форму и корпус, разработанные специально для данной задачи, — и библиотека спектральных характеристик LEF, загруженная в устройство. Головка и библиотека продаются как дополнительные модули, обеспечивая постоянный доход от одной установленной базы.",
     "comm__note_strong": "Для территориальных лицензиатов:",
-    "comm__note_p": "Приобретайте базовый блок и насадки для приложений по оптовой цене. Устанавливайте собственную розничную цену. По мере расширения сферы применения ваших клиентов, они будут приобретать дополнительные насадки и библиотеки — это обеспечит им постоянный доход от одной установленной базы. Доступны эксклюзивные территориальные права. Свяжитесь с dave@wardeffect.com для обсуждения условий.",
+    "comm__note_p": "Приобретайте базовый блок и насадки для приложений по оптовой цене. Устанавливайте собственную розничную цену. По мере расширения сферы применения ваших клиентов, они будут приобретать дополнительные насадки и библиотеки — это обеспечит им постоянный доход от одной установленной базы. Доступны эксклюзивные территориальные права. Свяжитесь с resonancesensor@gmail.com для обсуждения условий.",
     "comm__catalogue_label": "Каталог устройств",
     "comm__catalogue_title": "Продукты, находящиеся в разработке",
     "comm__catalogue_p": "Все перечисленные ниже устройства являются продуктами компании Ward Effect® Technology, находящимися в стадии разработки и предназначенными для оптовой продажи лицензиатам на закрепленных территориях. Первым устройством, вышедшим на рынок, станет...",
@@ -8877,7 +8877,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ортопедия",
     "comm__cta_title": "Уточните информацию о лицензировании.",
     "comm__cta_p": "Компания Ward Effect® Technology предлагает территориальные лицензии, оптовые цены и соглашения о поставках оборудования. Свяжитесь с нами, чтобы обсудить возможности для вашего региона.",
-    "comm__cta_btn": "Свяжитесь с нами по адресу dave@wardeffect.com"
+    "comm__cta_btn": "Свяжитесь с нами по адресу resonancesensor@gmail.com"
   },
   "es": {
     "nav__ward_effect": "Efecto Ward®",
@@ -9175,7 +9175,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Cabeza + Biblioteca",
     "comm__card2_p": "Cada aplicación requiere un cabezal transductor compatible (el conjunto de micrófono/altavoz diseñado y alojado para la tarea específica) y una biblioteca LEF de huella espectral cargada en la unidad. El cabezal y la biblioteca se venden como actualizaciones, lo que genera ingresos recurrentes a partir de una única base instalada.",
     "comm__note_strong": "Para los licenciatarios territoriales:",
-    "comm__note_p": "Adquiera la unidad base y los cabezales de aplicación a precio mayorista. Establezca su propio precio de venta al público. A medida que sus clientes se expandan a nuevas aplicaciones, adquirirán cabezales y bibliotecas adicionales, generando ingresos recurrentes a partir de una única base instalada. Se ofrecen derechos territoriales exclusivos. Para más información, contacte con dave@wardeffect.com.",
+    "comm__note_p": "Adquiera la unidad base y los cabezales de aplicación a precio mayorista. Establezca su propio precio de venta al público. A medida que sus clientes se expandan a nuevas aplicaciones, adquirirán cabezales y bibliotecas adicionales, generando ingresos recurrentes a partir de una única base instalada. Se ofrecen derechos territoriales exclusivos. Para más información, contacte con resonancesensor@gmail.com.",
     "comm__catalogue_label": "Catálogo de dispositivos",
     "comm__catalogue_title": "Productos en desarrollo",
     "comm__catalogue_p": "Todos los dispositivos que se enumeran a continuación son productos de Ward Effect® Technology en desarrollo, que estarán disponibles para su venta al por mayor a los licenciatarios territoriales. El primer dispositivo en salir al mercado es el",
@@ -9247,7 +9247,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedía",
     "comm__cta_title": "Consultar sobre licencias",
     "comm__cta_p": "Las licencias territoriales, los precios al por mayor y los acuerdos para cabezales de aplicación están disponibles directamente con Ward Effect® Technology. Contáctenos para analizar las oportunidades en su territorio.",
-    "comm__cta_btn": "Contacta con dave@wardeffect.com"
+    "comm__cta_btn": "Contacta con resonancesensor@gmail.com"
   },
   "sv": {
     "nav__ward_effect": "Ward Effect®",
@@ -9545,7 +9545,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Chef + Bibliotek",
     "comm__card2_p": "Varje applikation kräver ett matchande givarhuvud – mikrofon-/högtalaraggregatet format och inrymt för den specifika uppgiften – och ett spektral fingeravtrycks-LEF-bibliotek laddat i enheten. Huvud och bibliotek säljs som uppgraderingar, vilket genererar kontinuerliga intäkter från en enda installerad bas.",
     "comm__note_strong": "För territoriella licensinnehavare:",
-    "comm__note_p": "Köp basenheten och applikationshuvudena till grossistpris. Sätt ditt eget detaljhandelspris. Allt eftersom dina kunder expanderar till nya applikationer köper de ytterligare huvuden och bibliotek – återkommande intäkter från en enda installerad bas. Exklusiva territoriella rättigheter finns tillgängliga. Kontakta dave@wardeffect.com för att diskutera arrangemang.",
+    "comm__note_p": "Köp basenheten och applikationshuvudena till grossistpris. Sätt ditt eget detaljhandelspris. Allt eftersom dina kunder expanderar till nya applikationer köper de ytterligare huvuden och bibliotek – återkommande intäkter från en enda installerad bas. Exklusiva territoriella rättigheter finns tillgängliga. Kontakta resonancesensor@gmail.com för att diskutera arrangemang.",
     "comm__catalogue_label": "Enhetskatalog",
     "comm__catalogue_title": "Produkter under utveckling",
     "comm__catalogue_p": "Alla enheter som listas nedan är Ward Effect® Technology-produkter under utveckling, som ska göras tillgängliga för grossistförsäljning till territoriella licenstagare. Den första enheten på marknaden är",
@@ -9617,7 +9617,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedi",
     "comm__cta_title": "Fråga om licensiering",
     "comm__cta_p": "Territoriell licensiering, grossistpriser och applikationsöverenskommelser finns tillgängliga direkt från Ward Effect® Technology. Kontakta oss för att diskutera möjligheten för ditt område.",
-    "comm__cta_btn": "Kontakta dave@wardeffect.com"
+    "comm__cta_btn": "Kontakta resonancesensor@gmail.com"
   },
   "tl": {
     "nav__ward_effect": "Epekto ng Ward®",
@@ -9915,7 +9915,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Ulo + Aklatan",
     "comm__card2_p": "Ang bawat aplikasyon ay nangangailangan ng katugmang transducer head — ang mic/speaker assembly na hinubog at inilalagay para sa partikular na gawain — at isang spectral fingerprint LEF library na naka-load sa unit. Ang head at library ay ibinebenta bilang mga upgrade, na bumubuo ng patuloy na kita mula sa iisang naka-install na base.",
     "comm__note_strong": "Para sa mga may lisensya sa teritoryo:",
-    "comm__note_p": "Bilhin ang base unit at mga application head sa presyong pakyawan. Magtakda ng sarili mong presyong tingian. Habang lumalawak ang iyong mga customer sa mga bagong aplikasyon, bumibili sila ng mga karagdagang head at library — paulit-ulit na kita mula sa iisang naka-install na base. May mga eksklusibong karapatan sa teritoryo na magagamit. Makipag-ugnayan sa dave@wardeffect.com upang talakayin ang mga kaayusan.",
+    "comm__note_p": "Bilhin ang base unit at mga application head sa presyong pakyawan. Magtakda ng sarili mong presyong tingian. Habang lumalawak ang iyong mga customer sa mga bagong aplikasyon, bumibili sila ng mga karagdagang head at library — paulit-ulit na kita mula sa iisang naka-install na base. May mga eksklusibong karapatan sa teritoryo na magagamit. Makipag-ugnayan sa resonancesensor@gmail.com upang talakayin ang mga kaayusan.",
     "comm__catalogue_label": "Katalogo ng Kagamitan",
     "comm__catalogue_title": "Mga Produkto na Ginagawa Pa",
     "comm__catalogue_p": "Ang lahat ng mga device na nakalista sa ibaba ay mga produktong Ward Effect® Technology na kasalukuyang ginagawa, na ibebenta nang pakyawan sa mga teritoryal na may lisensya. Ang unang device na ibebenta sa merkado ay ang",
@@ -9987,7 +9987,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopediko",
     "comm__cta_title": "Magtanong Tungkol sa Paglilisensya",
     "comm__cta_p": "Ang paglilisensya sa teritoryo, pagpepresyo ng pakyawan, at mga kaayusan sa head ng aplikasyon ay direktang makukuha mula sa Ward Effect® Technology. Makipag-ugnayan sa amin upang talakayin ang oportunidad para sa iyong teritoryo.",
-    "comm__cta_btn": "Makipag-ugnayan kay dave@wardeffect.com"
+    "comm__cta_btn": "Makipag-ugnayan kay resonancesensor@gmail.com"
   },
   "th": {
     "nav__ward_effect": "วอร์ด เอฟเฟ็กต์®",
@@ -10285,7 +10285,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "หัวหน้า + ห้องสมุด",
     "comm__card2_p": "แต่ละแอปพลิเคชันต้องการหัวแปลงสัญญาณที่เหมาะสม — ชุดไมโครโฟน/ลำโพงที่ออกแบบและบรรจุไว้สำหรับงานเฉพาะ — และไลบรารีลายนิ้วมือสเปกตรัม LEF ที่โหลดลงในตัวเครื่อง หัวแปลงสัญญาณและไลบรารีจำหน่ายเป็นอุปกรณ์เสริม สร้างรายได้ต่อเนื่องจากฐานลูกค้าเดิม",
     "comm__note_strong": "สำหรับผู้ได้รับใบอนุญาตตามเขตพื้นที่:",
-    "comm__note_p": "ซื้อชุดฐานและหัวพิมพ์สำหรับงานต่างๆ ในราคาส่ง กำหนดราคาขายปลีกเองได้ เมื่อลูกค้าของคุณขยายไปสู่การใช้งานใหม่ๆ พวกเขาก็จะซื้อหัวพิมพ์และไลบรารีเพิ่มเติม ซึ่งจะสร้างรายได้ต่อเนื่องจากฐานลูกค้าเดิม มีสิทธิ์ในการจำหน่ายแต่เพียงผู้เดียวในพื้นที่ต่างๆ ติดต่อ dave@wardeffect.com เพื่อหารือเกี่ยวกับข้อตกลงต่างๆ",
+    "comm__note_p": "ซื้อชุดฐานและหัวพิมพ์สำหรับงานต่างๆ ในราคาส่ง กำหนดราคาขายปลีกเองได้ เมื่อลูกค้าของคุณขยายไปสู่การใช้งานใหม่ๆ พวกเขาก็จะซื้อหัวพิมพ์และไลบรารีเพิ่มเติม ซึ่งจะสร้างรายได้ต่อเนื่องจากฐานลูกค้าเดิม มีสิทธิ์ในการจำหน่ายแต่เพียงผู้เดียวในพื้นที่ต่างๆ ติดต่อ resonancesensor@gmail.com เพื่อหารือเกี่ยวกับข้อตกลงต่างๆ",
     "comm__catalogue_label": "แคตตาล็อกอุปกรณ์",
     "comm__catalogue_title": "ผลิตภัณฑ์ที่อยู่ระหว่างการพัฒนา",
     "comm__catalogue_p": "อุปกรณ์ทั้งหมดที่ระบุไว้ด้านล่างนี้เป็นผลิตภัณฑ์เทคโนโลยี Ward Effect® ที่อยู่ระหว่างการพัฒนา และจะวางจำหน่ายในราคาส่งแก่ผู้ได้รับใบอนุญาตในแต่ละพื้นที่ อุปกรณ์ชิ้นแรกที่จะวางจำหน่ายคือ...",
@@ -10357,7 +10357,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "ศัลยกรรมกระดูกและข้อ",
     "comm__cta_title": "สอบถามเกี่ยวกับการขอใบอนุญาต",
     "comm__cta_p": "การอนุญาตให้ใช้สิทธิในระดับภูมิภาค ราคาขายส่ง และข้อตกลงเกี่ยวกับหัวแอปพลิเคชันต่างๆ มีให้บริการโดยตรงจาก Ward Effect® Technology ติดต่อเราเพื่อหารือเกี่ยวกับโอกาสในพื้นที่ของคุณ",
-    "comm__cta_btn": "ติดต่อ dave@wardeffect.com"
+    "comm__cta_btn": "ติดต่อ resonancesensor@gmail.com"
   },
   "tr": {
     "nav__ward_effect": "Koğuş Etkisi®",
@@ -10655,7 +10655,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Baş + Kütüphane",
     "comm__card2_p": "Her uygulama, ilgili göreve uygun şekilde şekillendirilmiş ve yerleştirilmiş mikrofon/hoparlör düzeneği olan eşleşen bir dönüştürücü başlığı ve üniteye yüklenmiş bir spektral parmak izi LEF kütüphanesi gerektirir. Başlık ve kütüphane yükseltme olarak satılır ve tek bir kurulu tabandan sürekli gelir elde edilmesini sağlar.",
     "comm__note_strong": "Bölgesel lisans sahipleri için:",
-    "comm__note_p": "Ana üniteyi ve uygulama başlıklarını toptan fiyattan satın alın. Perakende fiyatınızı kendiniz belirleyin. Müşterileriniz yeni uygulamalara geçtikçe, ek başlıklar ve kütüphaneler satın alırlar; bu da tek bir kurulu tabandan elde edilen tekrarlayan gelir anlamına gelir. Özel bölgesel haklar mevcuttur. Anlaşmaları görüşmek için dave@wardeffect.com adresinden iletişime geçin.",
+    "comm__note_p": "Ana üniteyi ve uygulama başlıklarını toptan fiyattan satın alın. Perakende fiyatınızı kendiniz belirleyin. Müşterileriniz yeni uygulamalara geçtikçe, ek başlıklar ve kütüphaneler satın alırlar; bu da tek bir kurulu tabandan elde edilen tekrarlayan gelir anlamına gelir. Özel bölgesel haklar mevcuttur. Anlaşmaları görüşmek için resonancesensor@gmail.com adresinden iletişime geçin.",
     "comm__catalogue_label": "Cihaz Kataloğu",
     "comm__catalogue_title": "Geliştirme Aşamasındaki Ürünler",
     "comm__catalogue_p": "Aşağıda listelenen tüm cihazlar, Ward Effect® Teknolojisi'nin geliştirme aşamasında olan ve bölgesel lisans sahiplerine toptan satışa sunulacak ürünleridir. Piyasaya sürülecek ilk cihaz şudur:",
@@ -10727,7 +10727,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ortopedi",
     "comm__cta_title": "Lisanslama Hakkında Bilgi Alın",
     "comm__cta_p": "Bölgesel lisanslama, toptan fiyatlandırma ve uygulama başlığı düzenlemeleri doğrudan Ward Effect® Technology'den temin edilebilir. Bölgeniz için fırsatları görüşmek üzere bizimle iletişime geçin.",
-    "comm__cta_btn": "Dave@wardeffect.com adresinden iletişime geçin."
+    "comm__cta_btn": "resonancesensor@gmail.com adresinden iletişime geçin."
   },
   "uk": {
     "nav__ward_effect": "Ефект Ворда®",
@@ -11025,7 +11025,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Головний офіс + Бібліотека",
     "comm__card2_p": "Кожне застосування вимагає відповідної головки перетворювача — вузла мікрофона/динаміка, форми та корпусу якого відповідають конкретному завданню — та бібліотеки спектральних відбитків пальців LEF, завантаженої в пристрій. Головка та бібліотека продаються як оновлення, що генерує постійний дохід від однієї встановленої бази.",
     "comm__note_strong": "Для територіальних ліцензіатів:",
-    "comm__note_p": "Купуйте базовий блок та головки програмного забезпечення за оптовою ціною. Встановлюйте власну роздрібну ціну. У міру розширення можливостей ваших клієнтів, вони купують додаткові головки та бібліотеки — постійний дохід від однієї встановленої бази. Доступні ексклюзивні територіальні права. Звертайтеся за адресою dave@wardeffect.com, щоб обговорити домовленості.",
+    "comm__note_p": "Купуйте базовий блок та головки програмного забезпечення за оптовою ціною. Встановлюйте власну роздрібну ціну. У міру розширення можливостей ваших клієнтів, вони купують додаткові головки та бібліотеки — постійний дохід від однієї встановленої бази. Доступні ексклюзивні територіальні права. Звертайтеся за адресою resonancesensor@gmail.com, щоб обговорити домовленості.",
     "comm__catalogue_label": "Каталог пристроїв",
     "comm__catalogue_title": "Продукти в розробці",
     "comm__catalogue_p": "Усі перелічені нижче пристрої є продуктами Ward Effect® Technology, що знаходяться в розробці та будуть доступні для оптових продажів територіальним ліцензіатам. Першим пристроєм, який вийде на ринок, є",
@@ -11097,7 +11097,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Ортопедія",
     "comm__cta_title": "Запит щодо ліцензування",
     "comm__cta_p": "Територіальне ліцензування, оптові ціни та домовленості щодо керівника програми можна отримати безпосередньо у Ward Effect® Technology. Зв’яжіться з нами, щоб обговорити можливості для вашої території.",
-    "comm__cta_btn": "Зв'яжіться з нами за адресою dave@wardeffect.com"
+    "comm__cta_btn": "Зв'яжіться з нами за адресою resonancesensor@gmail.com"
   },
   "ur": {
     "nav__ward_effect": "وارڈ ایفیکٹ®",
@@ -11395,7 +11395,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "ہیڈ + لائبریری",
     "comm__card2_p": "ہر ایپلیکیشن کے لیے ایک مماثل ٹرانسڈیوسر ہیڈ کی ضرورت ہوتی ہے — مائیک/اسپیکر اسمبلی کی شکل اور مخصوص کام کے لیے رکھی گئی — اور یونٹ میں بھری ہوئی اسپیکٹرل فنگر پرنٹ LEF لائبریری۔ ہیڈ اور لائبریری کو اپ گریڈ کے طور پر فروخت کیا جاتا ہے، جو ایک نصب شدہ بنیاد سے جاری آمدنی پیدا کرتا ہے۔",
     "comm__note_strong": "علاقائی لائسنس کے لیے:",
-    "comm__note_p": "ہول سیل قیمت پر بیس یونٹ اور ایپلیکیشن ہیڈز خریدیں۔ اپنی خوردہ قیمت خود مقرر کریں۔ جیسے جیسے آپ کے گاہک نئی ایپلیکیشنز میں پھیلتے ہیں، وہ اضافی ہیڈز اور لائبریریاں خریدتے ہیں - ایک نصب شدہ بنیاد سے بار بار ہونے والی آمدنی۔ خصوصی علاقائی حقوق دستیاب ہیں۔ انتظامات پر بات کرنے کے لیے dave@wardeffect.com سے رابطہ کریں۔",
+    "comm__note_p": "ہول سیل قیمت پر بیس یونٹ اور ایپلیکیشن ہیڈز خریدیں۔ اپنی خوردہ قیمت خود مقرر کریں۔ جیسے جیسے آپ کے گاہک نئی ایپلیکیشنز میں پھیلتے ہیں، وہ اضافی ہیڈز اور لائبریریاں خریدتے ہیں - ایک نصب شدہ بنیاد سے بار بار ہونے والی آمدنی۔ خصوصی علاقائی حقوق دستیاب ہیں۔ انتظامات پر بات کرنے کے لیے resonancesensor@gmail.com سے رابطہ کریں۔",
     "comm__catalogue_label": "ڈیوائس کیٹلاگ",
     "comm__catalogue_title": "ترقی کے تحت مصنوعات",
     "comm__catalogue_p": "ذیل میں درج تمام آلات Ward Effect® ٹیکنالوجی پروڈکٹس ہیں جو ترقی کے مراحل میں ہیں، جو علاقائی لائسنس دہندگان کو ہول سیل کے لیے دستیاب کرائے جائیں گے۔ مارکیٹ میں پہلا آلہ ہے",
@@ -11467,7 +11467,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "آرتھوپیڈکس",
     "comm__cta_title": "لائسنسنگ کے بارے میں پوچھ گچھ کریں۔",
     "comm__cta_p": "علاقائی لائسنسنگ، ہول سیل قیمتوں کا تعین، اور ایپلیکیشن ہیڈ کے انتظامات براہ راست وارڈ ایفیکٹ® ٹیکنالوجی سے دستیاب ہیں۔ اپنے علاقے کے موقع پر بات کرنے کے لیے ہم سے رابطہ کریں۔",
-    "comm__cta_btn": "dave@wardeffect.com سے رابطہ کریں۔"
+    "comm__cta_btn": "resonancesensor@gmail.com سے رابطہ کریں۔"
   },
   "vi": {
     "nav__ward_effect": "Ward Effect®",
@@ -11765,7 +11765,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "Đầu + Thư viện",
     "comm__card2_p": "Mỗi ứng dụng yêu cầu một đầu chuyển đổi phù hợp — cụm micrô/loa được định hình và đặt trong vỏ bọc cho nhiệm vụ cụ thể — và một thư viện dấu vân tay quang phổ LEF được tải vào thiết bị. Đầu chuyển đổi và thư viện được bán dưới dạng các bản nâng cấp, tạo ra doanh thu liên tục từ một cơ sở khách hàng đã lắp đặt duy nhất.",
     "comm__note_strong": "Đối với các đơn vị được cấp phép theo khu vực:",
-    "comm__note_p": "Mua bộ phận cơ bản và các đầu ứng dụng với giá bán buôn. Tự đặt giá bán lẻ của riêng bạn. Khi khách hàng của bạn mở rộng sang các ứng dụng mới, họ sẽ mua thêm đầu ứng dụng và thư viện – tạo ra doanh thu định kỳ từ một cơ sở khách hàng duy nhất. Quyền phân phối độc quyền theo khu vực có sẵn. Liên hệ dave@wardeffect.com để thảo luận về các thỏa thuận.",
+    "comm__note_p": "Mua bộ phận cơ bản và các đầu ứng dụng với giá bán buôn. Tự đặt giá bán lẻ của riêng bạn. Khi khách hàng của bạn mở rộng sang các ứng dụng mới, họ sẽ mua thêm đầu ứng dụng và thư viện – tạo ra doanh thu định kỳ từ một cơ sở khách hàng duy nhất. Quyền phân phối độc quyền theo khu vực có sẵn. Liên hệ resonancesensor@gmail.com để thảo luận về các thỏa thuận.",
     "comm__catalogue_label": "Danh mục thiết bị",
     "comm__catalogue_title": "Sản phẩm đang được phát triển",
     "comm__catalogue_p": "Tất cả các thiết bị được liệt kê bên dưới đều là sản phẩm của Công nghệ Ward Effect® đang trong giai đoạn phát triển, sẽ được cung cấp bán buôn cho các đối tác được cấp phép theo khu vực. Thiết bị đầu tiên ra mắt thị trường là...",
@@ -11837,7 +11837,7 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "Chỉnh hình",
     "comm__cta_title": "Hỏi về vấn đề cấp phép",
     "comm__cta_p": "Ward Effect® Technology cung cấp trực tiếp các dịch vụ cấp phép theo khu vực, giá bán buôn và thỏa thuận hợp tác ứng dụng. Hãy liên hệ với chúng tôi để thảo luận về cơ hội dành cho khu vực của bạn.",
-    "comm__cta_btn": "Vui lòng liên hệ dave@wardeffect.com"
+    "comm__cta_btn": "Vui lòng liên hệ resonancesensor@gmail.com"
   },
   "zh-TW": {
     "nav__ward_effect": "沃德效應®",
@@ -12135,7 +12135,7 @@ const WE_TRANSLATIONS = {
     "comm__card2_h": "頭部 + 圖書館",
     "comm__card2_p": "每種應用都需要一個匹配的傳感器頭——即專為特定任務而設計的麥克風/揚聲器組件——以及加載到設備中的頻譜指紋LEF庫。感測器頭和庫作為升級配件出售，從而從單一的已安裝用戶群中獲得持續收益。",
     "comm__note_strong": "對於區域性許可證持有者：",
-    "comm__note_p": "以批發價購買主機和應用程式頭。自行設定零售價。隨著客戶拓展應用領域，他們會購買更多應用程式頭和函式庫—單一客戶群帶來持續收入。獨家區域代理權現已開放。請聯絡 dave@wardeffect.com 洽談合作事宜。",
+    "comm__note_p": "以批發價購買主機和應用程式頭。自行設定零售價。隨著客戶拓展應用領域，他們會購買更多應用程式頭和函式庫—單一客戶群帶來持續收入。獨家區域代理權現已開放。請聯絡 resonancesensor@gmail.com 洽談合作事宜。",
     "comm__catalogue_label": "設備目錄",
     "comm__catalogue_title": "正在開發中的產品",
     "comm__catalogue_p": "以下列出的所有設備均為 Ward Effect® 技術正在開發中的產品，將以批發形式提供給區域授權經銷商。首款上市的設備是…",
@@ -12207,6 +12207,6 @@ const WE_TRANSLATIONS = {
     "comm__d20_sector": "骨科",
     "comm__cta_title": "諮詢許可事宜",
     "comm__cta_p": "沃德效應®技術公司可直接提供區域授權、批發價格和應用頭安排。請聯絡我們，探討您所在區域的合作機會。",
-    "comm__cta_btn": "請聯絡 dave@wardeffect.com"
+    "comm__cta_btn": "請聯絡 resonancesensor@gmail.com"
   }
 };
